@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>io.swagger</groupId>
-    <artifactId>swagger-java-client</artifactId>
+    <groupId>com.sematext</groupId>
+    <artifactId>StCloudClient</artifactId>
     <packaging>jar</packaging>
-    <name>swagger-java-client</name>
+    <name>StCloudClient</name>
     <version>1.0.0</version>
     <url>https://github.com/swagger-api/swagger-codegen</url>
     <description>Swagger Java</description>
@@ -16,18 +16,18 @@
 
     <licenses>
         <license>
-            <name>Unlicense</name>
-            <url>http://unlicense.org</url>
+            <name>Apache License Version 2.0, January 2004</name>
+            <url>http://www.apache.org/licenses/</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
 
     <developers>
         <developer>
-            <name>Swagger</name>
-            <email>apiteam@swagger.io</email>
-            <organization>Swagger</organization>
-            <organizationUrl>http://swagger.io</organizationUrl>
+            <name>Sematext</name>
+            <email>support@sematext.com</email>
+            <organization>Sematext</organization>
+            <organizationUrl>https://sematext.com</organizationUrl>
         </developer>
     </developers>
 
@@ -227,7 +227,7 @@
         </dependency>
     </dependencies>
     <properties>
-        <java.version>1.7</java.version>
+        <java.version>1.8</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <gson-fire-version>1.8.0</gson-fire-version>

@@ -18,11 +18,11 @@ Get invoice details
 ### Example
 ```java
 // Import classes:
-//import io.swagger.client.ApiClient;
-//import io.swagger.client.ApiException;
-//import io.swagger.client.Configuration;
-//import io.swagger.client.auth.*;
-//import io.swagger.client.api.BillingApi;
+//import com.sematext.stcloud.ApiClient;
+//import com.sematext.stcloud.ApiException;
+//import com.sematext.stcloud.Configuration;
+//import com.sematext.stcloud.auth.*;
+//import com.sematext.stcloud.client.BillingApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -75,11 +75,11 @@ Get available plans
 ### Example
 ```java
 // Import classes:
-//import io.swagger.client.ApiClient;
-//import io.swagger.client.ApiException;
-//import io.swagger.client.Configuration;
-//import io.swagger.client.auth.*;
-//import io.swagger.client.api.BillingApi;
+//import com.sematext.stcloud.ApiClient;
+//import com.sematext.stcloud.ApiException;
+//import com.sematext.stcloud.Configuration;
+//import com.sematext.stcloud.auth.*;
+//import com.sematext.stcloud.client.BillingApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -130,11 +130,11 @@ Update plan for an app
 ### Example
 ```java
 // Import classes:
-//import io.swagger.client.ApiClient;
-//import io.swagger.client.ApiException;
-//import io.swagger.client.Configuration;
-//import io.swagger.client.auth.*;
-//import io.swagger.client.api.BillingApi;
+//import com.sematext.stcloud.ApiClient;
+//import com.sematext.stcloud.ApiException;
+//import com.sematext.stcloud.Configuration;
+//import com.sematext.stcloud.auth.*;
+//import com.sematext.stcloud.client.BillingApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 

@@ -19,11 +19,11 @@ Delete saved query
 ### Example
 ```java
 // Import classes:
-//import io.swagger.client.ApiClient;
-//import io.swagger.client.ApiException;
-//import io.swagger.client.Configuration;
-//import io.swagger.client.auth.*;
-//import io.swagger.client.api.SavedQueriesApi;
+//import com.sematext.stcloud.ApiClient;
+//import com.sematext.stcloud.ApiException;
+//import com.sematext.stcloud.Configuration;
+//import com.sematext.stcloud.auth.*;
+//import com.sematext.stcloud.client.SavedQueriesApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -72,11 +72,11 @@ Get saved queries for an app
 ### Example
 ```java
 // Import classes:
-//import io.swagger.client.ApiClient;
-//import io.swagger.client.ApiException;
-//import io.swagger.client.Configuration;
-//import io.swagger.client.auth.*;
-//import io.swagger.client.api.SavedQueriesApi;
+//import com.sematext.stcloud.ApiClient;
+//import com.sematext.stcloud.ApiException;
+//import com.sematext.stcloud.Configuration;
+//import com.sematext.stcloud.auth.*;
+//import com.sematext.stcloud.client.SavedQueriesApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -125,11 +125,11 @@ Create saved query
 ### Example
 ```java
 // Import classes:
-//import io.swagger.client.ApiClient;
-//import io.swagger.client.ApiException;
-//import io.swagger.client.Configuration;
-//import io.swagger.client.auth.*;
-//import io.swagger.client.api.SavedQueriesApi;
+//import com.sematext.stcloud.ApiClient;
+//import com.sematext.stcloud.ApiException;
+//import com.sematext.stcloud.Configuration;
+//import com.sematext.stcloud.auth.*;
+//import com.sematext.stcloud.client.SavedQueriesApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -178,11 +178,11 @@ Update saved query
 ### Example
 ```java
 // Import classes:
-//import io.swagger.client.ApiClient;
-//import io.swagger.client.ApiException;
-//import io.swagger.client.Configuration;
-//import io.swagger.client.auth.*;
-//import io.swagger.client.api.SavedQueriesApi;
+//import com.sematext.stcloud.ApiClient;
+//import com.sematext.stcloud.ApiException;
+//import com.sematext.stcloud.Configuration;
+//import com.sematext.stcloud.auth.*;
+//import com.sematext.stcloud.client.SavedQueriesApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 

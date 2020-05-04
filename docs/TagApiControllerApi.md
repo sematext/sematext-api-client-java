@@ -18,11 +18,11 @@ Gets tag names for the given application identifiers appearing in the given time
 ### Example
 ```java
 // Import classes:
-//import io.swagger.client.ApiClient;
-//import io.swagger.client.ApiException;
-//import io.swagger.client.Configuration;
-//import io.swagger.client.auth.*;
-//import io.swagger.client.api.TagApiControllerApi;
+//import com.sematext.stcloud.ApiClient;
+//import com.sematext.stcloud.ApiException;
+//import com.sematext.stcloud.Configuration;
+//import com.sematext.stcloud.auth.*;
+//import com.sematext.stcloud.client.TagApiControllerApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -83,11 +83,11 @@ Gets values for specified tags for the given application identifiers appearing i
 ### Example
 ```java
 // Import classes:
-//import io.swagger.client.ApiClient;
-//import io.swagger.client.ApiException;
-//import io.swagger.client.Configuration;
-//import io.swagger.client.auth.*;
-//import io.swagger.client.api.TagApiControllerApi;
+//import com.sematext.stcloud.ApiClient;
+//import com.sematext.stcloud.ApiException;
+//import com.sematext.stcloud.Configuration;
+//import com.sematext.stcloud.auth.*;
+//import com.sematext.stcloud.client.TagApiControllerApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -150,11 +150,11 @@ Gets values for specified tags for the given application identifiers appearing i
 ### Example
 ```java
 // Import classes:
-//import io.swagger.client.ApiClient;
-//import io.swagger.client.ApiException;
-//import io.swagger.client.Configuration;
-//import io.swagger.client.auth.*;
-//import io.swagger.client.api.TagApiControllerApi;
+//import com.sematext.stcloud.ApiClient;
+//import com.sematext.stcloud.ApiException;
+//import com.sematext.stcloud.Configuration;
+//import com.sematext.stcloud.auth.*;
+//import com.sematext.stcloud.client.TagApiControllerApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 

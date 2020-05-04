@@ -18,11 +18,11 @@ Applicable only for AWS Apps
 ### Example
 ```java
 // Import classes:
-//import io.swagger.client.ApiClient;
-//import io.swagger.client.ApiException;
-//import io.swagger.client.Configuration;
-//import io.swagger.client.auth.*;
-//import io.swagger.client.api.AwsSettingsControllerApi;
+//import com.sematext.stcloud.ApiClient;
+//import com.sematext.stcloud.ApiException;
+//import com.sematext.stcloud.Configuration;
+//import com.sematext.stcloud.auth.*;
+//import com.sematext.stcloud.client.AwsSettingsControllerApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 

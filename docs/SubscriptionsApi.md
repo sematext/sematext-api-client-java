@@ -17,11 +17,11 @@ Get subscriptions for an app
 ### Example
 ```java
 // Import classes:
-//import io.swagger.client.ApiClient;
-//import io.swagger.client.ApiException;
-//import io.swagger.client.Configuration;
-//import io.swagger.client.auth.*;
-//import io.swagger.client.api.SubscriptionsApi;
+//import com.sematext.stcloud.ApiClient;
+//import com.sematext.stcloud.ApiException;
+//import com.sematext.stcloud.Configuration;
+//import com.sematext.stcloud.auth.*;
+//import com.sematext.stcloud.client.SubscriptionsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -70,11 +70,11 @@ Trigger emailing of report for an app
 ### Example
 ```java
 // Import classes:
-//import io.swagger.client.ApiClient;
-//import io.swagger.client.ApiException;
-//import io.swagger.client.Configuration;
-//import io.swagger.client.auth.*;
-//import io.swagger.client.api.SubscriptionsApi;
+//import com.sematext.stcloud.ApiClient;
+//import com.sematext.stcloud.ApiException;
+//import com.sematext.stcloud.Configuration;
+//import com.sematext.stcloud.auth.*;
+//import com.sematext.stcloud.client.SubscriptionsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
