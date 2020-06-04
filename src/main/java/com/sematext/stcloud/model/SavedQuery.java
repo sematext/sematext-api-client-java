@@ -29,7 +29,7 @@ import java.io.IOException;
 /**
  * SavedQuery
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-05-05T00:52:46.095+12:00")
+
 public class SavedQuery {
   @SerializedName("alertRule")
   private AlertRule alertRule = null;

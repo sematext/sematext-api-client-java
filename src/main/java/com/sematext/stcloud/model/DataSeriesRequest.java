@@ -31,7 +31,7 @@ import java.util.Map;
 /**
  * DataSeriesRequest
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-05-05T00:52:46.095+12:00")
+
 public class DataSeriesRequest {
   @SerializedName("defaultInterval")
   private Long defaultInterval = null;

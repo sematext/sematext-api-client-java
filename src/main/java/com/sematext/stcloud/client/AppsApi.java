@@ -294,14 +294,14 @@ public class AppsApi {
         return call;
     }
     /**
-     * Build call for inviteAppGuestsUsingPOST
+     * Build call for inviteAppGuestsUsingPOST1
      * @param invitation For &#x60;app&#x60; and &#x60;apps&#x60; fields only &#x60;id&#x60; needs to be populated.Other fields can be left empty or with default values (required)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call inviteAppGuestsUsingPOSTCall(Invitation invitation, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call inviteAppGuestsUsingPOST1Call(Invitation invitation, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = invitation;
 
         // create path and map variables
@@ -343,15 +343,15 @@ public class AppsApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call inviteAppGuestsUsingPOSTValidateBeforeCall(Invitation invitation, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call inviteAppGuestsUsingPOST1ValidateBeforeCall(Invitation invitation, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         
         // verify the required parameter 'invitation' is set
         if (invitation == null) {
-            throw new ApiException("Missing the required parameter 'invitation' when calling inviteAppGuestsUsingPOST(Async)");
+            throw new ApiException("Missing the required parameter 'invitation' when calling inviteAppGuestsUsingPOST1(Async)");
         }
         
 
-        com.squareup.okhttp.Call call = inviteAppGuestsUsingPOSTCall(invitation, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = inviteAppGuestsUsingPOST1Call(invitation, progressListener, progressRequestListener);
         return call;
 
     }
@@ -363,8 +363,8 @@ public class AppsApi {
      * @return GenericApiResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public GenericApiResponse inviteAppGuestsUsingPOST(Invitation invitation) throws ApiException {
-        ApiResponse<GenericApiResponse> resp = inviteAppGuestsUsingPOSTWithHttpInfo(invitation);
+    public GenericApiResponse inviteAppGuestsUsingPOST1(Invitation invitation) throws ApiException {
+        ApiResponse<GenericApiResponse> resp = inviteAppGuestsUsingPOST1WithHttpInfo(invitation);
         return resp.getData();
     }
 
@@ -375,8 +375,8 @@ public class AppsApi {
      * @return ApiResponse&lt;GenericApiResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<GenericApiResponse> inviteAppGuestsUsingPOSTWithHttpInfo(Invitation invitation) throws ApiException {
-        com.squareup.okhttp.Call call = inviteAppGuestsUsingPOSTValidateBeforeCall(invitation, null, null);
+    public ApiResponse<GenericApiResponse> inviteAppGuestsUsingPOST1WithHttpInfo(Invitation invitation) throws ApiException {
+        com.squareup.okhttp.Call call = inviteAppGuestsUsingPOST1ValidateBeforeCall(invitation, null, null);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -389,7 +389,7 @@ public class AppsApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call inviteAppGuestsUsingPOSTAsync(Invitation invitation, final ApiCallback<GenericApiResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call inviteAppGuestsUsingPOST1Async(Invitation invitation, final ApiCallback<GenericApiResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -410,7 +410,7 @@ public class AppsApi {
             };
         }
 
-        com.squareup.okhttp.Call call = inviteAppGuestsUsingPOSTValidateBeforeCall(invitation, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = inviteAppGuestsUsingPOST1ValidateBeforeCall(invitation, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
@@ -529,13 +529,13 @@ public class AppsApi {
         return call;
     }
     /**
-     * Build call for listUsingGET
+     * Build call for listUsingGET1
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call listUsingGETCall(final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call listUsingGET1Call(final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
 
         // create path and map variables
@@ -577,10 +577,10 @@ public class AppsApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call listUsingGETValidateBeforeCall(final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call listUsingGET1ValidateBeforeCall(final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         
 
-        com.squareup.okhttp.Call call = listUsingGETCall(progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = listUsingGET1Call(progressListener, progressRequestListener);
         return call;
 
     }
@@ -591,8 +591,8 @@ public class AppsApi {
      * @return GenericApiResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public GenericApiResponse listUsingGET() throws ApiException {
-        ApiResponse<GenericApiResponse> resp = listUsingGETWithHttpInfo();
+    public GenericApiResponse listUsingGET1() throws ApiException {
+        ApiResponse<GenericApiResponse> resp = listUsingGET1WithHttpInfo();
         return resp.getData();
     }
 
@@ -602,8 +602,8 @@ public class AppsApi {
      * @return ApiResponse&lt;GenericApiResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<GenericApiResponse> listUsingGETWithHttpInfo() throws ApiException {
-        com.squareup.okhttp.Call call = listUsingGETValidateBeforeCall(null, null);
+    public ApiResponse<GenericApiResponse> listUsingGET1WithHttpInfo() throws ApiException {
+        com.squareup.okhttp.Call call = listUsingGET1ValidateBeforeCall(null, null);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -615,7 +615,7 @@ public class AppsApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call listUsingGETAsync(final ApiCallback<GenericApiResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call listUsingGET1Async(final ApiCallback<GenericApiResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -636,13 +636,13 @@ public class AppsApi {
             };
         }
 
-        com.squareup.okhttp.Call call = listUsingGETValidateBeforeCall(progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = listUsingGET1ValidateBeforeCall(progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
     }
     /**
-     * Build call for updateDescriptionUsingPUT
+     * Build call for updateDescriptionUsingPUT1
      * @param anyStateAppId App Id (required)
      * @param updateDetails Update Details (optional)
      * @param progressListener Progress listener
@@ -650,7 +650,7 @@ public class AppsApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call updateDescriptionUsingPUTCall(Long anyStateAppId, AppDescription updateDetails, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call updateDescriptionUsingPUT1Call(Long anyStateAppId, AppDescription updateDetails, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = updateDetails;
 
         // create path and map variables
@@ -693,15 +693,15 @@ public class AppsApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call updateDescriptionUsingPUTValidateBeforeCall(Long anyStateAppId, AppDescription updateDetails, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call updateDescriptionUsingPUT1ValidateBeforeCall(Long anyStateAppId, AppDescription updateDetails, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         
         // verify the required parameter 'anyStateAppId' is set
         if (anyStateAppId == null) {
-            throw new ApiException("Missing the required parameter 'anyStateAppId' when calling updateDescriptionUsingPUT(Async)");
+            throw new ApiException("Missing the required parameter 'anyStateAppId' when calling updateDescriptionUsingPUT1(Async)");
         }
         
 
-        com.squareup.okhttp.Call call = updateDescriptionUsingPUTCall(anyStateAppId, updateDetails, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = updateDescriptionUsingPUT1Call(anyStateAppId, updateDetails, progressListener, progressRequestListener);
         return call;
 
     }
@@ -714,8 +714,8 @@ public class AppsApi {
      * @return GenericApiResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public GenericApiResponse updateDescriptionUsingPUT(Long anyStateAppId, AppDescription updateDetails) throws ApiException {
-        ApiResponse<GenericApiResponse> resp = updateDescriptionUsingPUTWithHttpInfo(anyStateAppId, updateDetails);
+    public GenericApiResponse updateDescriptionUsingPUT1(Long anyStateAppId, AppDescription updateDetails) throws ApiException {
+        ApiResponse<GenericApiResponse> resp = updateDescriptionUsingPUT1WithHttpInfo(anyStateAppId, updateDetails);
         return resp.getData();
     }
 
@@ -727,8 +727,8 @@ public class AppsApi {
      * @return ApiResponse&lt;GenericApiResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<GenericApiResponse> updateDescriptionUsingPUTWithHttpInfo(Long anyStateAppId, AppDescription updateDetails) throws ApiException {
-        com.squareup.okhttp.Call call = updateDescriptionUsingPUTValidateBeforeCall(anyStateAppId, updateDetails, null, null);
+    public ApiResponse<GenericApiResponse> updateDescriptionUsingPUT1WithHttpInfo(Long anyStateAppId, AppDescription updateDetails) throws ApiException {
+        com.squareup.okhttp.Call call = updateDescriptionUsingPUT1ValidateBeforeCall(anyStateAppId, updateDetails, null, null);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -742,7 +742,7 @@ public class AppsApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call updateDescriptionUsingPUTAsync(Long anyStateAppId, AppDescription updateDetails, final ApiCallback<GenericApiResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call updateDescriptionUsingPUT1Async(Long anyStateAppId, AppDescription updateDetails, final ApiCallback<GenericApiResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -763,13 +763,13 @@ public class AppsApi {
             };
         }
 
-        com.squareup.okhttp.Call call = updateDescriptionUsingPUTValidateBeforeCall(anyStateAppId, updateDetails, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = updateDescriptionUsingPUT1ValidateBeforeCall(anyStateAppId, updateDetails, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
     }
     /**
-     * Build call for updateUsingPUT1
+     * Build call for updateUsingPUT2
      * @param dto dto (required)
      * @param anyStateAppId App Id (required)
      * @param progressListener Progress listener
@@ -777,7 +777,7 @@ public class AppsApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call updateUsingPUT1Call(UpdateAppInfo dto, Long anyStateAppId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call updateUsingPUT2Call(UpdateAppInfo dto, Long anyStateAppId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = dto;
 
         // create path and map variables
@@ -820,20 +820,20 @@ public class AppsApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call updateUsingPUT1ValidateBeforeCall(UpdateAppInfo dto, Long anyStateAppId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call updateUsingPUT2ValidateBeforeCall(UpdateAppInfo dto, Long anyStateAppId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         
         // verify the required parameter 'dto' is set
         if (dto == null) {
-            throw new ApiException("Missing the required parameter 'dto' when calling updateUsingPUT1(Async)");
+            throw new ApiException("Missing the required parameter 'dto' when calling updateUsingPUT2(Async)");
         }
         
         // verify the required parameter 'anyStateAppId' is set
         if (anyStateAppId == null) {
-            throw new ApiException("Missing the required parameter 'anyStateAppId' when calling updateUsingPUT1(Async)");
+            throw new ApiException("Missing the required parameter 'anyStateAppId' when calling updateUsingPUT2(Async)");
         }
         
 
-        com.squareup.okhttp.Call call = updateUsingPUT1Call(dto, anyStateAppId, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = updateUsingPUT2Call(dto, anyStateAppId, progressListener, progressRequestListener);
         return call;
 
     }
@@ -846,8 +846,8 @@ public class AppsApi {
      * @return GenericApiResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public GenericApiResponse updateUsingPUT1(UpdateAppInfo dto, Long anyStateAppId) throws ApiException {
-        ApiResponse<GenericApiResponse> resp = updateUsingPUT1WithHttpInfo(dto, anyStateAppId);
+    public GenericApiResponse updateUsingPUT2(UpdateAppInfo dto, Long anyStateAppId) throws ApiException {
+        ApiResponse<GenericApiResponse> resp = updateUsingPUT2WithHttpInfo(dto, anyStateAppId);
         return resp.getData();
     }
 
@@ -859,8 +859,8 @@ public class AppsApi {
      * @return ApiResponse&lt;GenericApiResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<GenericApiResponse> updateUsingPUT1WithHttpInfo(UpdateAppInfo dto, Long anyStateAppId) throws ApiException {
-        com.squareup.okhttp.Call call = updateUsingPUT1ValidateBeforeCall(dto, anyStateAppId, null, null);
+    public ApiResponse<GenericApiResponse> updateUsingPUT2WithHttpInfo(UpdateAppInfo dto, Long anyStateAppId) throws ApiException {
+        com.squareup.okhttp.Call call = updateUsingPUT2ValidateBeforeCall(dto, anyStateAppId, null, null);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -874,7 +874,7 @@ public class AppsApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call updateUsingPUT1Async(UpdateAppInfo dto, Long anyStateAppId, final ApiCallback<GenericApiResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call updateUsingPUT2Async(UpdateAppInfo dto, Long anyStateAppId, final ApiCallback<GenericApiResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -895,7 +895,7 @@ public class AppsApi {
             };
         }
 
-        com.squareup.okhttp.Call call = updateUsingPUT1ValidateBeforeCall(dto, anyStateAppId, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = updateUsingPUT2ValidateBeforeCall(dto, anyStateAppId, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;

@@ -31,6 +31,7 @@ LOGSENE_1_0 | &quot;LOGSENE_1_0&quot;
 LOGSENE_2_0 | &quot;LOGSENE_2_0&quot;
 RUM_1_0 | &quot;RUM_1_0&quot;
 RUM_EA | &quot;RUM_EA&quot;
+SYNTHETICS_EA | &quot;SYNTHETICS_EA&quot;
 SYNTHETICS_1_0 | &quot;SYNTHETICS_1_0&quot;
 
 

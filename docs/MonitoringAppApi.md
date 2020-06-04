@@ -4,12 +4,12 @@ All URIs are relative to *https://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createSpmApplication**](MonitoringAppApi.md#createSpmApplication) | **POST** /spm-reports/api/v3/apps | Create Monitoring App
+[**createSpmApplication1**](MonitoringAppApi.md#createSpmApplication1) | **POST** /spm-reports/api/v3/apps | Create Monitoring App
 
 
-<a name="createSpmApplication"></a>
-# **createSpmApplication**
-> GenericApiResponse createSpmApplication(applicationDetails)
+<a name="createSpmApplication1"></a>
+# **createSpmApplication1**
+> GenericApiResponse createSpmApplication1(applicationDetails)
 
 Create Monitoring App
 
@@ -33,10 +33,10 @@ api_key.setApiKey("YOUR API KEY");
 MonitoringAppApi apiInstance = new MonitoringAppApi();
 CreateAppInfo applicationDetails = new CreateAppInfo(); // CreateAppInfo | Details of the application to be created
 try {
-    GenericApiResponse result = apiInstance.createSpmApplication(applicationDetails);
+    GenericApiResponse result = apiInstance.createSpmApplication1(applicationDetails);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling MonitoringAppApi#createSpmApplication");
+    System.err.println("Exception when calling MonitoringAppApi#createSpmApplication1");
     e.printStackTrace();
 }
 ```

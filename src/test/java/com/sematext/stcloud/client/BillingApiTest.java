@@ -42,11 +42,11 @@ public class BillingApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getDetailedInvoiceUsingGETTest() throws ApiException {
+    public void getDetailedInvoiceUsingGET1Test() throws ApiException {
         String service = null;
         Integer year = null;
         Integer month = null;
-        GenericApiResponse response = api.getDetailedInvoiceUsingGET(service, year, month);
+        GenericApiResponse response = api.getDetailedInvoiceUsingGET1(service, year, month);
 
         // TODO: test validations
     }
@@ -60,10 +60,10 @@ public class BillingApiTest {
      *          if the Api call fails
      */
     @Test
-    public void listAvailablePlansUsingGETTest() throws ApiException {
+    public void listAvailablePlansUsingGET1Test() throws ApiException {
         Long integrationId = null;
         String appType = null;
-        GenericApiResponse response = api.listAvailablePlansUsingGET(integrationId, appType);
+        GenericApiResponse response = api.listAvailablePlansUsingGET1(integrationId, appType);
 
         // TODO: test validations
     }
@@ -77,10 +77,10 @@ public class BillingApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updatePlanUsingPUTTest() throws ApiException {
+    public void updatePlanUsingPUT1Test() throws ApiException {
         Long appId = null;
         BillingInfo dto = null;
-        GenericApiResponse response = api.updatePlanUsingPUT(appId, dto);
+        GenericApiResponse response = api.updatePlanUsingPUT1(appId, dto);
 
         // TODO: test validations
     }

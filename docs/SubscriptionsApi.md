@@ -4,13 +4,13 @@ All URIs are relative to *https://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**listUsingGET1**](SubscriptionsApi.md#listUsingGET1) | **GET** /users-web/api/v3/apps/{appId}/subscriptions | Get subscriptions for an app
-[**sendReportUsingPOST**](SubscriptionsApi.md#sendReportUsingPOST) | **POST** /users-web/api/v3/apps/{appId}/report/send | Trigger emailing of report for an app
+[**listUsingGET2**](SubscriptionsApi.md#listUsingGET2) | **GET** /users-web/api/v3/apps/{appId}/subscriptions | Get subscriptions for an app
+[**sendReportUsingPOST1**](SubscriptionsApi.md#sendReportUsingPOST1) | **POST** /users-web/api/v3/apps/{appId}/report/send | Trigger emailing of report for an app
 
 
-<a name="listUsingGET1"></a>
-# **listUsingGET1**
-> GenericApiResponse listUsingGET1(appId)
+<a name="listUsingGET2"></a>
+# **listUsingGET2**
+> GenericApiResponse listUsingGET2(appId)
 
 Get subscriptions for an app
 
@@ -34,10 +34,10 @@ api_key.setApiKey("YOUR API KEY");
 SubscriptionsApi apiInstance = new SubscriptionsApi();
 Long appId = 789L; // Long | appId
 try {
-    GenericApiResponse result = apiInstance.listUsingGET1(appId);
+    GenericApiResponse result = apiInstance.listUsingGET2(appId);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling SubscriptionsApi#listUsingGET1");
+    System.err.println("Exception when calling SubscriptionsApi#listUsingGET2");
     e.printStackTrace();
 }
 ```
@@ -61,9 +61,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="sendReportUsingPOST"></a>
-# **sendReportUsingPOST**
-> GenericApiResponse sendReportUsingPOST(appId, emailDto)
+<a name="sendReportUsingPOST1"></a>
+# **sendReportUsingPOST1**
+> GenericApiResponse sendReportUsingPOST1(appId, emailDto)
 
 Trigger emailing of report for an app
 
@@ -88,10 +88,10 @@ SubscriptionsApi apiInstance = new SubscriptionsApi();
 Long appId = 789L; // Long | appId
 ReportInfo emailDto = new ReportInfo(); // ReportInfo | emailDto
 try {
-    GenericApiResponse result = apiInstance.sendReportUsingPOST(appId, emailDto);
+    GenericApiResponse result = apiInstance.sendReportUsingPOST1(appId, emailDto);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling SubscriptionsApi#sendReportUsingPOST");
+    System.err.println("Exception when calling SubscriptionsApi#sendReportUsingPOST1");
     e.printStackTrace();
 }
 ```

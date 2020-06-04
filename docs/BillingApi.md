@@ -4,14 +4,14 @@ All URIs are relative to *https://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getDetailedInvoiceUsingGET**](BillingApi.md#getDetailedInvoiceUsingGET) | **GET** /users-web/api/v3/billing/invoice/{service}/{year}/{month} | Get invoice details
-[**listAvailablePlansUsingGET**](BillingApi.md#listAvailablePlansUsingGET) | **GET** /users-web/api/v3/billing/availablePlans | Get available plans
-[**updatePlanUsingPUT**](BillingApi.md#updatePlanUsingPUT) | **PUT** /users-web/api/v3/billing/info/{appId} | Update plan for an app
+[**getDetailedInvoiceUsingGET1**](BillingApi.md#getDetailedInvoiceUsingGET1) | **GET** /users-web/api/v3/billing/invoice/{service}/{year}/{month} | Get invoice details
+[**listAvailablePlansUsingGET1**](BillingApi.md#listAvailablePlansUsingGET1) | **GET** /users-web/api/v3/billing/availablePlans | Get available plans
+[**updatePlanUsingPUT1**](BillingApi.md#updatePlanUsingPUT1) | **PUT** /users-web/api/v3/billing/info/{appId} | Update plan for an app
 
 
-<a name="getDetailedInvoiceUsingGET"></a>
-# **getDetailedInvoiceUsingGET**
-> GenericApiResponse getDetailedInvoiceUsingGET(service, year, month)
+<a name="getDetailedInvoiceUsingGET1"></a>
+# **getDetailedInvoiceUsingGET1**
+> GenericApiResponse getDetailedInvoiceUsingGET1(service, year, month)
 
 Get invoice details
 
@@ -37,10 +37,10 @@ String service = "service_example"; // String | service
 Integer year = 56; // Integer | year
 Integer month = 56; // Integer | month
 try {
-    GenericApiResponse result = apiInstance.getDetailedInvoiceUsingGET(service, year, month);
+    GenericApiResponse result = apiInstance.getDetailedInvoiceUsingGET1(service, year, month);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling BillingApi#getDetailedInvoiceUsingGET");
+    System.err.println("Exception when calling BillingApi#getDetailedInvoiceUsingGET1");
     e.printStackTrace();
 }
 ```
@@ -66,9 +66,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="listAvailablePlansUsingGET"></a>
-# **listAvailablePlansUsingGET**
-> GenericApiResponse listAvailablePlansUsingGET(integrationId, appType)
+<a name="listAvailablePlansUsingGET1"></a>
+# **listAvailablePlansUsingGET1**
+> GenericApiResponse listAvailablePlansUsingGET1(integrationId, appType)
 
 Get available plans
 
@@ -93,10 +93,10 @@ BillingApi apiInstance = new BillingApi();
 Long integrationId = 789L; // Long | integrationId
 String appType = "appType_example"; // String | appType
 try {
-    GenericApiResponse result = apiInstance.listAvailablePlansUsingGET(integrationId, appType);
+    GenericApiResponse result = apiInstance.listAvailablePlansUsingGET1(integrationId, appType);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling BillingApi#listAvailablePlansUsingGET");
+    System.err.println("Exception when calling BillingApi#listAvailablePlansUsingGET1");
     e.printStackTrace();
 }
 ```
@@ -121,9 +121,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="updatePlanUsingPUT"></a>
-# **updatePlanUsingPUT**
-> GenericApiResponse updatePlanUsingPUT(appId, dto)
+<a name="updatePlanUsingPUT1"></a>
+# **updatePlanUsingPUT1**
+> GenericApiResponse updatePlanUsingPUT1(appId, dto)
 
 Update plan for an app
 
@@ -148,10 +148,10 @@ BillingApi apiInstance = new BillingApi();
 Long appId = 789L; // Long | appId
 BillingInfo dto = new BillingInfo(); // BillingInfo | dto
 try {
-    GenericApiResponse result = apiInstance.updatePlanUsingPUT(appId, dto);
+    GenericApiResponse result = apiInstance.updatePlanUsingPUT1(appId, dto);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling BillingApi#updatePlanUsingPUT");
+    System.err.println("Exception when calling BillingApi#updatePlanUsingPUT1");
     e.printStackTrace();
 }
 ```

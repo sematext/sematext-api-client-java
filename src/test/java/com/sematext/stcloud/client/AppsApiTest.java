@@ -75,9 +75,9 @@ public class AppsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void inviteAppGuestsUsingPOSTTest() throws ApiException {
+    public void inviteAppGuestsUsingPOST1Test() throws ApiException {
         Invitation invitation = null;
-        GenericApiResponse response = api.inviteAppGuestsUsingPOST(invitation);
+        GenericApiResponse response = api.inviteAppGuestsUsingPOST1(invitation);
 
         // TODO: test validations
     }
@@ -106,8 +106,8 @@ public class AppsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void listUsingGETTest() throws ApiException {
-        GenericApiResponse response = api.listUsingGET();
+    public void listUsingGET1Test() throws ApiException {
+        GenericApiResponse response = api.listUsingGET1();
 
         // TODO: test validations
     }
@@ -121,10 +121,10 @@ public class AppsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateDescriptionUsingPUTTest() throws ApiException {
+    public void updateDescriptionUsingPUT1Test() throws ApiException {
         Long anyStateAppId = null;
         AppDescription updateDetails = null;
-        GenericApiResponse response = api.updateDescriptionUsingPUT(anyStateAppId, updateDetails);
+        GenericApiResponse response = api.updateDescriptionUsingPUT1(anyStateAppId, updateDetails);
 
         // TODO: test validations
     }
@@ -138,10 +138,10 @@ public class AppsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateUsingPUT1Test() throws ApiException {
+    public void updateUsingPUT2Test() throws ApiException {
         UpdateAppInfo dto = null;
         Long anyStateAppId = null;
-        GenericApiResponse response = api.updateUsingPUT1(dto, anyStateAppId);
+        GenericApiResponse response = api.updateUsingPUT2(dto, anyStateAppId);
 
         // TODO: test validations
     }

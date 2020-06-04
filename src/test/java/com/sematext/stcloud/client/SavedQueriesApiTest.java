@@ -42,9 +42,9 @@ public class SavedQueriesApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteSavedQueryUsingDELETETest() throws ApiException {
+    public void deleteSavedQueryUsingDELETE1Test() throws ApiException {
         Long updateableQueryId = null;
-        GenericApiResponse response = api.deleteSavedQueryUsingDELETE(updateableQueryId);
+        GenericApiResponse response = api.deleteSavedQueryUsingDELETE1(updateableQueryId);
 
         // TODO: test validations
     }
@@ -74,9 +74,9 @@ public class SavedQueriesApiTest {
      *          if the Api call fails
      */
     @Test
-    public void saveQueryUsingPOSTTest() throws ApiException {
+    public void saveQueryUsingPOST1Test() throws ApiException {
         SavedQuery savedQueryDto = null;
-        GenericApiResponse response = api.saveQueryUsingPOST(savedQueryDto);
+        GenericApiResponse response = api.saveQueryUsingPOST1(savedQueryDto);
 
         // TODO: test validations
     }
@@ -90,10 +90,10 @@ public class SavedQueriesApiTest {
      *          if the Api call fails
      */
     @Test
-    public void saveQueryUsingPUTTest() throws ApiException {
+    public void saveQueryUsingPUT1Test() throws ApiException {
         SavedQuery savedQueryDto = null;
         Long updateableQueryId = null;
-        GenericApiResponse response = api.saveQueryUsingPUT(savedQueryDto, updateableQueryId);
+        GenericApiResponse response = api.saveQueryUsingPUT1(savedQueryDto, updateableQueryId);
 
         // TODO: test validations
     }

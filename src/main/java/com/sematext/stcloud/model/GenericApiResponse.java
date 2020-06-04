@@ -31,7 +31,7 @@ import java.util.List;
  * Generic wrapper class for all API responses
  */
 @ApiModel(description = "Generic wrapper class for all API responses")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-05-05T00:52:46.095+12:00")
+
 public class GenericApiResponse {
   @SerializedName("data")
   private Object data = null;
