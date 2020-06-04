@@ -27,13 +27,13 @@ import java.io.IOException;
 /**
  * UpdateAppInfo
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-05-05T00:52:46.095+12:00")
+
 public class UpdateAppInfo {
   @SerializedName("description")
   private String description = null;
 
   @SerializedName("ignorePercentage")
-  private Integer ignorePercentage = null;
+  private Double ignorePercentage = null;
 
   @SerializedName("maxEvents")
   private Long maxEvents = null;
@@ -121,7 +121,7 @@ public class UpdateAppInfo {
     this.description = description;
   }
 
-  public UpdateAppInfo ignorePercentage(Integer ignorePercentage) {
+  public UpdateAppInfo ignorePercentage(Double ignorePercentage) {
     this.ignorePercentage = ignorePercentage;
     return this;
   }
@@ -130,12 +130,12 @@ public class UpdateAppInfo {
    * Get ignorePercentage
    * @return ignorePercentage
   **/
-  @ApiModelProperty(example = "1", value = "")
-  public Integer getIgnorePercentage() {
+  @ApiModelProperty(example = "1.0", value = "")
+  public Double getIgnorePercentage() {
     return ignorePercentage;
   }
 
-  public void setIgnorePercentage(Integer ignorePercentage) {
+  public void setIgnorePercentage(Double ignorePercentage) {
     this.ignorePercentage = ignorePercentage;
   }
 

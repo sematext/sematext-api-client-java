@@ -42,10 +42,10 @@ public class MetricsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void listDataSeriesUsingPOST1Test() throws ApiException {
+    public void listDataSeriesUsingPOSTTest() throws ApiException {
         Long appId = null;
         DataSeriesRequest requestBody = null;
-        GenericApiResponse response = api.listDataSeriesUsingPOST1(appId, requestBody);
+        GenericApiResponse response = api.listDataSeriesUsingPOST(appId, requestBody);
 
         // TODO: test validations
     }
@@ -59,10 +59,10 @@ public class MetricsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void listFiltersUsingPOSTTest() throws ApiException {
+    public void listFiltersUsingPOST1Test() throws ApiException {
         Long appId = null;
         DataSeriesRequest requestBody = null;
-        GenericApiResponse response = api.listFiltersUsingPOST(appId, requestBody);
+        GenericApiResponse response = api.listFiltersUsingPOST1(appId, requestBody);
 
         // TODO: test validations
     }
@@ -76,9 +76,9 @@ public class MetricsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void listMetricsKeysUsingGET1Test() throws ApiException {
+    public void listMetricsKeysUsingGETTest() throws ApiException {
         Long appId = null;
-        GenericApiResponse response = api.listMetricsKeysUsingGET1(appId);
+        GenericApiResponse response = api.listMetricsKeysUsingGET(appId);
 
         // TODO: test validations
     }
@@ -92,9 +92,9 @@ public class MetricsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void listMetricsUsingGET1Test() throws ApiException {
+    public void listMetricsUsingGETTest() throws ApiException {
         Long appId = null;
-        GenericApiResponse response = api.listMetricsUsingGET1(appId);
+        GenericApiResponse response = api.listMetricsUsingGET(appId);
 
         // TODO: test validations
     }

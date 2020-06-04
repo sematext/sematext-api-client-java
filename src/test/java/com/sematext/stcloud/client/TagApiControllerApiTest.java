@@ -62,7 +62,7 @@ public class TagApiControllerApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getUsingGET2Test() throws ApiException {
+    public void getUsingGET1Test() throws ApiException {
         String appIds = null;
         List<String> tag = null;
         Long from = null;
@@ -71,7 +71,7 @@ public class TagApiControllerApiTest {
         Boolean logs = null;
         Boolean events = null;
         Boolean rum = null;
-        Object response = api.getUsingGET2(appIds, tag, from, to, metrics, logs, events, rum);
+        Object response = api.getUsingGET1(appIds, tag, from, to, metrics, logs, events, rum);
 
         // TODO: test validations
     }
@@ -85,7 +85,7 @@ public class TagApiControllerApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getUsingGET3Test() throws ApiException {
+    public void getUsingGET2Test() throws ApiException {
         String appIds = null;
         List<String> tag = null;
         Long from = null;
@@ -94,7 +94,7 @@ public class TagApiControllerApiTest {
         Boolean logs = null;
         Boolean events = null;
         Boolean rum = null;
-        Object response = api.getUsingGET3(appIds, tag, from, to, metrics, logs, events, rum);
+        Object response = api.getUsingGET2(appIds, tag, from, to, metrics, logs, events, rum);
 
         // TODO: test validations
     }

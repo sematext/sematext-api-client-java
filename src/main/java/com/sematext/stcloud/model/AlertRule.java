@@ -33,7 +33,7 @@ import java.util.List;
 /**
  * AlertRule
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-05-05T00:52:46.095+12:00")
+
 public class AlertRule {
   @SerializedName("accountEmail")
   private String accountEmail = null;

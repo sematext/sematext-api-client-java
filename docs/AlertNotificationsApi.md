@@ -4,13 +4,13 @@ All URIs are relative to *https://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getAlertNotificationsForAppUsingPOST**](AlertNotificationsApi.md#getAlertNotificationsForAppUsingPOST) | **POST** /users-web/api/v3/apps/{appId}/notifications/alerts | Get alert notifications for an app
+[**getAlertNotificationsForAppUsingPOST1**](AlertNotificationsApi.md#getAlertNotificationsForAppUsingPOST1) | **POST** /users-web/api/v3/apps/{appId}/notifications/alerts | Get alert notifications for an app
 [**getAlertNotificationsForUserUsingPOST**](AlertNotificationsApi.md#getAlertNotificationsForUserUsingPOST) | **POST** /users-web/api/v3/notifications/alerts | Get alert notifications for a user
 
 
-<a name="getAlertNotificationsForAppUsingPOST"></a>
-# **getAlertNotificationsForAppUsingPOST**
-> GenericApiResponse getAlertNotificationsForAppUsingPOST(appId, timeInterval)
+<a name="getAlertNotificationsForAppUsingPOST1"></a>
+# **getAlertNotificationsForAppUsingPOST1**
+> GenericApiResponse getAlertNotificationsForAppUsingPOST1(appId, timeInterval)
 
 Get alert notifications for an app
 
@@ -37,10 +37,10 @@ AlertNotificationsApi apiInstance = new AlertNotificationsApi();
 Long appId = 789L; // Long | appId
 AlertNotificationRequest timeInterval = new AlertNotificationRequest(); // AlertNotificationRequest | Time Interval
 try {
-    GenericApiResponse result = apiInstance.getAlertNotificationsForAppUsingPOST(appId, timeInterval);
+    GenericApiResponse result = apiInstance.getAlertNotificationsForAppUsingPOST1(appId, timeInterval);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling AlertNotificationsApi#getAlertNotificationsForAppUsingPOST");
+    System.err.println("Exception when calling AlertNotificationsApi#getAlertNotificationsForAppUsingPOST1");
     e.printStackTrace();
 }
 ```

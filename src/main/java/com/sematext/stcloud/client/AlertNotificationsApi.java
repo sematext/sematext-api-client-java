@@ -56,7 +56,7 @@ public class AlertNotificationsApi {
     }
 
     /**
-     * Build call for getAlertNotificationsForAppUsingPOST
+     * Build call for getAlertNotificationsForAppUsingPOST1
      * @param appId appId (required)
      * @param timeInterval Time Interval (required)
      * @param progressListener Progress listener
@@ -64,7 +64,7 @@ public class AlertNotificationsApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call getAlertNotificationsForAppUsingPOSTCall(Long appId, AlertNotificationRequest timeInterval, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call getAlertNotificationsForAppUsingPOST1Call(Long appId, AlertNotificationRequest timeInterval, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = timeInterval;
 
         // create path and map variables
@@ -107,20 +107,20 @@ public class AlertNotificationsApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call getAlertNotificationsForAppUsingPOSTValidateBeforeCall(Long appId, AlertNotificationRequest timeInterval, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call getAlertNotificationsForAppUsingPOST1ValidateBeforeCall(Long appId, AlertNotificationRequest timeInterval, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         
         // verify the required parameter 'appId' is set
         if (appId == null) {
-            throw new ApiException("Missing the required parameter 'appId' when calling getAlertNotificationsForAppUsingPOST(Async)");
+            throw new ApiException("Missing the required parameter 'appId' when calling getAlertNotificationsForAppUsingPOST1(Async)");
         }
         
         // verify the required parameter 'timeInterval' is set
         if (timeInterval == null) {
-            throw new ApiException("Missing the required parameter 'timeInterval' when calling getAlertNotificationsForAppUsingPOST(Async)");
+            throw new ApiException("Missing the required parameter 'timeInterval' when calling getAlertNotificationsForAppUsingPOST1(Async)");
         }
         
 
-        com.squareup.okhttp.Call call = getAlertNotificationsForAppUsingPOSTCall(appId, timeInterval, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = getAlertNotificationsForAppUsingPOST1Call(appId, timeInterval, progressListener, progressRequestListener);
         return call;
 
     }
@@ -133,8 +133,8 @@ public class AlertNotificationsApi {
      * @return GenericApiResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public GenericApiResponse getAlertNotificationsForAppUsingPOST(Long appId, AlertNotificationRequest timeInterval) throws ApiException {
-        ApiResponse<GenericApiResponse> resp = getAlertNotificationsForAppUsingPOSTWithHttpInfo(appId, timeInterval);
+    public GenericApiResponse getAlertNotificationsForAppUsingPOST1(Long appId, AlertNotificationRequest timeInterval) throws ApiException {
+        ApiResponse<GenericApiResponse> resp = getAlertNotificationsForAppUsingPOST1WithHttpInfo(appId, timeInterval);
         return resp.getData();
     }
 
@@ -146,8 +146,8 @@ public class AlertNotificationsApi {
      * @return ApiResponse&lt;GenericApiResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<GenericApiResponse> getAlertNotificationsForAppUsingPOSTWithHttpInfo(Long appId, AlertNotificationRequest timeInterval) throws ApiException {
-        com.squareup.okhttp.Call call = getAlertNotificationsForAppUsingPOSTValidateBeforeCall(appId, timeInterval, null, null);
+    public ApiResponse<GenericApiResponse> getAlertNotificationsForAppUsingPOST1WithHttpInfo(Long appId, AlertNotificationRequest timeInterval) throws ApiException {
+        com.squareup.okhttp.Call call = getAlertNotificationsForAppUsingPOST1ValidateBeforeCall(appId, timeInterval, null, null);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -161,7 +161,7 @@ public class AlertNotificationsApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call getAlertNotificationsForAppUsingPOSTAsync(Long appId, AlertNotificationRequest timeInterval, final ApiCallback<GenericApiResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call getAlertNotificationsForAppUsingPOST1Async(Long appId, AlertNotificationRequest timeInterval, final ApiCallback<GenericApiResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -182,7 +182,7 @@ public class AlertNotificationsApi {
             };
         }
 
-        com.squareup.okhttp.Call call = getAlertNotificationsForAppUsingPOSTValidateBeforeCall(appId, timeInterval, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = getAlertNotificationsForAppUsingPOST1ValidateBeforeCall(appId, timeInterval, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;

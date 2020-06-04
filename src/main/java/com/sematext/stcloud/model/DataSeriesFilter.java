@@ -29,7 +29,7 @@ import java.util.List;
 /**
  * DataSeriesFilter
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-05-05T00:52:46.095+12:00")
+
 public class DataSeriesFilter {
   /**
    * Gets or Sets aggregation

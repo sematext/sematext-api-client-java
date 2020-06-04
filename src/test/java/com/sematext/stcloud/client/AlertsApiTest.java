@@ -74,9 +74,9 @@ public class AlertsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void disableAlertRuleUsingPUTTest() throws ApiException {
+    public void disableAlertRuleUsingPUT1Test() throws ApiException {
         Long updateableAlertId = null;
-        GenericApiResponse response = api.disableAlertRuleUsingPUT(updateableAlertId);
+        GenericApiResponse response = api.disableAlertRuleUsingPUT1(updateableAlertId);
 
         // TODO: test validations
     }
@@ -106,9 +106,9 @@ public class AlertsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getAlertRulesForAppUsingGETTest() throws ApiException {
+    public void getAlertRulesForAppUsingGET1Test() throws ApiException {
         Long appId = null;
-        GenericApiResponse response = api.getAlertRulesForAppUsingGET(appId);
+        GenericApiResponse response = api.getAlertRulesForAppUsingGET1(appId);
 
         // TODO: test validations
     }

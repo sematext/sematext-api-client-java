@@ -6,9 +6,9 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**createAlertUsingPOST**](AlertsApi.md#createAlertUsingPOST) | **POST** /users-web/api/v3/alerts | Create alert rule
 [**deleteAlertRuleUsingDELETE**](AlertsApi.md#deleteAlertRuleUsingDELETE) | **DELETE** /users-web/api/v3/alerts/{updateableAlertId} | Delete alert rule
-[**disableAlertRuleUsingPUT**](AlertsApi.md#disableAlertRuleUsingPUT) | **PUT** /users-web/api/v3/alerts/{updateableAlertId}/disable | Disable alert rule
+[**disableAlertRuleUsingPUT1**](AlertsApi.md#disableAlertRuleUsingPUT1) | **PUT** /users-web/api/v3/alerts/{updateableAlertId}/disable | Disable alert rule
 [**enableAlertRuleUsingPUT**](AlertsApi.md#enableAlertRuleUsingPUT) | **PUT** /users-web/api/v3/alerts/{updateableAlertId}/enable | Enable alert rule
-[**getAlertRulesForAppUsingGET**](AlertsApi.md#getAlertRulesForAppUsingGET) | **GET** /users-web/api/v3/apps/{appId}/alerts | Get alert rules for an app
+[**getAlertRulesForAppUsingGET1**](AlertsApi.md#getAlertRulesForAppUsingGET1) | **GET** /users-web/api/v3/apps/{appId}/alerts | Get alert rules for an app
 
 
 <a name="createAlertUsingPOST"></a>
@@ -117,9 +117,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="disableAlertRuleUsingPUT"></a>
-# **disableAlertRuleUsingPUT**
-> GenericApiResponse disableAlertRuleUsingPUT(updateableAlertId)
+<a name="disableAlertRuleUsingPUT1"></a>
+# **disableAlertRuleUsingPUT1**
+> GenericApiResponse disableAlertRuleUsingPUT1(updateableAlertId)
 
 Disable alert rule
 
@@ -143,10 +143,10 @@ api_key.setApiKey("YOUR API KEY");
 AlertsApi apiInstance = new AlertsApi();
 Long updateableAlertId = 789L; // Long | updateableAlertId
 try {
-    GenericApiResponse result = apiInstance.disableAlertRuleUsingPUT(updateableAlertId);
+    GenericApiResponse result = apiInstance.disableAlertRuleUsingPUT1(updateableAlertId);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling AlertsApi#disableAlertRuleUsingPUT");
+    System.err.println("Exception when calling AlertsApi#disableAlertRuleUsingPUT1");
     e.printStackTrace();
 }
 ```
@@ -223,9 +223,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="getAlertRulesForAppUsingGET"></a>
-# **getAlertRulesForAppUsingGET**
-> GenericApiResponse getAlertRulesForAppUsingGET(appId)
+<a name="getAlertRulesForAppUsingGET1"></a>
+# **getAlertRulesForAppUsingGET1**
+> GenericApiResponse getAlertRulesForAppUsingGET1(appId)
 
 Get alert rules for an app
 
@@ -249,10 +249,10 @@ api_key.setApiKey("YOUR API KEY");
 AlertsApi apiInstance = new AlertsApi();
 Long appId = 789L; // Long | appId
 try {
-    GenericApiResponse result = apiInstance.getAlertRulesForAppUsingGET(appId);
+    GenericApiResponse result = apiInstance.getAlertRulesForAppUsingGET1(appId);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling AlertsApi#getAlertRulesForAppUsingGET");
+    System.err.println("Exception when calling AlertsApi#getAlertRulesForAppUsingGET1");
     e.printStackTrace();
 }
 ```
