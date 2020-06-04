@@ -56,7 +56,7 @@ public class BillingApi {
     }
 
     /**
-     * Build call for getDetailedInvoiceUsingGET
+     * Build call for getDetailedInvoiceUsingGET1
      * @param service service (required)
      * @param year year (required)
      * @param month month (required)
@@ -65,7 +65,7 @@ public class BillingApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call getDetailedInvoiceUsingGETCall(String service, Integer year, Integer month, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call getDetailedInvoiceUsingGET1Call(String service, Integer year, Integer month, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
 
         // create path and map variables
@@ -110,25 +110,25 @@ public class BillingApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call getDetailedInvoiceUsingGETValidateBeforeCall(String service, Integer year, Integer month, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call getDetailedInvoiceUsingGET1ValidateBeforeCall(String service, Integer year, Integer month, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         
         // verify the required parameter 'service' is set
         if (service == null) {
-            throw new ApiException("Missing the required parameter 'service' when calling getDetailedInvoiceUsingGET(Async)");
+            throw new ApiException("Missing the required parameter 'service' when calling getDetailedInvoiceUsingGET1(Async)");
         }
         
         // verify the required parameter 'year' is set
         if (year == null) {
-            throw new ApiException("Missing the required parameter 'year' when calling getDetailedInvoiceUsingGET(Async)");
+            throw new ApiException("Missing the required parameter 'year' when calling getDetailedInvoiceUsingGET1(Async)");
         }
         
         // verify the required parameter 'month' is set
         if (month == null) {
-            throw new ApiException("Missing the required parameter 'month' when calling getDetailedInvoiceUsingGET(Async)");
+            throw new ApiException("Missing the required parameter 'month' when calling getDetailedInvoiceUsingGET1(Async)");
         }
         
 
-        com.squareup.okhttp.Call call = getDetailedInvoiceUsingGETCall(service, year, month, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = getDetailedInvoiceUsingGET1Call(service, year, month, progressListener, progressRequestListener);
         return call;
 
     }
@@ -142,8 +142,8 @@ public class BillingApi {
      * @return GenericApiResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public GenericApiResponse getDetailedInvoiceUsingGET(String service, Integer year, Integer month) throws ApiException {
-        ApiResponse<GenericApiResponse> resp = getDetailedInvoiceUsingGETWithHttpInfo(service, year, month);
+    public GenericApiResponse getDetailedInvoiceUsingGET1(String service, Integer year, Integer month) throws ApiException {
+        ApiResponse<GenericApiResponse> resp = getDetailedInvoiceUsingGET1WithHttpInfo(service, year, month);
         return resp.getData();
     }
 
@@ -156,8 +156,8 @@ public class BillingApi {
      * @return ApiResponse&lt;GenericApiResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<GenericApiResponse> getDetailedInvoiceUsingGETWithHttpInfo(String service, Integer year, Integer month) throws ApiException {
-        com.squareup.okhttp.Call call = getDetailedInvoiceUsingGETValidateBeforeCall(service, year, month, null, null);
+    public ApiResponse<GenericApiResponse> getDetailedInvoiceUsingGET1WithHttpInfo(String service, Integer year, Integer month) throws ApiException {
+        com.squareup.okhttp.Call call = getDetailedInvoiceUsingGET1ValidateBeforeCall(service, year, month, null, null);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -172,7 +172,7 @@ public class BillingApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call getDetailedInvoiceUsingGETAsync(String service, Integer year, Integer month, final ApiCallback<GenericApiResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call getDetailedInvoiceUsingGET1Async(String service, Integer year, Integer month, final ApiCallback<GenericApiResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -193,13 +193,13 @@ public class BillingApi {
             };
         }
 
-        com.squareup.okhttp.Call call = getDetailedInvoiceUsingGETValidateBeforeCall(service, year, month, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = getDetailedInvoiceUsingGET1ValidateBeforeCall(service, year, month, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
     }
     /**
-     * Build call for listAvailablePlansUsingGET
+     * Build call for listAvailablePlansUsingGET1
      * @param integrationId integrationId (optional)
      * @param appType appType (optional)
      * @param progressListener Progress listener
@@ -207,7 +207,7 @@ public class BillingApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call listAvailablePlansUsingGETCall(Long integrationId, String appType, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call listAvailablePlansUsingGET1Call(Long integrationId, String appType, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
 
         // create path and map variables
@@ -253,10 +253,10 @@ public class BillingApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call listAvailablePlansUsingGETValidateBeforeCall(Long integrationId, String appType, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call listAvailablePlansUsingGET1ValidateBeforeCall(Long integrationId, String appType, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         
 
-        com.squareup.okhttp.Call call = listAvailablePlansUsingGETCall(integrationId, appType, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = listAvailablePlansUsingGET1Call(integrationId, appType, progressListener, progressRequestListener);
         return call;
 
     }
@@ -269,8 +269,8 @@ public class BillingApi {
      * @return GenericApiResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public GenericApiResponse listAvailablePlansUsingGET(Long integrationId, String appType) throws ApiException {
-        ApiResponse<GenericApiResponse> resp = listAvailablePlansUsingGETWithHttpInfo(integrationId, appType);
+    public GenericApiResponse listAvailablePlansUsingGET1(Long integrationId, String appType) throws ApiException {
+        ApiResponse<GenericApiResponse> resp = listAvailablePlansUsingGET1WithHttpInfo(integrationId, appType);
         return resp.getData();
     }
 
@@ -282,8 +282,8 @@ public class BillingApi {
      * @return ApiResponse&lt;GenericApiResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<GenericApiResponse> listAvailablePlansUsingGETWithHttpInfo(Long integrationId, String appType) throws ApiException {
-        com.squareup.okhttp.Call call = listAvailablePlansUsingGETValidateBeforeCall(integrationId, appType, null, null);
+    public ApiResponse<GenericApiResponse> listAvailablePlansUsingGET1WithHttpInfo(Long integrationId, String appType) throws ApiException {
+        com.squareup.okhttp.Call call = listAvailablePlansUsingGET1ValidateBeforeCall(integrationId, appType, null, null);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -297,7 +297,7 @@ public class BillingApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call listAvailablePlansUsingGETAsync(Long integrationId, String appType, final ApiCallback<GenericApiResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call listAvailablePlansUsingGET1Async(Long integrationId, String appType, final ApiCallback<GenericApiResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -318,13 +318,13 @@ public class BillingApi {
             };
         }
 
-        com.squareup.okhttp.Call call = listAvailablePlansUsingGETValidateBeforeCall(integrationId, appType, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = listAvailablePlansUsingGET1ValidateBeforeCall(integrationId, appType, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
     }
     /**
-     * Build call for updatePlanUsingPUT
+     * Build call for updatePlanUsingPUT1
      * @param appId appId (required)
      * @param dto dto (required)
      * @param progressListener Progress listener
@@ -332,7 +332,7 @@ public class BillingApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call updatePlanUsingPUTCall(Long appId, BillingInfo dto, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call updatePlanUsingPUT1Call(Long appId, BillingInfo dto, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = dto;
 
         // create path and map variables
@@ -375,20 +375,20 @@ public class BillingApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call updatePlanUsingPUTValidateBeforeCall(Long appId, BillingInfo dto, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call updatePlanUsingPUT1ValidateBeforeCall(Long appId, BillingInfo dto, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         
         // verify the required parameter 'appId' is set
         if (appId == null) {
-            throw new ApiException("Missing the required parameter 'appId' when calling updatePlanUsingPUT(Async)");
+            throw new ApiException("Missing the required parameter 'appId' when calling updatePlanUsingPUT1(Async)");
         }
         
         // verify the required parameter 'dto' is set
         if (dto == null) {
-            throw new ApiException("Missing the required parameter 'dto' when calling updatePlanUsingPUT(Async)");
+            throw new ApiException("Missing the required parameter 'dto' when calling updatePlanUsingPUT1(Async)");
         }
         
 
-        com.squareup.okhttp.Call call = updatePlanUsingPUTCall(appId, dto, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = updatePlanUsingPUT1Call(appId, dto, progressListener, progressRequestListener);
         return call;
 
     }
@@ -401,8 +401,8 @@ public class BillingApi {
      * @return GenericApiResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public GenericApiResponse updatePlanUsingPUT(Long appId, BillingInfo dto) throws ApiException {
-        ApiResponse<GenericApiResponse> resp = updatePlanUsingPUTWithHttpInfo(appId, dto);
+    public GenericApiResponse updatePlanUsingPUT1(Long appId, BillingInfo dto) throws ApiException {
+        ApiResponse<GenericApiResponse> resp = updatePlanUsingPUT1WithHttpInfo(appId, dto);
         return resp.getData();
     }
 
@@ -414,8 +414,8 @@ public class BillingApi {
      * @return ApiResponse&lt;GenericApiResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<GenericApiResponse> updatePlanUsingPUTWithHttpInfo(Long appId, BillingInfo dto) throws ApiException {
-        com.squareup.okhttp.Call call = updatePlanUsingPUTValidateBeforeCall(appId, dto, null, null);
+    public ApiResponse<GenericApiResponse> updatePlanUsingPUT1WithHttpInfo(Long appId, BillingInfo dto) throws ApiException {
+        com.squareup.okhttp.Call call = updatePlanUsingPUT1ValidateBeforeCall(appId, dto, null, null);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -429,7 +429,7 @@ public class BillingApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call updatePlanUsingPUTAsync(Long appId, BillingInfo dto, final ApiCallback<GenericApiResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call updatePlanUsingPUT1Async(Long appId, BillingInfo dto, final ApiCallback<GenericApiResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -450,7 +450,7 @@ public class BillingApi {
             };
         }
 
-        com.squareup.okhttp.Call call = updatePlanUsingPUTValidateBeforeCall(appId, dto, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = updatePlanUsingPUT1ValidateBeforeCall(appId, dto, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;

@@ -42,9 +42,9 @@ public class ResetPasswordApiTest {
      *          if the Api call fails
      */
     @Test
-    public void resetPasswordUsingPOSTTest() throws ApiException {
+    public void resetPasswordUsingPOST1Test() throws ApiException {
         UserInfo dto = null;
-        GenericApiResponse response = api.resetPasswordUsingPOST(dto);
+        GenericApiResponse response = api.resetPasswordUsingPOST1(dto);
 
         // TODO: test validations
     }

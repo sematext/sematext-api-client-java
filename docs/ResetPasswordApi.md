@@ -4,12 +4,12 @@ All URIs are relative to *https://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**resetPasswordUsingPOST**](ResetPasswordApi.md#resetPasswordUsingPOST) | **POST** /users-web/api/v3/account/password/reset | Reset Password
+[**resetPasswordUsingPOST1**](ResetPasswordApi.md#resetPasswordUsingPOST1) | **POST** /users-web/api/v3/account/password/reset | Reset Password
 
 
-<a name="resetPasswordUsingPOST"></a>
-# **resetPasswordUsingPOST**
-> GenericApiResponse resetPasswordUsingPOST(dto)
+<a name="resetPasswordUsingPOST1"></a>
+# **resetPasswordUsingPOST1**
+> GenericApiResponse resetPasswordUsingPOST1(dto)
 
 Reset Password
 
@@ -33,10 +33,10 @@ api_key.setApiKey("YOUR API KEY");
 ResetPasswordApi apiInstance = new ResetPasswordApi();
 UserInfo dto = new UserInfo(); // UserInfo | dto
 try {
-    GenericApiResponse result = apiInstance.resetPasswordUsingPOST(dto);
+    GenericApiResponse result = apiInstance.resetPasswordUsingPOST1(dto);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling ResetPasswordApi#resetPasswordUsingPOST");
+    System.err.println("Exception when calling ResetPasswordApi#resetPasswordUsingPOST1");
     e.printStackTrace();
 }
 ```

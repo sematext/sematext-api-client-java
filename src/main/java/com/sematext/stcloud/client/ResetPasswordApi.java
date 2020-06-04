@@ -56,14 +56,14 @@ public class ResetPasswordApi {
     }
 
     /**
-     * Build call for resetPasswordUsingPOST
+     * Build call for resetPasswordUsingPOST1
      * @param dto dto (required)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call resetPasswordUsingPOSTCall(UserInfo dto, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call resetPasswordUsingPOST1Call(UserInfo dto, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = dto;
 
         // create path and map variables
@@ -105,15 +105,15 @@ public class ResetPasswordApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call resetPasswordUsingPOSTValidateBeforeCall(UserInfo dto, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call resetPasswordUsingPOST1ValidateBeforeCall(UserInfo dto, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         
         // verify the required parameter 'dto' is set
         if (dto == null) {
-            throw new ApiException("Missing the required parameter 'dto' when calling resetPasswordUsingPOST(Async)");
+            throw new ApiException("Missing the required parameter 'dto' when calling resetPasswordUsingPOST1(Async)");
         }
         
 
-        com.squareup.okhttp.Call call = resetPasswordUsingPOSTCall(dto, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = resetPasswordUsingPOST1Call(dto, progressListener, progressRequestListener);
         return call;
 
     }
@@ -125,8 +125,8 @@ public class ResetPasswordApi {
      * @return GenericApiResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public GenericApiResponse resetPasswordUsingPOST(UserInfo dto) throws ApiException {
-        ApiResponse<GenericApiResponse> resp = resetPasswordUsingPOSTWithHttpInfo(dto);
+    public GenericApiResponse resetPasswordUsingPOST1(UserInfo dto) throws ApiException {
+        ApiResponse<GenericApiResponse> resp = resetPasswordUsingPOST1WithHttpInfo(dto);
         return resp.getData();
     }
 
@@ -137,8 +137,8 @@ public class ResetPasswordApi {
      * @return ApiResponse&lt;GenericApiResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<GenericApiResponse> resetPasswordUsingPOSTWithHttpInfo(UserInfo dto) throws ApiException {
-        com.squareup.okhttp.Call call = resetPasswordUsingPOSTValidateBeforeCall(dto, null, null);
+    public ApiResponse<GenericApiResponse> resetPasswordUsingPOST1WithHttpInfo(UserInfo dto) throws ApiException {
+        com.squareup.okhttp.Call call = resetPasswordUsingPOST1ValidateBeforeCall(dto, null, null);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -151,7 +151,7 @@ public class ResetPasswordApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call resetPasswordUsingPOSTAsync(UserInfo dto, final ApiCallback<GenericApiResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call resetPasswordUsingPOST1Async(UserInfo dto, final ApiCallback<GenericApiResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -172,7 +172,7 @@ public class ResetPasswordApi {
             };
         }
 
-        com.squareup.okhttp.Call call = resetPasswordUsingPOSTValidateBeforeCall(dto, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = resetPasswordUsingPOST1ValidateBeforeCall(dto, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;

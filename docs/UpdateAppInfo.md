@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **description** | **String** |  |  [optional]
-**ignorePercentage** | **Integer** |  |  [optional]
+**ignorePercentage** | **Double** |  |  [optional]
 **maxEvents** | **Long** |  |  [optional]
 **maxLimitMB** | **Long** |  |  [optional]
 **name** | **String** |  |  [optional]

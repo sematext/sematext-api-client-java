@@ -56,14 +56,14 @@ public class SavedQueriesApi {
     }
 
     /**
-     * Build call for deleteSavedQueryUsingDELETE
+     * Build call for deleteSavedQueryUsingDELETE1
      * @param updateableQueryId updateableQueryId (required)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call deleteSavedQueryUsingDELETECall(Long updateableQueryId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call deleteSavedQueryUsingDELETE1Call(Long updateableQueryId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
 
         // create path and map variables
@@ -106,15 +106,15 @@ public class SavedQueriesApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call deleteSavedQueryUsingDELETEValidateBeforeCall(Long updateableQueryId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call deleteSavedQueryUsingDELETE1ValidateBeforeCall(Long updateableQueryId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         
         // verify the required parameter 'updateableQueryId' is set
         if (updateableQueryId == null) {
-            throw new ApiException("Missing the required parameter 'updateableQueryId' when calling deleteSavedQueryUsingDELETE(Async)");
+            throw new ApiException("Missing the required parameter 'updateableQueryId' when calling deleteSavedQueryUsingDELETE1(Async)");
         }
         
 
-        com.squareup.okhttp.Call call = deleteSavedQueryUsingDELETECall(updateableQueryId, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = deleteSavedQueryUsingDELETE1Call(updateableQueryId, progressListener, progressRequestListener);
         return call;
 
     }
@@ -126,8 +126,8 @@ public class SavedQueriesApi {
      * @return GenericApiResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public GenericApiResponse deleteSavedQueryUsingDELETE(Long updateableQueryId) throws ApiException {
-        ApiResponse<GenericApiResponse> resp = deleteSavedQueryUsingDELETEWithHttpInfo(updateableQueryId);
+    public GenericApiResponse deleteSavedQueryUsingDELETE1(Long updateableQueryId) throws ApiException {
+        ApiResponse<GenericApiResponse> resp = deleteSavedQueryUsingDELETE1WithHttpInfo(updateableQueryId);
         return resp.getData();
     }
 
@@ -138,8 +138,8 @@ public class SavedQueriesApi {
      * @return ApiResponse&lt;GenericApiResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<GenericApiResponse> deleteSavedQueryUsingDELETEWithHttpInfo(Long updateableQueryId) throws ApiException {
-        com.squareup.okhttp.Call call = deleteSavedQueryUsingDELETEValidateBeforeCall(updateableQueryId, null, null);
+    public ApiResponse<GenericApiResponse> deleteSavedQueryUsingDELETE1WithHttpInfo(Long updateableQueryId) throws ApiException {
+        com.squareup.okhttp.Call call = deleteSavedQueryUsingDELETE1ValidateBeforeCall(updateableQueryId, null, null);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -152,7 +152,7 @@ public class SavedQueriesApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call deleteSavedQueryUsingDELETEAsync(Long updateableQueryId, final ApiCallback<GenericApiResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call deleteSavedQueryUsingDELETE1Async(Long updateableQueryId, final ApiCallback<GenericApiResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -173,7 +173,7 @@ public class SavedQueriesApi {
             };
         }
 
-        com.squareup.okhttp.Call call = deleteSavedQueryUsingDELETEValidateBeforeCall(updateableQueryId, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = deleteSavedQueryUsingDELETE1ValidateBeforeCall(updateableQueryId, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
@@ -302,14 +302,14 @@ public class SavedQueriesApi {
         return call;
     }
     /**
-     * Build call for saveQueryUsingPOST
+     * Build call for saveQueryUsingPOST1
      * @param savedQueryDto savedQueryDto (required)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call saveQueryUsingPOSTCall(SavedQuery savedQueryDto, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call saveQueryUsingPOST1Call(SavedQuery savedQueryDto, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = savedQueryDto;
 
         // create path and map variables
@@ -351,15 +351,15 @@ public class SavedQueriesApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call saveQueryUsingPOSTValidateBeforeCall(SavedQuery savedQueryDto, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call saveQueryUsingPOST1ValidateBeforeCall(SavedQuery savedQueryDto, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         
         // verify the required parameter 'savedQueryDto' is set
         if (savedQueryDto == null) {
-            throw new ApiException("Missing the required parameter 'savedQueryDto' when calling saveQueryUsingPOST(Async)");
+            throw new ApiException("Missing the required parameter 'savedQueryDto' when calling saveQueryUsingPOST1(Async)");
         }
         
 
-        com.squareup.okhttp.Call call = saveQueryUsingPOSTCall(savedQueryDto, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = saveQueryUsingPOST1Call(savedQueryDto, progressListener, progressRequestListener);
         return call;
 
     }
@@ -371,8 +371,8 @@ public class SavedQueriesApi {
      * @return GenericApiResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public GenericApiResponse saveQueryUsingPOST(SavedQuery savedQueryDto) throws ApiException {
-        ApiResponse<GenericApiResponse> resp = saveQueryUsingPOSTWithHttpInfo(savedQueryDto);
+    public GenericApiResponse saveQueryUsingPOST1(SavedQuery savedQueryDto) throws ApiException {
+        ApiResponse<GenericApiResponse> resp = saveQueryUsingPOST1WithHttpInfo(savedQueryDto);
         return resp.getData();
     }
 
@@ -383,8 +383,8 @@ public class SavedQueriesApi {
      * @return ApiResponse&lt;GenericApiResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<GenericApiResponse> saveQueryUsingPOSTWithHttpInfo(SavedQuery savedQueryDto) throws ApiException {
-        com.squareup.okhttp.Call call = saveQueryUsingPOSTValidateBeforeCall(savedQueryDto, null, null);
+    public ApiResponse<GenericApiResponse> saveQueryUsingPOST1WithHttpInfo(SavedQuery savedQueryDto) throws ApiException {
+        com.squareup.okhttp.Call call = saveQueryUsingPOST1ValidateBeforeCall(savedQueryDto, null, null);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -397,7 +397,7 @@ public class SavedQueriesApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call saveQueryUsingPOSTAsync(SavedQuery savedQueryDto, final ApiCallback<GenericApiResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call saveQueryUsingPOST1Async(SavedQuery savedQueryDto, final ApiCallback<GenericApiResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -418,13 +418,13 @@ public class SavedQueriesApi {
             };
         }
 
-        com.squareup.okhttp.Call call = saveQueryUsingPOSTValidateBeforeCall(savedQueryDto, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = saveQueryUsingPOST1ValidateBeforeCall(savedQueryDto, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
     }
     /**
-     * Build call for saveQueryUsingPUT
+     * Build call for saveQueryUsingPUT1
      * @param savedQueryDto savedQueryDto (required)
      * @param updateableQueryId updateableQueryId (required)
      * @param progressListener Progress listener
@@ -432,7 +432,7 @@ public class SavedQueriesApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call saveQueryUsingPUTCall(SavedQuery savedQueryDto, Long updateableQueryId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call saveQueryUsingPUT1Call(SavedQuery savedQueryDto, Long updateableQueryId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = savedQueryDto;
 
         // create path and map variables
@@ -475,20 +475,20 @@ public class SavedQueriesApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call saveQueryUsingPUTValidateBeforeCall(SavedQuery savedQueryDto, Long updateableQueryId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call saveQueryUsingPUT1ValidateBeforeCall(SavedQuery savedQueryDto, Long updateableQueryId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         
         // verify the required parameter 'savedQueryDto' is set
         if (savedQueryDto == null) {
-            throw new ApiException("Missing the required parameter 'savedQueryDto' when calling saveQueryUsingPUT(Async)");
+            throw new ApiException("Missing the required parameter 'savedQueryDto' when calling saveQueryUsingPUT1(Async)");
         }
         
         // verify the required parameter 'updateableQueryId' is set
         if (updateableQueryId == null) {
-            throw new ApiException("Missing the required parameter 'updateableQueryId' when calling saveQueryUsingPUT(Async)");
+            throw new ApiException("Missing the required parameter 'updateableQueryId' when calling saveQueryUsingPUT1(Async)");
         }
         
 
-        com.squareup.okhttp.Call call = saveQueryUsingPUTCall(savedQueryDto, updateableQueryId, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = saveQueryUsingPUT1Call(savedQueryDto, updateableQueryId, progressListener, progressRequestListener);
         return call;
 
     }
@@ -501,8 +501,8 @@ public class SavedQueriesApi {
      * @return GenericApiResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public GenericApiResponse saveQueryUsingPUT(SavedQuery savedQueryDto, Long updateableQueryId) throws ApiException {
-        ApiResponse<GenericApiResponse> resp = saveQueryUsingPUTWithHttpInfo(savedQueryDto, updateableQueryId);
+    public GenericApiResponse saveQueryUsingPUT1(SavedQuery savedQueryDto, Long updateableQueryId) throws ApiException {
+        ApiResponse<GenericApiResponse> resp = saveQueryUsingPUT1WithHttpInfo(savedQueryDto, updateableQueryId);
         return resp.getData();
     }
 
@@ -514,8 +514,8 @@ public class SavedQueriesApi {
      * @return ApiResponse&lt;GenericApiResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<GenericApiResponse> saveQueryUsingPUTWithHttpInfo(SavedQuery savedQueryDto, Long updateableQueryId) throws ApiException {
-        com.squareup.okhttp.Call call = saveQueryUsingPUTValidateBeforeCall(savedQueryDto, updateableQueryId, null, null);
+    public ApiResponse<GenericApiResponse> saveQueryUsingPUT1WithHttpInfo(SavedQuery savedQueryDto, Long updateableQueryId) throws ApiException {
+        com.squareup.okhttp.Call call = saveQueryUsingPUT1ValidateBeforeCall(savedQueryDto, updateableQueryId, null, null);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -529,7 +529,7 @@ public class SavedQueriesApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call saveQueryUsingPUTAsync(SavedQuery savedQueryDto, Long updateableQueryId, final ApiCallback<GenericApiResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call saveQueryUsingPUT1Async(SavedQuery savedQueryDto, Long updateableQueryId, final ApiCallback<GenericApiResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -550,7 +550,7 @@ public class SavedQueriesApi {
             };
         }
 
-        com.squareup.okhttp.Call call = saveQueryUsingPUTValidateBeforeCall(savedQueryDto, updateableQueryId, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = saveQueryUsingPUT1ValidateBeforeCall(savedQueryDto, updateableQueryId, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;

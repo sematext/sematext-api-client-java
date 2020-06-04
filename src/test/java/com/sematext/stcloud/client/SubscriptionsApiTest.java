@@ -42,9 +42,9 @@ public class SubscriptionsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void listUsingGET1Test() throws ApiException {
+    public void listUsingGET2Test() throws ApiException {
         Long appId = null;
-        GenericApiResponse response = api.listUsingGET1(appId);
+        GenericApiResponse response = api.listUsingGET2(appId);
 
         // TODO: test validations
     }
@@ -58,10 +58,10 @@ public class SubscriptionsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void sendReportUsingPOSTTest() throws ApiException {
+    public void sendReportUsingPOST1Test() throws ApiException {
         Long appId = null;
         ReportInfo emailDto = null;
-        GenericApiResponse response = api.sendReportUsingPOST(appId, emailDto);
+        GenericApiResponse response = api.sendReportUsingPOST1(appId, emailDto);
 
         // TODO: test validations
     }

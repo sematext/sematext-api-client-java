@@ -1,9 +1,10 @@
+ 
+
 
 # Sematext Cloud - API Client - sematext-api-java
 
 This client code talks to [Sematext Cloud API](https://sematext.com/cloud/) providing a way to automate setup of solution monitoring.<br>
-It's primary purpose is as a client module supporting [Sematext Terraform Provider](https://github.com/sematext/terraform-provider-sematext)
-<br><br>
+<br /><br />
 
 Further information and API browsing refer to the [Sematext Cloud API web page](https://sematext.com/docs/api/) 
 
@@ -32,6 +33,12 @@ To deploy it to a remote Maven repository instead, configure the settings of the
 
 ```shell
 mvn clean deploy
+```
+
+To run tests:
+
+```shell
+mvn test
 ```
 
 Refer to the [OSSRH Guide](http://central.sonatype.org/pages/ossrh-guide.html) for more information.

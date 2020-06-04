@@ -28,7 +28,7 @@ import java.math.BigDecimal;
 /**
  * Plan
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-05-05T00:52:46.095+12:00")
+
 public class Plan {
   @SerializedName("appType")
   private String appType = null;
@@ -80,6 +80,8 @@ public class Plan {
     RUM_1_0("RUM_1_0"),
     
     RUM_EA("RUM_EA"),
+    
+    SYNTHETICS_EA("SYNTHETICS_EA"),
     
     SYNTHETICS_1_0("SYNTHETICS_1_0");
 

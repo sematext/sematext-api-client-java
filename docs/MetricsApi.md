@@ -4,15 +4,15 @@ All URIs are relative to *https://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**listDataSeriesUsingPOST1**](MetricsApi.md#listDataSeriesUsingPOST1) | **POST** /spm-reports/api/v3/apps/{appId}/metrics/data | Get metrics data points for an app
-[**listFiltersUsingPOST**](MetricsApi.md#listFiltersUsingPOST) | **POST** /spm-reports/api/v3/apps/{appId}/metrics/filters | Get metrics filters and their values for an app
-[**listMetricsKeysUsingGET1**](MetricsApi.md#listMetricsKeysUsingGET1) | **GET** /spm-reports/api/v3/apps/{appId}/metrics/keys | Get metrics keys for an app
-[**listMetricsUsingGET1**](MetricsApi.md#listMetricsUsingGET1) | **GET** /spm-reports/api/v3/apps/{appId}/metrics | Get metrics info for an app
+[**listDataSeriesUsingPOST**](MetricsApi.md#listDataSeriesUsingPOST) | **POST** /spm-reports/api/v3/apps/{appId}/metrics/data | Get metrics data points for an app
+[**listFiltersUsingPOST1**](MetricsApi.md#listFiltersUsingPOST1) | **POST** /spm-reports/api/v3/apps/{appId}/metrics/filters | Get metrics filters and their values for an app
+[**listMetricsKeysUsingGET**](MetricsApi.md#listMetricsKeysUsingGET) | **GET** /spm-reports/api/v3/apps/{appId}/metrics/keys | Get metrics keys for an app
+[**listMetricsUsingGET**](MetricsApi.md#listMetricsUsingGET) | **GET** /spm-reports/api/v3/apps/{appId}/metrics | Get metrics info for an app
 
 
-<a name="listDataSeriesUsingPOST1"></a>
-# **listDataSeriesUsingPOST1**
-> GenericApiResponse listDataSeriesUsingPOST1(appId, requestBody)
+<a name="listDataSeriesUsingPOST"></a>
+# **listDataSeriesUsingPOST**
+> GenericApiResponse listDataSeriesUsingPOST(appId, requestBody)
 
 Get metrics data points for an app
 
@@ -39,10 +39,10 @@ MetricsApi apiInstance = new MetricsApi();
 Long appId = 789L; // Long | appId
 DataSeriesRequest requestBody = new DataSeriesRequest(); // DataSeriesRequest | Metric data points request
 try {
-    GenericApiResponse result = apiInstance.listDataSeriesUsingPOST1(appId, requestBody);
+    GenericApiResponse result = apiInstance.listDataSeriesUsingPOST(appId, requestBody);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling MetricsApi#listDataSeriesUsingPOST1");
+    System.err.println("Exception when calling MetricsApi#listDataSeriesUsingPOST");
     e.printStackTrace();
 }
 ```
@@ -67,9 +67,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="listFiltersUsingPOST"></a>
-# **listFiltersUsingPOST**
-> GenericApiResponse listFiltersUsingPOST(appId, requestBody)
+<a name="listFiltersUsingPOST1"></a>
+# **listFiltersUsingPOST1**
+> GenericApiResponse listFiltersUsingPOST1(appId, requestBody)
 
 Get metrics filters and their values for an app
 
@@ -96,10 +96,10 @@ MetricsApi apiInstance = new MetricsApi();
 Long appId = 789L; // Long | appId
 DataSeriesRequest requestBody = new DataSeriesRequest(); // DataSeriesRequest | Metric filters request
 try {
-    GenericApiResponse result = apiInstance.listFiltersUsingPOST(appId, requestBody);
+    GenericApiResponse result = apiInstance.listFiltersUsingPOST1(appId, requestBody);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling MetricsApi#listFiltersUsingPOST");
+    System.err.println("Exception when calling MetricsApi#listFiltersUsingPOST1");
     e.printStackTrace();
 }
 ```
@@ -124,9 +124,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="listMetricsKeysUsingGET1"></a>
-# **listMetricsKeysUsingGET1**
-> GenericApiResponse listMetricsKeysUsingGET1(appId)
+<a name="listMetricsKeysUsingGET"></a>
+# **listMetricsKeysUsingGET**
+> GenericApiResponse listMetricsKeysUsingGET(appId)
 
 Get metrics keys for an app
 
@@ -150,10 +150,10 @@ api_key.setApiKey("YOUR API KEY");
 MetricsApi apiInstance = new MetricsApi();
 Long appId = 789L; // Long | appId
 try {
-    GenericApiResponse result = apiInstance.listMetricsKeysUsingGET1(appId);
+    GenericApiResponse result = apiInstance.listMetricsKeysUsingGET(appId);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling MetricsApi#listMetricsKeysUsingGET1");
+    System.err.println("Exception when calling MetricsApi#listMetricsKeysUsingGET");
     e.printStackTrace();
 }
 ```
@@ -177,9 +177,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json
  - **Accept**: application/json
 
-<a name="listMetricsUsingGET1"></a>
-# **listMetricsUsingGET1**
-> GenericApiResponse listMetricsUsingGET1(appId)
+<a name="listMetricsUsingGET"></a>
+# **listMetricsUsingGET**
+> GenericApiResponse listMetricsUsingGET(appId)
 
 Get metrics info for an app
 
@@ -203,10 +203,10 @@ api_key.setApiKey("YOUR API KEY");
 MetricsApi apiInstance = new MetricsApi();
 Long appId = 789L; // Long | appId
 try {
-    GenericApiResponse result = apiInstance.listMetricsUsingGET1(appId);
+    GenericApiResponse result = apiInstance.listMetricsUsingGET(appId);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling MetricsApi#listMetricsUsingGET1");
+    System.err.println("Exception when calling MetricsApi#listMetricsUsingGET");
     e.printStackTrace();
 }
 ```
