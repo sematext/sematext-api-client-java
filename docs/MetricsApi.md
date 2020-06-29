@@ -21,11 +21,11 @@ Default value of interval is 5m
 ### Example
 ```java
 // Import classes:
-//import com.sematext.stcloud.ApiClient;
-//import com.sematext.stcloud.ApiException;
-//import com.sematext.stcloud.Configuration;
-//import com.sematext.stcloud.auth.*;
-//import com.sematext.stcloud.client.MetricsApi;
+//import com.sematext.cloud.ApiClient;
+//import com.sematext.cloud.ApiException;
+//import com.sematext.cloud.Configuration;
+//import com.sematext.cloud.auth.*;
+//import com.sematext.cloud.client.MetricsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -78,11 +78,11 @@ Default value of interval is 5m
 ### Example
 ```java
 // Import classes:
-//import com.sematext.stcloud.ApiClient;
-//import com.sematext.stcloud.ApiException;
-//import com.sematext.stcloud.Configuration;
-//import com.sematext.stcloud.auth.*;
-//import com.sematext.stcloud.client.MetricsApi;
+//import com.sematext.cloud.ApiClient;
+//import com.sematext.cloud.ApiException;
+//import com.sematext.cloud.Configuration;
+//import com.sematext.cloud.auth.*;
+//import com.sematext.cloud.client.MetricsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -133,11 +133,11 @@ Get metrics keys for an app
 ### Example
 ```java
 // Import classes:
-//import com.sematext.stcloud.ApiClient;
-//import com.sematext.stcloud.ApiException;
-//import com.sematext.stcloud.Configuration;
-//import com.sematext.stcloud.auth.*;
-//import com.sematext.stcloud.client.MetricsApi;
+//import com.sematext.cloud.ApiClient;
+//import com.sematext.cloud.ApiException;
+//import com.sematext.cloud.Configuration;
+//import com.sematext.cloud.auth.*;
+//import com.sematext.cloud.client.MetricsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -186,11 +186,11 @@ Get metrics info for an app
 ### Example
 ```java
 // Import classes:
-//import com.sematext.stcloud.ApiClient;
-//import com.sematext.stcloud.ApiException;
-//import com.sematext.stcloud.Configuration;
-//import com.sematext.stcloud.auth.*;
-//import com.sematext.stcloud.client.MetricsApi;
+//import com.sematext.cloud.ApiClient;
+//import com.sematext.cloud.ApiException;
+//import com.sematext.cloud.Configuration;
+//import com.sematext.cloud.auth.*;
+//import com.sematext.cloud.client.MetricsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 

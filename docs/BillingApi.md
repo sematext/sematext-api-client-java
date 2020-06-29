@@ -18,11 +18,11 @@ Get invoice details
 ### Example
 ```java
 // Import classes:
-//import com.sematext.stcloud.ApiClient;
-//import com.sematext.stcloud.ApiException;
-//import com.sematext.stcloud.Configuration;
-//import com.sematext.stcloud.auth.*;
-//import com.sematext.stcloud.client.BillingApi;
+//import com.sematext.cloud.ApiClient;
+//import com.sematext.cloud.ApiException;
+//import com.sematext.cloud.Configuration;
+//import com.sematext.cloud.auth.*;
+//import com.sematext.cloud.client.BillingApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -75,11 +75,11 @@ Get available plans
 ### Example
 ```java
 // Import classes:
-//import com.sematext.stcloud.ApiClient;
-//import com.sematext.stcloud.ApiException;
-//import com.sematext.stcloud.Configuration;
-//import com.sematext.stcloud.auth.*;
-//import com.sematext.stcloud.client.BillingApi;
+//import com.sematext.cloud.ApiClient;
+//import com.sematext.cloud.ApiException;
+//import com.sematext.cloud.Configuration;
+//import com.sematext.cloud.auth.*;
+//import com.sematext.cloud.client.BillingApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -130,11 +130,11 @@ Update plan for an app
 ### Example
 ```java
 // Import classes:
-//import com.sematext.stcloud.ApiClient;
-//import com.sematext.stcloud.ApiException;
-//import com.sematext.stcloud.Configuration;
-//import com.sematext.stcloud.auth.*;
-//import com.sematext.stcloud.client.BillingApi;
+//import com.sematext.cloud.ApiClient;
+//import com.sematext.cloud.ApiException;
+//import com.sematext.cloud.Configuration;
+//import com.sematext.cloud.auth.*;
+//import com.sematext.cloud.client.BillingApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 

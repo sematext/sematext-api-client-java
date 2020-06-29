@@ -1,4 +1,4 @@
- 
+
 
 
 # Sematext Cloud - API Client - sematext-api-java
@@ -6,7 +6,7 @@
 This client code talks to [Sematext Cloud API](https://sematext.com/cloud/) providing a way to automate setup of solution monitoring.<br>
 <br /><br />
 
-Further information and API browsing refer to the [Sematext Cloud API web page](https://sematext.com/docs/api/) 
+Further information and API browsing refer to the [Sematext Cloud API web page](https://sematext.com/docs/api/)
 
 
 ## Getting Started
@@ -50,9 +50,9 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-  <groupId>io.swagger</groupId>
-  <artifactId>swagger-java-client</artifactId>
-  <version>1.0.0</version>
+  <groupId>com.sematext</groupId>
+  <artifactId>SematextCloudClient</artifactId>
+  <version>0.1.0</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -62,7 +62,7 @@ Add this dependency to your project's POM:
 Add this dependency to your project's build file:
 
 ```groovy
-compile "io.swagger:swagger-java-client:1.0.0"
+compile "com.sematext:sematext-api-client-java:0.1.0"
 ```
 
 ### Others
@@ -84,14 +84,9 @@ Then manually install the following JARs:
 This client code requires a Sematext API Access token to function. You can find this by logging into your [Sematext Cloud Account](https://apps.sematext.com/ui/account/api)
 
 
-### Coding style tests
-
-The code in this repo uses TODO linting.
-
-
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
 
 ## License
@@ -113,10 +108,10 @@ Please follow the [installation](#installation) instruction and execute the foll
 
 ```java
 
-import io.swagger.client.*;
-import io.swagger.client.auth.*;
-import io.swagger.client.model.*;
-import io.swagger.client.api.AlertNotificationsApi;
+import com.sematext.cloud.client.*;
+import com.sematext.cloud.client.auth.*;
+import com.sematext.cloud.client.model.*;
+import com.sematext.cloud.client.api.AlertNotificationsApi;
 
 import java.io.File;
 import java.util.*;
@@ -125,7 +120,7 @@ public class AlertNotificationsApiExample {
 
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: api_key
         ApiKeyAuth api_key = (ApiKeyAuth) defaultClient.getAuthentication("api_key");
         api_key.setApiKey("YOUR API KEY");
@@ -235,8 +230,3 @@ Authentication schemes defined for the API:
 It's recommended to create an instance of `ApiClient` per thread in a multithreaded environment to avoid any potential issues.
 
 ## Author
-
-
-
-
-

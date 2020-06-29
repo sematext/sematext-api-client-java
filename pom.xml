@@ -1,23 +1,22 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.sematext</groupId>
-    <artifactId>StCloudClient</artifactId>
+    <artifactId>SematextCloudClient</artifactId>
     <packaging>jar</packaging>
-    <name>StCloudClient</name>
-    <version>1.0.0</version>
-    <url>https://github.com/swagger-api/swagger-codegen</url>
-    <description>Swagger Java</description>
+    <name>SematextCloudClient</name>
+    <version>0.1.0</version>
+    <url>https://github.com/sematext/sematext-api-client-java</url>
+    <description>Client for Sematext Cloud API at https://sematext.com/docs/api/</description>
     <scm>
-        <connection>scm:git:git@github.com:swagger-api/swagger-codegen.git</connection>
-        <developerConnection>scm:git:git@github.com:swagger-api/swagger-codegen.git</developerConnection>
-        <url>https://github.com/swagger-api/swagger-codegen</url>
+        <connection>https://github.com/sematext/sematext-api-client-java.git</connection>
+        <developerConnection>https://github.com/sematext/sematext-api-client-java.git</developerConnection>
+        <url>https://github.com/sematext/sematext-api-client-java.git</url>
     </scm>
 
     <licenses>
         <license>
-            <name>Apache License Version 2.0, January 2004</name>
-            <url>http://www.apache.org/licenses/</url>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
@@ -25,7 +24,7 @@
     <developers>
         <developer>
             <name>Sematext</name>
-            <email>support@sematext.com</email>
+            <email>packages@sematext.com</email>
             <organization>Sematext</organization>
             <organizationUrl>https://sematext.com</organizationUrl>
         </developer>
@@ -133,20 +132,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.10.4</version>
-                <executions>
-                    <execution>
-                        <id>attach-javadocs</id>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+            </plugin>          
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
