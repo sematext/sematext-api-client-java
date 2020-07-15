@@ -19,6 +19,7 @@ repositories {
 }
 
 
+
 if(hasProperty('target') && target == 'android') {
 
     apply plugin: 'com.android.library'

@@ -1,5 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <groupId>com.sematext</groupId>
     <artifactId>SematextCloudClient</artifactId>
     <packaging>jar</packaging>
@@ -7,11 +8,6 @@
     <version>0.1.0</version>
     <url>https://github.com/sematext/sematext-api-client-java</url>
     <description>Client for Sematext Cloud API at https://sematext.com/docs/api/</description>
-    <scm>
-        <connection>https://github.com/sematext/sematext-api-client-java.git</connection>
-        <developerConnection>https://github.com/sematext/sematext-api-client-java.git</developerConnection>
-        <url>https://github.com/sematext/sematext-api-client-java.git</url>
-    </scm>
 
     <licenses>
         <license>
@@ -30,8 +26,41 @@
         </developer>
     </developers>
 
+    <organization>
+        <name>Sematext</name>
+        <url>http://sematext.com</url>
+    </organization>
+
+    <scm>
+        <connection>scm:git:git://github.com/sematext/sematext-api-client-java.git</connection>
+        <developerConnection>scm:git:git://github.com/sematext/sematext-api-client-java.git</developerConnection>
+        <url>https://github.com/sematext/sematext-api-client-java.git</url>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>oss</id>
+            <url>https://oss.sonatype.org/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>1.6.8</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <serverId>ossrh</serverId>
+                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
@@ -96,8 +125,7 @@
                         </goals>
                     </execution>
                 </executions>
-                <configuration>
-                </configuration>
+                <configuration></configuration>
             </plugin>
 
             <plugin>
@@ -132,7 +160,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>          
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
@@ -151,13 +179,19 @@
 
     <profiles>
         <profile>
-            <id>sign-artifacts</id>
+            <id>release-sign-artifacts</id>
+            <activation>
+                <property>
+                    <name>performRelease</name>
+                    <value>true</value>
+                </property>
+            </activation>
             <build>
                 <plugins>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.5</version>
+                        <version>1.6</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
