@@ -19,11 +19,11 @@ Default value of interval is 1d
 ### Example
 ```java
 // Import classes:
-//import com.sematext.stcloud.ApiClient;
-//import com.sematext.stcloud.ApiException;
-//import com.sematext.stcloud.Configuration;
-//import com.sematext.stcloud.auth.*;
-//import com.sematext.stcloud.client.AlertNotificationsApi;
+//import com.sematext.cloud.ApiClient;
+//import com.sematext.cloud.ApiException;
+//import com.sematext.cloud.Configuration;
+//import com.sematext.cloud.auth.*;
+//import com.sematext.cloud.client.AlertNotificationsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -76,11 +76,11 @@ Default value of interval is 1d
 ### Example
 ```java
 // Import classes:
-//import com.sematext.stcloud.ApiClient;
-//import com.sematext.stcloud.ApiException;
-//import com.sematext.stcloud.Configuration;
-//import com.sematext.stcloud.auth.*;
-//import com.sematext.stcloud.client.AlertNotificationsApi;
+//import com.sematext.cloud.ApiClient;
+//import com.sematext.cloud.ApiException;
+//import com.sematext.cloud.Configuration;
+//import com.sematext.cloud.auth.*;
+//import com.sematext.cloud.client.AlertNotificationsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 

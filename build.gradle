@@ -2,7 +2,7 @@ apply plugin: 'idea'
 apply plugin: 'eclipse'
 
 group = 'com.sematext'
-version = '1.0.0'
+version = '0.1.0'
 
 buildscript {
     repositories {
@@ -17,6 +17,7 @@ buildscript {
 repositories {
     jcenter()
 }
+
 
 
 if(hasProperty('target') && target == 'android') {
@@ -83,7 +84,7 @@ if(hasProperty('target') && target == 'android') {
 
     install {
         repositories.mavenInstaller {
-            pom.artifactId = 'StCloudClient'
+            pom.artifactId = 'SematextCloudClient'
         }
     }
 

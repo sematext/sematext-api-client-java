@@ -22,11 +22,11 @@ Get all App types supported for the account identified with apiKey
 ### Example
 ```java
 // Import classes:
-//import com.sematext.stcloud.ApiClient;
-//import com.sematext.stcloud.ApiException;
-//import com.sematext.stcloud.Configuration;
-//import com.sematext.stcloud.auth.*;
-//import com.sematext.stcloud.client.AppsApi;
+//import com.sematext.cloud.ApiClient;
+//import com.sematext.cloud.ApiException;
+//import com.sematext.cloud.Configuration;
+//import com.sematext.cloud.auth.*;
+//import com.sematext.cloud.client.AppsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -71,11 +71,11 @@ Gets defails for one particular App
 ### Example
 ```java
 // Import classes:
-//import com.sematext.stcloud.ApiClient;
-//import com.sematext.stcloud.ApiException;
-//import com.sematext.stcloud.Configuration;
-//import com.sematext.stcloud.auth.*;
-//import com.sematext.stcloud.client.AppsApi;
+//import com.sematext.cloud.ApiClient;
+//import com.sematext.cloud.ApiException;
+//import com.sematext.cloud.Configuration;
+//import com.sematext.cloud.auth.*;
+//import com.sematext.cloud.client.AppsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -124,11 +124,11 @@ Invite guests to an app
 ### Example
 ```java
 // Import classes:
-//import com.sematext.stcloud.ApiClient;
-//import com.sematext.stcloud.ApiException;
-//import com.sematext.stcloud.Configuration;
-//import com.sematext.stcloud.auth.*;
-//import com.sematext.stcloud.client.AppsApi;
+//import com.sematext.cloud.ApiClient;
+//import com.sematext.cloud.ApiException;
+//import com.sematext.cloud.Configuration;
+//import com.sematext.cloud.auth.*;
+//import com.sematext.cloud.client.AppsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -177,11 +177,11 @@ Get all users of apps accessible to this account
 ### Example
 ```java
 // Import classes:
-//import com.sematext.stcloud.ApiClient;
-//import com.sematext.stcloud.ApiException;
-//import com.sematext.stcloud.Configuration;
-//import com.sematext.stcloud.auth.*;
-//import com.sematext.stcloud.client.AppsApi;
+//import com.sematext.cloud.ApiClient;
+//import com.sematext.cloud.ApiException;
+//import com.sematext.cloud.Configuration;
+//import com.sematext.cloud.auth.*;
+//import com.sematext.cloud.client.AppsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -226,11 +226,11 @@ Get all apps accessible by account identified with apiKey
 ### Example
 ```java
 // Import classes:
-//import com.sematext.stcloud.ApiClient;
-//import com.sematext.stcloud.ApiException;
-//import com.sematext.stcloud.Configuration;
-//import com.sematext.stcloud.auth.*;
-//import com.sematext.stcloud.client.AppsApi;
+//import com.sematext.cloud.ApiClient;
+//import com.sematext.cloud.ApiException;
+//import com.sematext.cloud.Configuration;
+//import com.sematext.cloud.auth.*;
+//import com.sematext.cloud.client.AppsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -277,11 +277,11 @@ App can be in any state
 ### Example
 ```java
 // Import classes:
-//import com.sematext.stcloud.ApiClient;
-//import com.sematext.stcloud.ApiException;
-//import com.sematext.stcloud.Configuration;
-//import com.sematext.stcloud.auth.*;
-//import com.sematext.stcloud.client.AppsApi;
+//import com.sematext.cloud.ApiClient;
+//import com.sematext.cloud.ApiException;
+//import com.sematext.cloud.Configuration;
+//import com.sematext.cloud.auth.*;
+//import com.sematext.cloud.client.AppsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -334,11 +334,11 @@ App can be in any state
 ### Example
 ```java
 // Import classes:
-//import com.sematext.stcloud.ApiClient;
-//import com.sematext.stcloud.ApiException;
-//import com.sematext.stcloud.Configuration;
-//import com.sematext.stcloud.auth.*;
-//import com.sematext.stcloud.client.AppsApi;
+//import com.sematext.cloud.ApiClient;
+//import com.sematext.cloud.ApiException;
+//import com.sematext.cloud.Configuration;
+//import com.sematext.cloud.auth.*;
+//import com.sematext.cloud.client.AppsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 

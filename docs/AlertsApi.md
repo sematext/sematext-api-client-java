@@ -20,11 +20,11 @@ Create alert rule
 ### Example
 ```java
 // Import classes:
-//import com.sematext.stcloud.ApiClient;
-//import com.sematext.stcloud.ApiException;
-//import com.sematext.stcloud.Configuration;
-//import com.sematext.stcloud.auth.*;
-//import com.sematext.stcloud.client.AlertsApi;
+//import com.sematext.cloud.ApiClient;
+//import com.sematext.cloud.ApiException;
+//import com.sematext.cloud.Configuration;
+//import com.sematext.cloud.auth.*;
+//import com.sematext.cloud.client.AlertsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -73,11 +73,11 @@ Delete alert rule
 ### Example
 ```java
 // Import classes:
-//import com.sematext.stcloud.ApiClient;
-//import com.sematext.stcloud.ApiException;
-//import com.sematext.stcloud.Configuration;
-//import com.sematext.stcloud.auth.*;
-//import com.sematext.stcloud.client.AlertsApi;
+//import com.sematext.cloud.ApiClient;
+//import com.sematext.cloud.ApiException;
+//import com.sematext.cloud.Configuration;
+//import com.sematext.cloud.auth.*;
+//import com.sematext.cloud.client.AlertsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -126,11 +126,11 @@ Disable alert rule
 ### Example
 ```java
 // Import classes:
-//import com.sematext.stcloud.ApiClient;
-//import com.sematext.stcloud.ApiException;
-//import com.sematext.stcloud.Configuration;
-//import com.sematext.stcloud.auth.*;
-//import com.sematext.stcloud.client.AlertsApi;
+//import com.sematext.cloud.ApiClient;
+//import com.sematext.cloud.ApiException;
+//import com.sematext.cloud.Configuration;
+//import com.sematext.cloud.auth.*;
+//import com.sematext.cloud.client.AlertsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -179,11 +179,11 @@ Enable alert rule
 ### Example
 ```java
 // Import classes:
-//import com.sematext.stcloud.ApiClient;
-//import com.sematext.stcloud.ApiException;
-//import com.sematext.stcloud.Configuration;
-//import com.sematext.stcloud.auth.*;
-//import com.sematext.stcloud.client.AlertsApi;
+//import com.sematext.cloud.ApiClient;
+//import com.sematext.cloud.ApiException;
+//import com.sematext.cloud.Configuration;
+//import com.sematext.cloud.auth.*;
+//import com.sematext.cloud.client.AlertsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
@@ -232,11 +232,11 @@ Get alert rules for an app
 ### Example
 ```java
 // Import classes:
-//import com.sematext.stcloud.ApiClient;
-//import com.sematext.stcloud.ApiException;
-//import com.sematext.stcloud.Configuration;
-//import com.sematext.stcloud.auth.*;
-//import com.sematext.stcloud.client.AlertsApi;
+//import com.sematext.cloud.ApiClient;
+//import com.sematext.cloud.ApiException;
+//import com.sematext.cloud.Configuration;
+//import com.sematext.cloud.auth.*;
+//import com.sematext.cloud.client.AlertsApi;
 
 ApiClient defaultClient = Configuration.getDefaultApiClient();
 
