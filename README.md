@@ -37,8 +37,6 @@ Refer to below link for deeper information on the API itself.
   - [Contents](#contents)
   - [Getting Started](#getting-started)
   - [Installation](#installation)
-    - [*Node.js*](#nodejs)
-    - [*Webpack Configuration*](#webpack-configuration)
   - [Authentication](#authentication)
   - [Testing](#testing)
   - [Reference](#reference)
