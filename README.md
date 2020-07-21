@@ -1,12 +1,48 @@
 
+# <img src="./assets/octi-blue.png" valign="bottom" width="60px"/>**&nbsp;&nbsp;sematext-api-client-java**
 
+<br>
 
-# Sematext Cloud - API Client - sematext-api-java
+>*A [Sematext Cloud](https://sematext.com/cloud/) API client, for interaction with Sematext Cloud solution monitoring, alerting and log shipping.*
 
-This client code talks to [Sematext Cloud API](https://sematext.com/cloud/) providing a way to automate setup of solution monitoring.<br>
-<br /><br />
+<br>
 
-Further information and API browsing refer to the [Sematext Cloud API web page](https://sematext.com/docs/api/)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+<br>
+One of a family of clients in following flavours:
+<br>
+<br>
+
+* [sematext-api-client-javascript](https://github.com/sematext/sematext-api-client-javascript "Javascript")
+* [sematext-api-client-rust](https://github.com/sematext/sematext-api-client-rust "Rust")
+* [sematext-api-client-ruby](https://github.com/sematext/sematext-api-client-ruby "Ruby")
+* [sematext-api-client-python](https://github.com/sematext/sematext-api-client-python "Python")
+* [sematext-api-client-php](https://github.com/sematext/sematext-api-client-php "PHP")
+* [sematext-api-client-java](https://github.com/sematext/sematext-api-client-java "Java")
+* [sematext-api-client-go](https://github.com/sematext/sematext-api-client-go "Go/Golang")
+
+<br>
+Refer to below link for deeper information on the API itself.
+<br>
+<br>
+
+* [Sematext Cloud API Reference](https://github.com/sematext/sematext-api-client-go "API Reference")
+
+<br>
+
+## Contents
+
+- [&nbsp;&nbsp;sematext-api-client-javascript](#sematext-api-client-javascript)
+  - [Contents](#contents)
+  - [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Authentication](#authentication)
+  - [Testing](#testing)
+  - [Reference](#reference)
+  - [Documentation for Models](#documentation-for-models)
+
+<br>
 
 
 ## Getting Started
@@ -142,7 +178,7 @@ public class AlertNotificationsApiExample {
 
 ```
 
-## Documentation for API Endpoints
+## Reference
 
 All URIs are relative to *https://localhost*
 
