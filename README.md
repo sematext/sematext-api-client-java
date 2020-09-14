@@ -1,5 +1,5 @@
 
-# <img src="./assets/octi-blue.png" valign="bottom" width="60px"/>**&nbsp;&nbsp;sematext-api-client-java**
+# <img src="https://sematext.com/wp-content/uploads/2020/09/just-octi-blue.png" valign="bottom" width="60px"/>**&nbsp;&nbsp;sematext-api-client-java**
 
 <br>
 
@@ -88,7 +88,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>com.sematext</groupId>
   <artifactId>SematextCloudClient</artifactId>
-  <version>0.1.0</version>
+  <version>0.1.1</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -98,7 +98,7 @@ Add this dependency to your project's POM:
 Add this dependency to your project's build file:
 
 ```groovy
-compile "com.sematext:sematext-api-client-java:0.1.0"
+compile "com.sematext:sematext-api-client-java:0.1.1"
 ```
 
 ### Others
@@ -111,7 +111,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/swagger-java-client-1.0.0.jar`
+* `target/swagger-java-client-1.0.1.jar`
 * `target/lib/*.jar`
 
 
