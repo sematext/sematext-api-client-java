@@ -2,10 +2,10 @@
 
 All URIs are relative to *https://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**listUsingGET2**](SubscriptionsApi.md#listUsingGET2) | **GET** /users-web/api/v3/apps/{appId}/subscriptions | Get subscriptions for an app
-[**sendReportUsingPOST1**](SubscriptionsApi.md#sendReportUsingPOST1) | **POST** /users-web/api/v3/apps/{appId}/report/send | Trigger emailing of report for an app
+| Method                                                               | HTTP request                                         | Description                           |
+| -------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------- |
+| [**listUsingGET2**](SubscriptionsApi.md#listUsingGET2)               | **GET** /users-web/api/v3/apps/{appId}/subscriptions | Get subscriptions for an app          |
+| [**sendReportUsingPOST1**](SubscriptionsApi.md#sendReportUsingPOST1) | **POST** /users-web/api/v3/apps/{appId}/report/send  | Trigger emailing of report for an app |
 
 
 <a name="listUsingGET2"></a>
@@ -44,9 +44,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **appId** | **Long**| appId |
+| Name      | Type     | Description | Notes |
+| --------- | -------- | ----------- | ----- |
+| **appId** | **Long** | appId       |
 
 ### Return type
 
@@ -98,10 +98,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **appId** | **Long**| appId |
- **emailDto** | [**ReportInfo**](ReportInfo.md)| emailDto |
+| Name         | Type                            | Description | Notes |
+| ------------ | ------------------------------- | ----------- | ----- |
+| **appId**    | **Long**                        | appId       |
+| **emailDto** | [**ReportInfo**](ReportInfo.md) | emailDto    |
 
 ### Return type
 
@@ -115,4 +115,3 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-

@@ -2,11 +2,11 @@
 
 All URIs are relative to *https://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getDetailedInvoiceUsingGET1**](BillingApi.md#getDetailedInvoiceUsingGET1) | **GET** /users-web/api/v3/billing/invoice/{service}/{year}/{month} | Get invoice details
-[**listAvailablePlansUsingGET1**](BillingApi.md#listAvailablePlansUsingGET1) | **GET** /users-web/api/v3/billing/availablePlans | Get available plans
-[**updatePlanUsingPUT1**](BillingApi.md#updatePlanUsingPUT1) | **PUT** /users-web/api/v3/billing/info/{appId} | Update plan for an app
+| Method                                                                       | HTTP request                                                       | Description            |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------------------ | ---------------------- |
+| [**getDetailedInvoiceUsingGET1**](BillingApi.md#getDetailedInvoiceUsingGET1) | **GET** /users-web/api/v3/billing/invoice/{service}/{year}/{month} | Get invoice details    |
+| [**listAvailablePlansUsingGET1**](BillingApi.md#listAvailablePlansUsingGET1) | **GET** /users-web/api/v3/billing/availablePlans                   | Get available plans    |
+| [**updatePlanUsingPUT1**](BillingApi.md#updatePlanUsingPUT1)                 | **PUT** /users-web/api/v3/billing/info/{appId}                     | Update plan for an app |
 
 
 <a name="getDetailedInvoiceUsingGET1"></a>
@@ -47,11 +47,11 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **service** | **String**| service |
- **year** | **Integer**| year |
- **month** | **Integer**| month |
+| Name        | Type        | Description | Notes |
+| ----------- | ----------- | ----------- | ----- |
+| **service** | **String**  | service     |
+| **year**    | **Integer** | year        |
+| **month**   | **Integer** | month       |
 
 ### Return type
 
@@ -103,10 +103,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **integrationId** | **Long**| integrationId | [optional]
- **appType** | **String**| appType | [optional]
+| Name              | Type       | Description   | Notes      |
+| ----------------- | ---------- | ------------- | ---------- |
+| **integrationId** | **Long**   | integrationId | [optional] |
+| **appType**       | **String** | appType       | [optional] |
 
 ### Return type
 
@@ -158,10 +158,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **appId** | **Long**| appId |
- **dto** | [**BillingInfo**](BillingInfo.md)| dto |
+| Name      | Type                              | Description | Notes |
+| --------- | --------------------------------- | ----------- | ----- |
+| **appId** | **Long**                          | appId       |
+| **dto**   | [**BillingInfo**](BillingInfo.md) | dto         |
 
 ### Return type
 
@@ -175,4 +175,3 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-

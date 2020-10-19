@@ -2,9 +2,9 @@
 
 All URIs are relative to *https://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**resetPasswordUsingPOST1**](ResetPasswordApi.md#resetPasswordUsingPOST1) | **POST** /users-web/api/v3/account/password/reset | Reset Password
+| Method                                                                     | HTTP request                                      | Description    |
+| -------------------------------------------------------------------------- | ------------------------------------------------- | -------------- |
+| [**resetPasswordUsingPOST1**](ResetPasswordApi.md#resetPasswordUsingPOST1) | **POST** /users-web/api/v3/account/password/reset | Reset Password |
 
 
 <a name="resetPasswordUsingPOST1"></a>
@@ -43,9 +43,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **dto** | [**UserInfo**](UserInfo.md)| dto |
+| Name    | Type                        | Description | Notes |
+| ------- | --------------------------- | ----------- | ----- |
+| **dto** | [**UserInfo**](UserInfo.md) | dto         |
 
 ### Return type
 
@@ -59,4 +59,3 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-
