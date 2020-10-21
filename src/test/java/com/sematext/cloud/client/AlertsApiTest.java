@@ -42,9 +42,9 @@ public class AlertsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void createAlertUsingPOSTTest() throws ApiException {
+    public void createAlertUsingPOST1Test() throws ApiException {
         AlertRule dto = null;
-        GenericApiResponse response = api.createAlertUsingPOST(dto);
+        GenericApiResponse response = api.createAlertUsingPOST1(dto);
 
         // TODO: test validations
     }
@@ -58,9 +58,9 @@ public class AlertsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteAlertRuleUsingDELETETest() throws ApiException {
+    public void deleteAlertRuleUsingDELETE1Test() throws ApiException {
         Long updateableAlertId = null;
-        GenericApiResponse response = api.deleteAlertRuleUsingDELETE(updateableAlertId);
+        GenericApiResponse response = api.deleteAlertRuleUsingDELETE1(updateableAlertId);
 
         // TODO: test validations
     }
@@ -74,9 +74,9 @@ public class AlertsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void disableAlertRuleUsingPUT1Test() throws ApiException {
+    public void disableAlertRuleUsingPUTTest() throws ApiException {
         Long updateableAlertId = null;
-        GenericApiResponse response = api.disableAlertRuleUsingPUT1(updateableAlertId);
+        GenericApiResponse response = api.disableAlertRuleUsingPUT(updateableAlertId);
 
         // TODO: test validations
     }
@@ -90,9 +90,9 @@ public class AlertsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void enableAlertRuleUsingPUTTest() throws ApiException {
+    public void enableAlertRuleUsingPUT1Test() throws ApiException {
         Long updateableAlertId = null;
-        GenericApiResponse response = api.enableAlertRuleUsingPUT(updateableAlertId);
+        GenericApiResponse response = api.enableAlertRuleUsingPUT1(updateableAlertId);
 
         // TODO: test validations
     }

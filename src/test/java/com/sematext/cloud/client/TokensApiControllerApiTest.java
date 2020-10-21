@@ -14,8 +14,9 @@
 package com.sematext.cloud.client;
 
 import com.sematext.cloud.ApiException;
-import com.sematext.cloud.model.DataSeriesRequest;
+import com.sematext.cloud.model.CreateTokenDto;
 import com.sematext.cloud.model.GenericApiResponse;
+import com.sematext.cloud.model.UpdateTokenDto;
 import org.junit.Test;
 import org.junit.Ignore;
 
@@ -25,50 +26,16 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * API tests for MetricsApi
+ * API tests for TokensApiControllerApi
  */
 @Ignore
-public class MetricsApiTest {
+public class TokensApiControllerApiTest {
 
-    private final MetricsApi api = new MetricsApi();
+    private final TokensApiControllerApi api = new TokensApiControllerApi();
 
     
     /**
-     * Get metrics data points for an app
-     *
-     * Default value of interval is 5m
-     *
-     * @throws ApiException
-     *          if the Api call fails
-     */
-    @Test
-    public void listDataSeriesUsingPOST1Test() throws ApiException {
-        Long appId = null;
-        DataSeriesRequest requestBody = null;
-        GenericApiResponse response = api.listDataSeriesUsingPOST1(appId, requestBody);
-
-        // TODO: test validations
-    }
-    
-    /**
-     * Get metrics filters and their values for an app
-     *
-     * Default value of interval is 5m
-     *
-     * @throws ApiException
-     *          if the Api call fails
-     */
-    @Test
-    public void listFiltersUsingPOST1Test() throws ApiException {
-        Long appId = null;
-        DataSeriesRequest requestBody = null;
-        GenericApiResponse response = api.listFiltersUsingPOST1(appId, requestBody);
-
-        // TODO: test validations
-    }
-    
-    /**
-     * Get metrics keys for an app
+     * Create new app token
      *
      * 
      *
@@ -76,15 +43,16 @@ public class MetricsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void listMetricsKeysUsingGET1Test() throws ApiException {
+    public void createAppTokenTest() throws ApiException {
         Long appId = null;
-        GenericApiResponse response = api.listMetricsKeysUsingGET1(appId);
+        CreateTokenDto dto = null;
+        GenericApiResponse response = api.createAppToken(appId, dto);
 
         // TODO: test validations
     }
     
     /**
-     * Get metrics info for an app
+     * Delete app token
      *
      * 
      *
@@ -92,9 +60,61 @@ public class MetricsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void listMetricsUsingGETTest() throws ApiException {
+    public void deleteAppToken1Test() throws ApiException {
         Long appId = null;
-        GenericApiResponse response = api.listMetricsUsingGET(appId);
+        Long tokenId = null;
+        GenericApiResponse response = api.deleteAppToken1(appId, tokenId);
+
+        // TODO: test validations
+    }
+    
+    /**
+     * Get app available tokens
+     *
+     * 
+     *
+     * @throws ApiException
+     *          if the Api call fails
+     */
+    @Test
+    public void getAppTokens1Test() throws ApiException {
+        Long appId = null;
+        GenericApiResponse response = api.getAppTokens1(appId);
+
+        // TODO: test validations
+    }
+    
+    /**
+     * Regenerate app token)
+     *
+     * 
+     *
+     * @throws ApiException
+     *          if the Api call fails
+     */
+    @Test
+    public void regenerateAppTokenTest() throws ApiException {
+        Long appId = null;
+        Long tokenId = null;
+        GenericApiResponse response = api.regenerateAppToken(appId, tokenId);
+
+        // TODO: test validations
+    }
+    
+    /**
+     * Update app token (enable/disable)
+     *
+     * 
+     *
+     * @throws ApiException
+     *          if the Api call fails
+     */
+    @Test
+    public void updateAppTokenTest() throws ApiException {
+        Long appId = null;
+        Long tokenId = null;
+        UpdateTokenDto dto = null;
+        GenericApiResponse response = api.updateAppToken(appId, tokenId, dto);
 
         // TODO: test validations
     }

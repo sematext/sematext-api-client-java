@@ -101,6 +101,15 @@ public class App {
   @SerializedName("prepaidAccount")
   private Boolean prepaidAccount = null;
 
+  @SerializedName("readToken")
+  private String readToken = null;
+
+  @SerializedName("readWriteToken")
+  private String readWriteToken = null;
+
+  @SerializedName("registrationDate")
+  private Long registrationDate = null;
+
   @SerializedName("status")
   private String status = null;
 
@@ -115,6 +124,9 @@ public class App {
 
   @SerializedName("userRoles")
   private List<UserRole> userRoles = null;
+
+  @SerializedName("writeToken")
+  private String writeToken = null;
 
   public App ajaxThreshold(Long ajaxThreshold) {
     this.ajaxThreshold = ajaxThreshold;
@@ -512,6 +524,60 @@ public class App {
     this.prepaidAccount = prepaidAccount;
   }
 
+  public App readToken(String readToken) {
+    this.readToken = readToken;
+    return this;
+  }
+
+   /**
+   * Get readToken
+   * @return readToken
+  **/
+  @ApiModelProperty(value = "")
+  public String getReadToken() {
+    return readToken;
+  }
+
+  public void setReadToken(String readToken) {
+    this.readToken = readToken;
+  }
+
+  public App readWriteToken(String readWriteToken) {
+    this.readWriteToken = readWriteToken;
+    return this;
+  }
+
+   /**
+   * Get readWriteToken
+   * @return readWriteToken
+  **/
+  @ApiModelProperty(value = "")
+  public String getReadWriteToken() {
+    return readWriteToken;
+  }
+
+  public void setReadWriteToken(String readWriteToken) {
+    this.readWriteToken = readWriteToken;
+  }
+
+  public App registrationDate(Long registrationDate) {
+    this.registrationDate = registrationDate;
+    return this;
+  }
+
+   /**
+   * Get registrationDate
+   * @return registrationDate
+  **/
+  @ApiModelProperty(value = "")
+  public Long getRegistrationDate() {
+    return registrationDate;
+  }
+
+  public void setRegistrationDate(Long registrationDate) {
+    this.registrationDate = registrationDate;
+  }
+
   public App status(String status) {
     this.status = status;
     return this;
@@ -610,6 +676,24 @@ public class App {
     this.userRoles = userRoles;
   }
 
+  public App writeToken(String writeToken) {
+    this.writeToken = writeToken;
+    return this;
+  }
+
+   /**
+   * Get writeToken
+   * @return writeToken
+  **/
+  @ApiModelProperty(value = "")
+  public String getWriteToken() {
+    return writeToken;
+  }
+
+  public void setWriteToken(String writeToken) {
+    this.writeToken = writeToken;
+  }
+
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -642,16 +726,20 @@ public class App {
         Objects.equals(this.paymentMethodId, app.paymentMethodId) &&
         Objects.equals(this.plan, app.plan) &&
         Objects.equals(this.prepaidAccount, app.prepaidAccount) &&
+        Objects.equals(this.readToken, app.readToken) &&
+        Objects.equals(this.readWriteToken, app.readWriteToken) &&
+        Objects.equals(this.registrationDate, app.registrationDate) &&
         Objects.equals(this.status, app.status) &&
         Objects.equals(this.token, app.token) &&
         Objects.equals(this.trialEndDate, app.trialEndDate) &&
         Objects.equals(this.urlGroupLimit, app.urlGroupLimit) &&
-        Objects.equals(this.userRoles, app.userRoles);
+        Objects.equals(this.userRoles, app.userRoles) &&
+        Objects.equals(this.writeToken, app.writeToken);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(ajaxThreshold, appType, appTypeId, creatorEmail, creditCardExpiry, creditCardNumber, description, displayStatus, firstDataSavedDate, id, integration, lastDataReceivedDate, lastDataSavedDate, loggedInUserAppRole, monthlyInvoiceAccount, name, ownerEmail, owningOrganization, pageLoadThreshold, paymentMethodId, plan, prepaidAccount, status, token, trialEndDate, urlGroupLimit, userRoles);
+    return Objects.hash(ajaxThreshold, appType, appTypeId, creatorEmail, creditCardExpiry, creditCardNumber, description, displayStatus, firstDataSavedDate, id, integration, lastDataReceivedDate, lastDataSavedDate, loggedInUserAppRole, monthlyInvoiceAccount, name, ownerEmail, owningOrganization, pageLoadThreshold, paymentMethodId, plan, prepaidAccount, readToken, readWriteToken, registrationDate, status, token, trialEndDate, urlGroupLimit, userRoles, writeToken);
   }
 
 
@@ -682,11 +770,15 @@ public class App {
     sb.append("    paymentMethodId: ").append(toIndentedString(paymentMethodId)).append("\n");
     sb.append("    plan: ").append(toIndentedString(plan)).append("\n");
     sb.append("    prepaidAccount: ").append(toIndentedString(prepaidAccount)).append("\n");
+    sb.append("    readToken: ").append(toIndentedString(readToken)).append("\n");
+    sb.append("    readWriteToken: ").append(toIndentedString(readWriteToken)).append("\n");
+    sb.append("    registrationDate: ").append(toIndentedString(registrationDate)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("    token: ").append(toIndentedString(token)).append("\n");
     sb.append("    trialEndDate: ").append(toIndentedString(trialEndDate)).append("\n");
     sb.append("    urlGroupLimit: ").append(toIndentedString(urlGroupLimit)).append("\n");
     sb.append("    userRoles: ").append(toIndentedString(userRoles)).append("\n");
+    sb.append("    writeToken: ").append(toIndentedString(writeToken)).append("\n");
     sb.append("}");
     return sb.toString();
   }

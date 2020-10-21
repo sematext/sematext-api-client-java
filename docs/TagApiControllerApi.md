@@ -2,11 +2,11 @@
 
 All URIs are relative to *https://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getTagNamesUsingGET**](TagApiControllerApi.md#getTagNamesUsingGET) | **GET** /spm-reports/api/v3/apps/{appIds}/tagNames | Gets tag names for the given application identifiers appearing in the given time frame.
-[**getUsingGET1**](TagApiControllerApi.md#getUsingGET1) | **GET** /spm-reports/api/v3/apps/{appIds}/tags | Gets values for specified tags for the given application identifiers appearing in the given time frame.
-[**getUsingGET2**](TagApiControllerApi.md#getUsingGET2) | **GET** /spm-reports/api/v3/apps/{appIds}/metrics/filters | Gets values for specified tags for the given application identifiers appearing in the given time frame.
+| Method                                                                | HTTP request                                              | Description                                                                                             |
+| --------------------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| [**getTagNamesUsingGET**](TagApiControllerApi.md#getTagNamesUsingGET) | **GET** /spm-reports/api/v3/apps/{appIds}/tagNames        | Gets tag names for the given application identifiers appearing in the given time frame.                 |
+| [**getUsingGET1**](TagApiControllerApi.md#getUsingGET1)               | **GET** /spm-reports/api/v3/apps/{appIds}/tags            | Gets values for specified tags for the given application identifiers appearing in the given time frame. |
+| [**getUsingGET2**](TagApiControllerApi.md#getUsingGET2)               | **GET** /spm-reports/api/v3/apps/{appIds}/metrics/filters | Gets values for specified tags for the given application identifiers appearing in the given time frame. |
 
 
 <a name="getTagNamesUsingGET"></a>
@@ -51,15 +51,15 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **appIds** | **String**| appIds |
- **from** | **Long**| from | [optional]
- **to** | **Long**| to | [optional]
- **metrics** | **Boolean**| metrics | [optional] [default to true]
- **logs** | **Boolean**| logs | [optional] [default to true]
- **events** | **Boolean**| events | [optional] [default to false]
- **rum** | **Boolean**| rum | [optional] [default to true]
+| Name        | Type        | Description | Notes                         |
+| ----------- | ----------- | ----------- | ----------------------------- |
+| **appIds**  | **String**  | appIds      |
+| **from**    | **Long**    | from        | [optional]                    |
+| **to**      | **Long**    | to          | [optional]                    |
+| **metrics** | **Boolean** | metrics     | [optional] [default to true]  |
+| **logs**    | **Boolean** | logs        | [optional] [default to true]  |
+| **events**  | **Boolean** | events      | [optional] [default to false] |
+| **rum**     | **Boolean** | rum         | [optional] [default to true]  |
 
 ### Return type
 
@@ -117,16 +117,16 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **appIds** | **String**| appIds |
- **tag** | [**List&lt;String&gt;**](String.md)| tag |
- **from** | **Long**| from | [optional]
- **to** | **Long**| to | [optional]
- **metrics** | **Boolean**| metrics | [optional] [default to true]
- **logs** | **Boolean**| logs | [optional] [default to true]
- **events** | **Boolean**| events | [optional] [default to false]
- **rum** | **Boolean**| rum | [optional] [default to true]
+| Name        | Type                                | Description | Notes                         |
+| ----------- | ----------------------------------- | ----------- | ----------------------------- |
+| **appIds**  | **String**                          | appIds      |
+| **tag**     | [**List&lt;String&gt;**](String.md) | tag         |
+| **from**    | **Long**                            | from        | [optional]                    |
+| **to**      | **Long**                            | to          | [optional]                    |
+| **metrics** | **Boolean**                         | metrics     | [optional] [default to true]  |
+| **logs**    | **Boolean**                         | logs        | [optional] [default to true]  |
+| **events**  | **Boolean**                         | events      | [optional] [default to false] |
+| **rum**     | **Boolean**                         | rum         | [optional] [default to true]  |
 
 ### Return type
 
@@ -184,16 +184,16 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **appIds** | **String**| appIds |
- **tag** | [**List&lt;String&gt;**](String.md)| tag |
- **from** | **Long**| from | [optional]
- **to** | **Long**| to | [optional]
- **metrics** | **Boolean**| metrics | [optional] [default to true]
- **logs** | **Boolean**| logs | [optional] [default to true]
- **events** | **Boolean**| events | [optional] [default to false]
- **rum** | **Boolean**| rum | [optional] [default to true]
+| Name        | Type                                | Description | Notes                         |
+| ----------- | ----------------------------------- | ----------- | ----------------------------- |
+| **appIds**  | **String**                          | appIds      |
+| **tag**     | [**List&lt;String&gt;**](String.md) | tag         |
+| **from**    | **Long**                            | from        | [optional]                    |
+| **to**      | **Long**                            | to          | [optional]                    |
+| **metrics** | **Boolean**                         | metrics     | [optional] [default to true]  |
+| **logs**    | **Boolean**                         | logs        | [optional] [default to true]  |
+| **events**  | **Boolean**                         | events      | [optional] [default to false] |
+| **rum**     | **Boolean**                         | rum         | [optional] [default to true]  |
 
 ### Return type
 
@@ -207,4 +207,3 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-

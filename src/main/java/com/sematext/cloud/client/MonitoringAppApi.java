@@ -56,14 +56,14 @@ public class MonitoringAppApi {
     }
 
     /**
-     * Build call for createSpmApplication1
+     * Build call for createSpmApplication
      * @param applicationDetails Details of the application to be created (required)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call createSpmApplication1Call(CreateAppInfo applicationDetails, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call createSpmApplicationCall(CreateAppInfo applicationDetails, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = applicationDetails;
 
         // create path and map variables
@@ -105,15 +105,15 @@ public class MonitoringAppApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call createSpmApplication1ValidateBeforeCall(CreateAppInfo applicationDetails, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call createSpmApplicationValidateBeforeCall(CreateAppInfo applicationDetails, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         
         // verify the required parameter 'applicationDetails' is set
         if (applicationDetails == null) {
-            throw new ApiException("Missing the required parameter 'applicationDetails' when calling createSpmApplication1(Async)");
+            throw new ApiException("Missing the required parameter 'applicationDetails' when calling createSpmApplication(Async)");
         }
         
 
-        com.squareup.okhttp.Call call = createSpmApplication1Call(applicationDetails, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = createSpmApplicationCall(applicationDetails, progressListener, progressRequestListener);
         return call;
 
     }
@@ -125,8 +125,8 @@ public class MonitoringAppApi {
      * @return GenericApiResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public GenericApiResponse createSpmApplication1(CreateAppInfo applicationDetails) throws ApiException {
-        ApiResponse<GenericApiResponse> resp = createSpmApplication1WithHttpInfo(applicationDetails);
+    public GenericApiResponse createSpmApplication(CreateAppInfo applicationDetails) throws ApiException {
+        ApiResponse<GenericApiResponse> resp = createSpmApplicationWithHttpInfo(applicationDetails);
         return resp.getData();
     }
 
@@ -137,8 +137,8 @@ public class MonitoringAppApi {
      * @return ApiResponse&lt;GenericApiResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<GenericApiResponse> createSpmApplication1WithHttpInfo(CreateAppInfo applicationDetails) throws ApiException {
-        com.squareup.okhttp.Call call = createSpmApplication1ValidateBeforeCall(applicationDetails, null, null);
+    public ApiResponse<GenericApiResponse> createSpmApplicationWithHttpInfo(CreateAppInfo applicationDetails) throws ApiException {
+        com.squareup.okhttp.Call call = createSpmApplicationValidateBeforeCall(applicationDetails, null, null);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -151,7 +151,7 @@ public class MonitoringAppApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call createSpmApplication1Async(CreateAppInfo applicationDetails, final ApiCallback<GenericApiResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call createSpmApplicationAsync(CreateAppInfo applicationDetails, final ApiCallback<GenericApiResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -172,7 +172,7 @@ public class MonitoringAppApi {
             };
         }
 
-        com.squareup.okhttp.Call call = createSpmApplication1ValidateBeforeCall(applicationDetails, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = createSpmApplicationValidateBeforeCall(applicationDetails, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<GenericApiResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;

@@ -2,12 +2,12 @@
 
 All URIs are relative to *https://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**listDataSeriesUsingPOST**](MetricsApi.md#listDataSeriesUsingPOST) | **POST** /spm-reports/api/v3/apps/{appId}/metrics/data | Get metrics data points for an app
-[**listFiltersUsingPOST1**](MetricsApi.md#listFiltersUsingPOST1) | **POST** /spm-reports/api/v3/apps/{appId}/metrics/filters | Get metrics filters and their values for an app
-[**listMetricsKeysUsingGET**](MetricsApi.md#listMetricsKeysUsingGET) | **GET** /spm-reports/api/v3/apps/{appId}/metrics/keys | Get metrics keys for an app
-[**listMetricsUsingGET**](MetricsApi.md#listMetricsUsingGET) | **GET** /spm-reports/api/v3/apps/{appId}/metrics | Get metrics info for an app
+| Method                                                               | HTTP request                                              | Description                                     |
+| -------------------------------------------------------------------- | --------------------------------------------------------- | ----------------------------------------------- |
+| [**listDataSeriesUsingPOST**](MetricsApi.md#listDataSeriesUsingPOST) | **POST** /spm-reports/api/v3/apps/{appId}/metrics/data    | Get metrics data points for an app              |
+| [**listFiltersUsingPOST1**](MetricsApi.md#listFiltersUsingPOST1)     | **POST** /spm-reports/api/v3/apps/{appId}/metrics/filters | Get metrics filters and their values for an app |
+| [**listMetricsKeysUsingGET**](MetricsApi.md#listMetricsKeysUsingGET) | **GET** /spm-reports/api/v3/apps/{appId}/metrics/keys     | Get metrics keys for an app                     |
+| [**listMetricsUsingGET**](MetricsApi.md#listMetricsUsingGET)         | **GET** /spm-reports/api/v3/apps/{appId}/metrics          | Get metrics info for an app                     |
 
 
 <a name="listDataSeriesUsingPOST"></a>
@@ -49,10 +49,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **appId** | **Long**| appId |
- **requestBody** | [**DataSeriesRequest**](DataSeriesRequest.md)| Metric data points request |
+| Name            | Type                                          | Description                | Notes |
+| --------------- | --------------------------------------------- | -------------------------- | ----- |
+| **appId**       | **Long**                                      | appId                      |
+| **requestBody** | [**DataSeriesRequest**](DataSeriesRequest.md) | Metric data points request |
 
 ### Return type
 
@@ -106,10 +106,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **appId** | **Long**| appId |
- **requestBody** | [**DataSeriesRequest**](DataSeriesRequest.md)| Metric filters request |
+| Name            | Type                                          | Description            | Notes |
+| --------------- | --------------------------------------------- | ---------------------- | ----- |
+| **appId**       | **Long**                                      | appId                  |
+| **requestBody** | [**DataSeriesRequest**](DataSeriesRequest.md) | Metric filters request |
 
 ### Return type
 
@@ -160,9 +160,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **appId** | **Long**| appId |
+| Name      | Type     | Description | Notes |
+| --------- | -------- | ----------- | ----- |
+| **appId** | **Long** | appId       |
 
 ### Return type
 
@@ -213,9 +213,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **appId** | **Long**| appId |
+| Name      | Type     | Description | Notes |
+| --------- | -------- | ----------- | ----- |
+| **appId** | **Long** | appId       |
 
 ### Return type
 
@@ -229,4 +229,3 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-

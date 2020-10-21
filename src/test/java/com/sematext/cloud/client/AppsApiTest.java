@@ -36,6 +36,22 @@ public class AppsApiTest {
 
     
     /**
+     * delete
+     *
+     * 
+     *
+     * @throws ApiException
+     *          if the Api call fails
+     */
+    @Test
+    public void deleteUsingDELETETest() throws ApiException {
+        Long anyStateAppId = null;
+        GenericApiResponse response = api.deleteUsingDELETE(anyStateAppId);
+
+        // TODO: test validations
+    }
+    
+    /**
      * Get all App types supported for the account identified with apiKey
      *
      * 
@@ -75,9 +91,9 @@ public class AppsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void inviteAppGuestsUsingPOST1Test() throws ApiException {
+    public void inviteAppGuestsUsingPOSTTest() throws ApiException {
         Invitation invitation = null;
-        GenericApiResponse response = api.inviteAppGuestsUsingPOST1(invitation);
+        GenericApiResponse response = api.inviteAppGuestsUsingPOST(invitation);
 
         // TODO: test validations
     }
@@ -106,8 +122,8 @@ public class AppsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void listUsingGET1Test() throws ApiException {
-        GenericApiResponse response = api.listUsingGET1();
+    public void listUsingGETTest() throws ApiException {
+        GenericApiResponse response = api.listUsingGET();
 
         // TODO: test validations
     }
@@ -121,10 +137,10 @@ public class AppsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateDescriptionUsingPUT1Test() throws ApiException {
+    public void updateDescriptionUsingPUTTest() throws ApiException {
         Long anyStateAppId = null;
         AppDescription updateDetails = null;
-        GenericApiResponse response = api.updateDescriptionUsingPUT1(anyStateAppId, updateDetails);
+        GenericApiResponse response = api.updateDescriptionUsingPUT(anyStateAppId, updateDetails);
 
         // TODO: test validations
     }

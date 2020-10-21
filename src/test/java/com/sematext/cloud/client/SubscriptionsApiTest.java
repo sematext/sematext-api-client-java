@@ -16,6 +16,9 @@ package com.sematext.cloud.client;
 import com.sematext.cloud.ApiException;
 import com.sematext.cloud.model.GenericApiResponse;
 import com.sematext.cloud.model.ReportInfo;
+import com.sematext.cloud.model.SubscriptionDashboardDto;
+import com.sematext.cloud.model.SubscriptionDto;
+import com.sematext.cloud.model.UpdateSubscriptionDto;
 import org.junit.Test;
 import org.junit.Ignore;
 
@@ -34,7 +37,57 @@ public class SubscriptionsApiTest {
 
     
     /**
-     * Get subscriptions for an app
+     * Create App subscription
+     *
+     * 
+     *
+     * @throws ApiException
+     *          if the Api call fails
+     */
+    @Test
+    public void createForAppUsingPOST1Test() throws ApiException {
+        Long appId = null;
+        SubscriptionDto subscription = null;
+        GenericApiResponse response = api.createForAppUsingPOST1(appId, subscription);
+
+        // TODO: test validations
+    }
+    
+    /**
+     * Create dashboard subscription
+     *
+     * 
+     *
+     * @throws ApiException
+     *          if the Api call fails
+     */
+    @Test
+    public void createForDashUsingPOST1Test() throws ApiException {
+        Long dashId = null;
+        SubscriptionDashboardDto subscription = null;
+        GenericApiResponse response = api.createForDashUsingPOST1(dashId, subscription);
+
+        // TODO: test validations
+    }
+    
+    /**
+     * Delete subscription
+     *
+     * 
+     *
+     * @throws ApiException
+     *          if the Api call fails
+     */
+    @Test
+    public void deleteUsingDELETE2Test() throws ApiException {
+        Long updateableSubscriptionId = null;
+        GenericApiResponse response = api.deleteUsingDELETE2(updateableSubscriptionId);
+
+        // TODO: test validations
+    }
+    
+    /**
+     * Get subscriptions for an App
      *
      * 
      *
@@ -50,7 +103,7 @@ public class SubscriptionsApiTest {
     }
     
     /**
-     * Trigger emailing of report for an app
+     * Get current account&#39;s subscriptions
      *
      * 
      *
@@ -58,10 +111,93 @@ public class SubscriptionsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void sendReportUsingPOST1Test() throws ApiException {
+    public void listUsingGET4Test() throws ApiException {
+        GenericApiResponse response = api.listUsingGET4();
+
+        // TODO: test validations
+    }
+    
+    /**
+     * Email an App report
+     *
+     * 
+     *
+     * @throws ApiException
+     *          if the Api call fails
+     */
+    @Test
+    public void sendAppReportUsingPOST1Test() throws ApiException {
         Long appId = null;
         ReportInfo emailDto = null;
-        GenericApiResponse response = api.sendReportUsingPOST1(appId, emailDto);
+        GenericApiResponse response = api.sendAppReportUsingPOST1(appId, emailDto);
+
+        // TODO: test validations
+    }
+    
+    /**
+     * Email a dashboard report
+     *
+     * 
+     *
+     * @throws ApiException
+     *          if the Api call fails
+     */
+    @Test
+    public void sendDashReportUsingPOSTTest() throws ApiException {
+        Long dashId = null;
+        ReportInfo emailDto = null;
+        GenericApiResponse response = api.sendDashReportUsingPOST(dashId, emailDto);
+
+        // TODO: test validations
+    }
+    
+    /**
+     * Toggle subscription status
+     *
+     * 
+     *
+     * @throws ApiException
+     *          if the Api call fails
+     */
+    @Test
+    public void toggleEnabledUsingPUTTest() throws ApiException {
+        Long updateableSubscriptionId = null;
+        UpdateSubscriptionDto dto = null;
+        GenericApiResponse response = api.toggleEnabledUsingPUT(updateableSubscriptionId, dto);
+
+        // TODO: test validations
+    }
+    
+    /**
+     * Update App subscription
+     *
+     * 
+     *
+     * @throws ApiException
+     *          if the Api call fails
+     */
+    @Test
+    public void updateForAppUsingPUT1Test() throws ApiException {
+        Long appId = null;
+        SubscriptionDto subscription = null;
+        GenericApiResponse response = api.updateForAppUsingPUT1(appId, subscription);
+
+        // TODO: test validations
+    }
+    
+    /**
+     * Update dashboard subscription
+     *
+     * 
+     *
+     * @throws ApiException
+     *          if the Api call fails
+     */
+    @Test
+    public void updateForDashUsingPUT1Test() throws ApiException {
+        Long dashId = null;
+        SubscriptionDashboardDto subscription = null;
+        GenericApiResponse response = api.updateForDashUsingPUT1(dashId, subscription);
 
         // TODO: test validations
     }
