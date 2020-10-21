@@ -2,15 +2,15 @@
 
 All URIs are relative to *https://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getAppTypesUsingGET**](AppsApi.md#getAppTypesUsingGET) | **GET** /users-web/api/v3/apps/types | Get all App types supported for the account identified with apiKey
-[**getUsingGET**](AppsApi.md#getUsingGET) | **GET** /users-web/api/v3/apps/{anyStateAppId} | Gets defails for one particular App
-[**inviteAppGuestsUsingPOST1**](AppsApi.md#inviteAppGuestsUsingPOST1) | **POST** /users-web/api/v3/apps/guests | Invite guests to an app
-[**listAppsUsersUsingGET**](AppsApi.md#listAppsUsersUsingGET) | **GET** /users-web/api/v3/apps/users | Get all users of apps accessible to this account
-[**listUsingGET1**](AppsApi.md#listUsingGET1) | **GET** /users-web/api/v3/apps | Get all apps accessible by account identified with apiKey
-[**updateDescriptionUsingPUT1**](AppsApi.md#updateDescriptionUsingPUT1) | **PUT** /users-web/api/v3/apps/{anyStateAppId}/description | Update description of the app
-[**updateUsingPUT2**](AppsApi.md#updateUsingPUT2) | **PUT** /users-web/api/v3/apps/{anyStateAppId} | Update app
+| Method                                                                  | HTTP request                                               | Description                                                        |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------ |
+| [**getAppTypesUsingGET**](AppsApi.md#getAppTypesUsingGET)               | **GET** /users-web/api/v3/apps/types                       | Get all App types supported for the account identified with apiKey |
+| [**getUsingGET**](AppsApi.md#getUsingGET)                               | **GET** /users-web/api/v3/apps/{anyStateAppId}             | Gets defails for one particular App                                |
+| [**inviteAppGuestsUsingPOST1**](AppsApi.md#inviteAppGuestsUsingPOST1)   | **POST** /users-web/api/v3/apps/guests                     | Invite guests to an app                                            |
+| [**listAppsUsersUsingGET**](AppsApi.md#listAppsUsersUsingGET)           | **GET** /users-web/api/v3/apps/users                       | Get all users of apps accessible to this account                   |
+| [**listUsingGET1**](AppsApi.md#listUsingGET1)                           | **GET** /users-web/api/v3/apps                             | Get all apps accessible by account identified with apiKey          |
+| [**updateDescriptionUsingPUT1**](AppsApi.md#updateDescriptionUsingPUT1) | **PUT** /users-web/api/v3/apps/{anyStateAppId}/description | Update description of the app                                      |
+| [**updateUsingPUT2**](AppsApi.md#updateUsingPUT2)                       | **PUT** /users-web/api/v3/apps/{anyStateAppId}             | Update app                                                         |
 
 
 <a name="getAppTypesUsingGET"></a>
@@ -98,9 +98,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **anyStateAppId** | **Long**| anyStateAppId |
+| Name              | Type     | Description   | Notes |
+| ----------------- | -------- | ------------- | ----- |
+| **anyStateAppId** | **Long** | anyStateAppId |
 
 ### Return type
 
@@ -151,9 +151,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **invitation** | [**Invitation**](Invitation.md)| For &#x60;app&#x60; and &#x60;apps&#x60; fields only &#x60;id&#x60; needs to be populated.Other fields can be left empty or with default values |
+| Name           | Type                            | Description                                                                                                                                     | Notes |
+| -------------- | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| **invitation** | [**Invitation**](Invitation.md) | For &#x60;app&#x60; and &#x60;apps&#x60; fields only &#x60;id&#x60; needs to be populated.Other fields can be left empty or with default values |
 
 ### Return type
 
@@ -305,10 +305,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **anyStateAppId** | **Long**| App Id |
- **updateDetails** | [**AppDescription**](AppDescription.md)| Update Details | [optional]
+| Name              | Type                                    | Description    | Notes      |
+| ----------------- | --------------------------------------- | -------------- | ---------- |
+| **anyStateAppId** | **Long**                                | App Id         |
+| **updateDetails** | [**AppDescription**](AppDescription.md) | Update Details | [optional] |
 
 ### Return type
 
@@ -362,10 +362,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **dto** | [**UpdateAppInfo**](UpdateAppInfo.md)| dto |
- **anyStateAppId** | **Long**| App Id |
+| Name              | Type                                  | Description | Notes |
+| ----------------- | ------------------------------------- | ----------- | ----- |
+| **dto**           | [**UpdateAppInfo**](UpdateAppInfo.md) | dto         |
+| **anyStateAppId** | **Long**                              | App Id      |
 
 ### Return type
 
@@ -379,4 +379,3 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-

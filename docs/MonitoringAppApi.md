@@ -2,9 +2,9 @@
 
 All URIs are relative to *https://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**createSpmApplication1**](MonitoringAppApi.md#createSpmApplication1) | **POST** /spm-reports/api/v3/apps | Create Monitoring App
+| Method                                                                 | HTTP request                      | Description           |
+| ---------------------------------------------------------------------- | --------------------------------- | --------------------- |
+| [**createSpmApplication1**](MonitoringAppApi.md#createSpmApplication1) | **POST** /spm-reports/api/v3/apps | Create Monitoring App |
 
 
 <a name="createSpmApplication1"></a>
@@ -43,9 +43,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **applicationDetails** | [**CreateAppInfo**](CreateAppInfo.md)| Details of the application to be created |
+| Name                   | Type                                  | Description                              | Notes |
+| ---------------------- | ------------------------------------- | ---------------------------------------- | ----- |
+| **applicationDetails** | [**CreateAppInfo**](CreateAppInfo.md) | Details of the application to be created |
 
 ### Return type
 
@@ -59,4 +59,3 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-

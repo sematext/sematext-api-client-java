@@ -79,6 +79,8 @@ public class Plan {
     
     RUM_1_0("RUM_1_0"),
     
+    RUM_1_1("RUM_1_1"),
+    
     RUM_EA("RUM_EA"),
     
     SYNTHETICS_EA("SYNTHETICS_EA"),

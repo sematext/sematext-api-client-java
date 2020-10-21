@@ -2,12 +2,12 @@
 
 All URIs are relative to *https://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**deleteSavedQueryUsingDELETE1**](SavedQueriesApi.md#deleteSavedQueryUsingDELETE1) | **DELETE** /users-web/api/v3/savedQueries/{updateableQueryId} | Delete saved query
-[**getSavedQueriesForAppUsingGET**](SavedQueriesApi.md#getSavedQueriesForAppUsingGET) | **GET** /users-web/api/v3/apps/{appId}/savedQueries | Get saved queries for an app
-[**saveQueryUsingPOST1**](SavedQueriesApi.md#saveQueryUsingPOST1) | **POST** /users-web/api/v3/savedQueries | Create saved query
-[**saveQueryUsingPUT1**](SavedQueriesApi.md#saveQueryUsingPUT1) | **PUT** /users-web/api/v3/savedQueries/{updateableQueryId} | Update saved query
+| Method                                                                                | HTTP request                                                  | Description                  |
+| ------------------------------------------------------------------------------------- | ------------------------------------------------------------- | ---------------------------- |
+| [**deleteSavedQueryUsingDELETE1**](SavedQueriesApi.md#deleteSavedQueryUsingDELETE1)   | **DELETE** /users-web/api/v3/savedQueries/{updateableQueryId} | Delete saved query           |
+| [**getSavedQueriesForAppUsingGET**](SavedQueriesApi.md#getSavedQueriesForAppUsingGET) | **GET** /users-web/api/v3/apps/{appId}/savedQueries           | Get saved queries for an app |
+| [**saveQueryUsingPOST1**](SavedQueriesApi.md#saveQueryUsingPOST1)                     | **POST** /users-web/api/v3/savedQueries                       | Create saved query           |
+| [**saveQueryUsingPUT1**](SavedQueriesApi.md#saveQueryUsingPUT1)                       | **PUT** /users-web/api/v3/savedQueries/{updateableQueryId}    | Update saved query           |
 
 
 <a name="deleteSavedQueryUsingDELETE1"></a>
@@ -46,9 +46,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **updateableQueryId** | **Long**| updateableQueryId |
+| Name                  | Type     | Description       | Notes |
+| --------------------- | -------- | ----------------- | ----- |
+| **updateableQueryId** | **Long** | updateableQueryId |
 
 ### Return type
 
@@ -99,9 +99,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **appId** | **Long**| appId |
+| Name      | Type     | Description | Notes |
+| --------- | -------- | ----------- | ----- |
+| **appId** | **Long** | appId       |
 
 ### Return type
 
@@ -152,9 +152,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **savedQueryDto** | [**SavedQuery**](SavedQuery.md)| savedQueryDto |
+| Name              | Type                            | Description   | Notes |
+| ----------------- | ------------------------------- | ------------- | ----- |
+| **savedQueryDto** | [**SavedQuery**](SavedQuery.md) | savedQueryDto |
 
 ### Return type
 
@@ -206,10 +206,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **savedQueryDto** | [**SavedQuery**](SavedQuery.md)| savedQueryDto |
- **updateableQueryId** | **Long**| updateableQueryId |
+| Name                  | Type                            | Description       | Notes |
+| --------------------- | ------------------------------- | ----------------- | ----- |
+| **savedQueryDto**     | [**SavedQuery**](SavedQuery.md) | savedQueryDto     |
+| **updateableQueryId** | **Long**                        | updateableQueryId |
 
 ### Return type
 
@@ -223,4 +223,3 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-

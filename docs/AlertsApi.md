@@ -2,13 +2,13 @@
 
 All URIs are relative to *https://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**createAlertUsingPOST**](AlertsApi.md#createAlertUsingPOST) | **POST** /users-web/api/v3/alerts | Create alert rule
-[**deleteAlertRuleUsingDELETE**](AlertsApi.md#deleteAlertRuleUsingDELETE) | **DELETE** /users-web/api/v3/alerts/{updateableAlertId} | Delete alert rule
-[**disableAlertRuleUsingPUT1**](AlertsApi.md#disableAlertRuleUsingPUT1) | **PUT** /users-web/api/v3/alerts/{updateableAlertId}/disable | Disable alert rule
-[**enableAlertRuleUsingPUT**](AlertsApi.md#enableAlertRuleUsingPUT) | **PUT** /users-web/api/v3/alerts/{updateableAlertId}/enable | Enable alert rule
-[**getAlertRulesForAppUsingGET1**](AlertsApi.md#getAlertRulesForAppUsingGET1) | **GET** /users-web/api/v3/apps/{appId}/alerts | Get alert rules for an app
+| Method                                                                        | HTTP request                                                 | Description                |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------ | -------------------------- |
+| [**createAlertUsingPOST**](AlertsApi.md#createAlertUsingPOST)                 | **POST** /users-web/api/v3/alerts                            | Create alert rule          |
+| [**deleteAlertRuleUsingDELETE**](AlertsApi.md#deleteAlertRuleUsingDELETE)     | **DELETE** /users-web/api/v3/alerts/{updateableAlertId}      | Delete alert rule          |
+| [**disableAlertRuleUsingPUT1**](AlertsApi.md#disableAlertRuleUsingPUT1)       | **PUT** /users-web/api/v3/alerts/{updateableAlertId}/disable | Disable alert rule         |
+| [**enableAlertRuleUsingPUT**](AlertsApi.md#enableAlertRuleUsingPUT)           | **PUT** /users-web/api/v3/alerts/{updateableAlertId}/enable  | Enable alert rule          |
+| [**getAlertRulesForAppUsingGET1**](AlertsApi.md#getAlertRulesForAppUsingGET1) | **GET** /users-web/api/v3/apps/{appId}/alerts                | Get alert rules for an app |
 
 
 <a name="createAlertUsingPOST"></a>
@@ -47,9 +47,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **dto** | [**AlertRule**](AlertRule.md)| dto |
+| Name    | Type                          | Description | Notes |
+| ------- | ----------------------------- | ----------- | ----- |
+| **dto** | [**AlertRule**](AlertRule.md) | dto         |
 
 ### Return type
 
@@ -100,9 +100,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **updateableAlertId** | **Long**| updateableAlertId |
+| Name                  | Type     | Description       | Notes |
+| --------------------- | -------- | ----------------- | ----- |
+| **updateableAlertId** | **Long** | updateableAlertId |
 
 ### Return type
 
@@ -153,9 +153,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **updateableAlertId** | **Long**| updateableAlertId |
+| Name                  | Type     | Description       | Notes |
+| --------------------- | -------- | ----------------- | ----- |
+| **updateableAlertId** | **Long** | updateableAlertId |
 
 ### Return type
 
@@ -206,9 +206,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **updateableAlertId** | **Long**| updateableAlertId |
+| Name                  | Type     | Description       | Notes |
+| --------------------- | -------- | ----------------- | ----- |
+| **updateableAlertId** | **Long** | updateableAlertId |
 
 ### Return type
 
@@ -259,9 +259,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **appId** | **Long**| appId |
+| Name      | Type     | Description | Notes |
+| --------- | -------- | ----------- | ----- |
+| **appId** | **Long** | appId       |
 
 ### Return type
 
@@ -275,4 +275,3 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-

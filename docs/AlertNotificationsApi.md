@@ -2,10 +2,10 @@
 
 All URIs are relative to *https://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getAlertNotificationsForAppUsingPOST1**](AlertNotificationsApi.md#getAlertNotificationsForAppUsingPOST1) | **POST** /users-web/api/v3/apps/{appId}/notifications/alerts | Get alert notifications for an app
-[**getAlertNotificationsForUserUsingPOST**](AlertNotificationsApi.md#getAlertNotificationsForUserUsingPOST) | **POST** /users-web/api/v3/notifications/alerts | Get alert notifications for a user
+| Method                                                                                                      | HTTP request                                                 | Description                        |
+| ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ---------------------------------- |
+| [**getAlertNotificationsForAppUsingPOST1**](AlertNotificationsApi.md#getAlertNotificationsForAppUsingPOST1) | **POST** /users-web/api/v3/apps/{appId}/notifications/alerts | Get alert notifications for an app |
+| [**getAlertNotificationsForUserUsingPOST**](AlertNotificationsApi.md#getAlertNotificationsForUserUsingPOST) | **POST** /users-web/api/v3/notifications/alerts              | Get alert notifications for a user |
 
 
 <a name="getAlertNotificationsForAppUsingPOST1"></a>
@@ -47,10 +47,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **appId** | **Long**| appId |
- **timeInterval** | [**AlertNotificationRequest**](AlertNotificationRequest.md)| Time Interval |
+| Name             | Type                                                        | Description   | Notes |
+| ---------------- | ----------------------------------------------------------- | ------------- | ----- |
+| **appId**        | **Long**                                                    | appId         |
+| **timeInterval** | [**AlertNotificationRequest**](AlertNotificationRequest.md) | Time Interval |
 
 ### Return type
 
@@ -103,9 +103,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **timeInterval** | [**AlertNotificationRequest**](AlertNotificationRequest.md)| Time Interval |
+| Name             | Type                                                        | Description   | Notes |
+| ---------------- | ----------------------------------------------------------- | ------------- | ----- |
+| **timeInterval** | [**AlertNotificationRequest**](AlertNotificationRequest.md) | Time Interval |
 
 ### Return type
 
@@ -119,4 +119,3 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-

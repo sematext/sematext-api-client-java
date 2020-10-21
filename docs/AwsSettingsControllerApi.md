@@ -2,9 +2,9 @@
 
 All URIs are relative to *https://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**updateUsingPUT**](AwsSettingsControllerApi.md#updateUsingPUT) | **PUT** /users-web/api/v3/apps/{appId}/aws | Update App&#39;s AWS CloudWatch settings
+| Method                                                           | HTTP request                               | Description                              |
+| ---------------------------------------------------------------- | ------------------------------------------ | ---------------------------------------- |
+| [**updateUsingPUT**](AwsSettingsControllerApi.md#updateUsingPUT) | **PUT** /users-web/api/v3/apps/{appId}/aws | Update App&#39;s AWS CloudWatch settings |
 
 
 <a name="updateUsingPUT"></a>
@@ -46,10 +46,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **appId** | **Long**| appId |
- **dto** | [**CloudWatchSettings**](CloudWatchSettings.md)| dto |
+| Name      | Type                                            | Description | Notes |
+| --------- | ----------------------------------------------- | ----------- | ----- |
+| **appId** | **Long**                                        | appId       |
+| **dto**   | [**CloudWatchSettings**](CloudWatchSettings.md) | dto         |
 
 ### Return type
 
@@ -63,4 +63,3 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json
  - **Accept**: application/json
-

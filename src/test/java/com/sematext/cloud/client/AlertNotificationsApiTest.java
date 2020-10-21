@@ -42,10 +42,10 @@ public class AlertNotificationsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getAlertNotificationsForAppUsingPOST1Test() throws ApiException {
+    public void getAlertNotificationsForAppUsingPOSTTest() throws ApiException {
         Long appId = null;
         AlertNotificationRequest timeInterval = null;
-        GenericApiResponse response = api.getAlertNotificationsForAppUsingPOST1(appId, timeInterval);
+        GenericApiResponse response = api.getAlertNotificationsForAppUsingPOST(appId, timeInterval);
 
         // TODO: test validations
     }

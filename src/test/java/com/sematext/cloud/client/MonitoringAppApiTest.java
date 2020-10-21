@@ -42,9 +42,9 @@ public class MonitoringAppApiTest {
      *          if the Api call fails
      */
     @Test
-    public void createSpmApplication1Test() throws ApiException {
+    public void createSpmApplicationTest() throws ApiException {
         CreateAppInfo applicationDetails = null;
-        GenericApiResponse response = api.createSpmApplication1(applicationDetails);
+        GenericApiResponse response = api.createSpmApplication(applicationDetails);
 
         // TODO: test validations
     }
