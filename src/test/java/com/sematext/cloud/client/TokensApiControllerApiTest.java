@@ -38,6 +38,8 @@ public class TokensApiControllerApiTest {
     public void createAppTokenTest() throws ApiException {
         Long appId = null;
         CreateTokenDto dto = null;
+
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.createAppToken(appId, dto);
 
         // TODO: test validations
@@ -54,6 +56,8 @@ public class TokensApiControllerApiTest {
     public void deleteAppToken1Test() throws ApiException {
         Long appId = null;
         Long tokenId = null;
+
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.deleteAppToken1(appId, tokenId);
 
         // TODO: test validations
@@ -69,6 +73,8 @@ public class TokensApiControllerApiTest {
     @Test
     public void getAppTokens1Test() throws ApiException {
         Long appId = null;
+
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.getAppTokens1(appId);
 
         // TODO: test validations
@@ -85,6 +91,8 @@ public class TokensApiControllerApiTest {
     public void regenerateAppTokenTest() throws ApiException {
         Long appId = null;
         Long tokenId = null;
+
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.regenerateAppToken(appId, tokenId);
 
         // TODO: test validations
@@ -102,6 +110,8 @@ public class TokensApiControllerApiTest {
         Long appId = null;
         Long tokenId = null;
         UpdateTokenDto dto = null;
+
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.updateAppToken1(appId, tokenId, dto);
 
         // TODO: test validations

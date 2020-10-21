@@ -67,7 +67,7 @@ public class SavedQuery {
 
   /**
    * Get alertRule
-   * 
+   *
    * @return alertRule
    **/
   @ApiModelProperty(value = "")
@@ -81,7 +81,7 @@ public class SavedQuery {
 
   /**
    * Get allowModification
-   * 
+   *
    * @return allowModification
    **/
   @ApiModelProperty(example = "false", value = "")
@@ -96,7 +96,7 @@ public class SavedQuery {
 
   /**
    * Get applicationId
-   * 
+   *
    * @return applicationId
    **/
   @ApiModelProperty(value = "")
@@ -110,7 +110,7 @@ public class SavedQuery {
 
   /**
    * Get applicationName
-   * 
+   *
    * @return applicationName
    **/
   @ApiModelProperty(value = "")
@@ -120,7 +120,7 @@ public class SavedQuery {
 
   /**
    * Get applicationToken
-   * 
+   *
    * @return applicationToken
    **/
   @ApiModelProperty(value = "")
@@ -130,7 +130,7 @@ public class SavedQuery {
 
   /**
    * Get creatorEmail
-   * 
+   *
    * @return creatorEmail
    **/
   @ApiModelProperty(value = "")
@@ -140,7 +140,7 @@ public class SavedQuery {
 
   /**
    * Get id
-   * 
+   *
    * @return id
    **/
   @ApiModelProperty(value = "")
@@ -155,7 +155,7 @@ public class SavedQuery {
 
   /**
    * Get labelColor
-   * 
+   *
    * @return labelColor
    **/
   @ApiModelProperty(value = "")
@@ -174,7 +174,7 @@ public class SavedQuery {
 
   /**
    * Get logseneAlertType
-   * 
+   *
    * @return logseneAlertType
    **/
   @ApiModelProperty(value = "")
@@ -188,7 +188,7 @@ public class SavedQuery {
 
   /**
    * Get ownerEmail
-   * 
+   *
    * @return ownerEmail
    **/
   @ApiModelProperty(value = "")
@@ -203,7 +203,7 @@ public class SavedQuery {
 
   /**
    * Get queryName
-   * 
+   *
    * @return queryName
    **/
   @ApiModelProperty(value = "")
@@ -222,7 +222,7 @@ public class SavedQuery {
 
   /**
    * Get queryString
-   * 
+   *
    * @return queryString
    **/
   @ApiModelProperty(value = "")
@@ -241,7 +241,7 @@ public class SavedQuery {
 
   /**
    * Get userPermissions
-   * 
+   *
    * @return userPermissions
    **/
   @ApiModelProperty(value = "")

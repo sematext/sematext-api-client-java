@@ -37,7 +37,7 @@ public class UserPermissions {
 
   /**
    * Get canDelete
-   * 
+   *
    * @return canDelete
    **/
   @ApiModelProperty(value = "")
@@ -56,7 +56,7 @@ public class UserPermissions {
 
   /**
    * Get canEdit
-   * 
+   *
    * @return canEdit
    **/
   @ApiModelProperty(value = "")
@@ -75,7 +75,7 @@ public class UserPermissions {
 
   /**
    * Get canView
-   * 
+   *
    * @return canView
    **/
   @ApiModelProperty(value = "")

@@ -37,6 +37,7 @@ public class AwsSettingsControllerApiTest {
     public void updateUsingPUTTest() throws ApiException {
         Long appId = null;
         CloudWatchSettings dto = null;
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.updateUsingPUT(appId, dto);
 
         // TODO: test validations

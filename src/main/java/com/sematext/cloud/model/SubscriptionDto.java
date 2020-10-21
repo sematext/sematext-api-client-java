@@ -178,7 +178,7 @@ public class SubscriptionDto {
 
   /**
    * Get addresses
-   * 
+   *
    * @return addresses
    **/
   @ApiModelProperty(value = "")
@@ -197,7 +197,7 @@ public class SubscriptionDto {
 
   /**
    * Get enable
-   * 
+   *
    * @return enable
    **/
   @ApiModelProperty(value = "")
@@ -216,7 +216,7 @@ public class SubscriptionDto {
 
   /**
    * Get filters
-   * 
+   *
    * @return filters
    **/
   @ApiModelProperty(value = "")
@@ -235,7 +235,7 @@ public class SubscriptionDto {
 
   /**
    * Get frequency
-   * 
+   *
    * @return frequency
    **/
   @ApiModelProperty(value = "")
@@ -254,7 +254,7 @@ public class SubscriptionDto {
 
   /**
    * Get id
-   * 
+   *
    * @return id
    **/
   @ApiModelProperty(value = "")
@@ -273,7 +273,7 @@ public class SubscriptionDto {
 
   /**
    * Get reportName
-   * 
+   *
    * @return reportName
    **/
   @ApiModelProperty(value = "")
@@ -292,7 +292,7 @@ public class SubscriptionDto {
 
   /**
    * Get sendTime
-   * 
+   *
    * @return sendTime
    **/
   @ApiModelProperty(value = "")
@@ -311,7 +311,7 @@ public class SubscriptionDto {
 
   /**
    * Get subject
-   * 
+   *
    * @return subject
    **/
   @ApiModelProperty(value = "")
@@ -330,7 +330,7 @@ public class SubscriptionDto {
 
   /**
    * Get systemId
-   * 
+   *
    * @return systemId
    **/
   @ApiModelProperty(value = "")
@@ -349,7 +349,7 @@ public class SubscriptionDto {
 
   /**
    * Get text
-   * 
+   *
    * @return text
    **/
   @ApiModelProperty(value = "")
@@ -368,7 +368,7 @@ public class SubscriptionDto {
 
   /**
    * Get timeRange
-   * 
+   *
    * @return timeRange
    **/
   @ApiModelProperty(value = "")
@@ -387,7 +387,7 @@ public class SubscriptionDto {
 
   /**
    * Get userPermissions
-   * 
+   *
    * @return userPermissions
    **/
   @ApiModelProperty(value = "")

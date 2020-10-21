@@ -107,7 +107,7 @@ public class UpdateAppInfo {
 
   /**
    * Get description
-   * 
+   *
    * @return description
    **/
   @ApiModelProperty(example = "New Description of App", value = "")
@@ -126,7 +126,7 @@ public class UpdateAppInfo {
 
   /**
    * Get ignorePercentage
-   * 
+   *
    * @return ignorePercentage
    **/
   @ApiModelProperty(example = "1.0", value = "")
@@ -145,7 +145,7 @@ public class UpdateAppInfo {
 
   /**
    * Get maxEvents
-   * 
+   *
    * @return maxEvents
    **/
   @ApiModelProperty(example = "1000", value = "")
@@ -164,7 +164,7 @@ public class UpdateAppInfo {
 
   /**
    * Get maxLimitMB
-   * 
+   *
    * @return maxLimitMB
    **/
   @ApiModelProperty(example = "10", value = "")
@@ -183,7 +183,7 @@ public class UpdateAppInfo {
 
   /**
    * Get name
-   * 
+   *
    * @return name
    **/
   @ApiModelProperty(example = "New Name", value = "")
@@ -202,7 +202,7 @@ public class UpdateAppInfo {
 
   /**
    * Get sampling
-   * 
+   *
    * @return sampling
    **/
   @ApiModelProperty(example = "false", value = "")
@@ -221,7 +221,7 @@ public class UpdateAppInfo {
 
   /**
    * Get samplingPercentage
-   * 
+   *
    * @return samplingPercentage
    **/
   @ApiModelProperty(example = "10", value = "")
@@ -240,7 +240,7 @@ public class UpdateAppInfo {
 
   /**
    * Get staggering
-   * 
+   *
    * @return staggering
    **/
   @ApiModelProperty(example = "false", value = "")
@@ -259,7 +259,7 @@ public class UpdateAppInfo {
 
   /**
    * Get status
-   * 
+   *
    * @return status
    **/
   @ApiModelProperty(example = "ACTIVE", value = "")

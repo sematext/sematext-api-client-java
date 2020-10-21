@@ -106,6 +106,7 @@ public class TokensApiControllerApi {
                 localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
 
+    @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call createAppTokenValidateBeforeCall(Long appId, CreateTokenDto dto,
             final ProgressResponseBody.ProgressListener progressListener,
             final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
@@ -249,6 +250,7 @@ public class TokensApiControllerApi {
                 localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
 
+    @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call deleteAppToken1ValidateBeforeCall(Long appId, Long tokenId,
             final ProgressResponseBody.ProgressListener progressListener,
             final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
@@ -389,6 +391,7 @@ public class TokensApiControllerApi {
                 localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
 
+    @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call getAppTokens1ValidateBeforeCall(Long appId,
             final ProgressResponseBody.ProgressListener progressListener,
             final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
@@ -523,6 +526,7 @@ public class TokensApiControllerApi {
                 localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
 
+    @SuppressWarnings("rawtypes")
     private com.squareup.okhttp.Call regenerateAppTokenValidateBeforeCall(Long appId, Long tokenId,
             final ProgressResponseBody.ProgressListener progressListener,
             final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
@@ -615,7 +619,7 @@ public class TokensApiControllerApi {
     }
 
     /**
-     * Build call for updateAppToken1
+     * Build call for updateAppToken
      * 
      * @param appId                   appId (required)
      * @param tokenId                 tokenId (required)
@@ -625,7 +629,7 @@ public class TokensApiControllerApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call updateAppToken1Call(Long appId, Long tokenId, UpdateTokenDto dto,
+    public com.squareup.okhttp.Call updateAppTokenCall(Long appId, Long tokenId, UpdateTokenDto dto,
             final ProgressResponseBody.ProgressListener progressListener,
             final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = dto;
@@ -668,26 +672,27 @@ public class TokensApiControllerApi {
                 localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
 
-    private com.squareup.okhttp.Call updateAppToken1ValidateBeforeCall(Long appId, Long tokenId, UpdateTokenDto dto,
+    @SuppressWarnings("rawtypes")
+    private com.squareup.okhttp.Call updateAppTokenValidateBeforeCall(Long appId, Long tokenId, UpdateTokenDto dto,
             final ProgressResponseBody.ProgressListener progressListener,
             final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
 
         // verify the required parameter 'appId' is set
         if (appId == null) {
-            throw new ApiException("Missing the required parameter 'appId' when calling updateAppToken1(Async)");
+            throw new ApiException("Missing the required parameter 'appId' when calling updateAppToken(Async)");
         }
 
         // verify the required parameter 'tokenId' is set
         if (tokenId == null) {
-            throw new ApiException("Missing the required parameter 'tokenId' when calling updateAppToken1(Async)");
+            throw new ApiException("Missing the required parameter 'tokenId' when calling updateAppToken(Async)");
         }
 
         // verify the required parameter 'dto' is set
         if (dto == null) {
-            throw new ApiException("Missing the required parameter 'dto' when calling updateAppToken1(Async)");
+            throw new ApiException("Missing the required parameter 'dto' when calling updateAppToken(Async)");
         }
 
-        com.squareup.okhttp.Call call = updateAppToken1Call(appId, tokenId, dto, progressListener,
+        com.squareup.okhttp.Call call = updateAppTokenCall(appId, tokenId, dto, progressListener,
                 progressRequestListener);
         return call;
 
@@ -703,8 +708,8 @@ public class TokensApiControllerApi {
      * @throws ApiException If fail to call the API, e.g. server error or cannot
      *                      deserialize the response body
      */
-    public GenericApiResponse updateAppToken1(Long appId, Long tokenId, UpdateTokenDto dto) throws ApiException {
-        ApiResponse<GenericApiResponse> resp = updateAppToken1WithHttpInfo(appId, tokenId, dto);
+    public GenericApiResponse updateAppToken(Long appId, Long tokenId, UpdateTokenDto dto) throws ApiException {
+        ApiResponse<GenericApiResponse> resp = updateAppTokenWithHttpInfo(appId, tokenId, dto);
         return resp.getData();
     }
 
@@ -718,9 +723,9 @@ public class TokensApiControllerApi {
      * @throws ApiException If fail to call the API, e.g. server error or cannot
      *                      deserialize the response body
      */
-    public ApiResponse<GenericApiResponse> updateAppToken1WithHttpInfo(Long appId, Long tokenId, UpdateTokenDto dto)
+    public ApiResponse<GenericApiResponse> updateAppTokenWithHttpInfo(Long appId, Long tokenId, UpdateTokenDto dto)
             throws ApiException {
-        com.squareup.okhttp.Call call = updateAppToken1ValidateBeforeCall(appId, tokenId, dto, null, null);
+        com.squareup.okhttp.Call call = updateAppTokenValidateBeforeCall(appId, tokenId, dto, null, null);
         Type localVarReturnType = new TypeToken<GenericApiResponse>() {
         }.getType();
         return apiClient.execute(call, localVarReturnType);
@@ -737,7 +742,7 @@ public class TokensApiControllerApi {
      * @throws ApiException If fail to process the API call, e.g. serializing the
      *                      request body object
      */
-    public com.squareup.okhttp.Call updateAppToken1Async(Long appId, Long tokenId, UpdateTokenDto dto,
+    public com.squareup.okhttp.Call updateAppTokenAsync(Long appId, Long tokenId, UpdateTokenDto dto,
             final ApiCallback<GenericApiResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
@@ -759,7 +764,7 @@ public class TokensApiControllerApi {
             };
         }
 
-        com.squareup.okhttp.Call call = updateAppToken1ValidateBeforeCall(appId, tokenId, dto, progressListener,
+        com.squareup.okhttp.Call call = updateAppTokenValidateBeforeCall(appId, tokenId, dto, progressListener,
                 progressRequestListener);
         Type localVarReturnType = new TypeToken<GenericApiResponse>() {
         }.getType();

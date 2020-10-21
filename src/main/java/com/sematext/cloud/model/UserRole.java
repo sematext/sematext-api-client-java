@@ -144,7 +144,7 @@ public class UserRole {
 
   /**
    * Get role
-   * 
+   *
    * @return role
    **/
   @ApiModelProperty(value = "")
@@ -163,7 +163,7 @@ public class UserRole {
 
   /**
    * Get roleStatus
-   * 
+   *
    * @return roleStatus
    **/
   @ApiModelProperty(value = "")
@@ -182,7 +182,7 @@ public class UserRole {
 
   /**
    * Get userEmail
-   * 
+   *
    * @return userEmail
    **/
   @ApiModelProperty(value = "")

@@ -37,6 +37,7 @@ public class MetricsApiTest {
     public void listDataSeriesUsingPOSTTest() throws ApiException {
         Long appId = null;
         DataSeriesRequest requestBody = null;
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.listDataSeriesUsingPOST(appId, requestBody);
 
         // TODO: test validations
@@ -53,6 +54,7 @@ public class MetricsApiTest {
     public void listFiltersUsingPOST1Test() throws ApiException {
         Long appId = null;
         DataSeriesRequest requestBody = null;
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.listFiltersUsingPOST1(appId, requestBody);
 
         // TODO: test validations
@@ -68,6 +70,7 @@ public class MetricsApiTest {
     @Test
     public void listMetricsKeysUsingGETTest() throws ApiException {
         Long appId = null;
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.listMetricsKeysUsingGET(appId);
 
         // TODO: test validations
@@ -83,6 +86,7 @@ public class MetricsApiTest {
     @Test
     public void listMetricsUsingGETTest() throws ApiException {
         Long appId = null;
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.listMetricsUsingGET(appId);
 
         // TODO: test validations

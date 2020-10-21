@@ -51,6 +51,7 @@ public class JSON {
         return builder;
     }
 
+    @SuppressWarnings("unused")
     private static String getDiscriminatorValue(JsonElement readElement, String discriminatorField) {
         JsonElement element = readElement.getAsJsonObject().get(discriminatorField);
         if (null == element) {
@@ -59,7 +60,9 @@ public class JSON {
         return element.getAsString();
     }
 
+    @SuppressWarnings("unused")
     private static Class getClassByDiscriminator(Map classByDiscriminatorValue, String discriminatorValue) {
+        @SuppressWarnings("rawtypes")
         Class clazz = (Class) classByDiscriminatorValue.get(discriminatorValue.toUpperCase());
         if (null == clazz) {
             throw new IllegalArgumentException("cannot determine model class of name: <" + discriminatorValue + ">");

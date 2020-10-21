@@ -169,7 +169,7 @@ public class CloudWatchSettings {
 
   /**
    * Get accessKey
-   * 
+   *
    * @return accessKey
    **/
   @ApiModelProperty(value = "")
@@ -188,7 +188,7 @@ public class CloudWatchSettings {
 
   /**
    * Get fetchFrequency
-   * 
+   *
    * @return fetchFrequency
    **/
   @ApiModelProperty(value = "")
@@ -207,7 +207,7 @@ public class CloudWatchSettings {
 
   /**
    * Get region
-   * 
+   *
    * @return region
    **/
   @ApiModelProperty(value = "")
@@ -226,7 +226,7 @@ public class CloudWatchSettings {
 
   /**
    * Get secretKey
-   * 
+   *
    * @return secretKey
    **/
   @ApiModelProperty(value = "")

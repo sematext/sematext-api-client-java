@@ -31,7 +31,7 @@ public class UserInfo {
 
   /**
    * Get loginName
-   * 
+   *
    * @return loginName
    **/
   @ApiModelProperty(value = "")

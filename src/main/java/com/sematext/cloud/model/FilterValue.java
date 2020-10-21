@@ -48,7 +48,7 @@ public class FilterValue {
 
   /**
    * Get aggType
-   * 
+   *
    * @return aggType
    **/
   @ApiModelProperty(value = "")
@@ -67,7 +67,7 @@ public class FilterValue {
 
   /**
    * Get filterName
-   * 
+   *
    * @return filterName
    **/
   @ApiModelProperty(value = "")
@@ -86,7 +86,7 @@ public class FilterValue {
 
   /**
    * Get key
-   * 
+   *
    * @return key
    **/
   @ApiModelProperty(value = "")
@@ -105,7 +105,7 @@ public class FilterValue {
 
   /**
    * Get label
-   * 
+   *
    * @return label
    **/
   @ApiModelProperty(value = "")
@@ -124,7 +124,7 @@ public class FilterValue {
 
   /**
    * Get name
-   * 
+   *
    * @return name
    **/
   @ApiModelProperty(value = "")
@@ -151,7 +151,7 @@ public class FilterValue {
 
   /**
    * Get values
-   * 
+   *
    * @return values
    **/
   @ApiModelProperty(value = "")

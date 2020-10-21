@@ -13,7 +13,6 @@
 package com.sematext.cloud.model;
 
 import java.util.Objects;
-
 import com.google.gson.annotations.SerializedName;
 import io.swagger.annotations.ApiModelProperty;
 

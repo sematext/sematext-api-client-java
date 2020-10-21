@@ -111,7 +111,7 @@ public class App {
 
   /**
    * Get ajaxThreshold
-   * 
+   *
    * @return ajaxThreshold
    **/
   @ApiModelProperty(value = "")
@@ -130,7 +130,7 @@ public class App {
 
   /**
    * Get appType
-   * 
+   *
    * @return appType
    **/
   @ApiModelProperty(value = "")
@@ -149,7 +149,7 @@ public class App {
 
   /**
    * Get appTypeId
-   * 
+   *
    * @return appTypeId
    **/
   @ApiModelProperty(value = "")
@@ -168,7 +168,7 @@ public class App {
 
   /**
    * Get creatorEmail
-   * 
+   *
    * @return creatorEmail
    **/
   @ApiModelProperty(value = "")
@@ -187,7 +187,7 @@ public class App {
 
   /**
    * Get creditCardExpiry
-   * 
+   *
    * @return creditCardExpiry
    **/
   @ApiModelProperty(value = "")
@@ -206,7 +206,7 @@ public class App {
 
   /**
    * Get creditCardNumber
-   * 
+   *
    * @return creditCardNumber
    **/
   @ApiModelProperty(value = "")
@@ -225,7 +225,7 @@ public class App {
 
   /**
    * Get description
-   * 
+   *
    * @return description
    **/
   @ApiModelProperty(value = "")
@@ -244,7 +244,7 @@ public class App {
 
   /**
    * Get displayStatus
-   * 
+   *
    * @return displayStatus
    **/
   @ApiModelProperty(value = "")
@@ -263,7 +263,7 @@ public class App {
 
   /**
    * Get firstDataSavedDate
-   * 
+   *
    * @return firstDataSavedDate
    **/
   @ApiModelProperty(value = "")
@@ -282,7 +282,7 @@ public class App {
 
   /**
    * Get id
-   * 
+   *
    * @return id
    **/
   @ApiModelProperty(value = "")
@@ -301,7 +301,7 @@ public class App {
 
   /**
    * Get integration
-   * 
+   *
    * @return integration
    **/
   @ApiModelProperty(value = "")
@@ -320,7 +320,7 @@ public class App {
 
   /**
    * Get lastDataReceivedDate
-   * 
+   *
    * @return lastDataReceivedDate
    **/
   @ApiModelProperty(value = "")
@@ -339,7 +339,7 @@ public class App {
 
   /**
    * Get lastDataSavedDate
-   * 
+   *
    * @return lastDataSavedDate
    **/
   @ApiModelProperty(value = "")
@@ -358,7 +358,7 @@ public class App {
 
   /**
    * Get loggedInUserAppRole
-   * 
+   *
    * @return loggedInUserAppRole
    **/
   @ApiModelProperty(value = "")
@@ -377,7 +377,7 @@ public class App {
 
   /**
    * Get monthlyInvoiceAccount
-   * 
+   *
    * @return monthlyInvoiceAccount
    **/
   @ApiModelProperty(value = "")
@@ -396,7 +396,7 @@ public class App {
 
   /**
    * Get name
-   * 
+   *
    * @return name
    **/
   @ApiModelProperty(value = "")
@@ -415,7 +415,7 @@ public class App {
 
   /**
    * Get ownerEmail
-   * 
+   *
    * @return ownerEmail
    **/
   @ApiModelProperty(value = "")
@@ -434,7 +434,7 @@ public class App {
 
   /**
    * Get owningOrganization
-   * 
+   *
    * @return owningOrganization
    **/
   @ApiModelProperty(value = "")
@@ -453,7 +453,7 @@ public class App {
 
   /**
    * Get pageLoadThreshold
-   * 
+   *
    * @return pageLoadThreshold
    **/
   @ApiModelProperty(value = "")
@@ -472,7 +472,7 @@ public class App {
 
   /**
    * Get paymentMethodId
-   * 
+   *
    * @return paymentMethodId
    **/
   @ApiModelProperty(value = "")
@@ -491,7 +491,7 @@ public class App {
 
   /**
    * Get plan
-   * 
+   *
    * @return plan
    **/
   @ApiModelProperty(value = "")
@@ -510,7 +510,7 @@ public class App {
 
   /**
    * Get prepaidAccount
-   * 
+   *
    * @return prepaidAccount
    **/
   @ApiModelProperty(value = "")
@@ -529,7 +529,7 @@ public class App {
 
   /**
    * Get status
-   * 
+   *
    * @return status
    **/
   @ApiModelProperty(value = "")
@@ -548,7 +548,7 @@ public class App {
 
   /**
    * Get token
-   * 
+   *
    * @return token
    **/
   @ApiModelProperty(value = "")
@@ -567,7 +567,7 @@ public class App {
 
   /**
    * Get trialEndDate
-   * 
+   *
    * @return trialEndDate
    **/
   @ApiModelProperty(value = "")
@@ -586,7 +586,7 @@ public class App {
 
   /**
    * Get urlGroupLimit
-   * 
+   *
    * @return urlGroupLimit
    **/
   @ApiModelProperty(value = "")
@@ -613,7 +613,7 @@ public class App {
 
   /**
    * Get userRoles
-   * 
+   *
    * @return userRoles
    **/
   @ApiModelProperty(value = "")

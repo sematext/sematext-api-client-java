@@ -36,6 +36,8 @@ public class SubscriptionsApiTest {
     @Test
     public void listUsingGET2Test() throws ApiException {
         Long appId = null;
+
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.listUsingGET2(appId);
 
         // TODO: test validations
@@ -52,6 +54,8 @@ public class SubscriptionsApiTest {
     public void sendReportUsingPOST1Test() throws ApiException {
         Long appId = null;
         ReportInfo emailDto = null;
+
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.sendReportUsingPOST1(appId, emailDto);
 
         // TODO: test validations

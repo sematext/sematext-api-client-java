@@ -31,7 +31,7 @@ public class UpdateSubscriptionDto {
 
   /**
    * Get enabled
-   * 
+   *
    * @return enabled
    **/
   @ApiModelProperty(value = "")

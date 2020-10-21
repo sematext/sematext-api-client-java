@@ -38,6 +38,8 @@ public class BillingApiTest {
         String service = null;
         Integer year = null;
         Integer month = null;
+
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.getDetailedInvoiceUsingGET1(service, year, month);
 
         // TODO: test validations
@@ -54,6 +56,7 @@ public class BillingApiTest {
     public void listAvailablePlansUsingGET1Test() throws ApiException {
         Long integrationId = null;
         String appType = null;
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.listAvailablePlansUsingGET1(integrationId, appType);
 
         // TODO: test validations
@@ -70,6 +73,7 @@ public class BillingApiTest {
     public void updatePlanUsingPUT1Test() throws ApiException {
         Long appId = null;
         BillingInfo dto = null;
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.updatePlanUsingPUT1(appId, dto);
 
         // TODO: test validations

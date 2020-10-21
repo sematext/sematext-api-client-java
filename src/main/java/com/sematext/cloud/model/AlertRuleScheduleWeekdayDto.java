@@ -45,7 +45,7 @@ public class AlertRuleScheduleWeekdayDto {
 
   /**
    * Get day
-   * 
+   *
    * @return day
    **/
   @ApiModelProperty(value = "")
@@ -64,7 +64,7 @@ public class AlertRuleScheduleWeekdayDto {
 
   /**
    * Get index
-   * 
+   *
    * @return index
    **/
   @ApiModelProperty(value = "")
@@ -91,7 +91,7 @@ public class AlertRuleScheduleWeekdayDto {
 
   /**
    * Get intervals
-   * 
+   *
    * @return intervals
    **/
   @ApiModelProperty(value = "")
@@ -110,7 +110,7 @@ public class AlertRuleScheduleWeekdayDto {
 
   /**
    * Get label
-   * 
+   *
    * @return label
    **/
   @ApiModelProperty(value = "")
@@ -129,7 +129,7 @@ public class AlertRuleScheduleWeekdayDto {
 
   /**
    * Get type
-   * 
+   *
    * @return type
    **/
   @ApiModelProperty(value = "")

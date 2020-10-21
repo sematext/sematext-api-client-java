@@ -36,6 +36,8 @@ public class AlertsApiTest {
     @Test
     public void createAlertUsingPOSTTest() throws ApiException {
         AlertRule dto = null;
+
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.createAlertUsingPOST(dto);
 
         // TODO: test validations
@@ -51,6 +53,8 @@ public class AlertsApiTest {
     @Test
     public void deleteAlertRuleUsingDELETETest() throws ApiException {
         Long updateableAlertId = null;
+
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.deleteAlertRuleUsingDELETE(updateableAlertId);
 
         // TODO: test validations
@@ -68,6 +72,7 @@ public class AlertsApiTest {
         Long updateableAlertId = null;
         GenericApiResponse response = api.disableAlertRuleUsingPUT1(updateableAlertId);
 
+        @SuppressWarnings("unused")
         // TODO: test validations
     }
 
@@ -81,6 +86,8 @@ public class AlertsApiTest {
     @Test
     public void enableAlertRuleUsingPUTTest() throws ApiException {
         Long updateableAlertId = null;
+
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.enableAlertRuleUsingPUT(updateableAlertId);
 
         // TODO: test validations
@@ -96,6 +103,8 @@ public class AlertsApiTest {
     @Test
     public void getAlertRulesForAppUsingGET1Test() throws ApiException {
         Long appId = null;
+
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.getAlertRulesForAppUsingGET1(appId);
 
         // TODO: test validations

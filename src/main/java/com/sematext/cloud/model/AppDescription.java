@@ -31,7 +31,7 @@ public class AppDescription {
 
   /**
    * Get description
-   * 
+   *
    * @return description
    **/
   @ApiModelProperty(value = "")

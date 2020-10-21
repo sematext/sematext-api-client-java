@@ -223,7 +223,7 @@ public class AppMetadata {
 
   /**
    * Get awsCloudWatchAccessKey
-   * 
+   *
    * @return awsCloudWatchAccessKey
    **/
   @ApiModelProperty(example = "zzzzz", value = "")
@@ -242,7 +242,7 @@ public class AppMetadata {
 
   /**
    * Get awsCloudWatchSecretKey
-   * 
+   *
    * @return awsCloudWatchSecretKey
    **/
   @ApiModelProperty(example = "xxxxx", value = "")
@@ -261,7 +261,7 @@ public class AppMetadata {
 
   /**
    * Get awsFetchFrequency
-   * 
+   *
    * @return awsFetchFrequency
    **/
   @ApiModelProperty(example = "FIVE_MINUTES", value = "")
@@ -280,7 +280,7 @@ public class AppMetadata {
 
   /**
    * Get awsRegion
-   * 
+   *
    * @return awsRegion
    **/
   @ApiModelProperty(example = "US_EAST_1", value = "")
@@ -307,7 +307,7 @@ public class AppMetadata {
 
   /**
    * Comma separated list of AWS types monitored by created app
-   * 
+   *
    * @return subTypes
    **/
   @ApiModelProperty(example = "\"aws_ec2,aws_elb\"", value = "Comma separated list of AWS types monitored by created app")

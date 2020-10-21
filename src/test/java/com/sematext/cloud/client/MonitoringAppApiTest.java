@@ -36,6 +36,8 @@ public class MonitoringAppApiTest {
     @Test
     public void createSpmApplication1Test() throws ApiException {
         CreateAppInfo applicationDetails = null;
+        @SuppressWarnings("unused")
+
         GenericApiResponse response = api.createSpmApplication1(applicationDetails);
 
         // TODO: test validations

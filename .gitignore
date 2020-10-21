@@ -31,6 +31,7 @@ build
 .vscode
 .settings
 .classpath
+bin
 
 
 # exclude jar for gradle wrapper

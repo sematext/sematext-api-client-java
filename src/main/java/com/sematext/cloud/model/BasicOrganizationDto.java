@@ -23,9 +23,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * BasicOrganizationDto
- */
+/* BasicOrganizationDto
+*/
 
 public class BasicOrganizationDto {
   @SerializedName("authMethods")
@@ -110,7 +109,7 @@ public class BasicOrganizationDto {
 
   /**
    * Get authMethods
-   * 
+   *
    * @return authMethods
    **/
   @ApiModelProperty(value = "")
@@ -129,7 +128,7 @@ public class BasicOrganizationDto {
 
   /**
    * Get name
-   * 
+   *
    * @return name
    **/
   @ApiModelProperty(value = "")
@@ -148,7 +147,7 @@ public class BasicOrganizationDto {
 
   /**
    * Get status
-   * 
+   *
    * @return status
    **/
   @ApiModelProperty(value = "")
@@ -167,7 +166,7 @@ public class BasicOrganizationDto {
 
   /**
    * Get uuid
-   * 
+   *
    * @return uuid
    **/
   @ApiModelProperty(value = "")

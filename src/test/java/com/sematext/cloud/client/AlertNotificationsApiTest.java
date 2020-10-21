@@ -37,6 +37,8 @@ public class AlertNotificationsApiTest {
     public void getAlertNotificationsForAppUsingPOST1Test() throws ApiException {
         Long appId = null;
         AlertNotificationRequest timeInterval = null;
+
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.getAlertNotificationsForAppUsingPOST1(appId, timeInterval);
 
         // TODO: test validations
@@ -52,6 +54,8 @@ public class AlertNotificationsApiTest {
     @Test
     public void getAlertNotificationsForUserUsingPOSTTest() throws ApiException {
         AlertNotificationRequest timeInterval = null;
+
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.getAlertNotificationsForUserUsingPOST(timeInterval);
 
         // TODO: test validations

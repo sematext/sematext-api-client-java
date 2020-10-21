@@ -37,6 +37,8 @@ public class AppsApiTest {
      */
     @Test
     public void getAppTypesUsingGETTest() throws ApiException {
+
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.getAppTypesUsingGET();
 
         // TODO: test validations
@@ -52,6 +54,8 @@ public class AppsApiTest {
     @Test
     public void getUsingGETTest() throws ApiException {
         Long anyStateAppId = null;
+
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.getUsingGET(anyStateAppId);
 
         // TODO: test validations
@@ -67,6 +71,8 @@ public class AppsApiTest {
     @Test
     public void inviteAppGuestsUsingPOST1Test() throws ApiException {
         Invitation invitation = null;
+
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.inviteAppGuestsUsingPOST1(invitation);
 
         // TODO: test validations
@@ -81,6 +87,8 @@ public class AppsApiTest {
      */
     @Test
     public void listAppsUsersUsingGETTest() throws ApiException {
+
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.listAppsUsersUsingGET();
 
         // TODO: test validations
@@ -95,6 +103,8 @@ public class AppsApiTest {
      */
     @Test
     public void listUsingGET1Test() throws ApiException {
+
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.listUsingGET1();
 
         // TODO: test validations
@@ -111,6 +121,7 @@ public class AppsApiTest {
     public void updateDescriptionUsingPUT1Test() throws ApiException {
         Long anyStateAppId = null;
         AppDescription updateDetails = null;
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.updateDescriptionUsingPUT1(anyStateAppId, updateDetails);
 
         // TODO: test validations
@@ -127,6 +138,7 @@ public class AppsApiTest {
     public void updateUsingPUT2Test() throws ApiException {
         UpdateAppInfo dto = null;
         Long anyStateAppId = null;
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.updateUsingPUT2(dto, anyStateAppId);
 
         // TODO: test validations

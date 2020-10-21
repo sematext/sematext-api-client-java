@@ -64,7 +64,7 @@ public class ServiceIntegration {
 
   /**
    * Get appTypeId
-   * 
+   *
    * @return appTypeId
    **/
   @ApiModelProperty(value = "")
@@ -83,7 +83,7 @@ public class ServiceIntegration {
 
   /**
    * Get appTypeName
-   * 
+   *
    * @return appTypeName
    **/
   @ApiModelProperty(value = "")
@@ -102,7 +102,7 @@ public class ServiceIntegration {
 
   /**
    * Get displayName
-   * 
+   *
    * @return displayName
    **/
   @ApiModelProperty(value = "")
@@ -121,7 +121,7 @@ public class ServiceIntegration {
 
   /**
    * Get enabled
-   * 
+   *
    * @return enabled
    **/
   @ApiModelProperty(value = "")
@@ -140,7 +140,7 @@ public class ServiceIntegration {
 
   /**
    * Get externalProductId
-   * 
+   *
    * @return externalProductId
    **/
   @ApiModelProperty(value = "")
@@ -159,7 +159,7 @@ public class ServiceIntegration {
 
   /**
    * Get externalProductName
-   * 
+   *
    * @return externalProductName
    **/
   @ApiModelProperty(value = "")
@@ -178,7 +178,7 @@ public class ServiceIntegration {
 
   /**
    * Get id
-   * 
+   *
    * @return id
    **/
   @ApiModelProperty(value = "")
@@ -197,7 +197,7 @@ public class ServiceIntegration {
 
   /**
    * Get integrationType
-   * 
+   *
    * @return integrationType
    **/
   @ApiModelProperty(value = "")
@@ -216,7 +216,7 @@ public class ServiceIntegration {
 
   /**
    * Get ordinal
-   * 
+   *
    * @return ordinal
    **/
   @ApiModelProperty(value = "")
@@ -235,7 +235,7 @@ public class ServiceIntegration {
 
   /**
    * Get parentIntegrationId
-   * 
+   *
    * @return parentIntegrationId
    **/
   @ApiModelProperty(value = "")
@@ -254,7 +254,7 @@ public class ServiceIntegration {
 
   /**
    * Get sematextService
-   * 
+   *
    * @return sematextService
    **/
   @ApiModelProperty(value = "")
@@ -273,7 +273,7 @@ public class ServiceIntegration {
 
   /**
    * Get visible
-   * 
+   *
    * @return visible
    **/
   @ApiModelProperty(value = "")

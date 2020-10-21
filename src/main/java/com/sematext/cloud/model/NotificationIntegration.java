@@ -219,7 +219,7 @@ public class NotificationIntegration {
 
   /**
    * Get applicability
-   * 
+   *
    * @return applicability
    **/
   @ApiModelProperty(value = "")
@@ -238,7 +238,7 @@ public class NotificationIntegration {
 
   /**
    * Get createDate
-   * 
+   *
    * @return createDate
    **/
   @ApiModelProperty(value = "")
@@ -257,7 +257,7 @@ public class NotificationIntegration {
 
   /**
    * Get createdByOwner
-   * 
+   *
    * @return createdByOwner
    **/
   @ApiModelProperty(value = "")
@@ -276,7 +276,7 @@ public class NotificationIntegration {
 
   /**
    * Get creatorId
-   * 
+   *
    * @return creatorId
    **/
   @ApiModelProperty(value = "")
@@ -295,7 +295,7 @@ public class NotificationIntegration {
 
   /**
    * Get id
-   * 
+   *
    * @return id
    **/
   @ApiModelProperty(value = "")
@@ -314,7 +314,7 @@ public class NotificationIntegration {
 
   /**
    * Get integrationType
-   * 
+   *
    * @return integrationType
    **/
   @ApiModelProperty(value = "")
@@ -333,7 +333,7 @@ public class NotificationIntegration {
 
   /**
    * Get name
-   * 
+   *
    * @return name
    **/
   @ApiModelProperty(value = "")
@@ -360,7 +360,7 @@ public class NotificationIntegration {
 
   /**
    * Get params
-   * 
+   *
    * @return params
    **/
   @ApiModelProperty(value = "")
@@ -379,7 +379,7 @@ public class NotificationIntegration {
 
   /**
    * Get state
-   * 
+   *
    * @return state
    **/
   @ApiModelProperty(value = "")
@@ -398,7 +398,7 @@ public class NotificationIntegration {
 
   /**
    * Get userId
-   * 
+   *
    * @return userId
    **/
   @ApiModelProperty(value = "")

@@ -36,6 +36,7 @@ public class SavedQueriesApiTest {
     @Test
     public void deleteSavedQueryUsingDELETE1Test() throws ApiException {
         Long updateableQueryId = null;
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.deleteSavedQueryUsingDELETE1(updateableQueryId);
 
         // TODO: test validations
@@ -51,6 +52,8 @@ public class SavedQueriesApiTest {
     @Test
     public void getSavedQueriesForAppUsingGETTest() throws ApiException {
         Long appId = null;
+
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.getSavedQueriesForAppUsingGET(appId);
 
         // TODO: test validations
@@ -66,6 +69,8 @@ public class SavedQueriesApiTest {
     @Test
     public void saveQueryUsingPOST1Test() throws ApiException {
         SavedQuery savedQueryDto = null;
+
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.saveQueryUsingPOST1(savedQueryDto);
 
         // TODO: test validations
@@ -82,6 +87,8 @@ public class SavedQueriesApiTest {
     public void saveQueryUsingPUT1Test() throws ApiException {
         SavedQuery savedQueryDto = null;
         Long updateableQueryId = null;
+
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.saveQueryUsingPUT1(savedQueryDto, updateableQueryId);
 
         // TODO: test validations

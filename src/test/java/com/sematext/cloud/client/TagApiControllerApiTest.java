@@ -43,6 +43,8 @@ public class TagApiControllerApiTest {
         Boolean logs = null;
         Boolean events = null;
         Boolean rum = null;
+
+        @SuppressWarnings("unused")
         Object response = api.getTagNamesUsingGET(appIds, from, to, metrics, logs, events, rum);
 
         // TODO: test validations
@@ -66,6 +68,8 @@ public class TagApiControllerApiTest {
         Boolean logs = null;
         Boolean events = null;
         Boolean rum = null;
+
+        @SuppressWarnings("unused")
         Object response = api.getUsingGET1(appIds, tag, from, to, metrics, logs, events, rum);
 
         // TODO: test validations
@@ -89,6 +93,8 @@ public class TagApiControllerApiTest {
         Boolean logs = null;
         Boolean events = null;
         Boolean rum = null;
+
+        @SuppressWarnings("unused")
         Object response = api.getUsingGET2(appIds, tag, from, to, metrics, logs, events, rum);
 
         // TODO: test validations

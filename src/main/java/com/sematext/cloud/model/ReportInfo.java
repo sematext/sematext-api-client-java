@@ -53,7 +53,7 @@ public class ReportInfo {
 
   /**
    * Comma separated list of email addresses
-   * 
+   *
    * @return addresses
    **/
   @ApiModelProperty(value = "Comma separated list of email addresses")
@@ -72,7 +72,7 @@ public class ReportInfo {
 
   /**
    * Get appId
-   * 
+   *
    * @return appId
    **/
   @ApiModelProperty(value = "")
@@ -91,7 +91,7 @@ public class ReportInfo {
 
   /**
    * Get endDate
-   * 
+   *
    * @return endDate
    **/
   @ApiModelProperty(value = "")
@@ -110,7 +110,7 @@ public class ReportInfo {
 
   /**
    * Get filters
-   * 
+   *
    * @return filters
    **/
   @ApiModelProperty(value = "")
@@ -129,7 +129,7 @@ public class ReportInfo {
 
   /**
    * Get reportName
-   * 
+   *
    * @return reportName
    **/
   @ApiModelProperty(value = "")
@@ -148,7 +148,7 @@ public class ReportInfo {
 
   /**
    * Get startDate
-   * 
+   *
    * @return startDate
    **/
   @ApiModelProperty(value = "")
@@ -167,7 +167,7 @@ public class ReportInfo {
 
   /**
    * Get subject
-   * 
+   *
    * @return subject
    **/
   @ApiModelProperty(value = "")
@@ -186,7 +186,7 @@ public class ReportInfo {
 
   /**
    * Get text
-   * 
+   *
    * @return text
    **/
   @ApiModelProperty(value = "")

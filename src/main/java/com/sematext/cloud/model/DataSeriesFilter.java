@@ -97,7 +97,7 @@ public class DataSeriesFilter {
 
   /**
    * Get aggregation
-   * 
+   *
    * @return aggregation
    **/
   @ApiModelProperty(value = "")
@@ -116,7 +116,7 @@ public class DataSeriesFilter {
 
   /**
    * Get multiValue
-   * 
+   *
    * @return multiValue
    **/
   @ApiModelProperty(value = "")
@@ -143,7 +143,7 @@ public class DataSeriesFilter {
 
   /**
    * Get values
-   * 
+   *
    * @return values
    **/
   @ApiModelProperty(value = "")

@@ -86,7 +86,7 @@ public class BasicAuthMethodDto {
 
   /**
    * Get authType
-   * 
+   *
    * @return authType
    **/
   @ApiModelProperty(value = "")
@@ -105,7 +105,7 @@ public class BasicAuthMethodDto {
 
   /**
    * Get uuid
-   * 
+   *
    * @return uuid
    **/
   @ApiModelProperty(value = "")

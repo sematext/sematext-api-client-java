@@ -187,7 +187,7 @@ public class Plan {
 
   /**
    * Get appType
-   * 
+   *
    * @return appType
    **/
   @ApiModelProperty(value = "")
@@ -206,7 +206,7 @@ public class Plan {
 
   /**
    * Get custom
-   * 
+   *
    * @return custom
    **/
   @ApiModelProperty(value = "")
@@ -225,7 +225,7 @@ public class Plan {
 
   /**
    * Get dataRetentionHours
-   * 
+   *
    * @return dataRetentionHours
    **/
   @ApiModelProperty(value = "")
@@ -244,7 +244,7 @@ public class Plan {
 
   /**
    * Get defaultTrialPlan
-   * 
+   *
    * @return defaultTrialPlan
    **/
   @ApiModelProperty(value = "")
@@ -263,7 +263,7 @@ public class Plan {
 
   /**
    * Get free
-   * 
+   *
    * @return free
    **/
   @ApiModelProperty(value = "")
@@ -282,7 +282,7 @@ public class Plan {
 
   /**
    * Get freeTrialDays
-   * 
+   *
    * @return freeTrialDays
    **/
   @ApiModelProperty(value = "")
@@ -301,7 +301,7 @@ public class Plan {
 
   /**
    * Get id
-   * 
+   *
    * @return id
    **/
   @ApiModelProperty(value = "")
@@ -320,7 +320,7 @@ public class Plan {
 
   /**
    * Get maxAlerts
-   * 
+   *
    * @return maxAlerts
    **/
   @ApiModelProperty(value = "")
@@ -339,7 +339,7 @@ public class Plan {
 
   /**
    * Get maxDailyEvents
-   * 
+   *
    * @return maxDailyEvents
    **/
   @ApiModelProperty(value = "")
@@ -358,7 +358,7 @@ public class Plan {
 
   /**
    * Get name
-   * 
+   *
    * @return name
    **/
   @ApiModelProperty(value = "")
@@ -377,7 +377,7 @@ public class Plan {
 
   /**
    * Get planScheme
-   * 
+   *
    * @return planScheme
    **/
   @ApiModelProperty(value = "")
@@ -396,7 +396,7 @@ public class Plan {
 
   /**
    * Get sematextService
-   * 
+   *
    * @return sematextService
    **/
   @ApiModelProperty(value = "")
@@ -415,7 +415,7 @@ public class Plan {
 
   /**
    * Get trialPlan
-   * 
+   *
    * @return trialPlan
    **/
   @ApiModelProperty(value = "")

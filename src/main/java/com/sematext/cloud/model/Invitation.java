@@ -219,7 +219,7 @@ public class Invitation {
 
   /**
    * For invite request, only app.id needs to be set.
-   * 
+   *
    * @return app
    **/
   @ApiModelProperty(value = "For invite request, only app.id needs to be set.")
@@ -246,7 +246,7 @@ public class Invitation {
 
   /**
    * For invite request, only apps.id needs to be set.
-   * 
+   *
    * @return apps
    **/
   @ApiModelProperty(value = "For invite request, only apps.id needs to be set.")
@@ -260,7 +260,7 @@ public class Invitation {
 
   /**
    * Get id
-   * 
+   *
    * @return id
    **/
   @ApiModelProperty(value = "")
@@ -270,7 +270,7 @@ public class Invitation {
 
   /**
    * Get inviteDate
-   * 
+   *
    * @return inviteDate
    **/
   @ApiModelProperty(value = "")
@@ -280,7 +280,7 @@ public class Invitation {
 
   /**
    * Get inviteStatus
-   * 
+   *
    * @return inviteStatus
    **/
   @ApiModelProperty(value = "")
@@ -295,7 +295,7 @@ public class Invitation {
 
   /**
    * Get inviteeEmail
-   * 
+   *
    * @return inviteeEmail
    **/
   @ApiModelProperty(example = "guest@sematext.com", value = "")
@@ -314,7 +314,7 @@ public class Invitation {
 
   /**
    * Get inviteeRole
-   * 
+   *
    * @return inviteeRole
    **/
   @ApiModelProperty(example = "DEMO", value = "")
@@ -328,7 +328,7 @@ public class Invitation {
 
   /**
    * Get inviteeStatus
-   * 
+   *
    * @return inviteeStatus
    **/
   @ApiModelProperty(example = "ACTIVE", value = "")
@@ -338,7 +338,7 @@ public class Invitation {
 
   /**
    * Get inviterEmail
-   * 
+   *
    * @return inviterEmail
    **/
   @ApiModelProperty(value = "")
@@ -348,7 +348,7 @@ public class Invitation {
 
   /**
    * Get uuid
-   * 
+   *
    * @return uuid
    **/
   @ApiModelProperty(value = "")

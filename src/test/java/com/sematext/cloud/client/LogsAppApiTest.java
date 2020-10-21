@@ -36,6 +36,8 @@ public class LogsAppApiTest {
     @Test
     public void createLogseneApplicationTest() throws ApiException {
         CreateAppInfo applicationDetails = null;
+
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.createLogseneApplication(applicationDetails);
 
         // TODO: test validations

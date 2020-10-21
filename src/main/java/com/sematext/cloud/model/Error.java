@@ -34,7 +34,7 @@ public class Error {
 
   /**
    * Get code
-   * 
+   *
    * @return code
    **/
   @ApiModelProperty(value = "")
@@ -53,7 +53,7 @@ public class Error {
 
   /**
    * Get message
-   * 
+   *
    * @return message
    **/
   @ApiModelProperty(value = "")

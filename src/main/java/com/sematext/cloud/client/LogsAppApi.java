@@ -55,7 +55,7 @@ public class LogsAppApi {
 
     /**
      * Build call for createLogseneApplication
-     * 
+     *
      * @param applicationDetails      Details of the application to be created
      *                                (required)
      * @param progressListener        Progress listener

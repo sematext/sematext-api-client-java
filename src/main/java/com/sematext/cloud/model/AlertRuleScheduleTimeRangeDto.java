@@ -34,7 +34,7 @@ public class AlertRuleScheduleTimeRangeDto {
 
   /**
    * Get end
-   * 
+   *
    * @return end
    **/
   @ApiModelProperty(value = "")
@@ -53,7 +53,7 @@ public class AlertRuleScheduleTimeRangeDto {
 
   /**
    * Get start
-   * 
+   *
    * @return start
    **/
   @ApiModelProperty(value = "")

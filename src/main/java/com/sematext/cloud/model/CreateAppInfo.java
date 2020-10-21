@@ -43,7 +43,7 @@ public class CreateAppInfo {
 
   /**
    * Get appType
-   * 
+   *
    * @return appType
    **/
   @ApiModelProperty(example = "aws", value = "")
@@ -62,7 +62,7 @@ public class CreateAppInfo {
 
   /**
    * Get discountCode
-   * 
+   *
    * @return discountCode
    **/
   @ApiModelProperty(value = "")
@@ -81,7 +81,7 @@ public class CreateAppInfo {
 
   /**
    * Get initialPlanId
-   * 
+   *
    * @return initialPlanId
    **/
   @ApiModelProperty(example = "1", value = "")
@@ -100,7 +100,7 @@ public class CreateAppInfo {
 
   /**
    * AWS app meta data. Applicable only for &#x60;aws&#x60; appType
-   * 
+   *
    * @return metaData
    **/
   @ApiModelProperty(value = "AWS app meta data. Applicable only for `aws` appType")
@@ -119,7 +119,7 @@ public class CreateAppInfo {
 
   /**
    * Get name
-   * 
+   *
    * @return name
    **/
   @ApiModelProperty(example = "new-aws-app-1", value = "")

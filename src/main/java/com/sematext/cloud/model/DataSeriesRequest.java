@@ -115,7 +115,7 @@ public class DataSeriesRequest {
 
   /**
    * Get defaultInterval
-   * 
+   *
    * @return defaultInterval
    **/
   @ApiModelProperty(value = "")
@@ -135,7 +135,7 @@ public class DataSeriesRequest {
   /**
    * End time of interval. Can be expressed as timestamp in milliseconds or UTC
    * date in yyyy-MM-dd HH:mm:ss format
-   * 
+   *
    * @return end
    **/
   @ApiModelProperty(value = "End time of interval. Can be expressed as timestamp in milliseconds or UTC date in yyyy-MM-dd HH:mm:ss format")
@@ -164,7 +164,7 @@ public class DataSeriesRequest {
    * Map of allowed filter values and aggregation strategy. List of available
    * filter values can be fetched using metric filters endpoint and default
    * aggregation strategy depends on metric
-   * 
+   *
    * @return filters
    **/
   @ApiModelProperty(value = "Map of allowed filter values and aggregation strategy. List of available filter values can be fetched using metric filters endpoint and default aggregation strategy depends on metric")
@@ -185,7 +185,7 @@ public class DataSeriesRequest {
    * Data points interval granularity between two data points.Default value is
    * \&quot;AUTO\&quot; - calculated based on selected time span. Not required
    * while getting filters.
-   * 
+   *
    * @return granularity
    **/
   @ApiModelProperty(value = "Data points interval granularity between two data points.Default value is \"AUTO\" - calculated based on selected time span. Not required while getting filters.")
@@ -204,7 +204,7 @@ public class DataSeriesRequest {
 
   /**
    * Get interval
-   * 
+   *
    * @return interval
    **/
   @ApiModelProperty(value = "")
@@ -223,7 +223,7 @@ public class DataSeriesRequest {
 
   /**
    * Metric name or metric group prefix
-   * 
+   *
    * @return metric
    **/
   @ApiModelProperty(required = true, value = "Metric name or metric group prefix")
@@ -243,7 +243,7 @@ public class DataSeriesRequest {
   /**
    * Start time of interval. Can be expressed as timestamp in milliseconds or UTC
    * date in yyyy-MM-dd HH:mm:ss format
-   * 
+   *
    * @return start
    **/
   @ApiModelProperty(value = "Start time of interval. Can be expressed as timestamp in milliseconds or UTC date in yyyy-MM-dd HH:mm:ss format")

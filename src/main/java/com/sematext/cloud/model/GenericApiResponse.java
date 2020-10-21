@@ -45,7 +45,7 @@ public class GenericApiResponse {
   /**
    * Contains actual data when response is successful. Key and Value is specific
    * to each endpoint
-   * 
+   *
    * @return data
    **/
   @ApiModelProperty(value = "Contains actual data when response is successful. Key and Value is specific to each endpoint")
@@ -72,7 +72,7 @@ public class GenericApiResponse {
 
   /**
    * Get errors
-   * 
+   *
    * @return errors
    **/
   @ApiModelProperty(value = "")
@@ -91,7 +91,7 @@ public class GenericApiResponse {
 
   /**
    * Get message
-   * 
+   *
    * @return message
    **/
   @ApiModelProperty(value = "")
@@ -110,7 +110,7 @@ public class GenericApiResponse {
 
   /**
    * Get success
-   * 
+   *
    * @return success
    **/
   @ApiModelProperty(value = "")

@@ -36,6 +36,7 @@ public class ResetPasswordApiTest {
     @Test
     public void resetPasswordUsingPOST1Test() throws ApiException {
         UserInfo dto = null;
+        @SuppressWarnings("unused")
         GenericApiResponse response = api.resetPasswordUsingPOST1(dto);
 
         // TODO: test validations
