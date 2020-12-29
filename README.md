@@ -33,7 +33,7 @@ Refer to below link for deeper information on the API itself.
 
 ## Contents
 
-- [<img src="https://sematext.com/wp-content/uploads/2020/09/just-octi-blue.png" valign="bottom" width="60px"/>**&nbsp;&nbsp;sematext-api-client-java**](#img-srchttpssematextcomwp-contentuploads202009just-octi-bluepng-valignbottom-width60pxsematext-api-client-java)
+- [<img src="https://sematext.com/wp-content/uploads/2020/09/just-octi-blue.png" valign="bottom" width="60px"/>**&nbsp;&nbsp;sematext-api-client-java**](#sematext-api-client-java)
   - [Contents](#contents)
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
