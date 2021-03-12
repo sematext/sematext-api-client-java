@@ -1,4 +1,3 @@
-
 # UpdateTokenDto
 
 ## Properties

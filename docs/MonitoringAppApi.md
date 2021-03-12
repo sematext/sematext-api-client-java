@@ -1,15 +1,14 @@
 # MonitoringAppApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to */*
 
 | Method                                                                 | HTTP request                      | Description           |
 | ---------------------------------------------------------------------- | --------------------------------- | --------------------- |
 | [**createSpmApplication1**](MonitoringAppApi.md#createSpmApplication1) | **POST** /spm-reports/api/v3/apps | Create Monitoring App |
 
-
 <a name="createSpmApplication1"></a>
 # **createSpmApplication1**
-> GenericApiResponse createSpmApplication1(applicationDetails)
+> AppsResponse createSpmApplication1(body)
 
 Create Monitoring App
 
@@ -31,9 +30,9 @@ api_key.setApiKey("YOUR API KEY");
 //api_key.setApiKeyPrefix("Token");
 
 MonitoringAppApi apiInstance = new MonitoringAppApi();
-CreateAppInfo applicationDetails = new CreateAppInfo(); // CreateAppInfo | Details of the application to be created
+CreateAppInfo body = new CreateAppInfo(); // CreateAppInfo | Details of the application to be created
 try {
-    GenericApiResponse result = apiInstance.createSpmApplication1(applicationDetails);
+    AppsResponse result = apiInstance.createSpmApplication1(body);
     System.out.println(result);
 } catch (ApiException e) {
     System.err.println("Exception when calling MonitoringAppApi#createSpmApplication1");
@@ -43,13 +42,13 @@ try {
 
 ### Parameters
 
-| Name                   | Type                                  | Description                              | Notes |
-| ---------------------- | ------------------------------------- | ---------------------------------------- | ----- |
-| **applicationDetails** | [**CreateAppInfo**](CreateAppInfo.md) | Details of the application to be created |
+| Name     | Type                                  | Description                              | Notes |
+| -------- | ------------------------------------- | ---------------------------------------- | ----- |
+| **body** | [**CreateAppInfo**](CreateAppInfo.md) | Details of the application to be created |
 
 ### Return type
 
-[**GenericApiResponse**](GenericApiResponse.md)
+[**AppsResponse**](AppsResponse.md)
 
 ### Authorization
 

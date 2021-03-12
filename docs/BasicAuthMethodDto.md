@@ -1,4 +1,3 @@
-
 # BasicAuthMethodDto
 
 ## Properties
@@ -6,7 +5,6 @@
 | ------------ | --------------------------------- | ----------- | ---------- |
 | **authType** | [**AuthTypeEnum**](#AuthTypeEnum) |             | [optional] |
 | **uuid**     | **String**                        |             | [optional] |
-
 
 <a name="AuthTypeEnum"></a>
 ## Enum: AuthTypeEnum

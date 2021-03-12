@@ -1,4 +1,3 @@
-
 # Plan
 
 ## Properties
@@ -18,14 +17,12 @@
 | **sematextService**    | [**SematextServiceEnum**](#SematextServiceEnum) |             | [optional] |
 | **trialPlan**          | **Boolean**                                     |             | [optional] |
 
-
 <a name="PlanSchemeEnum"></a>
 ## Enum: PlanSchemeEnum
 | Name           | Value                      |
 | -------------- | -------------------------- |
 | SPM_1_0        | &quot;SPM_1_0&quot;        |
 | SPM_2_0        | &quot;SPM_2_0&quot;        |
-| SA_1_0         | &quot;SA_1_0&quot;         |
 | SEARCHENE_1_0  | &quot;SEARCHENE_1_0&quot;  |
 | LOGSENE_1_0    | &quot;LOGSENE_1_0&quot;    |
 | LOGSENE_2_0    | &quot;LOGSENE_2_0&quot;    |
@@ -34,7 +31,6 @@
 | RUM_EA         | &quot;RUM_EA&quot;         |
 | SYNTHETICS_EA  | &quot;SYNTHETICS_EA&quot;  |
 | SYNTHETICS_1_0 | &quot;SYNTHETICS_1_0&quot; |
-
 
 <a name="SematextServiceEnum"></a>
 ## Enum: SematextServiceEnum

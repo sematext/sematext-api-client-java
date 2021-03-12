@@ -1,4 +1,3 @@
-
 # AlertRuleScheduleWeekdayDto
 
 ## Properties

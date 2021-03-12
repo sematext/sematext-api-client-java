@@ -1,17 +1,16 @@
 # AwsSettingsControllerApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to */*
 
-| Method                                                           | HTTP request                               | Description                              |
-| ---------------------------------------------------------------- | ------------------------------------------ | ---------------------------------------- |
-| [**updateUsingPUT**](AwsSettingsControllerApi.md#updateUsingPUT) | **PUT** /users-web/api/v3/apps/{appId}/aws | Update App&#39;s AWS CloudWatch settings |
+| Method                                                             | HTTP request                               | Description                               |
+| ------------------------------------------------------------------ | ------------------------------------------ | ----------------------------------------- |
+| [**updateUsingPUT1**](AwsSettingsControllerApi.md#updateUsingPUT1) | **PUT** /users-web/api/v3/apps/{appId}/aws | Update App&#x27;s AWS CloudWatch settings |
 
+<a name="updateUsingPUT1"></a>
+# **updateUsingPUT1**
+> CloudWatchSettingsResponse updateUsingPUT1(body, appId)
 
-<a name="updateUsingPUT"></a>
-# **updateUsingPUT**
-> GenericApiResponse updateUsingPUT(appId, dto)
-
-Update App&#39;s AWS CloudWatch settings
+Update App&#x27;s AWS CloudWatch settings
 
 Applicable only for AWS Apps
 
@@ -33,13 +32,13 @@ api_key.setApiKey("YOUR API KEY");
 //api_key.setApiKeyPrefix("Token");
 
 AwsSettingsControllerApi apiInstance = new AwsSettingsControllerApi();
+CloudWatchSettings body = new CloudWatchSettings(); // CloudWatchSettings | dto
 Long appId = 789L; // Long | appId
-CloudWatchSettings dto = new CloudWatchSettings(); // CloudWatchSettings | dto
 try {
-    GenericApiResponse result = apiInstance.updateUsingPUT(appId, dto);
+    CloudWatchSettingsResponse result = apiInstance.updateUsingPUT1(body, appId);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling AwsSettingsControllerApi#updateUsingPUT");
+    System.err.println("Exception when calling AwsSettingsControllerApi#updateUsingPUT1");
     e.printStackTrace();
 }
 ```
@@ -48,12 +47,12 @@ try {
 
 | Name      | Type                                            | Description | Notes |
 | --------- | ----------------------------------------------- | ----------- | ----- |
+| **body**  | [**CloudWatchSettings**](CloudWatchSettings.md) | dto         |
 | **appId** | **Long**                                        | appId       |
-| **dto**   | [**CloudWatchSettings**](CloudWatchSettings.md) | dto         |
 
 ### Return type
 
-[**GenericApiResponse**](GenericApiResponse.md)
+[**CloudWatchSettingsResponse**](CloudWatchSettingsResponse.md)
 
 ### Authorization
 

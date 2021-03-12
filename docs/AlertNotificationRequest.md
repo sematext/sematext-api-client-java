@@ -1,4 +1,3 @@
-
 # AlertNotificationRequest
 
 ## Properties

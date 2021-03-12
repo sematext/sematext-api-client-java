@@ -1,16 +1,15 @@
 # AlertNotificationsApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to */*
 
 | Method                                                                                                      | HTTP request                                                 | Description                        |
 | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ---------------------------------- |
-| [**getAlertNotificationsForAppUsingPOST1**](AlertNotificationsApi.md#getAlertNotificationsForAppUsingPOST1) | **POST** /users-web/api/v3/apps/{appId}/notifications/alerts | Get alert notifications for an app |
+| [**getAlertNotificationsForAppUsingPOST**](AlertNotificationsApi.md#getAlertNotificationsForAppUsingPOST)   | **POST** /users-web/api/v3/apps/{appId}/notifications/alerts | Get alert notifications for an app |
 | [**getAlertNotificationsForUserUsingPOST**](AlertNotificationsApi.md#getAlertNotificationsForUserUsingPOST) | **POST** /users-web/api/v3/notifications/alerts              | Get alert notifications for a user |
 
-
-<a name="getAlertNotificationsForAppUsingPOST1"></a>
-# **getAlertNotificationsForAppUsingPOST1**
-> GenericApiResponse getAlertNotificationsForAppUsingPOST1(appId, timeInterval)
+<a name="getAlertNotificationsForAppUsingPOST"></a>
+# **getAlertNotificationsForAppUsingPOST**
+> NotificationsResponse getAlertNotificationsForAppUsingPOST(body, appId)
 
 Get alert notifications for an app
 
@@ -34,27 +33,27 @@ api_key.setApiKey("YOUR API KEY");
 //api_key.setApiKeyPrefix("Token");
 
 AlertNotificationsApi apiInstance = new AlertNotificationsApi();
+AlertNotificationRequest body = new AlertNotificationRequest(); // AlertNotificationRequest | Time Interval
 Long appId = 789L; // Long | appId
-AlertNotificationRequest timeInterval = new AlertNotificationRequest(); // AlertNotificationRequest | Time Interval
 try {
-    GenericApiResponse result = apiInstance.getAlertNotificationsForAppUsingPOST1(appId, timeInterval);
+    NotificationsResponse result = apiInstance.getAlertNotificationsForAppUsingPOST(body, appId);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling AlertNotificationsApi#getAlertNotificationsForAppUsingPOST1");
+    System.err.println("Exception when calling AlertNotificationsApi#getAlertNotificationsForAppUsingPOST");
     e.printStackTrace();
 }
 ```
 
 ### Parameters
 
-| Name             | Type                                                        | Description   | Notes |
-| ---------------- | ----------------------------------------------------------- | ------------- | ----- |
-| **appId**        | **Long**                                                    | appId         |
-| **timeInterval** | [**AlertNotificationRequest**](AlertNotificationRequest.md) | Time Interval |
+| Name      | Type                                                        | Description   | Notes |
+| --------- | ----------------------------------------------------------- | ------------- | ----- |
+| **body**  | [**AlertNotificationRequest**](AlertNotificationRequest.md) | Time Interval |
+| **appId** | **Long**                                                    | appId         |
 
 ### Return type
 
-[**GenericApiResponse**](GenericApiResponse.md)
+[**NotificationsResponse**](NotificationsResponse.md)
 
 ### Authorization
 
@@ -67,7 +66,7 @@ try {
 
 <a name="getAlertNotificationsForUserUsingPOST"></a>
 # **getAlertNotificationsForUserUsingPOST**
-> GenericApiResponse getAlertNotificationsForUserUsingPOST(timeInterval)
+> NotificationsResponse getAlertNotificationsForUserUsingPOST(body)
 
 Get alert notifications for a user
 
@@ -91,9 +90,9 @@ api_key.setApiKey("YOUR API KEY");
 //api_key.setApiKeyPrefix("Token");
 
 AlertNotificationsApi apiInstance = new AlertNotificationsApi();
-AlertNotificationRequest timeInterval = new AlertNotificationRequest(); // AlertNotificationRequest | Time Interval
+AlertNotificationRequest body = new AlertNotificationRequest(); // AlertNotificationRequest | Time Interval
 try {
-    GenericApiResponse result = apiInstance.getAlertNotificationsForUserUsingPOST(timeInterval);
+    NotificationsResponse result = apiInstance.getAlertNotificationsForUserUsingPOST(body);
     System.out.println(result);
 } catch (ApiException e) {
     System.err.println("Exception when calling AlertNotificationsApi#getAlertNotificationsForUserUsingPOST");
@@ -103,13 +102,13 @@ try {
 
 ### Parameters
 
-| Name             | Type                                                        | Description   | Notes |
-| ---------------- | ----------------------------------------------------------- | ------------- | ----- |
-| **timeInterval** | [**AlertNotificationRequest**](AlertNotificationRequest.md) | Time Interval |
+| Name     | Type                                                        | Description   | Notes |
+| -------- | ----------------------------------------------------------- | ------------- | ----- |
+| **body** | [**AlertNotificationRequest**](AlertNotificationRequest.md) | Time Interval |
 
 ### Return type
 
-[**GenericApiResponse**](GenericApiResponse.md)
+[**NotificationsResponse**](NotificationsResponse.md)
 
 ### Authorization
 

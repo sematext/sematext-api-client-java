@@ -1,4 +1,3 @@
-
 # FilterValue
 
 ## Properties

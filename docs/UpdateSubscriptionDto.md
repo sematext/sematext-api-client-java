@@ -1,4 +1,3 @@
-
 # UpdateSubscriptionDto
 
 ## Properties
