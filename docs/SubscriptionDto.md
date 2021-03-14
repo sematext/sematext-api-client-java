@@ -1,4 +1,3 @@
-
 # SubscriptionDto
 
 ## Properties
@@ -17,7 +16,6 @@
 | **timeRange**       | [**TimeRangeEnum**](#TimeRangeEnum)       |             | [optional] |
 | **userPermissions** | [**UserPermissions**](UserPermissions.md) |             | [optional] |
 
-
 <a name="FrequencyEnum"></a>
 ## Enum: FrequencyEnum
 | Name               | Value                          |
@@ -27,7 +25,6 @@
 | WEEKLY             | &quot;WEEKLY&quot;             |
 | MONTHLY            | &quot;MONTHLY&quot;            |
 | QUARTERLY          | &quot;QUARTERLY&quot;          |
-
 
 <a name="TimeRangeEnum"></a>
 ## Enum: TimeRangeEnum

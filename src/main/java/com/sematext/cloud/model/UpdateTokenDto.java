@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package com.sematext.cloud.model;
 
 import java.util.Objects;
@@ -20,13 +19,12 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
-
 /**
  * UpdateTokenDto
  */
+
 
 public class UpdateTokenDto {
   @SerializedName("enabled")
@@ -44,7 +42,7 @@ public class UpdateTokenDto {
    * Get enabled
    * @return enabled
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public Boolean isEnabled() {
     return enabled;
   }
@@ -53,11 +51,16 @@ public class UpdateTokenDto {
     this.enabled = enabled;
   }
 
+  public UpdateTokenDto name(String name) {
+    this.name = name;
+    return this;
+  }
+
    /**
    * Get name
    * @return name
-   **/
-  @ApiModelProperty(value = "")
+  **/
+  @Schema(description = "")
   public String getName() {
     return name;
   }
@@ -90,12 +93,12 @@ public class UpdateTokenDto {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class UpdateTokenDto {\n");
+
     sb.append("    enabled: ").append(toIndentedString(enabled)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("}");
     return sb.toString();
   }
-
 
   /**
    * Convert the given object to string with each line indented by 4 spaces

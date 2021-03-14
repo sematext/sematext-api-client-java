@@ -1,4 +1,3 @@
-
 # AlertRule
 
 ## Properties
@@ -52,7 +51,6 @@
 | **userPermissions**                       | [**UserPermissions**](UserPermissions.md)                                     |             | [optional] |
 | **valueColumnName**                       | **String**                                                                    |             | [optional] |
 | **valueName**                             | **String**                                                                    |             | [optional] |
-
 
 <a name="EstimateOperationEnum"></a>
 ## Enum: EstimateOperationEnum

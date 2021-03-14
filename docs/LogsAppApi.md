@@ -1,15 +1,14 @@
 # LogsAppApi
 
-All URIs are relative to *https://localhost*
+All URIs are relative to */*
 
 | Method                                                                 | HTTP request                          | Description     |
 | ---------------------------------------------------------------------- | ------------------------------------- | --------------- |
 | [**createLogseneApplication**](LogsAppApi.md#createLogseneApplication) | **POST** /logsene-reports/api/v3/apps | Create Logs App |
 
-
 <a name="createLogseneApplication"></a>
 # **createLogseneApplication**
-> GenericApiResponse createLogseneApplication(applicationDetails)
+> AppsResponse createLogseneApplication(body)
 
 Create Logs App
 
@@ -31,9 +30,9 @@ api_key.setApiKey("YOUR API KEY");
 //api_key.setApiKeyPrefix("Token");
 
 LogsAppApi apiInstance = new LogsAppApi();
-CreateAppInfo applicationDetails = new CreateAppInfo(); // CreateAppInfo | Details of the application to be created
+CreateAppInfo body = new CreateAppInfo(); // CreateAppInfo | Details of the application to be created
 try {
-    GenericApiResponse result = apiInstance.createLogseneApplication(applicationDetails);
+    AppsResponse result = apiInstance.createLogseneApplication(body);
     System.out.println(result);
 } catch (ApiException e) {
     System.err.println("Exception when calling LogsAppApi#createLogseneApplication");
@@ -43,13 +42,13 @@ try {
 
 ### Parameters
 
-| Name                   | Type                                  | Description                              | Notes |
-| ---------------------- | ------------------------------------- | ---------------------------------------- | ----- |
-| **applicationDetails** | [**CreateAppInfo**](CreateAppInfo.md) | Details of the application to be created |
+| Name     | Type                                  | Description                              | Notes |
+| -------- | ------------------------------------- | ---------------------------------------- | ----- |
+| **body** | [**CreateAppInfo**](CreateAppInfo.md) | Details of the application to be created |
 
 ### Return type
 
-[**GenericApiResponse**](GenericApiResponse.md)
+[**AppsResponse**](AppsResponse.md)
 
 ### Authorization
 

@@ -1,10 +1,9 @@
-
 # Invitation
 
 ## Properties
 | Name              | Type                                        | Description                                       | Notes      |
 | ----------------- | ------------------------------------------- | ------------------------------------------------- | ---------- |
-| **app**           | [**App**](App.md)                           | For invite request, only app.id needs to be set.  | [optional] |
+| **app**           | [**App**](App.md)                           |                                                   | [optional] |
 | **apps**          | [**List&lt;App&gt;**](App.md)               | For invite request, only apps.id needs to be set. | [optional] |
 | **id**            | **Long**                                    |                                                   | [optional] |
 | **inviteDate**    | [**OffsetDateTime**](OffsetDateTime.md)     |                                                   | [optional] |
@@ -15,7 +14,6 @@
 | **inviterEmail**  | **String**                                  |                                                   | [optional] |
 | **uuid**          | **String**                                  |                                                   | [optional] |
 
-
 <a name="InviteStatusEnum"></a>
 ## Enum: InviteStatusEnum
 | Name      | Value                 |
@@ -24,7 +22,6 @@
 | ACCEPTED  | &quot;ACCEPTED&quot;  |
 | CANCELLED | &quot;CANCELLED&quot; |
 | DECLINED  | &quot;DECLINED&quot;  |
-
 
 <a name="InviteeRoleEnum"></a>
 ## Enum: InviteeRoleEnum
@@ -36,7 +33,6 @@
 | USER       | &quot;USER&quot;       |
 | DEMO       | &quot;DEMO&quot;       |
 | ANONYMOUS  | &quot;ANONYMOUS&quot;  |
-
 
 <a name="InviteeStatusEnum"></a>
 ## Enum: InviteeStatusEnum

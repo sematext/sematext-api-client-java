@@ -1,4 +1,3 @@
-
 # BasicOrganizationDto
 
 ## Properties
@@ -8,7 +7,6 @@
 | **name**        | **String**                                                  |             | [optional] |
 | **status**      | [**StatusEnum**](#StatusEnum)                               |             | [optional] |
 | **uuid**        | **String**                                                  |             | [optional] |
-
 
 <a name="StatusEnum"></a>
 ## Enum: StatusEnum

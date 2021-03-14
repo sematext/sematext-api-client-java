@@ -1,4 +1,3 @@
-
 # UpdateAppInfo
 
 ## Properties
@@ -13,7 +12,6 @@
 | **samplingPercentage** | **Integer**                   |             | [optional] |
 | **staggering**         | **Boolean**                   |             | [optional] |
 | **status**             | [**StatusEnum**](#StatusEnum) |             | [optional] |
-
 
 <a name="StatusEnum"></a>
 ## Enum: StatusEnum

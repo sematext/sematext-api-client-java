@@ -1,4 +1,3 @@
-
 # NotificationIntegration
 
 ## Properties
@@ -15,14 +14,12 @@
 | **state**           | [**StateEnum**](#StateEnum)                     |             | [optional] |
 | **userId**          | **Long**                                        |             | [optional] |
 
-
 <a name="ApplicabilityEnum"></a>
 ## Enum: ApplicabilityEnum
 | Name       | Value                  |
 | ---------- | ---------------------- |
 | NONE       | &quot;NONE&quot;       |
 | USE_ALWAYS | &quot;USE_ALWAYS&quot; |
-
 
 <a name="IntegrationTypeEnum"></a>
 ## Enum: IntegrationTypeEnum
@@ -35,7 +32,6 @@
 | HIP_CHAT             | &quot;HIP_CHAT&quot;             |
 | EMAIL_LIST           | &quot;EMAIL_LIST&quot;           |
 | TEMPORARY_EMAIL_LIST | &quot;TEMPORARY_EMAIL_LIST&quot; |
-
 
 <a name="StateEnum"></a>
 ## Enum: StateEnum

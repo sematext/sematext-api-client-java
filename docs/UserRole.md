@@ -1,4 +1,3 @@
-
 # UserRole
 
 ## Properties
@@ -7,7 +6,6 @@
 | **role**       | [**RoleEnum**](#RoleEnum)             |             | [optional] |
 | **roleStatus** | [**RoleStatusEnum**](#RoleStatusEnum) |             | [optional] |
 | **userEmail**  | **String**                            |             | [optional] |
-
 
 <a name="RoleEnum"></a>
 ## Enum: RoleEnum
@@ -19,7 +17,6 @@
 | USER       | &quot;USER&quot;       |
 | DEMO       | &quot;DEMO&quot;       |
 | ANONYMOUS  | &quot;ANONYMOUS&quot;  |
-
 
 <a name="RoleStatusEnum"></a>
 ## Enum: RoleStatusEnum

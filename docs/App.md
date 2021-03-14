@@ -1,4 +1,3 @@
-
 # App
 
 ## Properties
@@ -31,6 +30,7 @@
 | **registrationDate**      | **Long**                                            |             | [optional] |
 | **status**                | **String**                                          |             | [optional] |
 | **token**                 | **String**                                          |             | [optional] |
+| **tokens**                | **List&lt;String&gt;**                              |             | [optional] |
 | **trialEndDate**          | **Long**                                            |             | [optional] |
 | **urlGroupLimit**         | **Integer**                                         |             | [optional] |
 | **userRoles**             | [**List&lt;UserRole&gt;**](UserRole.md)             |             | [optional] |

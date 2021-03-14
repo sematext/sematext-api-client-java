@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-
 package com.sematext.cloud.model;
 
 import java.util.Objects;
@@ -20,13 +19,12 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
-
 /**
  * CreateTokenDto
  */
+
 
 public class CreateTokenDto {
   @SerializedName("name")
@@ -38,17 +36,16 @@ public class CreateTokenDto {
   @SerializedName("writeable")
   private Boolean writeable = null;
 
-  public CreateTokenDto readable(Boolean readable) {
-    this.readable = readable;
+  public CreateTokenDto name(String name) {
+    this.name = name;
     return this;
   }
-
 
    /**
    * Get name
    * @return name
-   **/
-  @ApiModelProperty(value = "")
+  **/
+  @Schema(description = "")
   public String getName() {
     return name;
   }
@@ -57,11 +54,16 @@ public class CreateTokenDto {
     this.name = name;
   }
 
+  public CreateTokenDto readable(Boolean readable) {
+    this.readable = readable;
+    return this;
+  }
+
    /**
    * Get readable
    * @return readable
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public Boolean isReadable() {
     return readable;
   }
@@ -79,7 +81,7 @@ public class CreateTokenDto {
    * Get writeable
    * @return writeable
   **/
-  @ApiModelProperty(value = "")
+  @Schema(description = "")
   public Boolean isWriteable() {
     return writeable;
   }
@@ -120,6 +122,7 @@ public class CreateTokenDto {
     sb.append("}");
     return sb.toString();
   }
+
   /**
    * Convert the given object to string with each line indented by 4 spaces
    * (except the first line).

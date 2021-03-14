@@ -1,4 +1,3 @@
-
 # AppMetadata
 
 ## Properties
@@ -10,7 +9,6 @@
 | **awsRegion**              | [**AwsRegionEnum**](#AwsRegionEnum)                       |                                                            | [optional] |
 | **subTypes**               | [**List&lt;SubTypesEnum&gt;**](#List&lt;SubTypesEnum&gt;) | Comma separated list of AWS types monitored by created app | [optional] |
 
-
 <a name="AwsFetchFrequencyEnum"></a>
 ## Enum: AwsFetchFrequencyEnum
 | Name            | Value                       |
@@ -18,7 +16,6 @@
 | MINUTE          | &quot;MINUTE&quot;          |
 | FIVE_MINUTES    | &quot;FIVE_MINUTES&quot;    |
 | FIFTEEN_MINUTES | &quot;FIFTEEN_MINUTES&quot; |
-
 
 <a name="AwsRegionEnum"></a>
 ## Enum: AwsRegionEnum
@@ -40,7 +37,6 @@
 | CA_CENTRAL_1   | &quot;CA_CENTRAL_1&quot;   |
 | EU_CENTRAL_1   | &quot;EU_CENTRAL_1&quot;   |
 | EU_WEST_2      | &quot;EU_WEST_2&quot;      |
-
 
 <a name="List<SubTypesEnum>"></a>
 ## Enum: List&lt;SubTypesEnum&gt;
