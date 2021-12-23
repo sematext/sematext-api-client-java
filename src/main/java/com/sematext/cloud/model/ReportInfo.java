@@ -28,6 +28,9 @@ import java.time.OffsetDateTime;
 
 
 public class ReportInfo {
+  @SerializedName("additionalParams")
+  private String additionalParams = null;
+
   @SerializedName("addresses")
   private String addresses = null;
 
@@ -51,6 +54,24 @@ public class ReportInfo {
 
   @SerializedName("text")
   private String text = null;
+
+  public ReportInfo additionalParams(String additionalParams) {
+    this.additionalParams = additionalParams;
+    return this;
+  }
+
+   /**
+   * Get additionalParams
+   * @return additionalParams
+  **/
+  @Schema(description = "")
+  public String getAdditionalParams() {
+    return additionalParams;
+  }
+
+  public void setAdditionalParams(String additionalParams) {
+    this.additionalParams = additionalParams;
+  }
 
   public ReportInfo addresses(String addresses) {
     this.addresses = addresses;
@@ -206,7 +227,8 @@ public class ReportInfo {
       return false;
     }
     ReportInfo reportInfo = (ReportInfo) o;
-    return Objects.equals(this.addresses, reportInfo.addresses) &&
+    return Objects.equals(this.additionalParams, reportInfo.additionalParams) &&
+        Objects.equals(this.addresses, reportInfo.addresses) &&
         Objects.equals(this.appId, reportInfo.appId) &&
         Objects.equals(this.endDate, reportInfo.endDate) &&
         Objects.equals(this.filters, reportInfo.filters) &&
@@ -218,7 +240,7 @@ public class ReportInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(addresses, appId, endDate, filters, reportName, startDate, subject, text);
+    return Objects.hash(additionalParams, addresses, appId, endDate, filters, reportName, startDate, subject, text);
   }
 
 
@@ -227,6 +249,7 @@ public class ReportInfo {
     StringBuilder sb = new StringBuilder();
     sb.append("class ReportInfo {\n");
     
+    sb.append("    additionalParams: ").append(toIndentedString(additionalParams)).append("\n");
     sb.append("    addresses: ").append(toIndentedString(addresses)).append("\n");
     sb.append("    appId: ").append(toIndentedString(appId)).append("\n");
     sb.append("    endDate: ").append(toIndentedString(endDate)).append("\n");

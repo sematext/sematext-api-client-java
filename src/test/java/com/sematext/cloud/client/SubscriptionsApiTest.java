@@ -12,7 +12,6 @@
 
 package com.sematext.cloud.client;
 
-import com.sematext.cloud.ApiException;
 import com.sematext.cloud.model.GenericMapBasedApiResponse;
 import com.sematext.cloud.model.MailReportResponse;
 import com.sematext.cloud.model.ReportInfo;
@@ -24,10 +23,12 @@ import com.sematext.cloud.model.UpdateSubscriptionDto;
 import org.junit.Test;
 import org.junit.Ignore;
 
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 
 /**
  * API tests for SubscriptionsApi
@@ -42,14 +43,14 @@ public class SubscriptionsApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void createForAppUsingPOST1Test() throws ApiException {
+    public void createForAppUsingPOSTTest() throws Exception {
         SubscriptionDto body = null;
         Long appId = null;
-        SubscriptionResponse response = api.createForAppUsingPOST1(body, appId);
+        SubscriptionResponse response = api.createForAppUsingPOST(body, appId);
 
         // TODO: test validations
     }
@@ -58,14 +59,14 @@ public class SubscriptionsApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void createForDashUsingPOSTTest() throws ApiException {
+    public void createForDashUsingPOST1Test() throws Exception {
         SubscriptionDashboardDto body = null;
         Long dashId = null;
-        SubscriptionResponse response = api.createForDashUsingPOST(body, dashId);
+        SubscriptionResponse response = api.createForDashUsingPOST1(body, dashId);
 
         // TODO: test validations
     }
@@ -74,11 +75,11 @@ public class SubscriptionsApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void deleteUsingDELETE2Test() throws ApiException {
+    public void deleteUsingDELETE2Test() throws Exception {
         Long updateableSubscriptionId = null;
         GenericMapBasedApiResponse response = api.deleteUsingDELETE2(updateableSubscriptionId);
 
@@ -89,13 +90,13 @@ public class SubscriptionsApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void listUsingGET2Test() throws ApiException {
+    public void listUsingGET3Test() throws Exception {
         Long appId = null;
-        SubscriptionsResponse response = api.listUsingGET2(appId);
+        SubscriptionsResponse response = api.listUsingGET3(appId);
 
         // TODO: test validations
     }
@@ -104,11 +105,11 @@ public class SubscriptionsApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void listUsingGET5Test() throws ApiException {
+    public void listUsingGET5Test() throws Exception {
         SubscriptionsResponse response = api.listUsingGET5();
 
         // TODO: test validations
@@ -118,14 +119,14 @@ public class SubscriptionsApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void sendAppReportUsingPOST1Test() throws ApiException {
+    public void sendAppReportUsingPOSTTest() throws Exception {
         ReportInfo body = null;
         Long appId = null;
-        MailReportResponse response = api.sendAppReportUsingPOST1(body, appId);
+        MailReportResponse response = api.sendAppReportUsingPOST(body, appId);
 
         // TODO: test validations
     }
@@ -134,11 +135,11 @@ public class SubscriptionsApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void sendDashReportUsingPOSTTest() throws ApiException {
+    public void sendDashReportUsingPOSTTest() throws Exception {
         ReportInfo body = null;
         Long dashId = null;
         MailReportResponse response = api.sendDashReportUsingPOST(body, dashId);
@@ -150,11 +151,11 @@ public class SubscriptionsApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void toggleEnabledUsingPUT1Test() throws ApiException {
+    public void toggleEnabledUsingPUT1Test() throws Exception {
         UpdateSubscriptionDto body = null;
         Long updateableSubscriptionId = null;
         SubscriptionResponse response = api.toggleEnabledUsingPUT1(body, updateableSubscriptionId);
@@ -166,11 +167,11 @@ public class SubscriptionsApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void updateForAppUsingPUTTest() throws ApiException {
+    public void updateForAppUsingPUTTest() throws Exception {
         SubscriptionDto body = null;
         Long appId = null;
         SubscriptionResponse response = api.updateForAppUsingPUT(body, appId);
@@ -182,11 +183,11 @@ public class SubscriptionsApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void updateForDashUsingPUT1Test() throws ApiException {
+    public void updateForDashUsingPUT1Test() throws Exception {
         SubscriptionDashboardDto body = null;
         Long dashId = null;
         SubscriptionResponse response = api.updateForDashUsingPUT1(body, dashId);

@@ -4,22 +4,25 @@ All URIs are relative to */*
 
 | Method                                                                  | HTTP request                                               | Description                                                        |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------ |
-| [**deleteUsingDELETE1**](AppsApi.md#deleteUsingDELETE1)                 | **DELETE** /users-web/api/v3/apps/{anyStateAppId}          | delete                                                             |
-| [**getAppTypesUsingGET1**](AppsApi.md#getAppTypesUsingGET1)             | **GET** /users-web/api/v3/apps/types                       | Get all App types supported for the account identified with apiKey |
-| [**getUsingGET1**](AppsApi.md#getUsingGET1)                             | **GET** /users-web/api/v3/apps/{anyStateAppId}             | Gets defails for one particular App                                |
-| [**inviteAppGuestsUsingPOST1**](AppsApi.md#inviteAppGuestsUsingPOST1)   | **POST** /users-web/api/v3/apps/guests                     | Invite guests to an app                                            |
-| [**listAppsUsersUsingGET1**](AppsApi.md#listAppsUsersUsingGET1)         | **GET** /users-web/api/v3/apps/users                       | Get all users of apps accessible to this account                   |
+| [**deleteUsingDELETE**](AppsApi.md#deleteUsingDELETE)                   | **DELETE** /users-web/api/v3/apps/{anyStateAppId}          | delete                                                             |
+| [**getAppTypesUsingGET**](AppsApi.md#getAppTypesUsingGET)               | **GET** /users-web/api/v3/apps/types                       | Get all App types supported for the account identified with apiKey |
+| [**getUsingGET**](AppsApi.md#getUsingGET)                               | **GET** /users-web/api/v3/apps/{anyStateAppId}             | Gets defails for one particular App                                |
+| [**inviteAppGuestsUsingPOST**](AppsApi.md#inviteAppGuestsUsingPOST)     | **POST** /users-web/api/v3/apps/guests                     | Invite guests to an app                                            |
+| [**listAppsUsersUsingGET**](AppsApi.md#listAppsUsersUsingGET)           | **GET** /users-web/api/v3/apps/users                       | Get all users of apps accessible to this account                   |
 | [**listUsingGET**](AppsApi.md#listUsingGET)                             | **GET** /users-web/api/v3/apps                             | Get all apps accessible by account identified with apiKey          |
 | [**updateDescriptionUsingPUT1**](AppsApi.md#updateDescriptionUsingPUT1) | **PUT** /users-web/api/v3/apps/{anyStateAppId}/description | Update description of the app                                      |
-| [**updateUsingPUT3**](AppsApi.md#updateUsingPUT3)                       | **PUT** /users-web/api/v3/apps/{anyStateAppId}             | Update app                                                         |
+| [**updateUsingPUT2**](AppsApi.md#updateUsingPUT2)                       | **PUT** /users-web/api/v3/apps/{anyStateAppId}             | Update app                                                         |
 
-<a name="deleteUsingDELETE1"></a>
-# **deleteUsingDELETE1**
-> GenericMapBasedApiResponse deleteUsingDELETE1(anyStateAppId)
+<a name="deleteUsingDELETE"></a>
+
+# **deleteUsingDELETE**
+
+> GenericMapBasedApiResponse deleteUsingDELETE(anyStateAppId)
 
 delete
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -39,10 +42,10 @@ api_key.setApiKey("YOUR API KEY");
 AppsApi apiInstance = new AppsApi();
 Long anyStateAppId = 789L; // Long | anyStateAppId
 try {
-    GenericMapBasedApiResponse result = apiInstance.deleteUsingDELETE1(anyStateAppId);
+    GenericMapBasedApiResponse result = apiInstance.deleteUsingDELETE(anyStateAppId);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling AppsApi#deleteUsingDELETE1");
+    System.err.println("Exception when calling AppsApi#deleteUsingDELETE");
     e.printStackTrace();
 }
 ```
@@ -63,16 +66,19 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-<a name="getAppTypesUsingGET1"></a>
-# **getAppTypesUsingGET1**
-> AppTypesResponse getAppTypesUsingGET1()
+<a name="getAppTypesUsingGET"></a>
+
+# **getAppTypesUsingGET**
+
+> AppTypesResponse getAppTypesUsingGET()
 
 Get all App types supported for the account identified with apiKey
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -91,15 +97,16 @@ api_key.setApiKey("YOUR API KEY");
 
 AppsApi apiInstance = new AppsApi();
 try {
-    AppTypesResponse result = apiInstance.getAppTypesUsingGET1();
+    AppTypesResponse result = apiInstance.getAppTypesUsingGET();
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling AppsApi#getAppTypesUsingGET1");
+    System.err.println("Exception when calling AppsApi#getAppTypesUsingGET");
     e.printStackTrace();
 }
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -112,16 +119,19 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-<a name="getUsingGET1"></a>
-# **getUsingGET1**
-> AppResponse getUsingGET1(anyStateAppId)
+<a name="getUsingGET"></a>
+
+# **getUsingGET**
+
+> AppResponse getUsingGET(anyStateAppId)
 
 Gets defails for one particular App
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -141,10 +151,10 @@ api_key.setApiKey("YOUR API KEY");
 AppsApi apiInstance = new AppsApi();
 Long anyStateAppId = 789L; // Long | anyStateAppId
 try {
-    AppResponse result = apiInstance.getUsingGET1(anyStateAppId);
+    AppResponse result = apiInstance.getUsingGET(anyStateAppId);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling AppsApi#getUsingGET1");
+    System.err.println("Exception when calling AppsApi#getUsingGET");
     e.printStackTrace();
 }
 ```
@@ -165,16 +175,19 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-<a name="inviteAppGuestsUsingPOST1"></a>
-# **inviteAppGuestsUsingPOST1**
-> GenericMapBasedApiResponse inviteAppGuestsUsingPOST1(body)
+<a name="inviteAppGuestsUsingPOST"></a>
+
+# **inviteAppGuestsUsingPOST**
+
+> GenericMapBasedApiResponse inviteAppGuestsUsingPOST(body)
 
 Invite guests to an app
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -194,10 +207,10 @@ api_key.setApiKey("YOUR API KEY");
 AppsApi apiInstance = new AppsApi();
 Invitation body = new Invitation(); // Invitation | For `app` and `apps` fields only `id` needs to be populated.Other fields can be left empty or with default values
 try {
-    GenericMapBasedApiResponse result = apiInstance.inviteAppGuestsUsingPOST1(body);
+    GenericMapBasedApiResponse result = apiInstance.inviteAppGuestsUsingPOST(body);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling AppsApi#inviteAppGuestsUsingPOST1");
+    System.err.println("Exception when calling AppsApi#inviteAppGuestsUsingPOST");
     e.printStackTrace();
 }
 ```
@@ -218,16 +231,19 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-<a name="listAppsUsersUsingGET1"></a>
-# **listAppsUsersUsingGET1**
-> AppsResponse listAppsUsersUsingGET1()
+<a name="listAppsUsersUsingGET"></a>
+
+# **listAppsUsersUsingGET**
+
+> AppsResponse listAppsUsersUsingGET()
 
 Get all users of apps accessible to this account
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -246,15 +262,16 @@ api_key.setApiKey("YOUR API KEY");
 
 AppsApi apiInstance = new AppsApi();
 try {
-    AppsResponse result = apiInstance.listAppsUsersUsingGET1();
+    AppsResponse result = apiInstance.listAppsUsersUsingGET();
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling AppsApi#listAppsUsersUsingGET1");
+    System.err.println("Exception when calling AppsApi#listAppsUsersUsingGET");
     e.printStackTrace();
 }
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -267,16 +284,19 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 <a name="listUsingGET"></a>
+
 # **listUsingGET**
+
 > AppsResponse listUsingGET()
 
 Get all apps accessible by account identified with apiKey
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -304,6 +324,7 @@ try {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -316,11 +337,13 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 <a name="updateDescriptionUsingPUT1"></a>
+
 # **updateDescriptionUsingPUT1**
+
 > AppResponse updateDescriptionUsingPUT1(anyStateAppId, body)
 
 Update description of the app
@@ -328,6 +351,7 @@ Update description of the app
 App can be in any state
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -373,18 +397,21 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-<a name="updateUsingPUT3"></a>
-# **updateUsingPUT3**
-> AppResponse updateUsingPUT3(body, anyStateAppId)
+<a name="updateUsingPUT2"></a>
+
+# **updateUsingPUT2**
+
+> AppResponse updateUsingPUT2(body, anyStateAppId)
 
 Update app
 
 App can be in any state
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -405,10 +432,10 @@ AppsApi apiInstance = new AppsApi();
 UpdateAppInfo body = new UpdateAppInfo(); // UpdateAppInfo | dto
 Long anyStateAppId = 789L; // Long | App Id
 try {
-    AppResponse result = apiInstance.updateUsingPUT3(body, anyStateAppId);
+    AppResponse result = apiInstance.updateUsingPUT2(body, anyStateAppId);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling AppsApi#updateUsingPUT3");
+    System.err.println("Exception when calling AppsApi#updateUsingPUT2");
     e.printStackTrace();
 }
 ```
@@ -430,5 +457,5 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json

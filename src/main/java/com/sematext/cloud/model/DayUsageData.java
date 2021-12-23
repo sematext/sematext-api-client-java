@@ -81,9 +81,9 @@ public class DayUsageData {
     public String toString() {
       return String.valueOf(value);
     }
-    public static PlanTypeEnum fromValue(String text) {
+    public static PlanTypeEnum fromValue(String input) {
       for (PlanTypeEnum b : PlanTypeEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -92,13 +92,13 @@ public class DayUsageData {
     public static class Adapter extends TypeAdapter<PlanTypeEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final PlanTypeEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public PlanTypeEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return PlanTypeEnum.fromValue(String.valueOf(value));
+        return PlanTypeEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("planType")

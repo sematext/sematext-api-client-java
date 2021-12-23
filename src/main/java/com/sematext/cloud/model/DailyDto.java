@@ -33,11 +33,17 @@ public class DailyDto {
   @SerializedName("failed")
   private Long failed = null;
 
-  @SerializedName("indexed")
-  private Long indexed = null;
+  @SerializedName("ingestedCount")
+  private Long ingestedCount = null;
 
-  @SerializedName("volume")
-  private Long volume = null;
+  @SerializedName("ingestedVolume")
+  private Long ingestedVolume = null;
+
+  @SerializedName("storedCount")
+  private Long storedCount = null;
+
+  @SerializedName("storedVolume")
+  private Long storedVolume = null;
 
   public DailyDto day(Long day) {
     this.day = day;
@@ -75,40 +81,76 @@ public class DailyDto {
     this.failed = failed;
   }
 
-  public DailyDto indexed(Long indexed) {
-    this.indexed = indexed;
+  public DailyDto ingestedCount(Long ingestedCount) {
+    this.ingestedCount = ingestedCount;
     return this;
   }
 
    /**
-   * Get indexed
-   * @return indexed
+   * Get ingestedCount
+   * @return ingestedCount
   **/
   @Schema(description = "")
-  public Long getIndexed() {
-    return indexed;
+  public Long getIngestedCount() {
+    return ingestedCount;
   }
 
-  public void setIndexed(Long indexed) {
-    this.indexed = indexed;
+  public void setIngestedCount(Long ingestedCount) {
+    this.ingestedCount = ingestedCount;
   }
 
-  public DailyDto volume(Long volume) {
-    this.volume = volume;
+  public DailyDto ingestedVolume(Long ingestedVolume) {
+    this.ingestedVolume = ingestedVolume;
     return this;
   }
 
    /**
-   * Get volume
-   * @return volume
+   * Get ingestedVolume
+   * @return ingestedVolume
   **/
   @Schema(description = "")
-  public Long getVolume() {
-    return volume;
+  public Long getIngestedVolume() {
+    return ingestedVolume;
   }
 
-  public void setVolume(Long volume) {
-    this.volume = volume;
+  public void setIngestedVolume(Long ingestedVolume) {
+    this.ingestedVolume = ingestedVolume;
+  }
+
+  public DailyDto storedCount(Long storedCount) {
+    this.storedCount = storedCount;
+    return this;
+  }
+
+   /**
+   * Get storedCount
+   * @return storedCount
+  **/
+  @Schema(description = "")
+  public Long getStoredCount() {
+    return storedCount;
+  }
+
+  public void setStoredCount(Long storedCount) {
+    this.storedCount = storedCount;
+  }
+
+  public DailyDto storedVolume(Long storedVolume) {
+    this.storedVolume = storedVolume;
+    return this;
+  }
+
+   /**
+   * Get storedVolume
+   * @return storedVolume
+  **/
+  @Schema(description = "")
+  public Long getStoredVolume() {
+    return storedVolume;
+  }
+
+  public void setStoredVolume(Long storedVolume) {
+    this.storedVolume = storedVolume;
   }
 
 
@@ -123,13 +165,15 @@ public class DailyDto {
     DailyDto dailyDto = (DailyDto) o;
     return Objects.equals(this.day, dailyDto.day) &&
         Objects.equals(this.failed, dailyDto.failed) &&
-        Objects.equals(this.indexed, dailyDto.indexed) &&
-        Objects.equals(this.volume, dailyDto.volume);
+        Objects.equals(this.ingestedCount, dailyDto.ingestedCount) &&
+        Objects.equals(this.ingestedVolume, dailyDto.ingestedVolume) &&
+        Objects.equals(this.storedCount, dailyDto.storedCount) &&
+        Objects.equals(this.storedVolume, dailyDto.storedVolume);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(day, failed, indexed, volume);
+    return Objects.hash(day, failed, ingestedCount, ingestedVolume, storedCount, storedVolume);
   }
 
 
@@ -140,8 +184,10 @@ public class DailyDto {
     
     sb.append("    day: ").append(toIndentedString(day)).append("\n");
     sb.append("    failed: ").append(toIndentedString(failed)).append("\n");
-    sb.append("    indexed: ").append(toIndentedString(indexed)).append("\n");
-    sb.append("    volume: ").append(toIndentedString(volume)).append("\n");
+    sb.append("    ingestedCount: ").append(toIndentedString(ingestedCount)).append("\n");
+    sb.append("    ingestedVolume: ").append(toIndentedString(ingestedVolume)).append("\n");
+    sb.append("    storedCount: ").append(toIndentedString(storedCount)).append("\n");
+    sb.append("    storedVolume: ").append(toIndentedString(storedVolume)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -66,9 +66,9 @@ public class Invitation {
     public String toString() {
       return String.valueOf(value);
     }
-    public static InviteStatusEnum fromValue(String text) {
+    public static InviteStatusEnum fromValue(String input) {
       for (InviteStatusEnum b : InviteStatusEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -77,13 +77,13 @@ public class Invitation {
     public static class Adapter extends TypeAdapter<InviteStatusEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final InviteStatusEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public InviteStatusEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return InviteStatusEnum.fromValue(String.valueOf(value));
+        return InviteStatusEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("inviteStatus")
@@ -117,9 +117,9 @@ public class Invitation {
     public String toString() {
       return String.valueOf(value);
     }
-    public static InviteeRoleEnum fromValue(String text) {
+    public static InviteeRoleEnum fromValue(String input) {
       for (InviteeRoleEnum b : InviteeRoleEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -128,13 +128,13 @@ public class Invitation {
     public static class Adapter extends TypeAdapter<InviteeRoleEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final InviteeRoleEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public InviteeRoleEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return InviteeRoleEnum.fromValue(String.valueOf(value));
+        return InviteeRoleEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("inviteeRole")
@@ -161,9 +161,9 @@ public class Invitation {
     public String toString() {
       return String.valueOf(value);
     }
-    public static InviteeStatusEnum fromValue(String text) {
+    public static InviteeStatusEnum fromValue(String input) {
       for (InviteeStatusEnum b : InviteeStatusEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -172,13 +172,13 @@ public class Invitation {
     public static class Adapter extends TypeAdapter<InviteeStatusEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final InviteeStatusEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public InviteeStatusEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return InviteeStatusEnum.fromValue(String.valueOf(value));
+        return InviteeStatusEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("inviteeStatus")

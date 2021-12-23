@@ -1,6 +1,7 @@
 # UserRole
 
 ## Properties
+
 | Name           | Type                                  | Description | Notes      |
 | -------------- | ------------------------------------- | ----------- | ---------- |
 | **role**       | [**RoleEnum**](#RoleEnum)             |             | [optional] |
@@ -8,7 +9,9 @@
 | **userEmail**  | **String**                            |             | [optional] |
 
 <a name="RoleEnum"></a>
+
 ## Enum: RoleEnum
+
 | Name       | Value                  |
 | ---------- | ---------------------- |
 | SUPER_USER | &quot;SUPER_USER&quot; |
@@ -19,7 +22,9 @@
 | ANONYMOUS  | &quot;ANONYMOUS&quot;  |
 
 <a name="RoleStatusEnum"></a>
+
 ## Enum: RoleStatusEnum
+
 | Name     | Value                |
 | -------- | -------------------- |
 | INACTIVE | &quot;INACTIVE&quot; |

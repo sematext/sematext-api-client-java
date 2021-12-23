@@ -57,14 +57,14 @@ public class AlertsApi {
     }
 
     /**
-     * Build call for createAlertUsingPOST1
+     * Build call for createAlertUsingPOST
      * @param body dto (required)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call createAlertUsingPOST1Call(AlertRule body, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call createAlertUsingPOSTCall(AlertRule body, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = body;
         
         // create path and map variables
@@ -106,13 +106,13 @@ public class AlertsApi {
     }
     
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call createAlertUsingPOST1ValidateBeforeCall(AlertRule body, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call createAlertUsingPOSTValidateBeforeCall(AlertRule body, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         // verify the required parameter 'body' is set
         if (body == null) {
-            throw new ApiException("Missing the required parameter 'body' when calling createAlertUsingPOST1(Async)");
+            throw new ApiException("Missing the required parameter 'body' when calling createAlertUsingPOST(Async)");
         }
         
-        com.squareup.okhttp.Call call = createAlertUsingPOST1Call(body, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = createAlertUsingPOSTCall(body, progressListener, progressRequestListener);
         return call;
 
         
@@ -128,8 +128,8 @@ public class AlertsApi {
      * @return AlertRuleResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public AlertRuleResponse createAlertUsingPOST1(AlertRule body) throws ApiException {
-        ApiResponse<AlertRuleResponse> resp = createAlertUsingPOST1WithHttpInfo(body);
+    public AlertRuleResponse createAlertUsingPOST(AlertRule body) throws ApiException {
+        ApiResponse<AlertRuleResponse> resp = createAlertUsingPOSTWithHttpInfo(body);
         return resp.getData();
     }
 
@@ -140,8 +140,8 @@ public class AlertsApi {
      * @return ApiResponse&lt;AlertRuleResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<AlertRuleResponse> createAlertUsingPOST1WithHttpInfo(AlertRule body) throws ApiException {
-        com.squareup.okhttp.Call call = createAlertUsingPOST1ValidateBeforeCall(body, null, null);
+    public ApiResponse<AlertRuleResponse> createAlertUsingPOSTWithHttpInfo(AlertRule body) throws ApiException {
+        com.squareup.okhttp.Call call = createAlertUsingPOSTValidateBeforeCall(body, null, null);
         Type localVarReturnType = new TypeToken<AlertRuleResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -154,7 +154,7 @@ public class AlertsApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call createAlertUsingPOST1Async(AlertRule body, final ApiCallback<AlertRuleResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call createAlertUsingPOSTAsync(AlertRule body, final ApiCallback<AlertRuleResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -175,7 +175,7 @@ public class AlertsApi {
             };
         }
 
-        com.squareup.okhttp.Call call = createAlertUsingPOST1ValidateBeforeCall(body, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = createAlertUsingPOSTValidateBeforeCall(body, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<AlertRuleResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
@@ -306,14 +306,14 @@ public class AlertsApi {
         return call;
     }
     /**
-     * Build call for disableAlertRuleUsingPUT1
+     * Build call for disableAlertRuleUsingPUT
      * @param updateableAlertId updateableAlertId (required)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call disableAlertRuleUsingPUT1Call(Long updateableAlertId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call disableAlertRuleUsingPUTCall(Long updateableAlertId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
         
         // create path and map variables
@@ -356,13 +356,13 @@ public class AlertsApi {
     }
     
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call disableAlertRuleUsingPUT1ValidateBeforeCall(Long updateableAlertId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call disableAlertRuleUsingPUTValidateBeforeCall(Long updateableAlertId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         // verify the required parameter 'updateableAlertId' is set
         if (updateableAlertId == null) {
-            throw new ApiException("Missing the required parameter 'updateableAlertId' when calling disableAlertRuleUsingPUT1(Async)");
+            throw new ApiException("Missing the required parameter 'updateableAlertId' when calling disableAlertRuleUsingPUT(Async)");
         }
         
-        com.squareup.okhttp.Call call = disableAlertRuleUsingPUT1Call(updateableAlertId, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = disableAlertRuleUsingPUTCall(updateableAlertId, progressListener, progressRequestListener);
         return call;
 
         
@@ -378,8 +378,8 @@ public class AlertsApi {
      * @return GenericMapBasedApiResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public GenericMapBasedApiResponse disableAlertRuleUsingPUT1(Long updateableAlertId) throws ApiException {
-        ApiResponse<GenericMapBasedApiResponse> resp = disableAlertRuleUsingPUT1WithHttpInfo(updateableAlertId);
+    public GenericMapBasedApiResponse disableAlertRuleUsingPUT(Long updateableAlertId) throws ApiException {
+        ApiResponse<GenericMapBasedApiResponse> resp = disableAlertRuleUsingPUTWithHttpInfo(updateableAlertId);
         return resp.getData();
     }
 
@@ -390,8 +390,8 @@ public class AlertsApi {
      * @return ApiResponse&lt;GenericMapBasedApiResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<GenericMapBasedApiResponse> disableAlertRuleUsingPUT1WithHttpInfo(Long updateableAlertId) throws ApiException {
-        com.squareup.okhttp.Call call = disableAlertRuleUsingPUT1ValidateBeforeCall(updateableAlertId, null, null);
+    public ApiResponse<GenericMapBasedApiResponse> disableAlertRuleUsingPUTWithHttpInfo(Long updateableAlertId) throws ApiException {
+        com.squareup.okhttp.Call call = disableAlertRuleUsingPUTValidateBeforeCall(updateableAlertId, null, null);
         Type localVarReturnType = new TypeToken<GenericMapBasedApiResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -404,7 +404,7 @@ public class AlertsApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call disableAlertRuleUsingPUT1Async(Long updateableAlertId, final ApiCallback<GenericMapBasedApiResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call disableAlertRuleUsingPUTAsync(Long updateableAlertId, final ApiCallback<GenericMapBasedApiResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -425,20 +425,20 @@ public class AlertsApi {
             };
         }
 
-        com.squareup.okhttp.Call call = disableAlertRuleUsingPUT1ValidateBeforeCall(updateableAlertId, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = disableAlertRuleUsingPUTValidateBeforeCall(updateableAlertId, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<GenericMapBasedApiResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
     }
     /**
-     * Build call for enableAlertRuleUsingPUT1
+     * Build call for enableAlertRuleUsingPUT
      * @param updateableAlertId updateableAlertId (required)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call enableAlertRuleUsingPUT1Call(Long updateableAlertId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call enableAlertRuleUsingPUTCall(Long updateableAlertId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
         
         // create path and map variables
@@ -481,13 +481,13 @@ public class AlertsApi {
     }
     
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call enableAlertRuleUsingPUT1ValidateBeforeCall(Long updateableAlertId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call enableAlertRuleUsingPUTValidateBeforeCall(Long updateableAlertId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         // verify the required parameter 'updateableAlertId' is set
         if (updateableAlertId == null) {
-            throw new ApiException("Missing the required parameter 'updateableAlertId' when calling enableAlertRuleUsingPUT1(Async)");
+            throw new ApiException("Missing the required parameter 'updateableAlertId' when calling enableAlertRuleUsingPUT(Async)");
         }
         
-        com.squareup.okhttp.Call call = enableAlertRuleUsingPUT1Call(updateableAlertId, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = enableAlertRuleUsingPUTCall(updateableAlertId, progressListener, progressRequestListener);
         return call;
 
         
@@ -503,8 +503,8 @@ public class AlertsApi {
      * @return GenericMapBasedApiResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public GenericMapBasedApiResponse enableAlertRuleUsingPUT1(Long updateableAlertId) throws ApiException {
-        ApiResponse<GenericMapBasedApiResponse> resp = enableAlertRuleUsingPUT1WithHttpInfo(updateableAlertId);
+    public GenericMapBasedApiResponse enableAlertRuleUsingPUT(Long updateableAlertId) throws ApiException {
+        ApiResponse<GenericMapBasedApiResponse> resp = enableAlertRuleUsingPUTWithHttpInfo(updateableAlertId);
         return resp.getData();
     }
 
@@ -515,8 +515,8 @@ public class AlertsApi {
      * @return ApiResponse&lt;GenericMapBasedApiResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<GenericMapBasedApiResponse> enableAlertRuleUsingPUT1WithHttpInfo(Long updateableAlertId) throws ApiException {
-        com.squareup.okhttp.Call call = enableAlertRuleUsingPUT1ValidateBeforeCall(updateableAlertId, null, null);
+    public ApiResponse<GenericMapBasedApiResponse> enableAlertRuleUsingPUTWithHttpInfo(Long updateableAlertId) throws ApiException {
+        com.squareup.okhttp.Call call = enableAlertRuleUsingPUTValidateBeforeCall(updateableAlertId, null, null);
         Type localVarReturnType = new TypeToken<GenericMapBasedApiResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -529,7 +529,7 @@ public class AlertsApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call enableAlertRuleUsingPUT1Async(Long updateableAlertId, final ApiCallback<GenericMapBasedApiResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call enableAlertRuleUsingPUTAsync(Long updateableAlertId, final ApiCallback<GenericMapBasedApiResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -550,20 +550,20 @@ public class AlertsApi {
             };
         }
 
-        com.squareup.okhttp.Call call = enableAlertRuleUsingPUT1ValidateBeforeCall(updateableAlertId, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = enableAlertRuleUsingPUTValidateBeforeCall(updateableAlertId, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<GenericMapBasedApiResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
     }
     /**
-     * Build call for getAlertRulesForAppUsingGET
+     * Build call for getAlertRulesForAppUsingGET1
      * @param appId appId (required)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call getAlertRulesForAppUsingGETCall(Long appId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call getAlertRulesForAppUsingGET1Call(Long appId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
         
         // create path and map variables
@@ -606,13 +606,13 @@ public class AlertsApi {
     }
     
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call getAlertRulesForAppUsingGETValidateBeforeCall(Long appId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call getAlertRulesForAppUsingGET1ValidateBeforeCall(Long appId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         // verify the required parameter 'appId' is set
         if (appId == null) {
-            throw new ApiException("Missing the required parameter 'appId' when calling getAlertRulesForAppUsingGET(Async)");
+            throw new ApiException("Missing the required parameter 'appId' when calling getAlertRulesForAppUsingGET1(Async)");
         }
         
-        com.squareup.okhttp.Call call = getAlertRulesForAppUsingGETCall(appId, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = getAlertRulesForAppUsingGET1Call(appId, progressListener, progressRequestListener);
         return call;
 
         
@@ -628,8 +628,8 @@ public class AlertsApi {
      * @return AlertRulesResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public AlertRulesResponse getAlertRulesForAppUsingGET(Long appId) throws ApiException {
-        ApiResponse<AlertRulesResponse> resp = getAlertRulesForAppUsingGETWithHttpInfo(appId);
+    public AlertRulesResponse getAlertRulesForAppUsingGET1(Long appId) throws ApiException {
+        ApiResponse<AlertRulesResponse> resp = getAlertRulesForAppUsingGET1WithHttpInfo(appId);
         return resp.getData();
     }
 
@@ -640,8 +640,8 @@ public class AlertsApi {
      * @return ApiResponse&lt;AlertRulesResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<AlertRulesResponse> getAlertRulesForAppUsingGETWithHttpInfo(Long appId) throws ApiException {
-        com.squareup.okhttp.Call call = getAlertRulesForAppUsingGETValidateBeforeCall(appId, null, null);
+    public ApiResponse<AlertRulesResponse> getAlertRulesForAppUsingGET1WithHttpInfo(Long appId) throws ApiException {
+        com.squareup.okhttp.Call call = getAlertRulesForAppUsingGET1ValidateBeforeCall(appId, null, null);
         Type localVarReturnType = new TypeToken<AlertRulesResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -654,7 +654,7 @@ public class AlertsApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call getAlertRulesForAppUsingGETAsync(Long appId, final ApiCallback<AlertRulesResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call getAlertRulesForAppUsingGET1Async(Long appId, final ApiCallback<AlertRulesResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -675,7 +675,7 @@ public class AlertsApi {
             };
         }
 
-        com.squareup.okhttp.Call call = getAlertRulesForAppUsingGETValidateBeforeCall(appId, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = getAlertRulesForAppUsingGET1ValidateBeforeCall(appId, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<AlertRulesResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;

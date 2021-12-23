@@ -12,7 +12,6 @@
 
 package com.sematext.cloud.client;
 
-import com.sematext.cloud.ApiException;
 import com.sematext.cloud.model.CreateTokenDto;
 import com.sematext.cloud.model.GenericMapBasedApiResponse;
 import com.sematext.cloud.model.TokenResponse;
@@ -21,10 +20,12 @@ import com.sematext.cloud.model.UpdateTokenDto;
 import org.junit.Test;
 import org.junit.Ignore;
 
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 
 /**
  * API tests for TokensApiControllerApi
@@ -39,14 +40,14 @@ public class TokensApiControllerApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void createAppTokenTest() throws ApiException {
+    public void createAppToken1Test() throws Exception {
         CreateTokenDto body = null;
         Long appId = null;
-        TokenResponse response = api.createAppToken(body, appId);
+        TokenResponse response = api.createAppToken1(body, appId);
 
         // TODO: test validations
     }
@@ -55,11 +56,11 @@ public class TokensApiControllerApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void deleteAppToken1Test() throws ApiException {
+    public void deleteAppToken1Test() throws Exception {
         Long appId = null;
         Long tokenId = null;
         GenericMapBasedApiResponse response = api.deleteAppToken1(appId, tokenId);
@@ -71,13 +72,13 @@ public class TokensApiControllerApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void getAppTokens1Test() throws ApiException {
+    public void getAppTokensTest() throws Exception {
         Long appId = null;
-        TokensResponse response = api.getAppTokens1(appId);
+        TokensResponse response = api.getAppTokens(appId);
 
         // TODO: test validations
     }
@@ -86,11 +87,11 @@ public class TokensApiControllerApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void regenerateAppToken1Test() throws ApiException {
+    public void regenerateAppToken1Test() throws Exception {
         Long appId = null;
         Long tokenId = null;
         TokenResponse response = api.regenerateAppToken1(appId, tokenId);
@@ -102,15 +103,15 @@ public class TokensApiControllerApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void updateAppTokenTest() throws ApiException {
+    public void updateAppToken1Test() throws Exception {
         UpdateTokenDto body = null;
         Long appId = null;
         Long tokenId = null;
-        TokenResponse response = api.updateAppToken(body, appId, tokenId);
+        TokenResponse response = api.updateAppToken1(body, appId, tokenId);
 
         // TODO: test validations
     }

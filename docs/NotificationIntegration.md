@@ -1,6 +1,7 @@
 # NotificationIntegration
 
 ## Properties
+
 | Name                | Type                                            | Description | Notes      |
 | ------------------- | ----------------------------------------------- | ----------- | ---------- |
 | **applicability**   | [**ApplicabilityEnum**](#ApplicabilityEnum)     |             | [optional] |
@@ -15,14 +16,18 @@
 | **userId**          | **Long**                                        |             | [optional] |
 
 <a name="ApplicabilityEnum"></a>
+
 ## Enum: ApplicabilityEnum
+
 | Name       | Value                  |
 | ---------- | ---------------------- |
 | NONE       | &quot;NONE&quot;       |
 | USE_ALWAYS | &quot;USE_ALWAYS&quot; |
 
 <a name="IntegrationTypeEnum"></a>
+
 ## Enum: IntegrationTypeEnum
+
 | Name                 | Value                            |
 | -------------------- | -------------------------------- |
 | PAGER_DUTY           | &quot;PAGER_DUTY&quot;           |
@@ -34,7 +39,9 @@
 | TEMPORARY_EMAIL_LIST | &quot;TEMPORARY_EMAIL_LIST&quot; |
 
 <a name="StateEnum"></a>
+
 ## Enum: StateEnum
+
 | Name     | Value                |
 | -------- | -------------------- |
 | ACTIVE   | &quot;ACTIVE&quot;   |

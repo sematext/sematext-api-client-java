@@ -12,16 +12,17 @@
 
 package com.sematext.cloud.client;
 
-import com.sematext.cloud.ApiException;
 import com.sematext.cloud.model.GenericMapBasedApiResponse;
 import com.sematext.cloud.model.UserInfo;
 import org.junit.Test;
 import org.junit.Ignore;
 
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 
 /**
  * API tests for ResetPasswordApi
@@ -36,11 +37,11 @@ public class ResetPasswordApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void resetPasswordUsingPOSTTest() throws ApiException {
+    public void resetPasswordUsingPOSTTest() throws Exception {
         UserInfo body = null;
         GenericMapBasedApiResponse response = api.resetPasswordUsingPOST(body);
 

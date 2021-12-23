@@ -12,15 +12,16 @@
 
 package com.sematext.cloud.client;
 
-import com.sematext.cloud.ApiException;
 import com.sematext.cloud.model.UsageResponse;
 import org.junit.Test;
 import org.junit.Ignore;
+
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 
 /**
  * API tests for LogsUsageApiControllerApi
@@ -35,11 +36,11 @@ public class LogsUsageApiControllerApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void getForRangeUsingGETTest() throws ApiException {
+    public void getForRangeUsingGETTest() throws Exception {
         Long appId = null;
         Long from = null;
         Long to = null;

@@ -44,6 +44,9 @@ public class MinPeriodFeePeriod {
   @SerializedName("id")
   private Long id = null;
 
+  @SerializedName("ingestionPeriodFeeAmount")
+  private BigDecimal ingestionPeriodFeeAmount = null;
+
   @SerializedName("minPeriodFeeAmount")
   private BigDecimal minPeriodFeeAmount = null;
 
@@ -52,6 +55,9 @@ public class MinPeriodFeePeriod {
 
   @SerializedName("planDataLimit")
   private Long planDataLimit = null;
+
+  @SerializedName("storagePeriodFeeAmount")
+  private BigDecimal storagePeriodFeeAmount = null;
 
   @SerializedName("toDate")
   private OffsetDateTime toDate = null;
@@ -152,6 +158,24 @@ public class MinPeriodFeePeriod {
     this.id = id;
   }
 
+  public MinPeriodFeePeriod ingestionPeriodFeeAmount(BigDecimal ingestionPeriodFeeAmount) {
+    this.ingestionPeriodFeeAmount = ingestionPeriodFeeAmount;
+    return this;
+  }
+
+   /**
+   * Get ingestionPeriodFeeAmount
+   * @return ingestionPeriodFeeAmount
+  **/
+  @Schema(description = "")
+  public BigDecimal getIngestionPeriodFeeAmount() {
+    return ingestionPeriodFeeAmount;
+  }
+
+  public void setIngestionPeriodFeeAmount(BigDecimal ingestionPeriodFeeAmount) {
+    this.ingestionPeriodFeeAmount = ingestionPeriodFeeAmount;
+  }
+
   public MinPeriodFeePeriod minPeriodFeeAmount(BigDecimal minPeriodFeeAmount) {
     this.minPeriodFeeAmount = minPeriodFeeAmount;
     return this;
@@ -204,6 +228,24 @@ public class MinPeriodFeePeriod {
 
   public void setPlanDataLimit(Long planDataLimit) {
     this.planDataLimit = planDataLimit;
+  }
+
+  public MinPeriodFeePeriod storagePeriodFeeAmount(BigDecimal storagePeriodFeeAmount) {
+    this.storagePeriodFeeAmount = storagePeriodFeeAmount;
+    return this;
+  }
+
+   /**
+   * Get storagePeriodFeeAmount
+   * @return storagePeriodFeeAmount
+  **/
+  @Schema(description = "")
+  public BigDecimal getStoragePeriodFeeAmount() {
+    return storagePeriodFeeAmount;
+  }
+
+  public void setStoragePeriodFeeAmount(BigDecimal storagePeriodFeeAmount) {
+    this.storagePeriodFeeAmount = storagePeriodFeeAmount;
   }
 
   public MinPeriodFeePeriod toDate(OffsetDateTime toDate) {
@@ -275,9 +317,11 @@ public class MinPeriodFeePeriod {
         Objects.equals(this.fromDate, minPeriodFeePeriod.fromDate) &&
         Objects.equals(this.httpMonitors, minPeriodFeePeriod.httpMonitors) &&
         Objects.equals(this.id, minPeriodFeePeriod.id) &&
+        Objects.equals(this.ingestionPeriodFeeAmount, minPeriodFeePeriod.ingestionPeriodFeeAmount) &&
         Objects.equals(this.minPeriodFeeAmount, minPeriodFeePeriod.minPeriodFeeAmount) &&
         Objects.equals(this.overagePercentage, minPeriodFeePeriod.overagePercentage) &&
         Objects.equals(this.planDataLimit, minPeriodFeePeriod.planDataLimit) &&
+        Objects.equals(this.storagePeriodFeeAmount, minPeriodFeePeriod.storagePeriodFeeAmount) &&
         Objects.equals(this.toDate, minPeriodFeePeriod.toDate) &&
         Objects.equals(this.usedPlan, minPeriodFeePeriod.usedPlan) &&
         Objects.equals(this.usedPlanPeriodFee, minPeriodFeePeriod.usedPlanPeriodFee);
@@ -285,7 +329,7 @@ public class MinPeriodFeePeriod {
 
   @Override
   public int hashCode() {
-    return Objects.hash(browserMonitors, discount, fromDate, httpMonitors, id, minPeriodFeeAmount, overagePercentage, planDataLimit, toDate, usedPlan, usedPlanPeriodFee);
+    return Objects.hash(browserMonitors, discount, fromDate, httpMonitors, id, ingestionPeriodFeeAmount, minPeriodFeeAmount, overagePercentage, planDataLimit, storagePeriodFeeAmount, toDate, usedPlan, usedPlanPeriodFee);
   }
 
 
@@ -299,9 +343,11 @@ public class MinPeriodFeePeriod {
     sb.append("    fromDate: ").append(toIndentedString(fromDate)).append("\n");
     sb.append("    httpMonitors: ").append(toIndentedString(httpMonitors)).append("\n");
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    ingestionPeriodFeeAmount: ").append(toIndentedString(ingestionPeriodFeeAmount)).append("\n");
     sb.append("    minPeriodFeeAmount: ").append(toIndentedString(minPeriodFeeAmount)).append("\n");
     sb.append("    overagePercentage: ").append(toIndentedString(overagePercentage)).append("\n");
     sb.append("    planDataLimit: ").append(toIndentedString(planDataLimit)).append("\n");
+    sb.append("    storagePeriodFeeAmount: ").append(toIndentedString(storagePeriodFeeAmount)).append("\n");
     sb.append("    toDate: ").append(toIndentedString(toDate)).append("\n");
     sb.append("    usedPlan: ").append(toIndentedString(usedPlan)).append("\n");
     sb.append("    usedPlanPeriodFee: ").append(toIndentedString(usedPlanPeriodFee)).append("\n");

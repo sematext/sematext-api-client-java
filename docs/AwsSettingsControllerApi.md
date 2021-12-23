@@ -7,7 +7,9 @@ All URIs are relative to */*
 | [**updateUsingPUT1**](AwsSettingsControllerApi.md#updateUsingPUT1) | **PUT** /users-web/api/v3/apps/{appId}/aws | Update App&#x27;s AWS CloudWatch settings |
 
 <a name="updateUsingPUT1"></a>
+
 # **updateUsingPUT1**
+
 > CloudWatchSettingsResponse updateUsingPUT1(body, appId)
 
 Update App&#x27;s AWS CloudWatch settings
@@ -15,6 +17,7 @@ Update App&#x27;s AWS CloudWatch settings
 Applicable only for AWS Apps
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -60,5 +63,5 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json

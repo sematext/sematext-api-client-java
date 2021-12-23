@@ -57,9 +57,9 @@ public class AppMetadata {
     public String toString() {
       return String.valueOf(value);
     }
-    public static AwsFetchFrequencyEnum fromValue(String text) {
+    public static AwsFetchFrequencyEnum fromValue(String input) {
       for (AwsFetchFrequencyEnum b : AwsFetchFrequencyEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -68,13 +68,13 @@ public class AppMetadata {
     public static class Adapter extends TypeAdapter<AwsFetchFrequencyEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final AwsFetchFrequencyEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public AwsFetchFrequencyEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return AwsFetchFrequencyEnum.fromValue(String.valueOf(value));
+        return AwsFetchFrequencyEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("awsFetchFrequency")
@@ -115,9 +115,9 @@ public class AppMetadata {
     public String toString() {
       return String.valueOf(value);
     }
-    public static AwsRegionEnum fromValue(String text) {
+    public static AwsRegionEnum fromValue(String input) {
       for (AwsRegionEnum b : AwsRegionEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -126,13 +126,13 @@ public class AppMetadata {
     public static class Adapter extends TypeAdapter<AwsRegionEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final AwsRegionEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public AwsRegionEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return AwsRegionEnum.fromValue(String.valueOf(value));
+        return AwsRegionEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("awsRegion")
@@ -160,9 +160,9 @@ public class AppMetadata {
     public String toString() {
       return String.valueOf(value);
     }
-    public static SubTypesEnum fromValue(String text) {
+    public static SubTypesEnum fromValue(String input) {
       for (SubTypesEnum b : SubTypesEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -171,13 +171,13 @@ public class AppMetadata {
     public static class Adapter extends TypeAdapter<SubTypesEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final SubTypesEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public SubTypesEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return SubTypesEnum.fromValue(String.valueOf(value));
+        return SubTypesEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("subTypes")

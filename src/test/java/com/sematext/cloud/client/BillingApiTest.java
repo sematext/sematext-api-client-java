@@ -12,7 +12,6 @@
 
 package com.sematext.cloud.client;
 
-import com.sematext.cloud.ApiException;
 import com.sematext.cloud.model.BillingInfo;
 import com.sematext.cloud.model.InvoiceResponse;
 import com.sematext.cloud.model.PlansResponse;
@@ -20,10 +19,12 @@ import com.sematext.cloud.model.UpdatePlanResponse;
 import org.junit.Test;
 import org.junit.Ignore;
 
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 
 /**
  * API tests for BillingApi
@@ -38,11 +39,11 @@ public class BillingApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void getDetailedInvoiceUsingGETTest() throws ApiException {
+    public void getDetailedInvoiceUsingGETTest() throws Exception {
         String service = null;
         Integer year = null;
         Integer month = null;
@@ -55,14 +56,14 @@ public class BillingApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void listAvailablePlansUsingGETTest() throws ApiException {
+    public void listAvailablePlansUsingGET1Test() throws Exception {
         Long integrationId = null;
         String appType = null;
-        PlansResponse response = api.listAvailablePlansUsingGET(integrationId, appType);
+        PlansResponse response = api.listAvailablePlansUsingGET1(integrationId, appType);
 
         // TODO: test validations
     }
@@ -71,11 +72,11 @@ public class BillingApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void updatePlanUsingPUTTest() throws ApiException {
+    public void updatePlanUsingPUTTest() throws Exception {
         BillingInfo body = null;
         Long appId = null;
         UpdatePlanResponse response = api.updatePlanUsingPUT(body, appId);

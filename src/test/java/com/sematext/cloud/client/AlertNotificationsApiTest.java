@@ -12,16 +12,17 @@
 
 package com.sematext.cloud.client;
 
-import com.sematext.cloud.ApiException;
 import com.sematext.cloud.model.AlertNotificationRequest;
 import com.sematext.cloud.model.NotificationsResponse;
 import org.junit.Test;
 import org.junit.Ignore;
 
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 
 /**
  * API tests for AlertNotificationsApi
@@ -36,11 +37,11 @@ public class AlertNotificationsApiTest {
      *
      * Default value of interval is 1d
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void getAlertNotificationsForAppUsingPOSTTest() throws ApiException {
+    public void getAlertNotificationsForAppUsingPOSTTest() throws Exception {
         AlertNotificationRequest body = null;
         Long appId = null;
         NotificationsResponse response = api.getAlertNotificationsForAppUsingPOST(body, appId);
@@ -52,11 +53,11 @@ public class AlertNotificationsApiTest {
      *
      * Default value of interval is 1d
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void getAlertNotificationsForUserUsingPOSTTest() throws ApiException {
+    public void getAlertNotificationsForUserUsingPOSTTest() throws Exception {
         AlertNotificationRequest body = null;
         NotificationsResponse response = api.getAlertNotificationsForUserUsingPOST(body);
 

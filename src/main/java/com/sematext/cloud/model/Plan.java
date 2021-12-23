@@ -72,7 +72,8 @@ public class Plan {
     RUM_1_1("RUM_1_1"),
     RUM_EA("RUM_EA"),
     SYNTHETICS_EA("SYNTHETICS_EA"),
-    SYNTHETICS_1_0("SYNTHETICS_1_0");
+    SYNTHETICS_1_0("SYNTHETICS_1_0"),
+    BUGZ_EA("BUGZ_EA");
 
     private String value;
 
@@ -87,9 +88,9 @@ public class Plan {
     public String toString() {
       return String.valueOf(value);
     }
-    public static PlanSchemeEnum fromValue(String text) {
+    public static PlanSchemeEnum fromValue(String input) {
       for (PlanSchemeEnum b : PlanSchemeEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -98,13 +99,13 @@ public class Plan {
     public static class Adapter extends TypeAdapter<PlanSchemeEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final PlanSchemeEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public PlanSchemeEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return PlanSchemeEnum.fromValue(String.valueOf(value));
+        return PlanSchemeEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("planScheme")
@@ -133,9 +134,9 @@ public class Plan {
     public String toString() {
       return String.valueOf(value);
     }
-    public static SematextServiceEnum fromValue(String text) {
+    public static SematextServiceEnum fromValue(String input) {
       for (SematextServiceEnum b : SematextServiceEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -144,13 +145,13 @@ public class Plan {
     public static class Adapter extends TypeAdapter<SematextServiceEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final SematextServiceEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public SematextServiceEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return SematextServiceEnum.fromValue(String.valueOf(value));
+        return SematextServiceEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("sematextService")

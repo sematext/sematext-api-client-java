@@ -1,6 +1,7 @@
 # CloudWatchSettings
 
 ## Properties
+
 | Name               | Type                                          | Description | Notes      |
 | ------------------ | --------------------------------------------- | ----------- | ---------- |
 | **accessKey**      | **String**                                    |             | [optional] |
@@ -9,7 +10,9 @@
 | **secretKey**      | **String**                                    |             | [optional] |
 
 <a name="FetchFrequencyEnum"></a>
+
 ## Enum: FetchFrequencyEnum
+
 | Name            | Value                       |
 | --------------- | --------------------------- |
 | MINUTE          | &quot;MINUTE&quot;          |
@@ -17,7 +20,9 @@
 | FIFTEEN_MINUTES | &quot;FIFTEEN_MINUTES&quot; |
 
 <a name="RegionEnum"></a>
+
 ## Enum: RegionEnum
+
 | Name           | Value                      |
 | -------------- | -------------------------- |
 | US_EAST_1      | &quot;US_EAST_1&quot;      |

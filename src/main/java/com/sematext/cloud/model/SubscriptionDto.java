@@ -29,6 +29,9 @@ import java.time.OffsetDateTime;
 
 
 public class SubscriptionDto {
+  @SerializedName("additionalParams")
+  private String additionalParams = null;
+
   @SerializedName("addresses")
   private String addresses = null;
 
@@ -62,9 +65,9 @@ public class SubscriptionDto {
     public String toString() {
       return String.valueOf(value);
     }
-    public static FrequencyEnum fromValue(String text) {
+    public static FrequencyEnum fromValue(String input) {
       for (FrequencyEnum b : FrequencyEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -73,13 +76,13 @@ public class SubscriptionDto {
     public static class Adapter extends TypeAdapter<FrequencyEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final FrequencyEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public FrequencyEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return FrequencyEnum.fromValue(String.valueOf(value));
+        return FrequencyEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("frequency")
@@ -128,9 +131,9 @@ public class SubscriptionDto {
     public String toString() {
       return String.valueOf(value);
     }
-    public static TimeRangeEnum fromValue(String text) {
+    public static TimeRangeEnum fromValue(String input) {
       for (TimeRangeEnum b : TimeRangeEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -139,13 +142,13 @@ public class SubscriptionDto {
     public static class Adapter extends TypeAdapter<TimeRangeEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final TimeRangeEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public TimeRangeEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return TimeRangeEnum.fromValue(String.valueOf(value));
+        return TimeRangeEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("timeRange")
@@ -153,6 +156,24 @@ public class SubscriptionDto {
 
   @SerializedName("userPermissions")
   private UserPermissions userPermissions = null;
+
+  public SubscriptionDto additionalParams(String additionalParams) {
+    this.additionalParams = additionalParams;
+    return this;
+  }
+
+   /**
+   * Get additionalParams
+   * @return additionalParams
+  **/
+  @Schema(description = "")
+  public String getAdditionalParams() {
+    return additionalParams;
+  }
+
+  public void setAdditionalParams(String additionalParams) {
+    this.additionalParams = additionalParams;
+  }
 
   public SubscriptionDto addresses(String addresses) {
     this.addresses = addresses;
@@ -380,7 +401,8 @@ public class SubscriptionDto {
       return false;
     }
     SubscriptionDto subscriptionDto = (SubscriptionDto) o;
-    return Objects.equals(this.addresses, subscriptionDto.addresses) &&
+    return Objects.equals(this.additionalParams, subscriptionDto.additionalParams) &&
+        Objects.equals(this.addresses, subscriptionDto.addresses) &&
         Objects.equals(this.enable, subscriptionDto.enable) &&
         Objects.equals(this.filters, subscriptionDto.filters) &&
         Objects.equals(this.frequency, subscriptionDto.frequency) &&
@@ -396,7 +418,7 @@ public class SubscriptionDto {
 
   @Override
   public int hashCode() {
-    return Objects.hash(addresses, enable, filters, frequency, id, reportName, sendTime, subject, systemId, text, timeRange, userPermissions);
+    return Objects.hash(additionalParams, addresses, enable, filters, frequency, id, reportName, sendTime, subject, systemId, text, timeRange, userPermissions);
   }
 
 
@@ -405,6 +427,7 @@ public class SubscriptionDto {
     StringBuilder sb = new StringBuilder();
     sb.append("class SubscriptionDto {\n");
     
+    sb.append("    additionalParams: ").append(toIndentedString(additionalParams)).append("\n");
     sb.append("    addresses: ").append(toIndentedString(addresses)).append("\n");
     sb.append("    enable: ").append(toIndentedString(enable)).append("\n");
     sb.append("    filters: ").append(toIndentedString(filters)).append("\n");

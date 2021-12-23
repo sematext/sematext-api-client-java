@@ -1,6 +1,7 @@
 # AlertRule
 
 ## Properties
+
 | Name                                      | Type                                                                          | Description | Notes      |
 | ----------------------------------------- | ----------------------------------------------------------------------------- | ----------- | ---------- |
 | **accountEmail**                          | **String**                                                                    |             | [optional] |
@@ -53,7 +54,9 @@
 | **valueName**                             | **String**                                                                    |             | [optional] |
 
 <a name="EstimateOperationEnum"></a>
+
 ## Enum: EstimateOperationEnum
+
 | Name          | Value                     |
 | ------------- | ------------------------- |
 | LESS          | &quot;LESS&quot;          |

@@ -216,7 +216,7 @@ public class TagApiControllerApi {
         return call;
     }
     /**
-     * Build call for getUsingGET2
+     * Build call for getUsingGET
      * @param appIds appIds (required)
      * @param tag tag (required)
      * @param from from (optional)
@@ -230,7 +230,7 @@ public class TagApiControllerApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call getUsingGET2Call(String appIds, List<String> tag, Long from, Long to, Boolean metrics, Boolean logs, Boolean events, Boolean rum, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call getUsingGETCall(String appIds, List<String> tag, Long from, Long to, Boolean metrics, Boolean logs, Boolean events, Boolean rum, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
         
         // create path and map variables
@@ -287,17 +287,17 @@ public class TagApiControllerApi {
     }
     
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call getUsingGET2ValidateBeforeCall(String appIds, List<String> tag, Long from, Long to, Boolean metrics, Boolean logs, Boolean events, Boolean rum, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call getUsingGETValidateBeforeCall(String appIds, List<String> tag, Long from, Long to, Boolean metrics, Boolean logs, Boolean events, Boolean rum, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         // verify the required parameter 'appIds' is set
         if (appIds == null) {
-            throw new ApiException("Missing the required parameter 'appIds' when calling getUsingGET2(Async)");
+            throw new ApiException("Missing the required parameter 'appIds' when calling getUsingGET(Async)");
         }
         // verify the required parameter 'tag' is set
         if (tag == null) {
-            throw new ApiException("Missing the required parameter 'tag' when calling getUsingGET2(Async)");
+            throw new ApiException("Missing the required parameter 'tag' when calling getUsingGET(Async)");
         }
         
-        com.squareup.okhttp.Call call = getUsingGET2Call(appIds, tag, from, to, metrics, logs, events, rum, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = getUsingGETCall(appIds, tag, from, to, metrics, logs, events, rum, progressListener, progressRequestListener);
         return call;
 
         
@@ -320,8 +320,8 @@ public class TagApiControllerApi {
      * @return Map&lt;String, Dimension&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public Map<String, Dimension> getUsingGET2(String appIds, List<String> tag, Long from, Long to, Boolean metrics, Boolean logs, Boolean events, Boolean rum) throws ApiException {
-        ApiResponse<Map<String, Dimension>> resp = getUsingGET2WithHttpInfo(appIds, tag, from, to, metrics, logs, events, rum);
+    public Map<String, Dimension> getUsingGET(String appIds, List<String> tag, Long from, Long to, Boolean metrics, Boolean logs, Boolean events, Boolean rum) throws ApiException {
+        ApiResponse<Map<String, Dimension>> resp = getUsingGETWithHttpInfo(appIds, tag, from, to, metrics, logs, events, rum);
         return resp.getData();
     }
 
@@ -339,8 +339,8 @@ public class TagApiControllerApi {
      * @return ApiResponse&lt;Map&lt;String, Dimension&gt;&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<Map<String, Dimension>> getUsingGET2WithHttpInfo(String appIds, List<String> tag, Long from, Long to, Boolean metrics, Boolean logs, Boolean events, Boolean rum) throws ApiException {
-        com.squareup.okhttp.Call call = getUsingGET2ValidateBeforeCall(appIds, tag, from, to, metrics, logs, events, rum, null, null);
+    public ApiResponse<Map<String, Dimension>> getUsingGETWithHttpInfo(String appIds, List<String> tag, Long from, Long to, Boolean metrics, Boolean logs, Boolean events, Boolean rum) throws ApiException {
+        com.squareup.okhttp.Call call = getUsingGETValidateBeforeCall(appIds, tag, from, to, metrics, logs, events, rum, null, null);
         Type localVarReturnType = new TypeToken<Map<String, Dimension>>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -360,7 +360,7 @@ public class TagApiControllerApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call getUsingGET2Async(String appIds, List<String> tag, Long from, Long to, Boolean metrics, Boolean logs, Boolean events, Boolean rum, final ApiCallback<Map<String, Dimension>> callback) throws ApiException {
+    public com.squareup.okhttp.Call getUsingGETAsync(String appIds, List<String> tag, Long from, Long to, Boolean metrics, Boolean logs, Boolean events, Boolean rum, final ApiCallback<Map<String, Dimension>> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -381,7 +381,7 @@ public class TagApiControllerApi {
             };
         }
 
-        com.squareup.okhttp.Call call = getUsingGET2ValidateBeforeCall(appIds, tag, from, to, metrics, logs, events, rum, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = getUsingGETValidateBeforeCall(appIds, tag, from, to, metrics, logs, events, rum, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<Map<String, Dimension>>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;

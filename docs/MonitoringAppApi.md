@@ -2,17 +2,20 @@
 
 All URIs are relative to */*
 
-| Method                                                                 | HTTP request                      | Description           |
-| ---------------------------------------------------------------------- | --------------------------------- | --------------------- |
-| [**createSpmApplication1**](MonitoringAppApi.md#createSpmApplication1) | **POST** /spm-reports/api/v3/apps | Create Monitoring App |
+| Method                                                               | HTTP request                      | Description           |
+| -------------------------------------------------------------------- | --------------------------------- | --------------------- |
+| [**createSpmApplication**](MonitoringAppApi.md#createSpmApplication) | **POST** /spm-reports/api/v3/apps | Create Monitoring App |
 
-<a name="createSpmApplication1"></a>
-# **createSpmApplication1**
-> AppsResponse createSpmApplication1(body)
+<a name="createSpmApplication"></a>
+
+# **createSpmApplication**
+
+> AppsResponse createSpmApplication(body)
 
 Create Monitoring App
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -32,10 +35,10 @@ api_key.setApiKey("YOUR API KEY");
 MonitoringAppApi apiInstance = new MonitoringAppApi();
 CreateAppInfo body = new CreateAppInfo(); // CreateAppInfo | Details of the application to be created
 try {
-    AppsResponse result = apiInstance.createSpmApplication1(body);
+    AppsResponse result = apiInstance.createSpmApplication(body);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling MonitoringAppApi#createSpmApplication1");
+    System.err.println("Exception when calling MonitoringAppApi#createSpmApplication");
     e.printStackTrace();
 }
 ```
@@ -56,5 +59,5 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json

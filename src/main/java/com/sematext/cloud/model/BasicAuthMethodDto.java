@@ -48,9 +48,9 @@ public class BasicAuthMethodDto {
     public String toString() {
       return String.valueOf(value);
     }
-    public static AuthTypeEnum fromValue(String text) {
+    public static AuthTypeEnum fromValue(String input) {
       for (AuthTypeEnum b : AuthTypeEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -59,13 +59,13 @@ public class BasicAuthMethodDto {
     public static class Adapter extends TypeAdapter<AuthTypeEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final AuthTypeEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public AuthTypeEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return AuthTypeEnum.fromValue(String.valueOf(value));
+        return AuthTypeEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("authType")

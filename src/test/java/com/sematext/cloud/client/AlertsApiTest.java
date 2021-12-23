@@ -12,7 +12,6 @@
 
 package com.sematext.cloud.client;
 
-import com.sematext.cloud.ApiException;
 import com.sematext.cloud.model.AlertRule;
 import com.sematext.cloud.model.AlertRuleResponse;
 import com.sematext.cloud.model.AlertRulesResponse;
@@ -20,10 +19,12 @@ import com.sematext.cloud.model.GenericMapBasedApiResponse;
 import org.junit.Test;
 import org.junit.Ignore;
 
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 
 /**
  * API tests for AlertsApi
@@ -38,13 +39,13 @@ public class AlertsApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void createAlertUsingPOST1Test() throws ApiException {
+    public void createAlertUsingPOSTTest() throws Exception {
         AlertRule body = null;
-        AlertRuleResponse response = api.createAlertUsingPOST1(body);
+        AlertRuleResponse response = api.createAlertUsingPOST(body);
 
         // TODO: test validations
     }
@@ -53,11 +54,11 @@ public class AlertsApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void deleteAlertRuleUsingDELETE1Test() throws ApiException {
+    public void deleteAlertRuleUsingDELETE1Test() throws Exception {
         Long updateableAlertId = null;
         GenericMapBasedApiResponse response = api.deleteAlertRuleUsingDELETE1(updateableAlertId);
 
@@ -68,13 +69,13 @@ public class AlertsApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void disableAlertRuleUsingPUT1Test() throws ApiException {
+    public void disableAlertRuleUsingPUTTest() throws Exception {
         Long updateableAlertId = null;
-        GenericMapBasedApiResponse response = api.disableAlertRuleUsingPUT1(updateableAlertId);
+        GenericMapBasedApiResponse response = api.disableAlertRuleUsingPUT(updateableAlertId);
 
         // TODO: test validations
     }
@@ -83,13 +84,13 @@ public class AlertsApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void enableAlertRuleUsingPUT1Test() throws ApiException {
+    public void enableAlertRuleUsingPUTTest() throws Exception {
         Long updateableAlertId = null;
-        GenericMapBasedApiResponse response = api.enableAlertRuleUsingPUT1(updateableAlertId);
+        GenericMapBasedApiResponse response = api.enableAlertRuleUsingPUT(updateableAlertId);
 
         // TODO: test validations
     }
@@ -98,13 +99,13 @@ public class AlertsApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void getAlertRulesForAppUsingGETTest() throws ApiException {
+    public void getAlertRulesForAppUsingGET1Test() throws Exception {
         Long appId = null;
-        AlertRulesResponse response = api.getAlertRulesForAppUsingGET(appId);
+        AlertRulesResponse response = api.getAlertRulesForAppUsingGET1(appId);
 
         // TODO: test validations
     }

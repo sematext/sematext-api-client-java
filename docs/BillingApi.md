@@ -2,19 +2,22 @@
 
 All URIs are relative to */*
 
-| Method                                                                     | HTTP request                                                       | Description            |
-| -------------------------------------------------------------------------- | ------------------------------------------------------------------ | ---------------------- |
-| [**getDetailedInvoiceUsingGET**](BillingApi.md#getDetailedInvoiceUsingGET) | **GET** /users-web/api/v3/billing/invoice/{service}/{year}/{month} | Get invoice details    |
-| [**listAvailablePlansUsingGET**](BillingApi.md#listAvailablePlansUsingGET) | **GET** /users-web/api/v3/billing/availablePlans                   | Get available plans    |
-| [**updatePlanUsingPUT**](BillingApi.md#updatePlanUsingPUT)                 | **PUT** /users-web/api/v3/billing/info/{appId}                     | Update plan for an app |
+| Method                                                                       | HTTP request                                                       | Description            |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------------------ | ---------------------- |
+| [**getDetailedInvoiceUsingGET**](BillingApi.md#getDetailedInvoiceUsingGET)   | **GET** /users-web/api/v3/billing/invoice/{service}/{year}/{month} | Get invoice details    |
+| [**listAvailablePlansUsingGET1**](BillingApi.md#listAvailablePlansUsingGET1) | **GET** /users-web/api/v3/billing/availablePlans                   | Get available plans    |
+| [**updatePlanUsingPUT**](BillingApi.md#updatePlanUsingPUT)                   | **PUT** /users-web/api/v3/billing/info/{appId}                     | Update plan for an app |
 
 <a name="getDetailedInvoiceUsingGET"></a>
+
 # **getDetailedInvoiceUsingGET**
+
 > InvoiceResponse getDetailedInvoiceUsingGET(service, year, month)
 
 Get invoice details
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -62,16 +65,19 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-<a name="listAvailablePlansUsingGET"></a>
-# **listAvailablePlansUsingGET**
-> PlansResponse listAvailablePlansUsingGET(integrationId, appType)
+<a name="listAvailablePlansUsingGET1"></a>
+
+# **listAvailablePlansUsingGET1**
+
+> PlansResponse listAvailablePlansUsingGET1(integrationId, appType)
 
 Get available plans
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -92,10 +98,10 @@ BillingApi apiInstance = new BillingApi();
 Long integrationId = 789L; // Long | integrationId
 String appType = "appType_example"; // String | appType
 try {
-    PlansResponse result = apiInstance.listAvailablePlansUsingGET(integrationId, appType);
+    PlansResponse result = apiInstance.listAvailablePlansUsingGET1(integrationId, appType);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling BillingApi#listAvailablePlansUsingGET");
+    System.err.println("Exception when calling BillingApi#listAvailablePlansUsingGET1");
     e.printStackTrace();
 }
 ```
@@ -117,16 +123,19 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 <a name="updatePlanUsingPUT"></a>
+
 # **updatePlanUsingPUT**
+
 > UpdatePlanResponse updatePlanUsingPUT(body, appId)
 
 Update plan for an app
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -172,5 +181,5 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json

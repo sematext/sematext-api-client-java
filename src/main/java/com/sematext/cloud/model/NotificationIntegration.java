@@ -52,9 +52,9 @@ public class NotificationIntegration {
     public String toString() {
       return String.valueOf(value);
     }
-    public static ApplicabilityEnum fromValue(String text) {
+    public static ApplicabilityEnum fromValue(String input) {
       for (ApplicabilityEnum b : ApplicabilityEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -63,13 +63,13 @@ public class NotificationIntegration {
     public static class Adapter extends TypeAdapter<ApplicabilityEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final ApplicabilityEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public ApplicabilityEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return ApplicabilityEnum.fromValue(String.valueOf(value));
+        return ApplicabilityEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("applicability")
@@ -113,9 +113,9 @@ public class NotificationIntegration {
     public String toString() {
       return String.valueOf(value);
     }
-    public static IntegrationTypeEnum fromValue(String text) {
+    public static IntegrationTypeEnum fromValue(String input) {
       for (IntegrationTypeEnum b : IntegrationTypeEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -124,13 +124,13 @@ public class NotificationIntegration {
     public static class Adapter extends TypeAdapter<IntegrationTypeEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final IntegrationTypeEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public IntegrationTypeEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return IntegrationTypeEnum.fromValue(String.valueOf(value));
+        return IntegrationTypeEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("integrationType")
@@ -164,9 +164,9 @@ public class NotificationIntegration {
     public String toString() {
       return String.valueOf(value);
     }
-    public static StateEnum fromValue(String text) {
+    public static StateEnum fromValue(String input) {
       for (StateEnum b : StateEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -175,13 +175,13 @@ public class NotificationIntegration {
     public static class Adapter extends TypeAdapter<StateEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final StateEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public StateEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return StateEnum.fromValue(String.valueOf(value));
+        return StateEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("state")

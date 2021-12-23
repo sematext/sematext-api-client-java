@@ -29,6 +29,9 @@ import java.time.OffsetDateTime;
 
 
 public class Subscription {
+  @SerializedName("additionalParams")
+  private String additionalParams = null;
+
   @SerializedName("addresses")
   private String addresses = null;
 
@@ -71,9 +74,9 @@ public class Subscription {
     public String toString() {
       return String.valueOf(value);
     }
-    public static FrequencyEnum fromValue(String text) {
+    public static FrequencyEnum fromValue(String input) {
       for (FrequencyEnum b : FrequencyEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -82,13 +85,13 @@ public class Subscription {
     public static class Adapter extends TypeAdapter<FrequencyEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final FrequencyEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public FrequencyEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return FrequencyEnum.fromValue(String.valueOf(value));
+        return FrequencyEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("frequency")
@@ -137,9 +140,9 @@ public class Subscription {
     public String toString() {
       return String.valueOf(value);
     }
-    public static TimeRangeEnum fromValue(String text) {
+    public static TimeRangeEnum fromValue(String input) {
       for (TimeRangeEnum b : TimeRangeEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -148,13 +151,13 @@ public class Subscription {
     public static class Adapter extends TypeAdapter<TimeRangeEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final TimeRangeEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public TimeRangeEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return TimeRangeEnum.fromValue(String.valueOf(value));
+        return TimeRangeEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("timeRange")
@@ -162,6 +165,24 @@ public class Subscription {
 
   @SerializedName("userPermissions")
   private UserPermissions userPermissions = null;
+
+  public Subscription additionalParams(String additionalParams) {
+    this.additionalParams = additionalParams;
+    return this;
+  }
+
+   /**
+   * Get additionalParams
+   * @return additionalParams
+  **/
+  @Schema(description = "")
+  public String getAdditionalParams() {
+    return additionalParams;
+  }
+
+  public void setAdditionalParams(String additionalParams) {
+    this.additionalParams = additionalParams;
+  }
 
   public Subscription addresses(String addresses) {
     this.addresses = addresses;
@@ -443,7 +464,8 @@ public class Subscription {
       return false;
     }
     Subscription subscription = (Subscription) o;
-    return Objects.equals(this.addresses, subscription.addresses) &&
+    return Objects.equals(this.additionalParams, subscription.additionalParams) &&
+        Objects.equals(this.addresses, subscription.addresses) &&
         Objects.equals(this.createdBy, subscription.createdBy) &&
         Objects.equals(this.dashboardId, subscription.dashboardId) &&
         Objects.equals(this.dashboardName, subscription.dashboardName) &&
@@ -462,7 +484,7 @@ public class Subscription {
 
   @Override
   public int hashCode() {
-    return Objects.hash(addresses, createdBy, dashboardId, dashboardName, enabled, filters, frequency, id, nextSendDate, subject, systemId, systemName, text, timeRange, userPermissions);
+    return Objects.hash(additionalParams, addresses, createdBy, dashboardId, dashboardName, enabled, filters, frequency, id, nextSendDate, subject, systemId, systemName, text, timeRange, userPermissions);
   }
 
 
@@ -471,6 +493,7 @@ public class Subscription {
     StringBuilder sb = new StringBuilder();
     sb.append("class Subscription {\n");
     
+    sb.append("    additionalParams: ").append(toIndentedString(additionalParams)).append("\n");
     sb.append("    addresses: ").append(toIndentedString(addresses)).append("\n");
     sb.append("    createdBy: ").append(toIndentedString(createdBy)).append("\n");
     sb.append("    dashboardId: ").append(toIndentedString(dashboardId)).append("\n");
