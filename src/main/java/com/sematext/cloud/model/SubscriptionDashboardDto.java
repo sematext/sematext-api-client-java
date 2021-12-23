@@ -64,9 +64,9 @@ public class SubscriptionDashboardDto {
     public String toString() {
       return String.valueOf(value);
     }
-    public static FrequencyEnum fromValue(String text) {
+    public static FrequencyEnum fromValue(String input) {
       for (FrequencyEnum b : FrequencyEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -75,13 +75,13 @@ public class SubscriptionDashboardDto {
     public static class Adapter extends TypeAdapter<FrequencyEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final FrequencyEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public FrequencyEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return FrequencyEnum.fromValue(String.valueOf(value));
+        return FrequencyEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("frequency")
@@ -127,9 +127,9 @@ public class SubscriptionDashboardDto {
     public String toString() {
       return String.valueOf(value);
     }
-    public static TimeRangeEnum fromValue(String text) {
+    public static TimeRangeEnum fromValue(String input) {
       for (TimeRangeEnum b : TimeRangeEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -138,13 +138,13 @@ public class SubscriptionDashboardDto {
     public static class Adapter extends TypeAdapter<TimeRangeEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final TimeRangeEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public TimeRangeEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return TimeRangeEnum.fromValue(String.valueOf(value));
+        return TimeRangeEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("timeRange")

@@ -8,7 +8,9 @@ All URIs are relative to */*
 | [**getAlertNotificationsForUserUsingPOST**](AlertNotificationsApi.md#getAlertNotificationsForUserUsingPOST) | **POST** /users-web/api/v3/notifications/alerts              | Get alert notifications for a user |
 
 <a name="getAlertNotificationsForAppUsingPOST"></a>
+
 # **getAlertNotificationsForAppUsingPOST**
+
 > NotificationsResponse getAlertNotificationsForAppUsingPOST(body, appId)
 
 Get alert notifications for an app
@@ -16,6 +18,7 @@ Get alert notifications for an app
 Default value of interval is 1d
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -61,11 +64,13 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 <a name="getAlertNotificationsForUserUsingPOST"></a>
+
 # **getAlertNotificationsForUserUsingPOST**
+
 > NotificationsResponse getAlertNotificationsForUserUsingPOST(body)
 
 Get alert notifications for a user
@@ -73,6 +78,7 @@ Get alert notifications for a user
 Default value of interval is 1d
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -116,5 +122,5 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json

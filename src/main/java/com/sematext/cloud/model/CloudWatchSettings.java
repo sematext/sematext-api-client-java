@@ -52,9 +52,9 @@ public class CloudWatchSettings {
     public String toString() {
       return String.valueOf(value);
     }
-    public static FetchFrequencyEnum fromValue(String text) {
+    public static FetchFrequencyEnum fromValue(String input) {
       for (FetchFrequencyEnum b : FetchFrequencyEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -63,13 +63,13 @@ public class CloudWatchSettings {
     public static class Adapter extends TypeAdapter<FetchFrequencyEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final FetchFrequencyEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public FetchFrequencyEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return FetchFrequencyEnum.fromValue(String.valueOf(value));
+        return FetchFrequencyEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("fetchFrequency")
@@ -110,9 +110,9 @@ public class CloudWatchSettings {
     public String toString() {
       return String.valueOf(value);
     }
-    public static RegionEnum fromValue(String text) {
+    public static RegionEnum fromValue(String input) {
       for (RegionEnum b : RegionEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -121,13 +121,13 @@ public class CloudWatchSettings {
     public static class Adapter extends TypeAdapter<RegionEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final RegionEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public RegionEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return RegionEnum.fromValue(String.valueOf(value));
+        return RegionEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("region")

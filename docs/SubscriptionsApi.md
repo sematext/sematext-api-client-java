@@ -2,26 +2,29 @@
 
 All URIs are relative to */*
 
-| Method                                                                     | HTTP request                                                          | Description                              |
-| -------------------------------------------------------------------------- | --------------------------------------------------------------------- | ---------------------------------------- |
-| [**createForAppUsingPOST1**](SubscriptionsApi.md#createForAppUsingPOST1)   | **POST** /users-web/api/v3/apps/{appId}/subscription                  | Create App subscription                  |
-| [**createForDashUsingPOST**](SubscriptionsApi.md#createForDashUsingPOST)   | **POST** /users-web/api/v3/dashboards/{dashId}/subscription           | Create dashboard subscription            |
-| [**deleteUsingDELETE2**](SubscriptionsApi.md#deleteUsingDELETE2)           | **DELETE** /users-web/api/v3/subscriptions/{updateableSubscriptionId} | Delete subscription                      |
-| [**listUsingGET2**](SubscriptionsApi.md#listUsingGET2)                     | **GET** /users-web/api/v3/apps/{appId}/subscriptions                  | Get subscriptions for an App             |
-| [**listUsingGET5**](SubscriptionsApi.md#listUsingGET5)                     | **GET** /users-web/api/v3/subscriptions                               | Get current account&#x27;s subscriptions |
-| [**sendAppReportUsingPOST1**](SubscriptionsApi.md#sendAppReportUsingPOST1) | **POST** /users-web/api/v3/apps/{appId}/report/send                   | Email an App report                      |
-| [**sendDashReportUsingPOST**](SubscriptionsApi.md#sendDashReportUsingPOST) | **POST** /users-web/api/v3/dashboards/{dashId}/report/send            | Email a dashboard report                 |
-| [**toggleEnabledUsingPUT1**](SubscriptionsApi.md#toggleEnabledUsingPUT1)   | **PUT** /users-web/api/v3/subscriptions/{updateableSubscriptionId}    | Toggle subscription status               |
-| [**updateForAppUsingPUT**](SubscriptionsApi.md#updateForAppUsingPUT)       | **PUT** /users-web/api/v3/apps/{appId}/subscription                   | Update App subscription                  |
-| [**updateForDashUsingPUT1**](SubscriptionsApi.md#updateForDashUsingPUT1)   | **PUT** /users-web/api/v3/dashboards/{dashId}/subscription            | Update dashboard subscription            |
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**createForAppUsingPOST**](SubscriptionsApi.md#createForAppUsingPOST) | **POST** /users-web/api/v3/apps/{appId}/subscription | Create App subscription
+[**createForDashUsingPOST1**](SubscriptionsApi.md#createForDashUsingPOST1) | **POST** /users-web/api/v3/dashboards/{dashId}/subscription | Create dashboard subscription
+[**deleteUsingDELETE2**](SubscriptionsApi.md#deleteUsingDELETE2) | **DELETE** /users-web/api/v3/subscriptions/{updateableSubscriptionId} | Delete subscription
+[**listUsingGET3**](SubscriptionsApi.md#listUsingGET3) | **GET** /users-web/api/v3/apps/{appId}/subscriptions | Get subscriptions for an App
+[**listUsingGET5**](SubscriptionsApi.md#listUsingGET5) | **GET** /users-web/api/v3/subscriptions | Get current account&#x27;s subscriptions
+[**sendAppReportUsingPOST**](SubscriptionsApi.md#sendAppReportUsingPOST) | **POST** /users-web/api/v3/apps/{appId}/report/send | Email an App report
+[**sendDashReportUsingPOST**](SubscriptionsApi.md#sendDashReportUsingPOST) | **POST** /users-web/api/v3/dashboards/{dashId}/report/send | Email a dashboard report
+[**toggleEnabledUsingPUT1**](SubscriptionsApi.md#toggleEnabledUsingPUT1) | **PUT** /users-web/api/v3/subscriptions/{updateableSubscriptionId} | Toggle subscription status
+[**updateForAppUsingPUT**](SubscriptionsApi.md#updateForAppUsingPUT) | **PUT** /users-web/api/v3/apps/{appId}/subscription | Update App subscription
+[**updateForDashUsingPUT1**](SubscriptionsApi.md#updateForDashUsingPUT1) | **PUT** /users-web/api/v3/dashboards/{dashId}/subscription | Update dashboard subscription
 
-<a name="createForAppUsingPOST1"></a>
-# **createForAppUsingPOST1**
-> SubscriptionResponse createForAppUsingPOST1(body, appId)
+<a name="createForAppUsingPOST"></a>
+
+# **createForAppUsingPOST**
+
+> SubscriptionResponse createForAppUsingPOST(body, appId)
 
 Create App subscription
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -42,20 +45,20 @@ SubscriptionsApi apiInstance = new SubscriptionsApi();
 SubscriptionDto body = new SubscriptionDto(); // SubscriptionDto | subscription
 Long appId = 789L; // Long | appId
 try {
-    SubscriptionResponse result = apiInstance.createForAppUsingPOST1(body, appId);
+    SubscriptionResponse result = apiInstance.createForAppUsingPOST(body, appId);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling SubscriptionsApi#createForAppUsingPOST1");
+    System.err.println("Exception when calling SubscriptionsApi#createForAppUsingPOST");
     e.printStackTrace();
 }
 ```
 
 ### Parameters
 
-| Name      | Type                                      | Description  | Notes |
-| --------- | ----------------------------------------- | ------------ | ----- |
-| **body**  | [**SubscriptionDto**](SubscriptionDto.md) | subscription |
-| **appId** | **Long**                                  | appId        |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**SubscriptionDto**](SubscriptionDto.md)| subscription |
+ **appId** | **Long**| appId |
 
 ### Return type
 
@@ -67,16 +70,19 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
-<a name="createForDashUsingPOST"></a>
-# **createForDashUsingPOST**
-> SubscriptionResponse createForDashUsingPOST(body, dashId)
+<a name="createForDashUsingPOST1"></a>
+
+# **createForDashUsingPOST1**
+
+> SubscriptionResponse createForDashUsingPOST1(body, dashId)
 
 Create dashboard subscription
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -97,20 +103,20 @@ SubscriptionsApi apiInstance = new SubscriptionsApi();
 SubscriptionDashboardDto body = new SubscriptionDashboardDto(); // SubscriptionDashboardDto | subscription
 Long dashId = 789L; // Long | dashId
 try {
-    SubscriptionResponse result = apiInstance.createForDashUsingPOST(body, dashId);
+    SubscriptionResponse result = apiInstance.createForDashUsingPOST1(body, dashId);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling SubscriptionsApi#createForDashUsingPOST");
+    System.err.println("Exception when calling SubscriptionsApi#createForDashUsingPOST1");
     e.printStackTrace();
 }
 ```
 
 ### Parameters
 
-| Name       | Type                                                        | Description  | Notes |
-| ---------- | ----------------------------------------------------------- | ------------ | ----- |
-| **body**   | [**SubscriptionDashboardDto**](SubscriptionDashboardDto.md) | subscription |
-| **dashId** | **Long**                                                    | dashId       |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**SubscriptionDashboardDto**](SubscriptionDashboardDto.md)| subscription |
+ **dashId** | **Long**| dashId |
 
 ### Return type
 
@@ -122,16 +128,19 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 <a name="deleteUsingDELETE2"></a>
+
 # **deleteUsingDELETE2**
+
 > GenericMapBasedApiResponse deleteUsingDELETE2(updateableSubscriptionId)
 
 Delete subscription
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -161,9 +170,9 @@ try {
 
 ### Parameters
 
-| Name                         | Type     | Description              | Notes |
-| ---------------------------- | -------- | ------------------------ | ----- |
-| **updateableSubscriptionId** | **Long** | updateableSubscriptionId |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **updateableSubscriptionId** | **Long**| updateableSubscriptionId |
 
 ### Return type
 
@@ -175,16 +184,19 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-<a name="listUsingGET2"></a>
-# **listUsingGET2**
-> SubscriptionsResponse listUsingGET2(appId)
+<a name="listUsingGET3"></a>
+
+# **listUsingGET3**
+
+> SubscriptionsResponse listUsingGET3(appId)
 
 Get subscriptions for an App
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -204,19 +216,19 @@ api_key.setApiKey("YOUR API KEY");
 SubscriptionsApi apiInstance = new SubscriptionsApi();
 Long appId = 789L; // Long | appId
 try {
-    SubscriptionsResponse result = apiInstance.listUsingGET2(appId);
+    SubscriptionsResponse result = apiInstance.listUsingGET3(appId);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling SubscriptionsApi#listUsingGET2");
+    System.err.println("Exception when calling SubscriptionsApi#listUsingGET3");
     e.printStackTrace();
 }
 ```
 
 ### Parameters
 
-| Name      | Type     | Description | Notes |
-| --------- | -------- | ----------- | ----- |
-| **appId** | **Long** | appId       |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **appId** | **Long**| appId |
 
 ### Return type
 
@@ -228,16 +240,19 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 <a name="listUsingGET5"></a>
+
 # **listUsingGET5**
+
 > SubscriptionsResponse listUsingGET5()
 
 Get current account&#x27;s subscriptions
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -265,6 +280,7 @@ try {
 ```
 
 ### Parameters
+
 This endpoint does not need any parameter.
 
 ### Return type
@@ -277,16 +293,19 @@ This endpoint does not need any parameter.
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-<a name="sendAppReportUsingPOST1"></a>
-# **sendAppReportUsingPOST1**
-> MailReportResponse sendAppReportUsingPOST1(body, appId)
+<a name="sendAppReportUsingPOST"></a>
+
+# **sendAppReportUsingPOST**
+
+> MailReportResponse sendAppReportUsingPOST(body, appId)
 
 Email an App report
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -307,20 +326,20 @@ SubscriptionsApi apiInstance = new SubscriptionsApi();
 ReportInfo body = new ReportInfo(); // ReportInfo | emailDto
 Long appId = 789L; // Long | appId
 try {
-    MailReportResponse result = apiInstance.sendAppReportUsingPOST1(body, appId);
+    MailReportResponse result = apiInstance.sendAppReportUsingPOST(body, appId);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling SubscriptionsApi#sendAppReportUsingPOST1");
+    System.err.println("Exception when calling SubscriptionsApi#sendAppReportUsingPOST");
     e.printStackTrace();
 }
 ```
 
 ### Parameters
 
-| Name      | Type                            | Description | Notes |
-| --------- | ------------------------------- | ----------- | ----- |
-| **body**  | [**ReportInfo**](ReportInfo.md) | emailDto    |
-| **appId** | **Long**                        | appId       |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**ReportInfo**](ReportInfo.md)| emailDto |
+ **appId** | **Long**| appId |
 
 ### Return type
 
@@ -332,16 +351,19 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 <a name="sendDashReportUsingPOST"></a>
+
 # **sendDashReportUsingPOST**
+
 > MailReportResponse sendDashReportUsingPOST(body, dashId)
 
 Email a dashboard report
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -372,10 +394,10 @@ try {
 
 ### Parameters
 
-| Name       | Type                            | Description | Notes |
-| ---------- | ------------------------------- | ----------- | ----- |
-| **body**   | [**ReportInfo**](ReportInfo.md) | emailDto    |
-| **dashId** | **Long**                        | dashId      |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**ReportInfo**](ReportInfo.md)| emailDto |
+ **dashId** | **Long**| dashId |
 
 ### Return type
 
@@ -387,16 +409,19 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 <a name="toggleEnabledUsingPUT1"></a>
+
 # **toggleEnabledUsingPUT1**
+
 > SubscriptionResponse toggleEnabledUsingPUT1(body, updateableSubscriptionId)
 
 Toggle subscription status
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -427,10 +452,10 @@ try {
 
 ### Parameters
 
-| Name                         | Type                                                  | Description              | Notes |
-| ---------------------------- | ----------------------------------------------------- | ------------------------ | ----- |
-| **body**                     | [**UpdateSubscriptionDto**](UpdateSubscriptionDto.md) | dto                      |
-| **updateableSubscriptionId** | **Long**                                              | updateableSubscriptionId |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**UpdateSubscriptionDto**](UpdateSubscriptionDto.md)| dto |
+ **updateableSubscriptionId** | **Long**| updateableSubscriptionId |
 
 ### Return type
 
@@ -442,16 +467,19 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 <a name="updateForAppUsingPUT"></a>
+
 # **updateForAppUsingPUT**
+
 > SubscriptionResponse updateForAppUsingPUT(body, appId)
 
 Update App subscription
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -482,10 +510,10 @@ try {
 
 ### Parameters
 
-| Name      | Type                                      | Description  | Notes |
-| --------- | ----------------------------------------- | ------------ | ----- |
-| **body**  | [**SubscriptionDto**](SubscriptionDto.md) | subscription |
-| **appId** | **Long**                                  | appId        |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**SubscriptionDto**](SubscriptionDto.md)| subscription |
+ **appId** | **Long**| appId |
 
 ### Return type
 
@@ -497,16 +525,19 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 <a name="updateForDashUsingPUT1"></a>
+
 # **updateForDashUsingPUT1**
+
 > SubscriptionResponse updateForDashUsingPUT1(body, dashId)
 
 Update dashboard subscription
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -537,10 +568,10 @@ try {
 
 ### Parameters
 
-| Name       | Type                                                        | Description  | Notes |
-| ---------- | ----------------------------------------------------------- | ------------ | ----- |
-| **body**   | [**SubscriptionDashboardDto**](SubscriptionDashboardDto.md) | subscription |
-| **dashId** | **Long**                                                    | dashId       |
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**SubscriptionDashboardDto**](SubscriptionDashboardDto.md)| subscription |
+ **dashId** | **Long**| dashId |
 
 ### Return type
 
@@ -552,5 +583,5 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json

@@ -32,9 +32,6 @@ import java.util.List;
 
 
 public class UsageDto {
-  @SerializedName("count")
-  private Long count = null;
-
   @SerializedName("dailyUsage")
   private List<DailyDto> dailyUsage = null;
 
@@ -46,6 +43,12 @@ public class UsageDto {
 
   @SerializedName("failedCount")
   private Long failedCount = null;
+
+  @SerializedName("ingestedCount")
+  private Long ingestedCount = null;
+
+  @SerializedName("ingestedVolume")
+  private Long ingestedVolume = null;
 
   @SerializedName("limitChangeEvents")
   private List<LimitChangeEventDTO> limitChangeEvents = null;
@@ -59,29 +62,14 @@ public class UsageDto {
   @SerializedName("start")
   private OffsetDateTime start = null;
 
-  @SerializedName("volume")
-  private Long volume = null;
+  @SerializedName("storedCount")
+  private Long storedCount = null;
+
+  @SerializedName("storedVolume")
+  private Long storedVolume = null;
 
   @SerializedName("volumeChangeEvents")
   private List<LimitChangeEventDTO> volumeChangeEvents = null;
-
-  public UsageDto count(Long count) {
-    this.count = count;
-    return this;
-  }
-
-   /**
-   * Get count
-   * @return count
-  **/
-  @Schema(description = "")
-  public Long getCount() {
-    return count;
-  }
-
-  public void setCount(Long count) {
-    this.count = count;
-  }
 
   public UsageDto dailyUsage(List<DailyDto> dailyUsage) {
     this.dailyUsage = dailyUsage;
@@ -161,6 +149,42 @@ public class UsageDto {
 
   public void setFailedCount(Long failedCount) {
     this.failedCount = failedCount;
+  }
+
+  public UsageDto ingestedCount(Long ingestedCount) {
+    this.ingestedCount = ingestedCount;
+    return this;
+  }
+
+   /**
+   * Get ingestedCount
+   * @return ingestedCount
+  **/
+  @Schema(description = "")
+  public Long getIngestedCount() {
+    return ingestedCount;
+  }
+
+  public void setIngestedCount(Long ingestedCount) {
+    this.ingestedCount = ingestedCount;
+  }
+
+  public UsageDto ingestedVolume(Long ingestedVolume) {
+    this.ingestedVolume = ingestedVolume;
+    return this;
+  }
+
+   /**
+   * Get ingestedVolume
+   * @return ingestedVolume
+  **/
+  @Schema(description = "")
+  public Long getIngestedVolume() {
+    return ingestedVolume;
+  }
+
+  public void setIngestedVolume(Long ingestedVolume) {
+    this.ingestedVolume = ingestedVolume;
   }
 
   public UsageDto limitChangeEvents(List<LimitChangeEventDTO> limitChangeEvents) {
@@ -243,22 +267,40 @@ public class UsageDto {
     this.start = start;
   }
 
-  public UsageDto volume(Long volume) {
-    this.volume = volume;
+  public UsageDto storedCount(Long storedCount) {
+    this.storedCount = storedCount;
     return this;
   }
 
    /**
-   * Get volume
-   * @return volume
+   * Get storedCount
+   * @return storedCount
   **/
   @Schema(description = "")
-  public Long getVolume() {
-    return volume;
+  public Long getStoredCount() {
+    return storedCount;
   }
 
-  public void setVolume(Long volume) {
-    this.volume = volume;
+  public void setStoredCount(Long storedCount) {
+    this.storedCount = storedCount;
+  }
+
+  public UsageDto storedVolume(Long storedVolume) {
+    this.storedVolume = storedVolume;
+    return this;
+  }
+
+   /**
+   * Get storedVolume
+   * @return storedVolume
+  **/
+  @Schema(description = "")
+  public Long getStoredVolume() {
+    return storedVolume;
+  }
+
+  public void setStoredVolume(Long storedVolume) {
+    this.storedVolume = storedVolume;
   }
 
   public UsageDto volumeChangeEvents(List<LimitChangeEventDTO> volumeChangeEvents) {
@@ -297,22 +339,24 @@ public class UsageDto {
       return false;
     }
     UsageDto usageDto = (UsageDto) o;
-    return Objects.equals(this.count, usageDto.count) &&
-        Objects.equals(this.dailyUsage, usageDto.dailyUsage) &&
+    return Objects.equals(this.dailyUsage, usageDto.dailyUsage) &&
         Objects.equals(this.dailyVolumeMB, usageDto.dailyVolumeMB) &&
         Objects.equals(this.end, usageDto.end) &&
         Objects.equals(this.failedCount, usageDto.failedCount) &&
+        Objects.equals(this.ingestedCount, usageDto.ingestedCount) &&
+        Objects.equals(this.ingestedVolume, usageDto.ingestedVolume) &&
         Objects.equals(this.limitChangeEvents, usageDto.limitChangeEvents) &&
         Objects.equals(this.maxAllowedMB, usageDto.maxAllowedMB) &&
         Objects.equals(this.maxLimitMB, usageDto.maxLimitMB) &&
         Objects.equals(this.start, usageDto.start) &&
-        Objects.equals(this.volume, usageDto.volume) &&
+        Objects.equals(this.storedCount, usageDto.storedCount) &&
+        Objects.equals(this.storedVolume, usageDto.storedVolume) &&
         Objects.equals(this.volumeChangeEvents, usageDto.volumeChangeEvents);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(count, dailyUsage, dailyVolumeMB, end, failedCount, limitChangeEvents, maxAllowedMB, maxLimitMB, start, volume, volumeChangeEvents);
+    return Objects.hash(dailyUsage, dailyVolumeMB, end, failedCount, ingestedCount, ingestedVolume, limitChangeEvents, maxAllowedMB, maxLimitMB, start, storedCount, storedVolume, volumeChangeEvents);
   }
 
 
@@ -321,16 +365,18 @@ public class UsageDto {
     StringBuilder sb = new StringBuilder();
     sb.append("class UsageDto {\n");
     
-    sb.append("    count: ").append(toIndentedString(count)).append("\n");
     sb.append("    dailyUsage: ").append(toIndentedString(dailyUsage)).append("\n");
     sb.append("    dailyVolumeMB: ").append(toIndentedString(dailyVolumeMB)).append("\n");
     sb.append("    end: ").append(toIndentedString(end)).append("\n");
     sb.append("    failedCount: ").append(toIndentedString(failedCount)).append("\n");
+    sb.append("    ingestedCount: ").append(toIndentedString(ingestedCount)).append("\n");
+    sb.append("    ingestedVolume: ").append(toIndentedString(ingestedVolume)).append("\n");
     sb.append("    limitChangeEvents: ").append(toIndentedString(limitChangeEvents)).append("\n");
     sb.append("    maxAllowedMB: ").append(toIndentedString(maxAllowedMB)).append("\n");
     sb.append("    maxLimitMB: ").append(toIndentedString(maxLimitMB)).append("\n");
     sb.append("    start: ").append(toIndentedString(start)).append("\n");
-    sb.append("    volume: ").append(toIndentedString(volume)).append("\n");
+    sb.append("    storedCount: ").append(toIndentedString(storedCount)).append("\n");
+    sb.append("    storedVolume: ").append(toIndentedString(storedVolume)).append("\n");
     sb.append("    volumeChangeEvents: ").append(toIndentedString(volumeChangeEvents)).append("\n");
     sb.append("}");
     return sb.toString();

@@ -12,16 +12,17 @@
 
 package com.sematext.cloud.client;
 
-import com.sematext.cloud.ApiException;
 import com.sematext.cloud.model.AppsResponse;
 import com.sematext.cloud.model.CreateAppInfo;
 import org.junit.Test;
 import org.junit.Ignore;
 
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 
 /**
  * API tests for LogsAppApi
@@ -36,11 +37,11 @@ public class LogsAppApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void createLogseneApplicationTest() throws ApiException {
+    public void createLogseneApplicationTest() throws Exception {
         CreateAppInfo body = null;
         AppsResponse response = api.createLogseneApplication(body);
 

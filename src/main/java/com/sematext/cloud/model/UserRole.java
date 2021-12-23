@@ -52,9 +52,9 @@ public class UserRole {
     public String toString() {
       return String.valueOf(value);
     }
-    public static RoleEnum fromValue(String text) {
+    public static RoleEnum fromValue(String input) {
       for (RoleEnum b : RoleEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -63,13 +63,13 @@ public class UserRole {
     public static class Adapter extends TypeAdapter<RoleEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final RoleEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public RoleEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return RoleEnum.fromValue(String.valueOf(value));
+        return RoleEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("role")
@@ -96,9 +96,9 @@ public class UserRole {
     public String toString() {
       return String.valueOf(value);
     }
-    public static RoleStatusEnum fromValue(String text) {
+    public static RoleStatusEnum fromValue(String input) {
       for (RoleStatusEnum b : RoleStatusEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -107,13 +107,13 @@ public class UserRole {
     public static class Adapter extends TypeAdapter<RoleStatusEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final RoleStatusEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public RoleStatusEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return RoleStatusEnum.fromValue(String.valueOf(value));
+        return RoleStatusEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("roleStatus")

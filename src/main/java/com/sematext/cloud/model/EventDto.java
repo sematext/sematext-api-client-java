@@ -48,7 +48,8 @@ public class EventDto {
     AUTOMATIC_PLAN_UPGRADE_CHANGE("AUTOMATIC_PLAN_UPGRADE_CHANGE"),
     MAX_LIMIT_CHANGE("MAX_LIMIT_CHANGE"),
     SAMPLING_CHANGE("SAMPLING_CHANGE"),
-    OWNERSHIP_CHANGE("OWNERSHIP_CHANGE");
+    OWNERSHIP_CHANGE("OWNERSHIP_CHANGE"),
+    PIPELINE_CHANGE("PIPELINE_CHANGE");
 
     private String value;
 
@@ -63,9 +64,9 @@ public class EventDto {
     public String toString() {
       return String.valueOf(value);
     }
-    public static TypeEnum fromValue(String text) {
+    public static TypeEnum fromValue(String input) {
       for (TypeEnum b : TypeEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -74,13 +75,13 @@ public class EventDto {
     public static class Adapter extends TypeAdapter<TypeEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final TypeEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public TypeEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return TypeEnum.fromValue(String.valueOf(value));
+        return TypeEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("type")

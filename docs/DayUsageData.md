@@ -1,6 +1,7 @@
 # DayUsageData
 
 ## Properties
+
 | Name                           | Type                              | Description | Notes      |
 | ------------------------------ | --------------------------------- | ----------- | ---------- |
 | **countDailyDataPoints**       | **Integer**                       |             | [optional] |
@@ -25,7 +26,9 @@
 | **userDiscount**               | [**BigDecimal**](BigDecimal.md)   |             | [optional] |
 
 <a name="PlanTypeEnum"></a>
+
 ## Enum: PlanTypeEnum
+
 | Name        | Value                   |
 | ----------- | ----------------------- |
 | INFRA       | &quot;INFRA&quot;       |

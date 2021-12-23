@@ -1,6 +1,7 @@
 # EventDto
 
 ## Properties
+
 | Name     | Type                      | Description | Notes      |
 | -------- | ------------------------- | ----------- | ---------- |
 | **from** | **Object**                |             | [optional] |
@@ -8,7 +9,9 @@
 | **type** | [**TypeEnum**](#TypeEnum) |             | [optional] |
 
 <a name="TypeEnum"></a>
+
 ## Enum: TypeEnum
+
 | Name                          | Value                                     |
 | ----------------------------- | ----------------------------------------- |
 | CREATED                       | &quot;CREATED&quot;                       |
@@ -22,3 +25,4 @@
 | MAX_LIMIT_CHANGE              | &quot;MAX_LIMIT_CHANGE&quot;              |
 | SAMPLING_CHANGE               | &quot;SAMPLING_CHANGE&quot;               |
 | OWNERSHIP_CHANGE              | &quot;OWNERSHIP_CHANGE&quot;              |
+| PIPELINE_CHANGE               | &quot;PIPELINE_CHANGE&quot;               |

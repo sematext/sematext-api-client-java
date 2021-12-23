@@ -1,6 +1,7 @@
 # LimitChangeEventDTO
 
 ## Properties
+
 | Name          | Type                                    | Description | Notes      |
 | ------------- | --------------------------------------- | ----------- | ---------- |
 | **eventTime** | [**OffsetDateTime**](OffsetDateTime.md) |             | [optional] |

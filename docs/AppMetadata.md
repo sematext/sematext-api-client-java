@@ -1,6 +1,7 @@
 # AppMetadata
 
 ## Properties
+
 | Name                       | Type                                                      | Description                                                | Notes      |
 | -------------------------- | --------------------------------------------------------- | ---------------------------------------------------------- | ---------- |
 | **awsCloudWatchAccessKey** | **String**                                                |                                                            | [optional] |
@@ -10,7 +11,9 @@
 | **subTypes**               | [**List&lt;SubTypesEnum&gt;**](#List&lt;SubTypesEnum&gt;) | Comma separated list of AWS types monitored by created app | [optional] |
 
 <a name="AwsFetchFrequencyEnum"></a>
+
 ## Enum: AwsFetchFrequencyEnum
+
 | Name            | Value                       |
 | --------------- | --------------------------- |
 | MINUTE          | &quot;MINUTE&quot;          |
@@ -18,7 +21,9 @@
 | FIFTEEN_MINUTES | &quot;FIFTEEN_MINUTES&quot; |
 
 <a name="AwsRegionEnum"></a>
+
 ## Enum: AwsRegionEnum
+
 | Name           | Value                      |
 | -------------- | -------------------------- |
 | US_EAST_1      | &quot;US_EAST_1&quot;      |
@@ -39,7 +44,9 @@
 | EU_WEST_2      | &quot;EU_WEST_2&quot;      |
 
 <a name="List<SubTypesEnum>"></a>
+
 ## Enum: List&lt;SubTypesEnum&gt;
+
 | Name | Value               |
 | ---- | ------------------- |
 | EC2  | &quot;aws_ec2&quot; |

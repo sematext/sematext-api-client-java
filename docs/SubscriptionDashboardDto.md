@@ -1,6 +1,7 @@
 # SubscriptionDashboardDto
 
 ## Properties
+
 | Name            | Type                                    | Description | Notes      |
 | --------------- | --------------------------------------- | ----------- | ---------- |
 | **addresses**   | **String**                              |             | [optional] |
@@ -16,7 +17,9 @@
 | **timeRange**   | [**TimeRangeEnum**](#TimeRangeEnum)     |             | [optional] |
 
 <a name="FrequencyEnum"></a>
+
 ## Enum: FrequencyEnum
+
 | Name               | Value                          |
 | ------------------ | ------------------------------ |
 | EVERY_FIVE_MINUTES | &quot;EVERY_FIVE_MINUTES&quot; |
@@ -26,7 +29,9 @@
 | QUARTERLY          | &quot;QUARTERLY&quot;          |
 
 <a name="TimeRangeEnum"></a>
+
 ## Enum: TimeRangeEnum
+
 | Name      | Value                 |
 | --------- | --------------------- |
 | ONE_DAY   | &quot;ONE_DAY&quot;   |

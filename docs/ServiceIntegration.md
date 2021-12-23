@@ -1,6 +1,7 @@
 # ServiceIntegration
 
 ## Properties
+
 | Name                    | Type        | Description | Notes      |
 | ----------------------- | ----------- | ----------- | ---------- |
 | **appTypeId**           | **Long**    |             | [optional] |

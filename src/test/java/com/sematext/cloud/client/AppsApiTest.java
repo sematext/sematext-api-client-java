@@ -12,7 +12,6 @@
 
 package com.sematext.cloud.client;
 
-import com.sematext.cloud.ApiException;
 import com.sematext.cloud.model.AppDescription;
 import com.sematext.cloud.model.AppResponse;
 import com.sematext.cloud.model.AppTypesResponse;
@@ -23,10 +22,12 @@ import com.sematext.cloud.model.UpdateAppInfo;
 import org.junit.Test;
 import org.junit.Ignore;
 
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 
 /**
  * API tests for AppsApi
@@ -41,13 +42,13 @@ public class AppsApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void deleteUsingDELETE1Test() throws ApiException {
+    public void deleteUsingDELETETest() throws Exception {
         Long anyStateAppId = null;
-        GenericMapBasedApiResponse response = api.deleteUsingDELETE1(anyStateAppId);
+        GenericMapBasedApiResponse response = api.deleteUsingDELETE(anyStateAppId);
 
         // TODO: test validations
     }
@@ -56,12 +57,12 @@ public class AppsApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void getAppTypesUsingGET1Test() throws ApiException {
-        AppTypesResponse response = api.getAppTypesUsingGET1();
+    public void getAppTypesUsingGETTest() throws Exception {
+        AppTypesResponse response = api.getAppTypesUsingGET();
 
         // TODO: test validations
     }
@@ -70,13 +71,13 @@ public class AppsApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void getUsingGET1Test() throws ApiException {
+    public void getUsingGETTest() throws Exception {
         Long anyStateAppId = null;
-        AppResponse response = api.getUsingGET1(anyStateAppId);
+        AppResponse response = api.getUsingGET(anyStateAppId);
 
         // TODO: test validations
     }
@@ -85,13 +86,13 @@ public class AppsApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void inviteAppGuestsUsingPOST1Test() throws ApiException {
+    public void inviteAppGuestsUsingPOSTTest() throws Exception {
         Invitation body = null;
-        GenericMapBasedApiResponse response = api.inviteAppGuestsUsingPOST1(body);
+        GenericMapBasedApiResponse response = api.inviteAppGuestsUsingPOST(body);
 
         // TODO: test validations
     }
@@ -100,12 +101,12 @@ public class AppsApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void listAppsUsersUsingGET1Test() throws ApiException {
-        AppsResponse response = api.listAppsUsersUsingGET1();
+    public void listAppsUsersUsingGETTest() throws Exception {
+        AppsResponse response = api.listAppsUsersUsingGET();
 
         // TODO: test validations
     }
@@ -114,11 +115,11 @@ public class AppsApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void listUsingGETTest() throws ApiException {
+    public void listUsingGETTest() throws Exception {
         AppsResponse response = api.listUsingGET();
 
         // TODO: test validations
@@ -128,11 +129,11 @@ public class AppsApiTest {
      *
      * App can be in any state
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void updateDescriptionUsingPUT1Test() throws ApiException {
+    public void updateDescriptionUsingPUT1Test() throws Exception {
         Long anyStateAppId = null;
         AppDescription body = null;
         AppResponse response = api.updateDescriptionUsingPUT1(anyStateAppId, body);
@@ -144,14 +145,14 @@ public class AppsApiTest {
      *
      * App can be in any state
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void updateUsingPUT3Test() throws ApiException {
+    public void updateUsingPUT2Test() throws Exception {
         UpdateAppInfo body = null;
         Long anyStateAppId = null;
-        AppResponse response = api.updateUsingPUT3(body, anyStateAppId);
+        AppResponse response = api.updateUsingPUT2(body, anyStateAppId);
 
         // TODO: test validations
     }

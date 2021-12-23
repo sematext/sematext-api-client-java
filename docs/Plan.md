@@ -1,6 +1,7 @@
 # Plan
 
 ## Properties
+
 | Name                   | Type                                            | Description | Notes      |
 | ---------------------- | ----------------------------------------------- | ----------- | ---------- |
 | **appType**            | **String**                                      |             | [optional] |
@@ -18,7 +19,9 @@
 | **trialPlan**          | **Boolean**                                     |             | [optional] |
 
 <a name="PlanSchemeEnum"></a>
+
 ## Enum: PlanSchemeEnum
+
 | Name           | Value                      |
 | -------------- | -------------------------- |
 | SPM_1_0        | &quot;SPM_1_0&quot;        |
@@ -31,9 +34,12 @@
 | RUM_EA         | &quot;RUM_EA&quot;         |
 | SYNTHETICS_EA  | &quot;SYNTHETICS_EA&quot;  |
 | SYNTHETICS_1_0 | &quot;SYNTHETICS_1_0&quot; |
+| BUGZ_EA        | &quot;BUGZ_EA&quot;        |
 
 <a name="SematextServiceEnum"></a>
+
 ## Enum: SematextServiceEnum
+
 | Name       | Value                  |
 | ---------- | ---------------------- |
 | LOGSENE    | &quot;LOGSENE&quot;    |

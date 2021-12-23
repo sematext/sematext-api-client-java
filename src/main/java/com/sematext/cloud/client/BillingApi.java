@@ -200,7 +200,7 @@ public class BillingApi {
         return call;
     }
     /**
-     * Build call for listAvailablePlansUsingGET
+     * Build call for listAvailablePlansUsingGET1
      * @param integrationId integrationId (optional)
      * @param appType appType (optional)
      * @param progressListener Progress listener
@@ -208,7 +208,7 @@ public class BillingApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call listAvailablePlansUsingGETCall(Long integrationId, String appType, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call listAvailablePlansUsingGET1Call(Long integrationId, String appType, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
         
         // create path and map variables
@@ -254,9 +254,9 @@ public class BillingApi {
     }
     
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call listAvailablePlansUsingGETValidateBeforeCall(Long integrationId, String appType, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call listAvailablePlansUsingGET1ValidateBeforeCall(Long integrationId, String appType, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         
-        com.squareup.okhttp.Call call = listAvailablePlansUsingGETCall(integrationId, appType, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = listAvailablePlansUsingGET1Call(integrationId, appType, progressListener, progressRequestListener);
         return call;
 
         
@@ -273,8 +273,8 @@ public class BillingApi {
      * @return PlansResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public PlansResponse listAvailablePlansUsingGET(Long integrationId, String appType) throws ApiException {
-        ApiResponse<PlansResponse> resp = listAvailablePlansUsingGETWithHttpInfo(integrationId, appType);
+    public PlansResponse listAvailablePlansUsingGET1(Long integrationId, String appType) throws ApiException {
+        ApiResponse<PlansResponse> resp = listAvailablePlansUsingGET1WithHttpInfo(integrationId, appType);
         return resp.getData();
     }
 
@@ -286,8 +286,8 @@ public class BillingApi {
      * @return ApiResponse&lt;PlansResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<PlansResponse> listAvailablePlansUsingGETWithHttpInfo(Long integrationId, String appType) throws ApiException {
-        com.squareup.okhttp.Call call = listAvailablePlansUsingGETValidateBeforeCall(integrationId, appType, null, null);
+    public ApiResponse<PlansResponse> listAvailablePlansUsingGET1WithHttpInfo(Long integrationId, String appType) throws ApiException {
+        com.squareup.okhttp.Call call = listAvailablePlansUsingGET1ValidateBeforeCall(integrationId, appType, null, null);
         Type localVarReturnType = new TypeToken<PlansResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -301,7 +301,7 @@ public class BillingApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call listAvailablePlansUsingGETAsync(Long integrationId, String appType, final ApiCallback<PlansResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call listAvailablePlansUsingGET1Async(Long integrationId, String appType, final ApiCallback<PlansResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -322,7 +322,7 @@ public class BillingApi {
             };
         }
 
-        com.squareup.okhttp.Call call = listAvailablePlansUsingGETValidateBeforeCall(integrationId, appType, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = listAvailablePlansUsingGET1ValidateBeforeCall(integrationId, appType, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<PlansResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;

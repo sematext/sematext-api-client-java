@@ -7,12 +7,15 @@ All URIs are relative to */*
 | [**getForRangeUsingGET**](LogsUsageApiControllerApi.md#getForRangeUsingGET) | **GET** /logsene-reports/api/v3/apps/{appId}/usage/{from}/{to} | getForRange |
 
 <a name="getForRangeUsingGET"></a>
+
 # **getForRangeUsingGET**
+
 > UsageResponse getForRangeUsingGET(appId, from, to)
 
 getForRange
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -60,5 +63,5 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json

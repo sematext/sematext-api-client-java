@@ -1,6 +1,7 @@
 # Invitation
 
 ## Properties
+
 | Name              | Type                                        | Description                                       | Notes      |
 | ----------------- | ------------------------------------------- | ------------------------------------------------- | ---------- |
 | **app**           | [**App**](App.md)                           |                                                   | [optional] |
@@ -15,7 +16,9 @@
 | **uuid**          | **String**                                  |                                                   | [optional] |
 
 <a name="InviteStatusEnum"></a>
+
 ## Enum: InviteStatusEnum
+
 | Name      | Value                 |
 | --------- | --------------------- |
 | PENDING   | &quot;PENDING&quot;   |
@@ -24,7 +27,9 @@
 | DECLINED  | &quot;DECLINED&quot;  |
 
 <a name="InviteeRoleEnum"></a>
+
 ## Enum: InviteeRoleEnum
+
 | Name       | Value                  |
 | ---------- | ---------------------- |
 | SUPER_USER | &quot;SUPER_USER&quot; |
@@ -35,7 +40,9 @@
 | ANONYMOUS  | &quot;ANONYMOUS&quot;  |
 
 <a name="InviteeStatusEnum"></a>
+
 ## Enum: InviteeStatusEnum
+
 | Name     | Value                |
 | -------- | -------------------- |
 | INACTIVE | &quot;INACTIVE&quot; |

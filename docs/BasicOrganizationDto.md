@@ -1,6 +1,7 @@
 # BasicOrganizationDto
 
 ## Properties
+
 | Name            | Type                                                        | Description | Notes      |
 | --------------- | ----------------------------------------------------------- | ----------- | ---------- |
 | **authMethods** | [**List&lt;BasicAuthMethodDto&gt;**](BasicAuthMethodDto.md) |             | [optional] |
@@ -9,7 +10,9 @@
 | **uuid**        | **String**                                                  |             | [optional] |
 
 <a name="StatusEnum"></a>
+
 ## Enum: StatusEnum
+
 | Name            | Value                       |
 | --------------- | --------------------------- |
 | ACTIVE          | &quot;ACTIVE&quot;          |

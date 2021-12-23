@@ -12,16 +12,17 @@
 
 package com.sematext.cloud.client;
 
-import com.sematext.cloud.ApiException;
 import com.sematext.cloud.model.Dimension;
 import com.sematext.cloud.model.TagNamesResponse;
 import org.junit.Test;
 import org.junit.Ignore;
 
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 
 /**
  * API tests for TagApiControllerApi
@@ -36,11 +37,11 @@ public class TagApiControllerApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void getTagNamesUsingGETTest() throws ApiException {
+    public void getTagNamesUsingGETTest() throws Exception {
         String appIds = null;
         Long from = null;
         Long to = null;
@@ -57,11 +58,11 @@ public class TagApiControllerApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void getUsingGET2Test() throws ApiException {
+    public void getUsingGETTest() throws Exception {
         String appIds = null;
         List<String> tag = null;
         Long from = null;
@@ -70,7 +71,7 @@ public class TagApiControllerApiTest {
         Boolean logs = null;
         Boolean events = null;
         Boolean rum = null;
-        Map<String, Dimension> response = api.getUsingGET2(appIds, tag, from, to, metrics, logs, events, rum);
+        Map<String, Dimension> response = api.getUsingGET(appIds, tag, from, to, metrics, logs, events, rum);
 
         // TODO: test validations
     }
@@ -79,11 +80,11 @@ public class TagApiControllerApiTest {
      *
      * 
      *
-     * @throws ApiException
+     * @throws Exception
      *          if the Api call fails
      */
     @Test
-    public void getUsingGET3Test() throws ApiException {
+    public void getUsingGET3Test() throws Exception {
         String appIds = null;
         List<String> tag = null;
         Long from = null;

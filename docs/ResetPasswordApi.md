@@ -7,12 +7,15 @@ All URIs are relative to */*
 | [**resetPasswordUsingPOST**](ResetPasswordApi.md#resetPasswordUsingPOST) | **POST** /users-web/api/v3/account/password/reset | Reset Password |
 
 <a name="resetPasswordUsingPOST"></a>
+
 # **resetPasswordUsingPOST**
+
 > GenericMapBasedApiResponse resetPasswordUsingPOST(body)
 
 Reset Password
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -56,5 +59,5 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json

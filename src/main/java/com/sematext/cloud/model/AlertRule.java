@@ -109,9 +109,9 @@ public class AlertRule {
     public String toString() {
       return String.valueOf(value);
     }
-    public static EstimateOperationEnum fromValue(String text) {
+    public static EstimateOperationEnum fromValue(String input) {
       for (EstimateOperationEnum b : EstimateOperationEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -120,13 +120,13 @@ public class AlertRule {
     public static class Adapter extends TypeAdapter<EstimateOperationEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final EstimateOperationEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public EstimateOperationEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return EstimateOperationEnum.fromValue(String.valueOf(value));
+        return EstimateOperationEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("estimateOperation")

@@ -7,12 +7,15 @@ All URIs are relative to */*
 | [**createLogseneApplication**](LogsAppApi.md#createLogseneApplication) | **POST** /logsene-reports/api/v3/apps | Create Logs App |
 
 <a name="createLogseneApplication"></a>
+
 # **createLogseneApplication**
+
 > AppsResponse createLogseneApplication(body)
 
 Create Logs App
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -56,5 +59,5 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
- - **Accept**: application/json
+- **Content-Type**: application/json
+- **Accept**: application/json

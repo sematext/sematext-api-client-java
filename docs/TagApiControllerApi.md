@@ -5,16 +5,19 @@ All URIs are relative to */*
 | Method                                                                | HTTP request                                              | Description                                                                                             |
 | --------------------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | [**getTagNamesUsingGET**](TagApiControllerApi.md#getTagNamesUsingGET) | **GET** /spm-reports/api/v3/apps/{appIds}/tagNames        | Gets tag names for the given application identifiers appearing in the given time frame.                 |
-| [**getUsingGET2**](TagApiControllerApi.md#getUsingGET2)               | **GET** /spm-reports/api/v3/apps/{appIds}/metrics/filters | Gets values for specified tags for the given application identifiers appearing in the given time frame. |
+| [**getUsingGET**](TagApiControllerApi.md#getUsingGET)                 | **GET** /spm-reports/api/v3/apps/{appIds}/metrics/filters | Gets values for specified tags for the given application identifiers appearing in the given time frame. |
 | [**getUsingGET3**](TagApiControllerApi.md#getUsingGET3)               | **GET** /spm-reports/api/v3/apps/{appIds}/tags            | Gets values for specified tags for the given application identifiers appearing in the given time frame. |
 
 <a name="getTagNamesUsingGET"></a>
+
 # **getTagNamesUsingGET**
+
 > TagNamesResponse getTagNamesUsingGET(appIds, from, to, metrics, logs, events, rum)
 
 Gets tag names for the given application identifiers appearing in the given time frame.
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -70,16 +73,19 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
-<a name="getUsingGET2"></a>
-# **getUsingGET2**
-> Map&lt;String, Dimension&gt; getUsingGET2(appIds, tag, from, to, metrics, logs, events, rum)
+<a name="getUsingGET"></a>
+
+# **getUsingGET**
+
+> Map&lt;String, Dimension&gt; getUsingGET(appIds, tag, from, to, metrics, logs, events, rum)
 
 Gets values for specified tags for the given application identifiers appearing in the given time frame.
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -106,10 +112,10 @@ Boolean logs = true; // Boolean | logs
 Boolean events = false; // Boolean | events
 Boolean rum = true; // Boolean | rum
 try {
-    Map<String, Dimension> result = apiInstance.getUsingGET2(appIds, tag, from, to, metrics, logs, events, rum);
+    Map<String, Dimension> result = apiInstance.getUsingGET(appIds, tag, from, to, metrics, logs, events, rum);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling TagApiControllerApi#getUsingGET2");
+    System.err.println("Exception when calling TagApiControllerApi#getUsingGET");
     e.printStackTrace();
 }
 ```
@@ -137,16 +143,19 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 <a name="getUsingGET3"></a>
+
 # **getUsingGET3**
+
 > Map&lt;String, Dimension&gt; getUsingGET3(appIds, tag, from, to, metrics, logs, events, rum)
 
 Gets values for specified tags for the given application identifiers appearing in the given time frame.
 
 ### Example
+
 ```java
 // Import classes:
 //import com.sematext.cloud.ApiClient;
@@ -204,5 +213,5 @@ try {
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json
+- **Content-Type**: Not defined
+- **Accept**: application/json

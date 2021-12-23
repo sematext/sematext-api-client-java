@@ -59,9 +59,9 @@ public class ChargesDetailsResponseDto {
     public String toString() {
       return String.valueOf(value);
     }
-    public static ChargeBaseEnum fromValue(String text) {
+    public static ChargeBaseEnum fromValue(String input) {
       for (ChargeBaseEnum b : ChargeBaseEnum.values()) {
-        if (String.valueOf(b.value).equals(text)) {
+        if (b.value.equals(input)) {
           return b;
         }
       }
@@ -70,13 +70,13 @@ public class ChargesDetailsResponseDto {
     public static class Adapter extends TypeAdapter<ChargeBaseEnum> {
       @Override
       public void write(final JsonWriter jsonWriter, final ChargeBaseEnum enumeration) throws IOException {
-        jsonWriter.value(enumeration.getValue());
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
       }
 
       @Override
       public ChargeBaseEnum read(final JsonReader jsonReader) throws IOException {
         Object value = jsonReader.nextString();
-        return ChargeBaseEnum.fromValue(String.valueOf(value));
+        return ChargeBaseEnum.fromValue((String)(value));
       }
     }
   }  @SerializedName("chargeBase")
