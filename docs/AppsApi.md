@@ -7,11 +7,11 @@ All URIs are relative to */*
 | [**deleteUsingDELETE**](AppsApi.md#deleteUsingDELETE)                   | **DELETE** /users-web/api/v3/apps/{anyStateAppId}          | delete                                                             |
 | [**getAppTypesUsingGET**](AppsApi.md#getAppTypesUsingGET)               | **GET** /users-web/api/v3/apps/types                       | Get all App types supported for the account identified with apiKey |
 | [**getUsingGET**](AppsApi.md#getUsingGET)                               | **GET** /users-web/api/v3/apps/{anyStateAppId}             | Gets defails for one particular App                                |
-| [**inviteAppGuestsUsingPOST**](AppsApi.md#inviteAppGuestsUsingPOST)     | **POST** /users-web/api/v3/apps/guests                     | Invite guests to an app                                            |
-| [**listAppsUsersUsingGET**](AppsApi.md#listAppsUsersUsingGET)           | **GET** /users-web/api/v3/apps/users                       | Get all users of apps accessible to this account                   |
+| [**inviteAppGuestsUsingPOST1**](AppsApi.md#inviteAppGuestsUsingPOST1)   | **POST** /users-web/api/v3/apps/guests                     | Invite guests to an app                                            |
+| [**listAppsUsersUsingGET1**](AppsApi.md#listAppsUsersUsingGET1)         | **GET** /users-web/api/v3/apps/users                       | Get all users of apps accessible to this account                   |
 | [**listUsingGET**](AppsApi.md#listUsingGET)                             | **GET** /users-web/api/v3/apps                             | Get all apps accessible by account identified with apiKey          |
 | [**updateDescriptionUsingPUT1**](AppsApi.md#updateDescriptionUsingPUT1) | **PUT** /users-web/api/v3/apps/{anyStateAppId}/description | Update description of the app                                      |
-| [**updateUsingPUT2**](AppsApi.md#updateUsingPUT2)                       | **PUT** /users-web/api/v3/apps/{anyStateAppId}             | Update app                                                         |
+| [**updateUsingPUT3**](AppsApi.md#updateUsingPUT3)                       | **PUT** /users-web/api/v3/apps/{anyStateAppId}             | Update app                                                         |
 
 <a name="deleteUsingDELETE"></a>
 
@@ -178,11 +178,11 @@ try {
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
-<a name="inviteAppGuestsUsingPOST"></a>
+<a name="inviteAppGuestsUsingPOST1"></a>
 
-# **inviteAppGuestsUsingPOST**
+# **inviteAppGuestsUsingPOST1**
 
-> GenericMapBasedApiResponse inviteAppGuestsUsingPOST(body)
+> GenericMapBasedApiResponse inviteAppGuestsUsingPOST1(body)
 
 Invite guests to an app
 
@@ -207,10 +207,10 @@ api_key.setApiKey("YOUR API KEY");
 AppsApi apiInstance = new AppsApi();
 Invitation body = new Invitation(); // Invitation | For `app` and `apps` fields only `id` needs to be populated.Other fields can be left empty or with default values
 try {
-    GenericMapBasedApiResponse result = apiInstance.inviteAppGuestsUsingPOST(body);
+    GenericMapBasedApiResponse result = apiInstance.inviteAppGuestsUsingPOST1(body);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling AppsApi#inviteAppGuestsUsingPOST");
+    System.err.println("Exception when calling AppsApi#inviteAppGuestsUsingPOST1");
     e.printStackTrace();
 }
 ```
@@ -234,11 +234,11 @@ try {
 - **Content-Type**: application/json
 - **Accept**: application/json
 
-<a name="listAppsUsersUsingGET"></a>
+<a name="listAppsUsersUsingGET1"></a>
 
-# **listAppsUsersUsingGET**
+# **listAppsUsersUsingGET1**
 
-> AppsResponse listAppsUsersUsingGET()
+> AppsResponse listAppsUsersUsingGET1()
 
 Get all users of apps accessible to this account
 
@@ -262,10 +262,10 @@ api_key.setApiKey("YOUR API KEY");
 
 AppsApi apiInstance = new AppsApi();
 try {
-    AppsResponse result = apiInstance.listAppsUsersUsingGET();
+    AppsResponse result = apiInstance.listAppsUsersUsingGET1();
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling AppsApi#listAppsUsersUsingGET");
+    System.err.println("Exception when calling AppsApi#listAppsUsersUsingGET1");
     e.printStackTrace();
 }
 ```
@@ -400,11 +400,11 @@ try {
 - **Content-Type**: application/json
 - **Accept**: application/json
 
-<a name="updateUsingPUT2"></a>
+<a name="updateUsingPUT3"></a>
 
-# **updateUsingPUT2**
+# **updateUsingPUT3**
 
-> AppResponse updateUsingPUT2(body, anyStateAppId)
+> AppResponse updateUsingPUT3(body, anyStateAppId)
 
 Update app
 
@@ -432,10 +432,10 @@ AppsApi apiInstance = new AppsApi();
 UpdateAppInfo body = new UpdateAppInfo(); // UpdateAppInfo | dto
 Long anyStateAppId = 789L; // Long | App Id
 try {
-    AppResponse result = apiInstance.updateUsingPUT2(body, anyStateAppId);
+    AppResponse result = apiInstance.updateUsingPUT3(body, anyStateAppId);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling AppsApi#updateUsingPUT2");
+    System.err.println("Exception when calling AppsApi#updateUsingPUT3");
     e.printStackTrace();
 }
 ```

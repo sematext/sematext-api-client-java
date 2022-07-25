@@ -180,6 +180,52 @@ public class AlertRule {
   @SerializedName("notificationsEnabled")
   private Boolean notificationsEnabled = null;
 
+  /**
+   * Gets or Sets priority
+   */
+  @JsonAdapter(PriorityEnum.Adapter.class)
+  public enum PriorityEnum {
+    INFO("INFO"),
+    ERROR("ERROR"),
+    WARN("WARN"),
+    CRITICAL("CRITICAL");
+
+    private String value;
+
+    PriorityEnum(String value) {
+      this.value = value;
+    }
+    public String getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+    public static PriorityEnum fromValue(String input) {
+      for (PriorityEnum b : PriorityEnum.values()) {
+        if (b.value.equals(input)) {
+          return b;
+        }
+      }
+      return null;
+    }
+    public static class Adapter extends TypeAdapter<PriorityEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final PriorityEnum enumeration) throws IOException {
+        jsonWriter.value(String.valueOf(enumeration.getValue()));
+      }
+
+      @Override
+      public PriorityEnum read(final JsonReader jsonReader) throws IOException {
+        Object value = jsonReader.nextString();
+        return PriorityEnum.fromValue((String)(value));
+      }
+    }
+  }  @SerializedName("priority")
+  private PriorityEnum priority = null;
+
   @SerializedName("query")
   private String query = null;
 
@@ -757,6 +803,24 @@ public class AlertRule {
     this.notificationsEnabled = notificationsEnabled;
   }
 
+  public AlertRule priority(PriorityEnum priority) {
+    this.priority = priority;
+    return this;
+  }
+
+   /**
+   * Get priority
+   * @return priority
+  **/
+  @Schema(description = "")
+  public PriorityEnum getPriority() {
+    return priority;
+  }
+
+  public void setPriority(PriorityEnum priority) {
+    this.priority = priority;
+  }
+
   public AlertRule query(String query) {
     this.query = query;
     return this;
@@ -1016,6 +1080,7 @@ public class AlertRule {
         Objects.equals(this.notificationEmails, alertRule.notificationEmails) &&
         Objects.equals(this.notificationIntegrations, alertRule.notificationIntegrations) &&
         Objects.equals(this.notificationsEnabled, alertRule.notificationsEnabled) &&
+        Objects.equals(this.priority, alertRule.priority) &&
         Objects.equals(this.query, alertRule.query) &&
         Objects.equals(this.reportName, alertRule.reportName) &&
         Objects.equals(this.ruleKey, alertRule.ruleKey) &&
@@ -1034,7 +1099,7 @@ public class AlertRule {
 
   @Override
   public int hashCode() {
-    return Objects.hash(accountEmail, allowedAppTypes, analyzingTime, appDisplayState, appId, appName, appState, appToken, appType, backToNormalNeeded, chartKey, color, creatorEmail, defaultAggType, description, disallowedAppTypes, enabled, estimateOperation, estimateValue, filterValues, filterValuesObj, ignoreRegularEventsEnabled, integrations, lastDataReceivedDate, lastSent, lastTriggered, metadata, metricKey, metricLabel, minDelayBetweenNotificationsInMinutes, name, notificationEmails, notificationIntegrations, notificationsEnabled, query, reportName, ruleKey, ruleType, runbook, savedQueryId, schedule, sematextService, sendToEmail, timezone, useOnlyAlertRuleIntegrations, userPermissions, valueColumnName, valueName);
+    return Objects.hash(accountEmail, allowedAppTypes, analyzingTime, appDisplayState, appId, appName, appState, appToken, appType, backToNormalNeeded, chartKey, color, creatorEmail, defaultAggType, description, disallowedAppTypes, enabled, estimateOperation, estimateValue, filterValues, filterValuesObj, ignoreRegularEventsEnabled, integrations, lastDataReceivedDate, lastSent, lastTriggered, metadata, metricKey, metricLabel, minDelayBetweenNotificationsInMinutes, name, notificationEmails, notificationIntegrations, notificationsEnabled, priority, query, reportName, ruleKey, ruleType, runbook, savedQueryId, schedule, sematextService, sendToEmail, timezone, useOnlyAlertRuleIntegrations, userPermissions, valueColumnName, valueName);
   }
 
 
@@ -1077,6 +1142,7 @@ public class AlertRule {
     sb.append("    notificationEmails: ").append(toIndentedString(notificationEmails)).append("\n");
     sb.append("    notificationIntegrations: ").append(toIndentedString(notificationIntegrations)).append("\n");
     sb.append("    notificationsEnabled: ").append(toIndentedString(notificationsEnabled)).append("\n");
+    sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
     sb.append("    query: ").append(toIndentedString(query)).append("\n");
     sb.append("    reportName: ").append(toIndentedString(reportName)).append("\n");
     sb.append("    ruleKey: ").append(toIndentedString(ruleKey)).append("\n");

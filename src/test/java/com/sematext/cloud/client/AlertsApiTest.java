@@ -58,9 +58,9 @@ public class AlertsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteAlertRuleUsingDELETE1Test() throws Exception {
+    public void deleteAlertRuleUsingDELETETest() throws Exception {
         Long updateableAlertId = null;
-        GenericMapBasedApiResponse response = api.deleteAlertRuleUsingDELETE1(updateableAlertId);
+        GenericMapBasedApiResponse response = api.deleteAlertRuleUsingDELETE(updateableAlertId);
 
         // TODO: test validations
     }
@@ -73,9 +73,9 @@ public class AlertsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void disableAlertRuleUsingPUTTest() throws Exception {
+    public void disableAlertRuleUsingPUT1Test() throws Exception {
         Long updateableAlertId = null;
-        GenericMapBasedApiResponse response = api.disableAlertRuleUsingPUT(updateableAlertId);
+        GenericMapBasedApiResponse response = api.disableAlertRuleUsingPUT1(updateableAlertId);
 
         // TODO: test validations
     }
@@ -103,9 +103,9 @@ public class AlertsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getAlertRulesForAppUsingGET1Test() throws Exception {
+    public void getAlertRulesForAppUsingGETTest() throws Exception {
         Long appId = null;
-        AlertRulesResponse response = api.getAlertRulesForAppUsingGET1(appId);
+        AlertRulesResponse response = api.getAlertRulesForAppUsingGET(appId);
 
         // TODO: test validations
     }

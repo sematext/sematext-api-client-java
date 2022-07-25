@@ -2,15 +2,15 @@
 
 All URIs are relative to */*
 
-| Method                                                             | HTTP request                               | Description                               |
-| ------------------------------------------------------------------ | ------------------------------------------ | ----------------------------------------- |
-| [**updateUsingPUT1**](AwsSettingsControllerApi.md#updateUsingPUT1) | **PUT** /users-web/api/v3/apps/{appId}/aws | Update App&#x27;s AWS CloudWatch settings |
+| Method                                                           | HTTP request                               | Description                               |
+| ---------------------------------------------------------------- | ------------------------------------------ | ----------------------------------------- |
+| [**updateUsingPUT**](AwsSettingsControllerApi.md#updateUsingPUT) | **PUT** /users-web/api/v3/apps/{appId}/aws | Update App&#x27;s AWS CloudWatch settings |
 
-<a name="updateUsingPUT1"></a>
+<a name="updateUsingPUT"></a>
 
-# **updateUsingPUT1**
+# **updateUsingPUT**
 
-> CloudWatchSettingsResponse updateUsingPUT1(body, appId)
+> CloudWatchSettingsResponse updateUsingPUT(body, appId)
 
 Update App&#x27;s AWS CloudWatch settings
 
@@ -38,10 +38,10 @@ AwsSettingsControllerApi apiInstance = new AwsSettingsControllerApi();
 CloudWatchSettings body = new CloudWatchSettings(); // CloudWatchSettings | dto
 Long appId = 789L; // Long | appId
 try {
-    CloudWatchSettingsResponse result = apiInstance.updateUsingPUT1(body, appId);
+    CloudWatchSettingsResponse result = apiInstance.updateUsingPUT(body, appId);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling AwsSettingsControllerApi#updateUsingPUT1");
+    System.err.println("Exception when calling AwsSettingsControllerApi#updateUsingPUT");
     e.printStackTrace();
 }
 ```

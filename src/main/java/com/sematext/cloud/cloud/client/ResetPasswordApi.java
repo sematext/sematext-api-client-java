@@ -26,8 +26,8 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
-import com.sematext.cloud.model.CloudWatchSettings;
-import com.sematext.cloud.model.CloudWatchSettingsResponse;
+import com.sematext.cloud.model.GenericMapBasedApiResponse;
+import com.sematext.cloud.model.UserInfo;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -35,14 +35,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class AwsSettingsControllerApi {
+public class ResetPasswordApi {
     private ApiClient apiClient;
 
-    public AwsSettingsControllerApi() {
+    public ResetPasswordApi() {
         this(Configuration.getDefaultApiClient());
     }
 
-    public AwsSettingsControllerApi(ApiClient apiClient) {
+    public ResetPasswordApi(ApiClient apiClient) {
         this.apiClient = apiClient;
     }
 
@@ -55,20 +55,18 @@ public class AwsSettingsControllerApi {
     }
 
     /**
-     * Build call for updateUsingPUT1
+     * Build call for resetPasswordUsingPOST1
      * @param body dto (required)
-     * @param appId appId (required)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call updateUsingPUT1Call(CloudWatchSettings body, Long appId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call resetPasswordUsingPOST1Call(UserInfo body, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = body;
         
         // create path and map variables
-        String localVarPath = "/users-web/api/v3/apps/{appId}/aws"
-            .replaceAll("\\{" + "appId" + "\\}", apiClient.escapeString(appId.toString()));
+        String localVarPath = "/users-web/api/v3/account/password/reset";
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
@@ -102,21 +100,17 @@ public class AwsSettingsControllerApi {
         }
 
         String[] localVarAuthNames = new String[] { "api_key" };
-        return apiClient.buildCall(localVarPath, "PUT", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
+        return apiClient.buildCall(localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
     
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call updateUsingPUT1ValidateBeforeCall(CloudWatchSettings body, Long appId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call resetPasswordUsingPOST1ValidateBeforeCall(UserInfo body, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         // verify the required parameter 'body' is set
         if (body == null) {
-            throw new ApiException("Missing the required parameter 'body' when calling updateUsingPUT1(Async)");
-        }
-        // verify the required parameter 'appId' is set
-        if (appId == null) {
-            throw new ApiException("Missing the required parameter 'appId' when calling updateUsingPUT1(Async)");
+            throw new ApiException("Missing the required parameter 'body' when calling resetPasswordUsingPOST1(Async)");
         }
         
-        com.squareup.okhttp.Call call = updateUsingPUT1Call(body, appId, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = resetPasswordUsingPOST1Call(body, progressListener, progressRequestListener);
         return call;
 
         
@@ -126,42 +120,39 @@ public class AwsSettingsControllerApi {
     }
 
     /**
-     * Update App&#x27;s AWS CloudWatch settings
-     * Applicable only for AWS Apps
+     * Reset Password
+     * 
      * @param body dto (required)
-     * @param appId appId (required)
-     * @return CloudWatchSettingsResponse
+     * @return GenericMapBasedApiResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public CloudWatchSettingsResponse updateUsingPUT1(CloudWatchSettings body, Long appId) throws ApiException {
-        ApiResponse<CloudWatchSettingsResponse> resp = updateUsingPUT1WithHttpInfo(body, appId);
+    public GenericMapBasedApiResponse resetPasswordUsingPOST1(UserInfo body) throws ApiException {
+        ApiResponse<GenericMapBasedApiResponse> resp = resetPasswordUsingPOST1WithHttpInfo(body);
         return resp.getData();
     }
 
     /**
-     * Update App&#x27;s AWS CloudWatch settings
-     * Applicable only for AWS Apps
+     * Reset Password
+     * 
      * @param body dto (required)
-     * @param appId appId (required)
-     * @return ApiResponse&lt;CloudWatchSettingsResponse&gt;
+     * @return ApiResponse&lt;GenericMapBasedApiResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<CloudWatchSettingsResponse> updateUsingPUT1WithHttpInfo(CloudWatchSettings body, Long appId) throws ApiException {
-        com.squareup.okhttp.Call call = updateUsingPUT1ValidateBeforeCall(body, appId, null, null);
-        Type localVarReturnType = new TypeToken<CloudWatchSettingsResponse>(){}.getType();
+    public ApiResponse<GenericMapBasedApiResponse> resetPasswordUsingPOST1WithHttpInfo(UserInfo body) throws ApiException {
+        com.squareup.okhttp.Call call = resetPasswordUsingPOST1ValidateBeforeCall(body, null, null);
+        Type localVarReturnType = new TypeToken<GenericMapBasedApiResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
 
     /**
-     * Update App&#x27;s AWS CloudWatch settings (asynchronously)
-     * Applicable only for AWS Apps
+     * Reset Password (asynchronously)
+     * 
      * @param body dto (required)
-     * @param appId appId (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call updateUsingPUT1Async(CloudWatchSettings body, Long appId, final ApiCallback<CloudWatchSettingsResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call resetPasswordUsingPOST1Async(UserInfo body, final ApiCallback<GenericMapBasedApiResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -182,8 +173,8 @@ public class AwsSettingsControllerApi {
             };
         }
 
-        com.squareup.okhttp.Call call = updateUsingPUT1ValidateBeforeCall(body, appId, progressListener, progressRequestListener);
-        Type localVarReturnType = new TypeToken<CloudWatchSettingsResponse>(){}.getType();
+        com.squareup.okhttp.Call call = resetPasswordUsingPOST1ValidateBeforeCall(body, progressListener, progressRequestListener);
+        Type localVarReturnType = new TypeToken<GenericMapBasedApiResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
     }

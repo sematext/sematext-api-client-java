@@ -194,7 +194,7 @@ public class SubscriptionsApi {
         return call;
     }
     /**
-     * Build call for createForDashUsingPOST1
+     * Build call for createForDashUsingPOST
      * @param body subscription (required)
      * @param dashId dashId (required)
      * @param progressListener Progress listener
@@ -202,7 +202,7 @@ public class SubscriptionsApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call createForDashUsingPOST1Call(SubscriptionDashboardDto body, Long dashId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call createForDashUsingPOSTCall(SubscriptionDashboardDto body, Long dashId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = body;
         
         // create path and map variables
@@ -245,17 +245,17 @@ public class SubscriptionsApi {
     }
     
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call createForDashUsingPOST1ValidateBeforeCall(SubscriptionDashboardDto body, Long dashId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call createForDashUsingPOSTValidateBeforeCall(SubscriptionDashboardDto body, Long dashId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         // verify the required parameter 'body' is set
         if (body == null) {
-            throw new ApiException("Missing the required parameter 'body' when calling createForDashUsingPOST1(Async)");
+            throw new ApiException("Missing the required parameter 'body' when calling createForDashUsingPOST(Async)");
         }
         // verify the required parameter 'dashId' is set
         if (dashId == null) {
-            throw new ApiException("Missing the required parameter 'dashId' when calling createForDashUsingPOST1(Async)");
+            throw new ApiException("Missing the required parameter 'dashId' when calling createForDashUsingPOST(Async)");
         }
         
-        com.squareup.okhttp.Call call = createForDashUsingPOST1Call(body, dashId, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = createForDashUsingPOSTCall(body, dashId, progressListener, progressRequestListener);
         return call;
 
         
@@ -272,8 +272,8 @@ public class SubscriptionsApi {
      * @return SubscriptionResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public SubscriptionResponse createForDashUsingPOST1(SubscriptionDashboardDto body, Long dashId) throws ApiException {
-        ApiResponse<SubscriptionResponse> resp = createForDashUsingPOST1WithHttpInfo(body, dashId);
+    public SubscriptionResponse createForDashUsingPOST(SubscriptionDashboardDto body, Long dashId) throws ApiException {
+        ApiResponse<SubscriptionResponse> resp = createForDashUsingPOSTWithHttpInfo(body, dashId);
         return resp.getData();
     }
 
@@ -285,8 +285,8 @@ public class SubscriptionsApi {
      * @return ApiResponse&lt;SubscriptionResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<SubscriptionResponse> createForDashUsingPOST1WithHttpInfo(SubscriptionDashboardDto body, Long dashId) throws ApiException {
-        com.squareup.okhttp.Call call = createForDashUsingPOST1ValidateBeforeCall(body, dashId, null, null);
+    public ApiResponse<SubscriptionResponse> createForDashUsingPOSTWithHttpInfo(SubscriptionDashboardDto body, Long dashId) throws ApiException {
+        com.squareup.okhttp.Call call = createForDashUsingPOSTValidateBeforeCall(body, dashId, null, null);
         Type localVarReturnType = new TypeToken<SubscriptionResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -300,7 +300,7 @@ public class SubscriptionsApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call createForDashUsingPOST1Async(SubscriptionDashboardDto body, Long dashId, final ApiCallback<SubscriptionResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call createForDashUsingPOSTAsync(SubscriptionDashboardDto body, Long dashId, final ApiCallback<SubscriptionResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -321,20 +321,20 @@ public class SubscriptionsApi {
             };
         }
 
-        com.squareup.okhttp.Call call = createForDashUsingPOST1ValidateBeforeCall(body, dashId, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = createForDashUsingPOSTValidateBeforeCall(body, dashId, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<SubscriptionResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
     }
     /**
-     * Build call for deleteUsingDELETE2
+     * Build call for deleteUsingDELETE3
      * @param updateableSubscriptionId updateableSubscriptionId (required)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call deleteUsingDELETE2Call(Long updateableSubscriptionId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call deleteUsingDELETE3Call(Long updateableSubscriptionId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = null;
         
         // create path and map variables
@@ -377,13 +377,13 @@ public class SubscriptionsApi {
     }
     
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call deleteUsingDELETE2ValidateBeforeCall(Long updateableSubscriptionId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call deleteUsingDELETE3ValidateBeforeCall(Long updateableSubscriptionId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         // verify the required parameter 'updateableSubscriptionId' is set
         if (updateableSubscriptionId == null) {
-            throw new ApiException("Missing the required parameter 'updateableSubscriptionId' when calling deleteUsingDELETE2(Async)");
+            throw new ApiException("Missing the required parameter 'updateableSubscriptionId' when calling deleteUsingDELETE3(Async)");
         }
         
-        com.squareup.okhttp.Call call = deleteUsingDELETE2Call(updateableSubscriptionId, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = deleteUsingDELETE3Call(updateableSubscriptionId, progressListener, progressRequestListener);
         return call;
 
         
@@ -399,8 +399,8 @@ public class SubscriptionsApi {
      * @return GenericMapBasedApiResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public GenericMapBasedApiResponse deleteUsingDELETE2(Long updateableSubscriptionId) throws ApiException {
-        ApiResponse<GenericMapBasedApiResponse> resp = deleteUsingDELETE2WithHttpInfo(updateableSubscriptionId);
+    public GenericMapBasedApiResponse deleteUsingDELETE3(Long updateableSubscriptionId) throws ApiException {
+        ApiResponse<GenericMapBasedApiResponse> resp = deleteUsingDELETE3WithHttpInfo(updateableSubscriptionId);
         return resp.getData();
     }
 
@@ -411,8 +411,8 @@ public class SubscriptionsApi {
      * @return ApiResponse&lt;GenericMapBasedApiResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<GenericMapBasedApiResponse> deleteUsingDELETE2WithHttpInfo(Long updateableSubscriptionId) throws ApiException {
-        com.squareup.okhttp.Call call = deleteUsingDELETE2ValidateBeforeCall(updateableSubscriptionId, null, null);
+    public ApiResponse<GenericMapBasedApiResponse> deleteUsingDELETE3WithHttpInfo(Long updateableSubscriptionId) throws ApiException {
+        com.squareup.okhttp.Call call = deleteUsingDELETE3ValidateBeforeCall(updateableSubscriptionId, null, null);
         Type localVarReturnType = new TypeToken<GenericMapBasedApiResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -425,7 +425,7 @@ public class SubscriptionsApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call deleteUsingDELETE2Async(Long updateableSubscriptionId, final ApiCallback<GenericMapBasedApiResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call deleteUsingDELETE3Async(Long updateableSubscriptionId, final ApiCallback<GenericMapBasedApiResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -446,7 +446,7 @@ public class SubscriptionsApi {
             };
         }
 
-        com.squareup.okhttp.Call call = deleteUsingDELETE2ValidateBeforeCall(updateableSubscriptionId, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = deleteUsingDELETE3ValidateBeforeCall(updateableSubscriptionId, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<GenericMapBasedApiResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
@@ -693,7 +693,7 @@ public class SubscriptionsApi {
         return call;
     }
     /**
-     * Build call for sendAppReportUsingPOST
+     * Build call for sendAppReportUsingPOST1
      * @param body emailDto (required)
      * @param appId appId (required)
      * @param progressListener Progress listener
@@ -701,7 +701,7 @@ public class SubscriptionsApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call sendAppReportUsingPOSTCall(ReportInfo body, Long appId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call sendAppReportUsingPOST1Call(ReportInfo body, Long appId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = body;
         
         // create path and map variables
@@ -744,17 +744,17 @@ public class SubscriptionsApi {
     }
     
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call sendAppReportUsingPOSTValidateBeforeCall(ReportInfo body, Long appId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call sendAppReportUsingPOST1ValidateBeforeCall(ReportInfo body, Long appId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         // verify the required parameter 'body' is set
         if (body == null) {
-            throw new ApiException("Missing the required parameter 'body' when calling sendAppReportUsingPOST(Async)");
+            throw new ApiException("Missing the required parameter 'body' when calling sendAppReportUsingPOST1(Async)");
         }
         // verify the required parameter 'appId' is set
         if (appId == null) {
-            throw new ApiException("Missing the required parameter 'appId' when calling sendAppReportUsingPOST(Async)");
+            throw new ApiException("Missing the required parameter 'appId' when calling sendAppReportUsingPOST1(Async)");
         }
         
-        com.squareup.okhttp.Call call = sendAppReportUsingPOSTCall(body, appId, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = sendAppReportUsingPOST1Call(body, appId, progressListener, progressRequestListener);
         return call;
 
         
@@ -771,8 +771,8 @@ public class SubscriptionsApi {
      * @return MailReportResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public MailReportResponse sendAppReportUsingPOST(ReportInfo body, Long appId) throws ApiException {
-        ApiResponse<MailReportResponse> resp = sendAppReportUsingPOSTWithHttpInfo(body, appId);
+    public MailReportResponse sendAppReportUsingPOST1(ReportInfo body, Long appId) throws ApiException {
+        ApiResponse<MailReportResponse> resp = sendAppReportUsingPOST1WithHttpInfo(body, appId);
         return resp.getData();
     }
 
@@ -784,8 +784,8 @@ public class SubscriptionsApi {
      * @return ApiResponse&lt;MailReportResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<MailReportResponse> sendAppReportUsingPOSTWithHttpInfo(ReportInfo body, Long appId) throws ApiException {
-        com.squareup.okhttp.Call call = sendAppReportUsingPOSTValidateBeforeCall(body, appId, null, null);
+    public ApiResponse<MailReportResponse> sendAppReportUsingPOST1WithHttpInfo(ReportInfo body, Long appId) throws ApiException {
+        com.squareup.okhttp.Call call = sendAppReportUsingPOST1ValidateBeforeCall(body, appId, null, null);
         Type localVarReturnType = new TypeToken<MailReportResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -799,7 +799,7 @@ public class SubscriptionsApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call sendAppReportUsingPOSTAsync(ReportInfo body, Long appId, final ApiCallback<MailReportResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call sendAppReportUsingPOST1Async(ReportInfo body, Long appId, final ApiCallback<MailReportResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -820,7 +820,7 @@ public class SubscriptionsApi {
             };
         }
 
-        com.squareup.okhttp.Call call = sendAppReportUsingPOSTValidateBeforeCall(body, appId, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = sendAppReportUsingPOST1ValidateBeforeCall(body, appId, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<MailReportResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
@@ -959,7 +959,7 @@ public class SubscriptionsApi {
         return call;
     }
     /**
-     * Build call for toggleEnabledUsingPUT1
+     * Build call for toggleEnabledUsingPUT
      * @param body dto (required)
      * @param updateableSubscriptionId updateableSubscriptionId (required)
      * @param progressListener Progress listener
@@ -967,7 +967,7 @@ public class SubscriptionsApi {
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call toggleEnabledUsingPUT1Call(UpdateSubscriptionDto body, Long updateableSubscriptionId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call toggleEnabledUsingPUTCall(UpdateSubscriptionDto body, Long updateableSubscriptionId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = body;
         
         // create path and map variables
@@ -1010,17 +1010,17 @@ public class SubscriptionsApi {
     }
     
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call toggleEnabledUsingPUT1ValidateBeforeCall(UpdateSubscriptionDto body, Long updateableSubscriptionId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call toggleEnabledUsingPUTValidateBeforeCall(UpdateSubscriptionDto body, Long updateableSubscriptionId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         // verify the required parameter 'body' is set
         if (body == null) {
-            throw new ApiException("Missing the required parameter 'body' when calling toggleEnabledUsingPUT1(Async)");
+            throw new ApiException("Missing the required parameter 'body' when calling toggleEnabledUsingPUT(Async)");
         }
         // verify the required parameter 'updateableSubscriptionId' is set
         if (updateableSubscriptionId == null) {
-            throw new ApiException("Missing the required parameter 'updateableSubscriptionId' when calling toggleEnabledUsingPUT1(Async)");
+            throw new ApiException("Missing the required parameter 'updateableSubscriptionId' when calling toggleEnabledUsingPUT(Async)");
         }
         
-        com.squareup.okhttp.Call call = toggleEnabledUsingPUT1Call(body, updateableSubscriptionId, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = toggleEnabledUsingPUTCall(body, updateableSubscriptionId, progressListener, progressRequestListener);
         return call;
 
         
@@ -1037,8 +1037,8 @@ public class SubscriptionsApi {
      * @return SubscriptionResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public SubscriptionResponse toggleEnabledUsingPUT1(UpdateSubscriptionDto body, Long updateableSubscriptionId) throws ApiException {
-        ApiResponse<SubscriptionResponse> resp = toggleEnabledUsingPUT1WithHttpInfo(body, updateableSubscriptionId);
+    public SubscriptionResponse toggleEnabledUsingPUT(UpdateSubscriptionDto body, Long updateableSubscriptionId) throws ApiException {
+        ApiResponse<SubscriptionResponse> resp = toggleEnabledUsingPUTWithHttpInfo(body, updateableSubscriptionId);
         return resp.getData();
     }
 
@@ -1050,8 +1050,8 @@ public class SubscriptionsApi {
      * @return ApiResponse&lt;SubscriptionResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<SubscriptionResponse> toggleEnabledUsingPUT1WithHttpInfo(UpdateSubscriptionDto body, Long updateableSubscriptionId) throws ApiException {
-        com.squareup.okhttp.Call call = toggleEnabledUsingPUT1ValidateBeforeCall(body, updateableSubscriptionId, null, null);
+    public ApiResponse<SubscriptionResponse> toggleEnabledUsingPUTWithHttpInfo(UpdateSubscriptionDto body, Long updateableSubscriptionId) throws ApiException {
+        com.squareup.okhttp.Call call = toggleEnabledUsingPUTValidateBeforeCall(body, updateableSubscriptionId, null, null);
         Type localVarReturnType = new TypeToken<SubscriptionResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
@@ -1065,7 +1065,7 @@ public class SubscriptionsApi {
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call toggleEnabledUsingPUT1Async(UpdateSubscriptionDto body, Long updateableSubscriptionId, final ApiCallback<SubscriptionResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call toggleEnabledUsingPUTAsync(UpdateSubscriptionDto body, Long updateableSubscriptionId, final ApiCallback<SubscriptionResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -1086,7 +1086,7 @@ public class SubscriptionsApi {
             };
         }
 
-        com.squareup.okhttp.Call call = toggleEnabledUsingPUT1ValidateBeforeCall(body, updateableSubscriptionId, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = toggleEnabledUsingPUTValidateBeforeCall(body, updateableSubscriptionId, progressListener, progressRequestListener);
         Type localVarReturnType = new TypeToken<SubscriptionResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;

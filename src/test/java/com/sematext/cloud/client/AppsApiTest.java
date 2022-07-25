@@ -90,9 +90,9 @@ public class AppsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void inviteAppGuestsUsingPOSTTest() throws Exception {
+    public void inviteAppGuestsUsingPOST1Test() throws Exception {
         Invitation body = null;
-        GenericMapBasedApiResponse response = api.inviteAppGuestsUsingPOST(body);
+        GenericMapBasedApiResponse response = api.inviteAppGuestsUsingPOST1(body);
 
         // TODO: test validations
     }
@@ -105,8 +105,8 @@ public class AppsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void listAppsUsersUsingGETTest() throws Exception {
-        AppsResponse response = api.listAppsUsersUsingGET();
+    public void listAppsUsersUsingGET1Test() throws Exception {
+        AppsResponse response = api.listAppsUsersUsingGET1();
 
         // TODO: test validations
     }
@@ -149,10 +149,10 @@ public class AppsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateUsingPUT2Test() throws Exception {
+    public void updateUsingPUT3Test() throws Exception {
         UpdateAppInfo body = null;
         Long anyStateAppId = null;
-        AppResponse response = api.updateUsingPUT2(body, anyStateAppId);
+        AppResponse response = api.updateUsingPUT3(body, anyStateAppId);
 
         // TODO: test validations
     }

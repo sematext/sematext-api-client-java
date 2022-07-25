@@ -41,10 +41,10 @@ public class AwsSettingsControllerApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateUsingPUT1Test() throws Exception {
+    public void updateUsingPUTTest() throws Exception {
         CloudWatchSettings body = null;
         Long appId = null;
-        CloudWatchSettingsResponse response = api.updateUsingPUT1(body, appId);
+        CloudWatchSettingsResponse response = api.updateUsingPUT(body, appId);
 
         // TODO: test validations
     }

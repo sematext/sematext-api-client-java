@@ -2,15 +2,15 @@
 
 All URIs are relative to */*
 
-| Method                                                                   | HTTP request                                      | Description    |
-| ------------------------------------------------------------------------ | ------------------------------------------------- | -------------- |
-| [**resetPasswordUsingPOST**](ResetPasswordApi.md#resetPasswordUsingPOST) | **POST** /users-web/api/v3/account/password/reset | Reset Password |
+| Method                                                                     | HTTP request                                      | Description    |
+| -------------------------------------------------------------------------- | ------------------------------------------------- | -------------- |
+| [**resetPasswordUsingPOST1**](ResetPasswordApi.md#resetPasswordUsingPOST1) | **POST** /users-web/api/v3/account/password/reset | Reset Password |
 
-<a name="resetPasswordUsingPOST"></a>
+<a name="resetPasswordUsingPOST1"></a>
 
-# **resetPasswordUsingPOST**
+# **resetPasswordUsingPOST1**
 
-> GenericMapBasedApiResponse resetPasswordUsingPOST(body)
+> GenericMapBasedApiResponse resetPasswordUsingPOST1(body)
 
 Reset Password
 
@@ -35,10 +35,10 @@ api_key.setApiKey("YOUR API KEY");
 ResetPasswordApi apiInstance = new ResetPasswordApi();
 UserInfo body = new UserInfo(); // UserInfo | dto
 try {
-    GenericMapBasedApiResponse result = apiInstance.resetPasswordUsingPOST(body);
+    GenericMapBasedApiResponse result = apiInstance.resetPasswordUsingPOST1(body);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling ResetPasswordApi#resetPasswordUsingPOST");
+    System.err.println("Exception when calling ResetPasswordApi#resetPasswordUsingPOST1");
     e.printStackTrace();
 }
 ```

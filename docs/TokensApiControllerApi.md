@@ -4,17 +4,17 @@ All URIs are relative to */*
 
 | Method                                                                   | HTTP request                                                        | Description                               |
 | ------------------------------------------------------------------------ | ------------------------------------------------------------------- | ----------------------------------------- |
-| [**createAppToken1**](TokensApiControllerApi.md#createAppToken1)         | **POST** /users-web/api/v3/apps/{appId}/tokens                      | Create new app token                      |
+| [**createAppToken**](TokensApiControllerApi.md#createAppToken)           | **POST** /users-web/api/v3/apps/{appId}/tokens                      | Create new app token                      |
 | [**deleteAppToken1**](TokensApiControllerApi.md#deleteAppToken1)         | **DELETE** /users-web/api/v3/apps/{appId}/tokens/{tokenId}          | Delete app token                          |
-| [**getAppTokens**](TokensApiControllerApi.md#getAppTokens)               | **GET** /users-web/api/v3/apps/{appId}/tokens                       | Get app available tokens                  |
+| [**getAppTokens1**](TokensApiControllerApi.md#getAppTokens1)             | **GET** /users-web/api/v3/apps/{appId}/tokens                       | Get app available tokens                  |
 | [**regenerateAppToken1**](TokensApiControllerApi.md#regenerateAppToken1) | **POST** /users-web/api/v3/apps/{appId}/tokens/{tokenId}/regenerate | Regenerate app token)                     |
-| [**updateAppToken1**](TokensApiControllerApi.md#updateAppToken1)         | **PUT** /users-web/api/v3/apps/{appId}/tokens/{tokenId}             | Update app token (enable/disable or name) |
+| [**updateAppToken**](TokensApiControllerApi.md#updateAppToken)           | **PUT** /users-web/api/v3/apps/{appId}/tokens/{tokenId}             | Update app token (enable/disable or name) |
 
-<a name="createAppToken1"></a>
+<a name="createAppToken"></a>
 
-# **createAppToken1**
+# **createAppToken**
 
-> TokenResponse createAppToken1(body, appId)
+> TokenResponse createAppToken(body, appId)
 
 Create new app token
 
@@ -40,10 +40,10 @@ TokensApiControllerApi apiInstance = new TokensApiControllerApi();
 CreateTokenDto body = new CreateTokenDto(); // CreateTokenDto | dto
 Long appId = 789L; // Long | appId
 try {
-    TokenResponse result = apiInstance.createAppToken1(body, appId);
+    TokenResponse result = apiInstance.createAppToken(body, appId);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling TokensApiControllerApi#createAppToken1");
+    System.err.println("Exception when calling TokensApiControllerApi#createAppToken");
     e.printStackTrace();
 }
 ```
@@ -126,11 +126,11 @@ try {
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
-<a name="getAppTokens"></a>
+<a name="getAppTokens1"></a>
 
-# **getAppTokens**
+# **getAppTokens1**
 
-> TokensResponse getAppTokens(appId)
+> TokensResponse getAppTokens1(appId)
 
 Get app available tokens
 
@@ -155,10 +155,10 @@ api_key.setApiKey("YOUR API KEY");
 TokensApiControllerApi apiInstance = new TokensApiControllerApi();
 Long appId = 789L; // Long | appId
 try {
-    TokensResponse result = apiInstance.getAppTokens(appId);
+    TokensResponse result = apiInstance.getAppTokens1(appId);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling TokensApiControllerApi#getAppTokens");
+    System.err.println("Exception when calling TokensApiControllerApi#getAppTokens1");
     e.printStackTrace();
 }
 ```
@@ -240,11 +240,11 @@ try {
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
-<a name="updateAppToken1"></a>
+<a name="updateAppToken"></a>
 
-# **updateAppToken1**
+# **updateAppToken**
 
-> TokenResponse updateAppToken1(body, appId, tokenId)
+> TokenResponse updateAppToken(body, appId, tokenId)
 
 Update app token (enable/disable or name)
 
@@ -271,10 +271,10 @@ UpdateTokenDto body = new UpdateTokenDto(); // UpdateTokenDto | dto
 Long appId = 789L; // Long | appId
 Long tokenId = 789L; // Long | tokenId
 try {
-    TokenResponse result = apiInstance.updateAppToken1(body, appId, tokenId);
+    TokenResponse result = apiInstance.updateAppToken(body, appId, tokenId);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling TokensApiControllerApi#updateAppToken1");
+    System.err.println("Exception when calling TokensApiControllerApi#updateAppToken");
     e.printStackTrace();
 }
 ```

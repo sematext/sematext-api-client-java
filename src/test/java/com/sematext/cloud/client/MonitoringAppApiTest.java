@@ -41,9 +41,9 @@ public class MonitoringAppApiTest {
      *          if the Api call fails
      */
     @Test
-    public void createSpmApplicationTest() throws Exception {
+    public void createSpmApplication1Test() throws Exception {
         CreateAppInfo body = null;
-        AppsResponse response = api.createSpmApplication(body);
+        AppsResponse response = api.createSpmApplication1(body);
 
         // TODO: test validations
     }

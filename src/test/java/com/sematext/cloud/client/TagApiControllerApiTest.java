@@ -14,6 +14,7 @@ package com.sematext.cloud.client;
 
 import com.sematext.cloud.model.Dimension;
 import com.sematext.cloud.model.TagNamesResponse;
+import com.sematext.cloud.model.TagsGroupedResponse;
 import org.junit.Test;
 import org.junit.Ignore;
 
@@ -54,6 +55,28 @@ public class TagApiControllerApiTest {
         // TODO: test validations
     }
     /**
+     * Gets tag names grouped by application id.
+     *
+     * 
+     *
+     * @throws Exception
+     *          if the Api call fails
+     */
+    @Test
+    public void getTagsGroupedByIdUsingGET1Test() throws Exception {
+        String appIds = null;
+        List<String> tag = null;
+        Long from = null;
+        Long to = null;
+        Boolean metrics = null;
+        Boolean logs = null;
+        Boolean events = null;
+        Boolean rum = null;
+        TagsGroupedResponse response = api.getTagsGroupedByIdUsingGET1(appIds, tag, from, to, metrics, logs, events, rum);
+
+        // TODO: test validations
+    }
+    /**
      * Gets values for specified tags for the given application identifiers appearing in the given time frame.
      *
      * 
@@ -84,7 +107,7 @@ public class TagApiControllerApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getUsingGET3Test() throws Exception {
+    public void getUsingGET1Test() throws Exception {
         String appIds = null;
         List<String> tag = null;
         Long from = null;
@@ -93,7 +116,7 @@ public class TagApiControllerApiTest {
         Boolean logs = null;
         Boolean events = null;
         Boolean rum = null;
-        Map<String, Dimension> response = api.getUsingGET3(appIds, tag, from, to, metrics, logs, events, rum);
+        Map<String, Dimension> response = api.getUsingGET1(appIds, tag, from, to, metrics, logs, events, rum);
 
         // TODO: test validations
     }

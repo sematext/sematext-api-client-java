@@ -44,10 +44,10 @@ public class TokensApiControllerApiTest {
      *          if the Api call fails
      */
     @Test
-    public void createAppToken1Test() throws Exception {
+    public void createAppTokenTest() throws Exception {
         CreateTokenDto body = null;
         Long appId = null;
-        TokenResponse response = api.createAppToken1(body, appId);
+        TokenResponse response = api.createAppToken(body, appId);
 
         // TODO: test validations
     }
@@ -76,9 +76,9 @@ public class TokensApiControllerApiTest {
      *          if the Api call fails
      */
     @Test
-    public void getAppTokensTest() throws Exception {
+    public void getAppTokens1Test() throws Exception {
         Long appId = null;
-        TokensResponse response = api.getAppTokens(appId);
+        TokensResponse response = api.getAppTokens1(appId);
 
         // TODO: test validations
     }
@@ -107,11 +107,11 @@ public class TokensApiControllerApiTest {
      *          if the Api call fails
      */
     @Test
-    public void updateAppToken1Test() throws Exception {
+    public void updateAppTokenTest() throws Exception {
         UpdateTokenDto body = null;
         Long appId = null;
         Long tokenId = null;
-        TokenResponse response = api.updateAppToken1(body, appId, tokenId);
+        TokenResponse response = api.updateAppToken(body, appId, tokenId);
 
         // TODO: test validations
     }

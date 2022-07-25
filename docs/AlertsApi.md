@@ -2,13 +2,13 @@
 
 All URIs are relative to */*
 
-| Method                                                                        | HTTP request                                                 | Description                |
-| ----------------------------------------------------------------------------- | ------------------------------------------------------------ | -------------------------- |
-| [**createAlertUsingPOST**](AlertsApi.md#createAlertUsingPOST)                 | **POST** /users-web/api/v3/alerts                            | Create alert rule          |
-| [**deleteAlertRuleUsingDELETE1**](AlertsApi.md#deleteAlertRuleUsingDELETE1)   | **DELETE** /users-web/api/v3/alerts/{updateableAlertId}      | Delete alert rule          |
-| [**disableAlertRuleUsingPUT**](AlertsApi.md#disableAlertRuleUsingPUT)         | **PUT** /users-web/api/v3/alerts/{updateableAlertId}/disable | Disable alert rule         |
-| [**enableAlertRuleUsingPUT**](AlertsApi.md#enableAlertRuleUsingPUT)           | **PUT** /users-web/api/v3/alerts/{updateableAlertId}/enable  | Enable alert rule          |
-| [**getAlertRulesForAppUsingGET1**](AlertsApi.md#getAlertRulesForAppUsingGET1) | **GET** /users-web/api/v3/apps/{appId}/alerts                | Get alert rules for an app |
+| Method                                                                      | HTTP request                                                 | Description                |
+| --------------------------------------------------------------------------- | ------------------------------------------------------------ | -------------------------- |
+| [**createAlertUsingPOST**](AlertsApi.md#createAlertUsingPOST)               | **POST** /users-web/api/v3/alerts                            | Create alert rule          |
+| [**deleteAlertRuleUsingDELETE**](AlertsApi.md#deleteAlertRuleUsingDELETE)   | **DELETE** /users-web/api/v3/alerts/{updateableAlertId}      | Delete alert rule          |
+| [**disableAlertRuleUsingPUT1**](AlertsApi.md#disableAlertRuleUsingPUT1)     | **PUT** /users-web/api/v3/alerts/{updateableAlertId}/disable | Disable alert rule         |
+| [**enableAlertRuleUsingPUT**](AlertsApi.md#enableAlertRuleUsingPUT)         | **PUT** /users-web/api/v3/alerts/{updateableAlertId}/enable  | Enable alert rule          |
+| [**getAlertRulesForAppUsingGET**](AlertsApi.md#getAlertRulesForAppUsingGET) | **GET** /users-web/api/v3/apps/{appId}/alerts                | Get alert rules for an app |
 
 <a name="createAlertUsingPOST"></a>
 
@@ -66,11 +66,11 @@ try {
 - **Content-Type**: application/json
 - **Accept**: application/json
 
-<a name="deleteAlertRuleUsingDELETE1"></a>
+<a name="deleteAlertRuleUsingDELETE"></a>
 
-# **deleteAlertRuleUsingDELETE1**
+# **deleteAlertRuleUsingDELETE**
 
-> GenericMapBasedApiResponse deleteAlertRuleUsingDELETE1(updateableAlertId)
+> GenericMapBasedApiResponse deleteAlertRuleUsingDELETE(updateableAlertId)
 
 Delete alert rule
 
@@ -95,10 +95,10 @@ api_key.setApiKey("YOUR API KEY");
 AlertsApi apiInstance = new AlertsApi();
 Long updateableAlertId = 789L; // Long | updateableAlertId
 try {
-    GenericMapBasedApiResponse result = apiInstance.deleteAlertRuleUsingDELETE1(updateableAlertId);
+    GenericMapBasedApiResponse result = apiInstance.deleteAlertRuleUsingDELETE(updateableAlertId);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling AlertsApi#deleteAlertRuleUsingDELETE1");
+    System.err.println("Exception when calling AlertsApi#deleteAlertRuleUsingDELETE");
     e.printStackTrace();
 }
 ```
@@ -122,11 +122,11 @@ try {
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
-<a name="disableAlertRuleUsingPUT"></a>
+<a name="disableAlertRuleUsingPUT1"></a>
 
-# **disableAlertRuleUsingPUT**
+# **disableAlertRuleUsingPUT1**
 
-> GenericMapBasedApiResponse disableAlertRuleUsingPUT(updateableAlertId)
+> GenericMapBasedApiResponse disableAlertRuleUsingPUT1(updateableAlertId)
 
 Disable alert rule
 
@@ -151,10 +151,10 @@ api_key.setApiKey("YOUR API KEY");
 AlertsApi apiInstance = new AlertsApi();
 Long updateableAlertId = 789L; // Long | updateableAlertId
 try {
-    GenericMapBasedApiResponse result = apiInstance.disableAlertRuleUsingPUT(updateableAlertId);
+    GenericMapBasedApiResponse result = apiInstance.disableAlertRuleUsingPUT1(updateableAlertId);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling AlertsApi#disableAlertRuleUsingPUT");
+    System.err.println("Exception when calling AlertsApi#disableAlertRuleUsingPUT1");
     e.printStackTrace();
 }
 ```
@@ -234,11 +234,11 @@ try {
 - **Content-Type**: Not defined
 - **Accept**: application/json
 
-<a name="getAlertRulesForAppUsingGET1"></a>
+<a name="getAlertRulesForAppUsingGET"></a>
 
-# **getAlertRulesForAppUsingGET1**
+# **getAlertRulesForAppUsingGET**
 
-> AlertRulesResponse getAlertRulesForAppUsingGET1(appId)
+> AlertRulesResponse getAlertRulesForAppUsingGET(appId)
 
 Get alert rules for an app
 
@@ -263,10 +263,10 @@ api_key.setApiKey("YOUR API KEY");
 AlertsApi apiInstance = new AlertsApi();
 Long appId = 789L; // Long | appId
 try {
-    AlertRulesResponse result = apiInstance.getAlertRulesForAppUsingGET1(appId);
+    AlertRulesResponse result = apiInstance.getAlertRulesForAppUsingGET(appId);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling AlertsApi#getAlertRulesForAppUsingGET1");
+    System.err.println("Exception when calling AlertsApi#getAlertRulesForAppUsingGET");
     e.printStackTrace();
 }
 ```
