@@ -41,9 +41,9 @@ public class ResetPasswordApiTest {
      *          if the Api call fails
      */
     @Test
-    public void resetPasswordUsingPOSTTest() throws Exception {
+    public void resetPasswordUsingPOST1Test() throws Exception {
         UserInfo body = null;
-        GenericMapBasedApiResponse response = api.resetPasswordUsingPOST(body);
+        GenericMapBasedApiResponse response = api.resetPasswordUsingPOST1(body);
 
         // TODO: test validations
     }

@@ -63,10 +63,10 @@ public class SubscriptionsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void createForDashUsingPOST1Test() throws Exception {
+    public void createForDashUsingPOSTTest() throws Exception {
         SubscriptionDashboardDto body = null;
         Long dashId = null;
-        SubscriptionResponse response = api.createForDashUsingPOST1(body, dashId);
+        SubscriptionResponse response = api.createForDashUsingPOST(body, dashId);
 
         // TODO: test validations
     }
@@ -79,9 +79,9 @@ public class SubscriptionsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void deleteUsingDELETE2Test() throws Exception {
+    public void deleteUsingDELETE3Test() throws Exception {
         Long updateableSubscriptionId = null;
-        GenericMapBasedApiResponse response = api.deleteUsingDELETE2(updateableSubscriptionId);
+        GenericMapBasedApiResponse response = api.deleteUsingDELETE3(updateableSubscriptionId);
 
         // TODO: test validations
     }
@@ -123,10 +123,10 @@ public class SubscriptionsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void sendAppReportUsingPOSTTest() throws Exception {
+    public void sendAppReportUsingPOST1Test() throws Exception {
         ReportInfo body = null;
         Long appId = null;
-        MailReportResponse response = api.sendAppReportUsingPOST(body, appId);
+        MailReportResponse response = api.sendAppReportUsingPOST1(body, appId);
 
         // TODO: test validations
     }
@@ -155,10 +155,10 @@ public class SubscriptionsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void toggleEnabledUsingPUT1Test() throws Exception {
+    public void toggleEnabledUsingPUTTest() throws Exception {
         UpdateSubscriptionDto body = null;
         Long updateableSubscriptionId = null;
-        SubscriptionResponse response = api.toggleEnabledUsingPUT1(body, updateableSubscriptionId);
+        SubscriptionResponse response = api.toggleEnabledUsingPUT(body, updateableSubscriptionId);
 
         // TODO: test validations
     }

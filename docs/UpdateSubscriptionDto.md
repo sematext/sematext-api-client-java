@@ -2,6 +2,6 @@
 
 ## Properties
 
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**enabled** | **Boolean** |  |  [optional]
+| Name        | Type        | Description | Notes      |
+| ----------- | ----------- | ----------- | ---------- |
+| **enabled** | **Boolean** |             | [optional] |

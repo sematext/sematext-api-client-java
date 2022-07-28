@@ -38,6 +38,7 @@
 | **notificationEmails**                    | **List&lt;String&gt;**                                                        |             | [optional] |
 | **notificationIntegrations**              | [**List&lt;NotificationIntegration&gt;**](NotificationIntegration.md)         |             | [optional] |
 | **notificationsEnabled**                  | **Boolean**                                                                   |             | [optional] |
+| **priority**                              | [**PriorityEnum**](#PriorityEnum)                                             |             | [optional] |
 | **query**                                 | **String**                                                                    |             | [optional] |
 | **reportName**                            | **String**                                                                    |             | [optional] |
 | **ruleKey**                               | **Long**                                                                      |             | [optional] |
@@ -65,3 +66,14 @@
 | UN_EQUAL      | &quot;UN_EQUAL&quot;      |
 | LESS_OR_EQUAL | &quot;LESS_OR_EQUAL&quot; |
 | MORE_OR_EQUAL | &quot;MORE_OR_EQUAL&quot; |
+
+<a name="PriorityEnum"></a>
+
+## Enum: PriorityEnum
+
+| Name     | Value                |
+| -------- | -------------------- |
+| INFO     | &quot;INFO&quot;     |
+| ERROR    | &quot;ERROR&quot;    |
+| WARN     | &quot;WARN&quot;     |
+| CRITICAL | &quot;CRITICAL&quot; |

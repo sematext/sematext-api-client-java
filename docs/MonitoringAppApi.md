@@ -2,15 +2,15 @@
 
 All URIs are relative to */*
 
-| Method                                                               | HTTP request                      | Description           |
-| -------------------------------------------------------------------- | --------------------------------- | --------------------- |
-| [**createSpmApplication**](MonitoringAppApi.md#createSpmApplication) | **POST** /spm-reports/api/v3/apps | Create Monitoring App |
+| Method                                                                 | HTTP request                      | Description           |
+| ---------------------------------------------------------------------- | --------------------------------- | --------------------- |
+| [**createSpmApplication1**](MonitoringAppApi.md#createSpmApplication1) | **POST** /spm-reports/api/v3/apps | Create Monitoring App |
 
-<a name="createSpmApplication"></a>
+<a name="createSpmApplication1"></a>
 
-# **createSpmApplication**
+# **createSpmApplication1**
 
-> AppsResponse createSpmApplication(body)
+> AppsResponse createSpmApplication1(body)
 
 Create Monitoring App
 
@@ -35,10 +35,10 @@ api_key.setApiKey("YOUR API KEY");
 MonitoringAppApi apiInstance = new MonitoringAppApi();
 CreateAppInfo body = new CreateAppInfo(); // CreateAppInfo | Details of the application to be created
 try {
-    AppsResponse result = apiInstance.createSpmApplication(body);
+    AppsResponse result = apiInstance.createSpmApplication1(body);
     System.out.println(result);
 } catch (ApiException e) {
-    System.err.println("Exception when calling MonitoringAppApi#createSpmApplication");
+    System.err.println("Exception when calling MonitoringAppApi#createSpmApplication1");
     e.printStackTrace();
 }
 ```

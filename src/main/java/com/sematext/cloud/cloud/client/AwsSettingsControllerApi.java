@@ -26,8 +26,8 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
-import com.sematext.cloud.model.AppsResponse;
-import com.sematext.cloud.model.CreateAppInfo;
+import com.sematext.cloud.model.CloudWatchSettings;
+import com.sematext.cloud.model.CloudWatchSettingsResponse;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -35,14 +35,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class MonitoringAppApi {
+public class AwsSettingsControllerApi {
     private ApiClient apiClient;
 
-    public MonitoringAppApi() {
+    public AwsSettingsControllerApi() {
         this(Configuration.getDefaultApiClient());
     }
 
-    public MonitoringAppApi(ApiClient apiClient) {
+    public AwsSettingsControllerApi(ApiClient apiClient) {
         this.apiClient = apiClient;
     }
 
@@ -55,18 +55,20 @@ public class MonitoringAppApi {
     }
 
     /**
-     * Build call for createSpmApplication
-     * @param body Details of the application to be created (required)
+     * Build call for updateUsingPUT
+     * @param body dto (required)
+     * @param appId appId (required)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call createSpmApplicationCall(CreateAppInfo body, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call updateUsingPUTCall(CloudWatchSettings body, Long appId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = body;
         
         // create path and map variables
-        String localVarPath = "/spm-reports/api/v3/apps";
+        String localVarPath = "/users-web/api/v3/apps/{appId}/aws"
+            .replaceAll("\\{" + "appId" + "\\}", apiClient.escapeString(appId.toString()));
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
@@ -100,17 +102,21 @@ public class MonitoringAppApi {
         }
 
         String[] localVarAuthNames = new String[] { "api_key" };
-        return apiClient.buildCall(localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
+        return apiClient.buildCall(localVarPath, "PUT", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
     
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call createSpmApplicationValidateBeforeCall(CreateAppInfo body, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call updateUsingPUTValidateBeforeCall(CloudWatchSettings body, Long appId, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         // verify the required parameter 'body' is set
         if (body == null) {
-            throw new ApiException("Missing the required parameter 'body' when calling createSpmApplication(Async)");
+            throw new ApiException("Missing the required parameter 'body' when calling updateUsingPUT(Async)");
+        }
+        // verify the required parameter 'appId' is set
+        if (appId == null) {
+            throw new ApiException("Missing the required parameter 'appId' when calling updateUsingPUT(Async)");
         }
         
-        com.squareup.okhttp.Call call = createSpmApplicationCall(body, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = updateUsingPUTCall(body, appId, progressListener, progressRequestListener);
         return call;
 
         
@@ -120,39 +126,42 @@ public class MonitoringAppApi {
     }
 
     /**
-     * Create Monitoring App
-     * 
-     * @param body Details of the application to be created (required)
-     * @return AppsResponse
+     * Update App&#x27;s AWS CloudWatch settings
+     * Applicable only for AWS Apps
+     * @param body dto (required)
+     * @param appId appId (required)
+     * @return CloudWatchSettingsResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public AppsResponse createSpmApplication(CreateAppInfo body) throws ApiException {
-        ApiResponse<AppsResponse> resp = createSpmApplicationWithHttpInfo(body);
+    public CloudWatchSettingsResponse updateUsingPUT(CloudWatchSettings body, Long appId) throws ApiException {
+        ApiResponse<CloudWatchSettingsResponse> resp = updateUsingPUTWithHttpInfo(body, appId);
         return resp.getData();
     }
 
     /**
-     * Create Monitoring App
-     * 
-     * @param body Details of the application to be created (required)
-     * @return ApiResponse&lt;AppsResponse&gt;
+     * Update App&#x27;s AWS CloudWatch settings
+     * Applicable only for AWS Apps
+     * @param body dto (required)
+     * @param appId appId (required)
+     * @return ApiResponse&lt;CloudWatchSettingsResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<AppsResponse> createSpmApplicationWithHttpInfo(CreateAppInfo body) throws ApiException {
-        com.squareup.okhttp.Call call = createSpmApplicationValidateBeforeCall(body, null, null);
-        Type localVarReturnType = new TypeToken<AppsResponse>(){}.getType();
+    public ApiResponse<CloudWatchSettingsResponse> updateUsingPUTWithHttpInfo(CloudWatchSettings body, Long appId) throws ApiException {
+        com.squareup.okhttp.Call call = updateUsingPUTValidateBeforeCall(body, appId, null, null);
+        Type localVarReturnType = new TypeToken<CloudWatchSettingsResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
 
     /**
-     * Create Monitoring App (asynchronously)
-     * 
-     * @param body Details of the application to be created (required)
+     * Update App&#x27;s AWS CloudWatch settings (asynchronously)
+     * Applicable only for AWS Apps
+     * @param body dto (required)
+     * @param appId appId (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call createSpmApplicationAsync(CreateAppInfo body, final ApiCallback<AppsResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call updateUsingPUTAsync(CloudWatchSettings body, Long appId, final ApiCallback<CloudWatchSettingsResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -173,8 +182,8 @@ public class MonitoringAppApi {
             };
         }
 
-        com.squareup.okhttp.Call call = createSpmApplicationValidateBeforeCall(body, progressListener, progressRequestListener);
-        Type localVarReturnType = new TypeToken<AppsResponse>(){}.getType();
+        com.squareup.okhttp.Call call = updateUsingPUTValidateBeforeCall(body, appId, progressListener, progressRequestListener);
+        Type localVarReturnType = new TypeToken<CloudWatchSettingsResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
     }

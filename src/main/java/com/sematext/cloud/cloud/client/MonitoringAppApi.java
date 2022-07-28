@@ -26,8 +26,8 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
-import com.sematext.cloud.model.GenericMapBasedApiResponse;
-import com.sematext.cloud.model.UserInfo;
+import com.sematext.cloud.model.AppsResponse;
+import com.sematext.cloud.model.CreateAppInfo;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -35,14 +35,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ResetPasswordApi {
+public class MonitoringAppApi {
     private ApiClient apiClient;
 
-    public ResetPasswordApi() {
+    public MonitoringAppApi() {
         this(Configuration.getDefaultApiClient());
     }
 
-    public ResetPasswordApi(ApiClient apiClient) {
+    public MonitoringAppApi(ApiClient apiClient) {
         this.apiClient = apiClient;
     }
 
@@ -55,18 +55,18 @@ public class ResetPasswordApi {
     }
 
     /**
-     * Build call for resetPasswordUsingPOST
-     * @param body dto (required)
+     * Build call for createSpmApplication1
+     * @param body Details of the application to be created (required)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call resetPasswordUsingPOSTCall(UserInfo body, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    public com.squareup.okhttp.Call createSpmApplication1Call(CreateAppInfo body, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         Object localVarPostBody = body;
         
         // create path and map variables
-        String localVarPath = "/users-web/api/v3/account/password/reset";
+        String localVarPath = "/spm-reports/api/v3/apps";
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
@@ -104,13 +104,13 @@ public class ResetPasswordApi {
     }
     
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call resetPasswordUsingPOSTValidateBeforeCall(UserInfo body, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call createSpmApplication1ValidateBeforeCall(CreateAppInfo body, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         // verify the required parameter 'body' is set
         if (body == null) {
-            throw new ApiException("Missing the required parameter 'body' when calling resetPasswordUsingPOST(Async)");
+            throw new ApiException("Missing the required parameter 'body' when calling createSpmApplication1(Async)");
         }
         
-        com.squareup.okhttp.Call call = resetPasswordUsingPOSTCall(body, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = createSpmApplication1Call(body, progressListener, progressRequestListener);
         return call;
 
         
@@ -120,39 +120,39 @@ public class ResetPasswordApi {
     }
 
     /**
-     * Reset Password
+     * Create Monitoring App
      * 
-     * @param body dto (required)
-     * @return GenericMapBasedApiResponse
+     * @param body Details of the application to be created (required)
+     * @return AppsResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public GenericMapBasedApiResponse resetPasswordUsingPOST(UserInfo body) throws ApiException {
-        ApiResponse<GenericMapBasedApiResponse> resp = resetPasswordUsingPOSTWithHttpInfo(body);
+    public AppsResponse createSpmApplication1(CreateAppInfo body) throws ApiException {
+        ApiResponse<AppsResponse> resp = createSpmApplication1WithHttpInfo(body);
         return resp.getData();
     }
 
     /**
-     * Reset Password
+     * Create Monitoring App
      * 
-     * @param body dto (required)
-     * @return ApiResponse&lt;GenericMapBasedApiResponse&gt;
+     * @param body Details of the application to be created (required)
+     * @return ApiResponse&lt;AppsResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<GenericMapBasedApiResponse> resetPasswordUsingPOSTWithHttpInfo(UserInfo body) throws ApiException {
-        com.squareup.okhttp.Call call = resetPasswordUsingPOSTValidateBeforeCall(body, null, null);
-        Type localVarReturnType = new TypeToken<GenericMapBasedApiResponse>(){}.getType();
+    public ApiResponse<AppsResponse> createSpmApplication1WithHttpInfo(CreateAppInfo body) throws ApiException {
+        com.squareup.okhttp.Call call = createSpmApplication1ValidateBeforeCall(body, null, null);
+        Type localVarReturnType = new TypeToken<AppsResponse>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
 
     /**
-     * Reset Password (asynchronously)
+     * Create Monitoring App (asynchronously)
      * 
-     * @param body dto (required)
+     * @param body Details of the application to be created (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call resetPasswordUsingPOSTAsync(UserInfo body, final ApiCallback<GenericMapBasedApiResponse> callback) throws ApiException {
+    public com.squareup.okhttp.Call createSpmApplication1Async(CreateAppInfo body, final ApiCallback<AppsResponse> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -173,8 +173,8 @@ public class ResetPasswordApi {
             };
         }
 
-        com.squareup.okhttp.Call call = resetPasswordUsingPOSTValidateBeforeCall(body, progressListener, progressRequestListener);
-        Type localVarReturnType = new TypeToken<GenericMapBasedApiResponse>(){}.getType();
+        com.squareup.okhttp.Call call = createSpmApplication1ValidateBeforeCall(body, progressListener, progressRequestListener);
+        Type localVarReturnType = new TypeToken<AppsResponse>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
     }
